@@ -4,14 +4,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCare</title>
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!-- tailwind css -->
   <link rel="stylesheet" href="./src/assets/css/style.css">
-  <title>Document</title>
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold bg-gray-600 text-red-400">
-    Hello world!
-  </h1>
+<body class="font-inter">
+  <header class="">
+
+    <!-- top menu -->
+    <section class="topmenu bg-[#EDF7F7] py-[10px]">
+      <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
+
+        <ul class="flex gap-[40px]">
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+          </li>
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+          </li>
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+          </li>
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">List your Garage</a>
+          </li>
+        </ul>
+
+        <ul class="flex gap-[18px] items-center">
+          <div class="flex gap-[12px]">
+            <li>
+              <a href="#"><img src="./src/assets/image/home/fb.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./src/assets/image/home/instagram.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./src/assets/image/home/twitter.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./src/assets/image/home/linkedIn.svg" alt="fb"></a>
+            </li>
+          </div>
+
+          <div class="flex gap-[8px]">
+            <li>
+              <a href="#"><img src="./src/assets/image/home/googlePlay.png" alt="fb"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="./src/assets/image/home/appStore.png" alt="fb"></a>
+            </li>
+          </div>
+        </ul>
+
+      </nav>
+    </section>
+
+    <!-- main menu  -->
+    <section class="menu py-[16px] shadow">
+      <div
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center  gap-[70px]">
+
+        <div>
+          <a href="#">
+            <img src="./src/assets/image/home/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <form class="flex w-[655px] bg-[#F4F5F7] rounded-lg px-4 py-2">
+
+            <img src="./src/assets/image/home/search.svg" alt="search">
+
+            <input type="text" id="first_name"
+              class="border-0 bg-transparent block w-full focus:ring-0
+              font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+              placeholder="Search Anything" required />
+          </form>
+
+          <div>
+            <ul class="flex gap-7">
+
+              <li>
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
+                  <img src="./src/assets/image/home/location.svg" alt="location">
+                  <span class="text-base font-medium">Dhaka</span>
+                  <span
+                    class="absolute top-[9px] right-[-20px] border-r-4 border-r-transparent border-l-4 border-l-transparent border-t-8 border-[#B5B5BD]"></span>
+                </button>
+              </li>
+              <!-- Dropdown menu -->
+              <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                </ul>
+              </div>
+
+              <li class="ms-5">
+                <a class="relative" href="#">
+                  <img src="./src/assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pe-5 py-[6px] gap-6 rounded-xl">
+            <button
+              class="flex border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./src/assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <button class="text-[#09090B] font-bold text-base">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>

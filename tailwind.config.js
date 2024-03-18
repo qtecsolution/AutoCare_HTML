@@ -10,6 +10,9 @@ module.exports = {
     "*.{html,js}"
     ],
   theme: {
+    fontFamily: {
+      'inter': ["Inter", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
