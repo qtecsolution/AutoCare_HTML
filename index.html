@@ -149,9 +149,8 @@
   </header>
 
   <main>
-
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
-      <div class="flex gap-16 justify-between items-center">
+    <section class="container mx-auto mt-10">
+      <div class="grid grid-cols-2 md:grid md:grid-cols-4 justify-between gap-4 ml-3 md:ml-0">
         <div class=" flex items-center gap-4">
 
           <div class="bg-[#E0EAC8] w-12 h-12 flex justify-center items-center rounded-full">
@@ -199,25 +198,28 @@
     </section>
 
     <!-- Hot Product Category -->
-    <section class="sm:container md:container lg:container xl:container mx-auto bg-[#F4F4F4] rounded-3xl">
+    <section class="container mx-auto mt-10 bg-[#F4F4F4] rounded-3xl">
 
-      <div class="sm:flex gap-9 p-6 ">
-        <div class="">
+      <div class="md:flex gap-9 p-6 ">
+        <div class="mb-5">
           <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#E27B3D] text-xs font-semibold uppercase">
             Product Category
           </h3>
 
-          <h2 class="w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3">
+          <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3">
             Purchase Atumobile Parts and Enginge Oil fro any where
           </h2>
-          <img src="./src/assets/image/home/product-category.png" alt="">
-          <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">Browse All
-            Product</button>
+          <img class="w-full" src="./src/assets/image/home/product-category.png" alt="">
+          <div class="flex justify-center md:block mt-8">
+            <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
+              Browse All Product
+            </button>
+          </div>
         </div>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class=" w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/engine.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -237,7 +239,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/electrical.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -257,7 +259,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/steering.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -277,7 +279,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/brakes.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -297,7 +299,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/Tires.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -317,7 +319,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/paint.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -337,7 +339,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/turbo.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -357,7 +359,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/fuel.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -396,9 +398,9 @@
           </div>
         </div>
 
-        <div class="flex justify-between pt-6">
+        <div class="block md:flex justify-between pt-6">
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -434,7 +436,7 @@
             </div>
           </div>
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 mt-5 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -470,7 +472,7 @@
             </div>
           </div>
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 mt-5 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -506,7 +508,7 @@
             </div>
           </div>
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 mt-5 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -542,7 +544,7 @@
             </div>
           </div>
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 mt-5 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -578,7 +580,7 @@
             </div>
           </div>
 
-          <div class="w-48 bg-white rounded-xl shadow">
+          <div class="w-full md:w-48 mt-5 bg-white rounded-xl shadow">
             <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
               <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
                 <p class="text-[10px] font-semibold text-white">20% Off</p>
@@ -620,25 +622,29 @@
     </section>
 
     <!-- Hot Service Category-->
-    <section class="sm:container md:container lg:container xl:container mx-auto bg-[#F4F4F4] rounded-3xl mt-10">
+    <section class="container mx-auto mt-10 bg-[#F4F4F4] rounded-3xl">
 
       <div class="sm:flex gap-9 p-6 ">
-        <div class="">
-          <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#E27B3D] text-xs font-semibold uppercase">
-            Product Category
-          </h3>
+        <div class="my-5">
+          <div class="flex justify-center">
+            <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#E27B3D] text-xs font-semibold uppercase">
+              Product Category
+            </h3>
+          </div>
 
-          <h2 class="w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3">
+          <h2 class="w-full md:w-48 text-lg text-center font-bold tracking-[-0.09px] leading-[140%] py-3">
             Purchase Atumobile Parts and Enginge Oil fro any where
           </h2>
-          <img src="./src/assets/image/home/product-category.png" alt="">
-          <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">Browse All
-            Product</button>
+          <img class="w-full" src="./src/assets/image/home/product-category.png" alt="">
+          <div class="flex justify-center md:block">
+            <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">Browse All
+              Product</button>
+          </div>
         </div>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/engine.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -658,7 +664,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/electrical.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -678,7 +684,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/steering.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -698,7 +704,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/brakes.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -718,7 +724,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/Tires.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -738,7 +744,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/paint.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -758,7 +764,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/turbo.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -778,7 +784,7 @@
             </a>
           </div>
 
-          <div class="w-60 rounded-xl bg-white shadow">
+          <div class="w-full md:w-60 rounded-xl bg-white shadow">
             <div class="flex gap-2 p-[14px] border-b">
               <img src="./src/assets/image/home/fuel.svg" alt="engine">
               <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -817,9 +823,9 @@
           </div>
         </div>
 
-        <div class="pt-6 grid grid-cols-3 gap-3">
+        <div class="pt-6 md:grid md:grid-cols-3 md:gap-3">
 
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
             <div class="flex justify-center items-center">
               <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
             </div>
@@ -854,7 +860,7 @@
 
           </div>
 
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
             <div class="flex justify-center items-center">
               <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
             </div>
@@ -888,42 +894,7 @@
             </div>
           </div>
 
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
-            <div class="flex justify-center items-center">
-              <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
-            </div>
-
-            <div class="pt-3 pb-4">
-              <div class="flex items-center gap-1">
-                <img src="./src/assets/image/home/star.svg" alt="">
-                <p class="text-[10px] ">
-                  <span class="text-[#282728]">5.0</span>
-                  <span class="text-[#4A5568]">Average Rating</span>
-                </p>
-              </div>
-
-              <div class="mt-2">
-                <p class="text-xs font-bold text-[#B36C7D]">
-                  Tires/Wheels Sales Change
-                </p>
-              </div>
-
-              <div class="">
-                <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-              </div>
-
-              <div class="">
-                <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-              </div>
-
-              <div class="mt-2">
-                <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
             <div class="flex justify-center items-center">
               <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
             </div>
@@ -958,7 +929,7 @@
 
           </div>
 
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
             <div class="flex justify-center items-center">
               <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
             </div>
@@ -993,7 +964,42 @@
 
           </div>
 
-          <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
+            <div class="flex justify-center items-center">
+              <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
+            </div>
+
+            <div class="pt-3 pb-4">
+              <div class="flex items-center gap-1">
+                <img src="./src/assets/image/home/star.svg" alt="">
+                <p class="text-[10px] ">
+                  <span class="text-[#282728]">5.0</span>
+                  <span class="text-[#4A5568]">Average Rating</span>
+                </p>
+              </div>
+
+              <div class="mt-2">
+                <p class="text-xs font-bold text-[#B36C7D]">
+                  Tires/Wheels Sales Change
+                </p>
+              </div>
+
+              <div class="">
+                <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+              </div>
+
+              <div class="">
+                <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+              </div>
+
+              <div class="mt-2">
+                <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 md:mt-0 shadow">
             <div class="flex justify-center items-center">
               <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
             </div>
@@ -1032,9 +1038,9 @@
     </section>
 
     <!-- Featured Product &  Shop -->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
-      <div class="flex gap-6">
-        <aside class="w-[845px] bg-[#F4F5F7] rounded-[28px] p-6">
+    <section class="container mx-auto my-10">
+      <div class="md:flex gap-6">
+        <aside class=" md:w-[845px] bg-[#F4F5F7] rounded-[28px] p-6">
           <div class="flex justify-between items-center">
             <h1 class="font-semibold text-2xl text-[#09090B]">
               Featured Product
@@ -1053,9 +1059,8 @@
             </div>
           </div>
 
-          <div class="flex gap-4 mt-6 mb-3">
-
-            <div class="w-64 bg-white rounded-xl shadow">
+          <div class="md:flex gap-4 mt-6 mb-3">
+            <div class=" md:w-64 bg-white rounded-xl shadow">
               <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-52 flex justify-center items-center relative">
                 <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
                   <p class="text-base font-semibold text-white">20% Off</p>
@@ -1108,7 +1113,7 @@
               </div>
             </div>
 
-            <div class="w-64 bg-white rounded-xl shadow">
+            <div class="md:w-64 mt-5 bg-white rounded-xl shadow">
               <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-52 flex justify-center items-center relative">
                 <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
                   <p class="text-base font-semibold text-white">20% Off</p>
@@ -1161,7 +1166,7 @@
               </div>
             </div>
 
-            <div class="w-64 bg-white rounded-xl shadow">
+            <div class="md:w-64 mt-5 bg-white rounded-xl shadow">
               <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-52 flex justify-center items-center relative">
                 <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
                   <p class="text-base font-semibold text-white">20% Off</p>
@@ -1223,7 +1228,7 @@
           </div>
         </aside>
 
-        <aside class="w-[411px] rounded-3xl bg-[#F0FDFC] p-6">
+        <aside class=" md:w-[411px] rounded-3xl bg-[#F0FDFC] p-6">
           <div class="flex justify-between items-center mb-5">
             <h1 class="font-semibold text-2xl text-[#09090B]">Featured Shop</h1>
             <div class="flex gap-2">
@@ -1342,9 +1347,9 @@
     </section>
 
     <!-- Featured Garage &  Services-->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
-      <div class="flex gap-6">
-        <aside class="w-[411px] rounded-3xl bg-[#F4F5F7] p-6">
+    <section class="container mx-auto my-10">
+      <div class="md:flex gap-6">
+        <aside class="md:w-[411px] rounded-3xl bg-[#F4F5F7] p-6">
           <div class="flex justify-between items-center mb-3">
             <h1 class="font-semibold text-2xl text-[#09090B]">Featured Shop</h1>
             <div class="flex gap-2">
@@ -1521,9 +1526,8 @@
             </div>
           </div>
 
-          <div class="pt-3 grid grid-cols-2 gap-3">
-
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+          <div class="pt-3 md:grid md:grid-cols-2 gap-3">
+            <div class="w-full flex gap-3 bg-white rounded-2xl md:w-[392px] shadow">
               <div class="flex justify-center items-center">
                 <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
               </div>
@@ -1558,7 +1562,7 @@
 
             </div>
 
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+            <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 shadow">
               <div class="flex justify-center items-center">
                 <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
               </div>
@@ -1592,42 +1596,7 @@
               </div>
             </div>
 
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
-              <div class="flex justify-center items-center">
-                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
-              </div>
-
-              <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <p class="text-[10px] ">
-                    <span class="text-[#282728]">5.0</span>
-                    <span class="text-[#4A5568]">Average Rating</span>
-                  </p>
-                </div>
-
-                <div class="mt-2">
-                  <p class="text-xs font-bold text-[#B36C7D]">
-                    Tires/Wheels Sales Change
-                  </p>
-                </div>
-
-                <div class="">
-                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                </div>
-
-                <div class="">
-                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                </div>
-
-                <div class="mt-2">
-                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+            <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 shadow">
               <div class="flex justify-center items-center">
                 <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
               </div>
@@ -1662,7 +1631,7 @@
 
             </div>
 
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+            <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 shadow">
               <div class="flex justify-center items-center">
                 <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
               </div>
@@ -1697,7 +1666,42 @@
 
             </div>
 
-            <div class="flex gap-3 bg-white rounded-2xl w-[392px] shadow">
+            <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 shadow">
+              <div class="flex justify-center items-center">
+                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
+              </div>
+
+              <div class="pt-3 pb-4">
+                <div class="flex items-center gap-1">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <p class="text-[10px] ">
+                    <span class="text-[#282728]">5.0</span>
+                    <span class="text-[#4A5568]">Average Rating</span>
+                  </p>
+                </div>
+
+                <div class="mt-2">
+                  <p class="text-xs font-bold text-[#B36C7D]">
+                    Tires/Wheels Sales Change
+                  </p>
+                </div>
+
+                <div class="">
+                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                </div>
+
+                <div class="">
+                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                </div>
+
+                <div class="mt-2">
+                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex gap-3 bg-white rounded-2xl md:w-[392px] mt-5 shadow">
               <div class="flex justify-center items-center">
                 <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
               </div>
@@ -1743,7 +1747,7 @@
     </section>
 
     <!-- Just for you section -->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
+    <section class="container mx-auto my-10">
 
       <div class="">
         <div class="flex justify-between items-center">
@@ -1985,7 +1989,7 @@
     </section>
 
     <!-- car service -->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
+    <section class="container mx-auto my-10">
       <div class="flex justify-between">
         <div class="">
           <img class="rounded-2xl" src="./src/assets/image/home/carservice1.png" alt="">
@@ -1998,7 +2002,7 @@
     </section>
 
     <!-- Recently Viewed Product & Service  -->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
+    <section class="container mx-auto my-10">
       <div class="grid grid-cols-3 gap-6">
         <aside class="col-span-2 ">
           <h2 class="text-[#09090B] font-semibold text-2xl">
@@ -2411,8 +2415,7 @@
     </section>
 
     <!-- Best car  -->
-
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
+    <section class="container mx-auto my-10">
 
       <div class="grid grid-cols-3 gap-6">
         <div class="">
@@ -2431,7 +2434,7 @@
     </section>
 
     <!-- Browse Product By Brand  -->
-    <section class="sm:container md:container lg:container xl:container mx-auto my-10">
+    <section class="container mx-auto my-10">
       <div class="grid grid-cols-3 gap-6 ">
         <aside class="col-span-2 bg-[#F4F4F8] p-6 rounded-[32px]">
           <div class="flex justify-between items-center">
@@ -2549,54 +2552,317 @@
     </section>
 
     <!-- Get Clients  -->
-    <section>
-      <section class="sm:container md:container lg:container xl:container mx-auto my-10">
-
-        <div class="grid grid-cols-2 gap-7">
-          <aside class="bg-no-repeat" style="background-image: url('./src/assets/image/home/get-clients1.png')">
-
-            <div class="">
-              <h1 class="pt-[217px] ps-12 pr-11 text-[40px] font-bold text-white">
-                Want to Provide Automobile <br> Service? and Get Clients
-              </h1>
-              <p class="ps-12 text-xl text-white">
-                Rent your belongings to people in your area to make <br> some extra cash.
-              </p>
-              <div class="ps-8 mt-10">
-                <button class="px-6 py-4 bg-white rounded-[50px] text-[#027371] text-lg font-bold mb-20">
-                  List Your Garage
-                </button>
-              </div>
+    <section class="container mx-auto my-10">
+      <div class="md:grid md:grid-cols-2 md:gap-7">
+        <aside class="bg-no-repeat" style="background-image: url('./src/assets/image/home/get-clients1.png')">
+          <div class="">
+            <h1 class="pt-[217px] ps-12 pr-11 text-[40px] font-bold text-white">
+              Want to Provide Automobile <br> Service? and Get Clients
+            </h1>
+            <p class="ps-12 text-xl text-white">
+              Rent your belongings to people in your area to make <br> some extra cash.
+            </p>
+            <div class="ps-8 mt-10">
+              <button class="px-6 py-4 bg-white rounded-[50px] text-[#027371] text-lg font-bold mb-20">
+                List Your Garage
+              </button>
             </div>
-          </aside>
+          </div>
+        </aside>
 
-          <aside class="bg-no-repeat" style="background-image: url('./src/assets/image/home/get-clients3.png')">
-            <div class="flex justify-center flex-col">
-              <h1 class="mx-20 mt-10 font-bold text-[#27272E] text-[40px] text-center">Open Store to sell automobile
-                spare parts
-              </h1>
-              <p class="text-lg text-center mb-6">
-                Rent your belongings to people in your area to <br /> make some extra cash.
-              </p>
+        <aside class="bg-no-repeat" style="background-image: url('./src/assets/image/home/get-clients3.png')">
+          <div class="flex justify-center flex-col">
+            <h1 class="mx-20 mt-10 font-bold text-[#27272E] text-[40px] text-center">Open Store to sell automobile
+              spare parts
+            </h1>
+            <p class="text-lg text-center mb-6">
+              Rent your belongings to people in your area to <br /> make some extra cash.
+            </p>
 
-              <div class="flex justify-center">
-                <button class="px-6 py-4 bg-[#027371] rounded-[50px] text-white text-lg font-bold">
-                  List Your Garage
-                </button>
-              </div>
-
-              <div class="flex justify-center mt-5">
-                <img src="./src/assets/image/home/get-clients2.png" alt="">
-              </div>
+            <div class="flex justify-center">
+              <button class="px-6 py-4 bg-[#027371] rounded-[50px] text-white text-lg font-bold">
+                List Your Garage
+              </button>
             </div>
-          </aside>
-        </div>
-      </section>
+
+            <div class="flex justify-center mt-5">
+              <img src="./src/assets/image/home/get-clients2.png" alt="">
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
+
   </main>
 
-  <footer>
+  <!-- footer section -->
+  <footer class="bg-[#1F1E28]">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="./src/assets/image/home/auto-care-logo.svg" alt="">
+            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
+          </div>
+          <p class="text-[#BABABA] text-sm mt-6">Rent your belongings to people in your area to make some extra cash.
+          </p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./src/assets/image/home/Facebook-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./src/assets/image/home/Instagram-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./src/assets/image/home/Twitter-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./src/assets/image/home/LinkedIn-footer.svg" alt="">
+            </a>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-bold text-white">Need Assistance?</h3>
+            <p class="text-[#BABABA] text-sm mt-2">Get In Touch :</p>
+            <p class="text-[#BABABA] text-sm">+14 88854874124</p>
+            <p class="text-[#BABABA] text-sm">contactus@autocare.com</p>
+            <p class="text-[#BABABA] text-sm mt-2">Address :</p>
+            <p class="text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
+          </div>
+        </div>
 
+        <div class="col-span-2">
+          <div class="flex justify-between">
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Company
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Legal
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Terms of Use
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Refund Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Service Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Affiliates
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Shop Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Service Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex">
+            <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold text-lg">Download Customer App</legend>
+              <div class="flex px-24 gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold text-lg">Download Vendor App</legend>
+              <div class="flex px-24 gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between sm:items-center mt-8 mb-5 bg-[#14050B] sm:rounded-[22px] py-5 px-4 sm:px-11">
+        <div class="flex gap-6 items-center sm:w-1/2">
+          <img src="./src/assets/image/home/email.png" alt="">
+          <h2 class="text-lg sm:text-2xl font-semibold text-white leading-normal">
+            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
+          </h2>
+        </div>
+
+
+        <form
+          class="flex flex-col sm:flex-row items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          <input
+            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
+            type="text" placeholder="Enter Your Email">
+          <button
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-4 sm:mt-0 md:absolute md:top-[10px] md:right-[-36px]">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
+          <img src="./src/assets/image/home/copyright.svg" alt="">
+          <p class="text-[#ffffff99] font-medium text-sm">
+            2024-2025 autocare. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./src/assets/image/home/Payment Method1.png" alt="">
+          <img src="./src/assets/image/home/Payment Method2.png" alt="">
+          <img src="./src/assets/image/home/Payment Method3.png" alt="">
+          <img src="./src/assets/image/home/Payment Method4.png" alt="">
+          <img src="./src/assets/image/home/Payment Method5.png" alt="">
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- flowbite cdn -->

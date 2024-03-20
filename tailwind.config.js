@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'inter': ["Inter", "sans-serif"],
+      'alata': ["Alata", "sans-serif"],
     },
     extend: {},
   },
