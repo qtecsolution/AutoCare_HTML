@@ -70,7 +70,7 @@
     <!-- main menu  -->
     <section class="menu py-[16px] shadow">
       <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center  gap-[70px]">
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center gap-[70px]">
 
         <div>
           <a href="#">
@@ -140,10 +140,118 @@
       </div>
     </section>
 
+    <!-- Search for Products -->
+    <section class="container mx-auto my-6">
+      <div class="bg-no-repeat pt-9 pb-5 px-16"
+        style="background-image: url('./src/assets/image/home/search-for-products.png')">
+        <div class="">
+          <h1 class="text-[32px] font-semibold text-white">
+            Find Your Automotive Parts and Services
+          </h1>
+        </div>
+
+        <div class="mt-2 mb-6">
+          <p class="text-[#F0FDFC] text-sm">
+            Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
+            specific components or specialized maintenance
+          </p>
+        </div>
+
+        <div class="flex gap-5 mb-1">
+
+          <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+            <img src="./src/assets/image/home/search-for-products.svg" alt="">
+            <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
+          </div>
+
+          <div class="flex items-center gap-2 cursor-pointer">
+            <img src="./src/assets/image/home/search-for-services.svg" alt="">
+            <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
+          </div>
+
+        </div>
+
+        <div class="flex px-4 py-2 bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
+
+          <div class="border-r-2 border-[#E4E5E9]">
+            <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+              <option class="text-base text-[10px]" data-display="Select">Product Category</option>
+              <option class="text-base text-[10px]" value="1">Some option2</option>
+              <option class="text-base text-[10px]" value="2">Some option3</option>
+              <option class="text-base text-[10px]" value="4">Some option4</option>
+            </select>
+          </div>
+
+          <div class="border-r-2 border-[#E4E5E9]">
+            <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+              <option class="text-base text-[10px]" data-display="Select">Select Brand</option>
+              <option class="text-base text-[10px]" value="1">Some option2</option>
+              <option class="text-base text-[10px]" value="2">Some option3</option>
+              <option class="text-base text-[10px]" value="4">Some option4</option>
+            </select>
+          </div>
+
+          <div class="border-r-2 border-[#E4E5E9]">
+            <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+              <option class="text-base text-[10px]" data-display="Select">Select Model</option>
+              <option class="text-base text-[10px]" value="1">Some option2</option>
+              <option class="text-base text-[10px]" value="2">Some option3</option>
+              <option class="text-base text-[10px]" value="4">Some option4</option>
+            </select>
+          </div>
+
+          <div class="border-r-2 border-[#E4E5E9]">
+            <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+              <option class="text-base text-[10px]" data-display="Select">Model Year</option>
+              <option class="text-base text-[10px]" value="1">Some option2</option>
+              <option class="text-base text-[10px]" value="2">Some option3</option>
+              <option class="text-base text-[10px]" value="4">Some option4</option>
+            </select>
+          </div>
+
+          <div class="border-r-2 border-[#E4E5E9]">
+            <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+              <option class="text-base text-[10px]" data-display="Select">Engine (Optional)</option>
+              <option class="text-base text-[10px]" value="1">Some option2</option>
+              <option class="text-base text-[10px]" value="2">Some option3</option>
+              <option class="text-base text-[10px]" value="4">Some option4</option>
+            </select>
+          </div>
+
+
+          <div class="">
+            <input class="border-none focus:ring-0" type="text" name="" id="" placeholder="Keyword">
+          </div>
+
+          <div class="">
+            <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+              <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+              <span class="font-bold text-white text-xs">Search</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- hero section -->
+    <section class="container mx-auto mt-6 mb-10">
+      <div class="grid grid-cols-3 gap-3">
+        <aside class="col-span-2">
+          <div class="">
+            <img src="./src/assets/image/home/hero-slide.png" alt="">
+          </div>
+        </aside>
 
-    <section>
+        <aside class="flex-shrink-0 rounded-[24px] pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
 
+          <div class="relative z-10">
+            <img src="./src/assets/image/home/hero-right1.png" alt="">
+          </div>
+          <div class="absolute bottom-6 right-0 z-0">
+            <img src="./src/assets/image/home/hero-right2.png" alt="">
+          </div>
+        </aside>
+      </div>
     </section>
 
   </header>
@@ -383,7 +491,7 @@
       </div>
 
       <!-- Hot Product carousel -->
-      <div class="p-6">
+      <div class="p-6 pt-0">
         <div class="flex justify-between items-center">
           <h1 class="font-semibold text-2xl text-[#09090B]">Hot Product</h1>
           <div class="flex gap-2">
@@ -808,7 +916,7 @@
       </div>
 
       <!-- Hot Service carousel -->
-      <div class="p-6">
+      <div class="p-6 pt-0">
         <div class="flex justify-between items-center">
           <h1 class="font-semibold text-2xl text-[#09090B]">Hot Service</h1>
           <div class="flex gap-2">
