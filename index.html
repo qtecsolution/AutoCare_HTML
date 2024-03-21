@@ -11,8 +11,15 @@
 
   <!-- flowbite cdn -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- tailwind css -->
   <link rel="stylesheet" href="./src/assets/css/style.css">
+
+  <link rel="stylesheet" href="./src/assets/css/custom.css">
+
 </head>
 
 <body class="font-inter">
@@ -237,8 +244,20 @@
     <section class="container mx-auto mt-6 mb-10">
       <div class="grid grid-cols-3 gap-3">
         <aside class="col-span-2">
-          <div class="">
-            <img src="./src/assets/image/home/hero-slide.png" alt="">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img src="./src/assets/image/home/hero-slide.png" alt="">
+              </div>
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img src="./src/assets/image/home/hero-slide.png" alt="">
+              </div>
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img src="./src/assets/image/home/hero-slide.png" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </aside>
 
@@ -506,226 +525,481 @@
           </div>
         </div>
 
-        <div class="block md:flex justify-between pt-6">
+        <div class="swiper mySwiper1 block md:flex justify-between pt-6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel1.png" alt="">
+                </div>
 
-          <div class="w-full md:w-48 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
               </div>
-              <img src="./src/assets/image/home/carousel1.png" alt="">
             </div>
 
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel2.png" alt="">
+                </div>
 
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
 
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel3.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel1.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel2.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel3.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel1.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel2.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel3.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel1.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel2.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
+                <div
+                  class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                  <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                    <p class="text-[10px] font-semibold text-white">20% Off</p>
+                  </div>
+                  <img src="./src/assets/image/home/carousel3.png" alt="">
+                </div>
+
+                <div class="p-3">
+                  <div class="flex justify-between">
+                    <p class="flex">
+                      <img src="./src/assets/image/home/star.svg" alt="">
+                      <span class="text-[10px] text-[#09090B]">
+                        5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                      </span>
+                    </p>
+                    <p class="flex">
+                      <img src="./src/assets/image/home/location-block.svg" alt="">
+                      <span class="text-[10px] text-[#474957]">Dhaka</span>
+                    </p>
+                  </div>
+
+                  <div class="pt-[6px] pb-5">
+                    <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                      For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                    </h2>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    <img src="./src/assets/image/home/delivery.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-
-          <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
-              </div>
-              <img src="./src/assets/image/home/carousel2.png" alt="">
-            </div>
-
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
-
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
-              </div>
-              <img src="./src/assets/image/home/carousel3.png" alt="">
-            </div>
-
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
-
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
-              </div>
-              <img src="./src/assets/image/home/carousel1.png" alt="">
-            </div>
-
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
-
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
-              </div>
-              <img src="./src/assets/image/home/carousel2.png" alt="">
-            </div>
-
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
-
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full md:w-48 mt-5 md:mt-0 bg-white rounded-xl shadow">
-            <div class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
-              <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
-                <p class="text-[10px] font-semibold text-white">20% Off</p>
-              </div>
-              <img src="./src/assets/image/home/carousel3.png" alt="">
-            </div>
-
-            <div class="p-3">
-              <div class="flex justify-between">
-                <p class="flex">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <span class="text-[10px] text-[#09090B]">
-                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
-                  </span>
-                </p>
-                <p class="flex">
-                  <img src="./src/assets/image/home/location-block.svg" alt="">
-                  <span class="text-[10px] text-[#474957]">Dhaka</span>
-                </p>
-              </div>
-
-              <div class="pt-[6px] pb-5">
-                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
-                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                </h2>
-              </div>
-
-              <div class="flex justify-between items-center">
-                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                <img src="./src/assets/image/home/delivery.svg" alt="">
-              </div>
-            </div>
-          </div>
-
+          
+          <div class="swiper-button-next swiper-next-1"></div>
+          <div class="swiper-button-prev swiper-prev-1"></div>
         </div>
-
       </div>
     </section>
 
@@ -3038,6 +3312,47 @@
 
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+    var swiper1 = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
 </body>
 
 </html>
