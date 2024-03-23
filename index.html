@@ -515,12 +515,12 @@
           <h1 class="font-semibold text-2xl text-[#09090B]">Hot Product</h1>
           <div class="flex gap-2">
 
-            <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center" data-carousel-prev>
-              <i class="fa-solid fa-chevron-left text-xl text-[#D3D3D3]"></i>
+            <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center relative">
+              <div class="swiper-button-prev left-[1px] text-[#027371]"></div>
             </button>
 
-            <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center" data-carousel-next>
-              <i class="fa-solid fa-chevron-right text-xl text-[#027371]"></i>
+            <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center relative">
+              <div class="swiper-button-next right-[2px] text-[#027371]"></div>
             </button>
           </div>
         </div>
@@ -996,9 +996,9 @@
             </div>
 
           </div>
-          
-          <div class="swiper-button-next swiper-next-1"></div>
-          <div class="swiper-button-prev swiper-prev-1"></div>
+
+
+
         </div>
       </div>
     </section>
@@ -3315,44 +3315,8 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 1,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 50,
-        },
-      },
-    });
-  </script>
-
+  <!-- Custom main js -->
+  <script src="./src/assets/js/main.js"></script>
 </body>
 
 </html>
