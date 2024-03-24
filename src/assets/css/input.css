@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .label {
+    @apply block relative cursor-pointer;
+    padding-left: 35px;
+  }
+
+  /* Hide the browser's default checkbox */
+  .label input {
+    @apply absolute opacity-0 cursor-pointer h-0 w-0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    @apply absolute top-0 left-0 h-4 w-4 bg-white border-2 border-[#E4E5E9];
+  }
+
+  /* When the checkbox is checked, add a ##0F766D background */
+  .label input:checked~.checkmark {
+    @apply bg-[#0F766D] border-none;
+
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    /* @apply absolute block content ""; */
+    @apply absolute block content-[''];
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .label input:checked~.checkmark:after {
+    @apply block;
+  }
+
+  /* Style the checkmark/indicator */
+  .label .checkmark:after {
+    @apply left-[5px] top-[2px] w-[5px] h-[9px] border-white border-t-[2px] border-l-[2px] transform rotate-[216deg] content-[''];
+    /* border-radius: 16px 16px 0px 0px;
+border: 4px solid var(--White-Base, #FFF); */
+  }
+}

@@ -578,6 +578,82 @@ video {
   }
 }
 
+.label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+/* Hide the browser's default checkbox */
+
+.label input {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 1rem;
+  width: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(228 229 233 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+/* When the checkbox is checked, add a ##0F766D background */
+
+.label input:checked~.checkmark {
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 109 / var(--tw-bg-opacity));
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  /* @apply absolute block content ""; */
+  position: absolute;
+  display: block;
+  --tw-content: '';
+  content: var(--tw-content);
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.label input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.label .checkmark:after {
+  left: 5px;
+  top: 2px;
+  height: 9px;
+  width: 5px;
+  --tw-rotate: 216deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-top-width: 2px;
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+  /* border-radius: 16px 16px 0px 0px;
+border: 4px solid var(--White-Base, #FFF); */
+}
+
 .absolute {
   position: absolute;
 }
@@ -654,6 +730,14 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -719,6 +803,18 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-\[-20px\] {
+  margin-left: -20px;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -759,68 +855,28 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[14px\] {
-  margin-top: 14px;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mt-\[-10px\] {
-  margin-top: -10px;
-}
-
-.mt-\[-5px\] {
-  margin-top: -5px;
-}
-
-.mt-\[-12px\] {
-  margin-top: -12px;
-}
-
-.mt-\[-11px\] {
-  margin-top: -11px;
-}
-
-.mt-\[-20px\] {
-  margin-top: -20px;
+.mt-\[-13px\] {
+  margin-top: -13px;
 }
 
 .mt-\[-22px\] {
   margin-top: -22px;
 }
 
-.mt-\[-20\] {
-  margin-top: -20;
+.mt-\[-5px\] {
+  margin-top: -5px;
 }
 
-.mt-\[-16px\] {
-  margin-top: -16px;
+.mt-\[14px\] {
+  margin-top: 14px;
 }
 
-.ml-\[-\] {
-  margin-left: -;
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
-.ml-\[-20px\] {
-  margin-left: -20px;
-}
-
-.mt-\[-1px\] {
-  margin-top: -1px;
-}
-
-.mt-\[-13px\] {
-  margin-top: -13px;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
+.mt-\[18px\] {
+  margin-top: 18px;
 }
 
 .block {
@@ -899,6 +955,10 @@ video {
   width: 1.25rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -943,6 +1003,14 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -967,12 +1035,12 @@ video {
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
 }
 
 .gap-10 {
@@ -1031,6 +1099,10 @@ video {
   gap: 70px;
 }
 
+.gap-\[75px\] {
+  gap: 75px;
+}
+
 .gap-\[7px\] {
   gap: 7px;
 }
@@ -1039,16 +1111,8 @@ video {
   gap: 8px;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[75px\] {
-  gap: 75px;
+.gap-12 {
+  gap: 3rem;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1064,6 +1128,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-2xl {
@@ -1140,6 +1208,21 @@ video {
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.rounded-s {
+  border-start-start-radius: 0.25rem;
+  border-end-start-radius: 0.25rem;
+}
+
+.rounded-s-2xl {
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .rounded-se-lg {
@@ -1253,6 +1336,11 @@ video {
   background-color: rgb(224 234 200 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#E4EEDB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 238 219 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#E9D8BF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 216 191 / var(--tw-bg-opacity));
@@ -1315,9 +1403,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#E4EEDB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 238 219 / var(--tw-bg-opacity));
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#0273710d\] {
+  background-color: #0273710d;
 }
 
 .bg-gradient-to-b {
@@ -1389,6 +1480,10 @@ video {
 
 .p-\[14px\] {
   padding: 14px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
 }
 
 .px-12 {
@@ -1469,6 +1564,11 @@ video {
 .py-\[16px\] {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .py-\[6px\] {
@@ -1609,6 +1709,10 @@ video {
   font-size: 15px;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -1640,10 +1744,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[26px\] {
-  font-size: 26px;
 }
 
 .font-bold {
@@ -1684,6 +1784,11 @@ video {
 
 .tracking-\[-0\.09px\] {
   letter-spacing: -0.09px;
+}
+
+.text-\[\#013B42\] {
+  --tw-text-opacity: 1;
+  color: rgb(1 59 66 / var(--tw-text-opacity));
 }
 
 .text-\[\#027371\] {
@@ -1844,19 +1949,6 @@ video {
   color: ;
 }
 
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[26\] {
-  color: 26;
-}
-
-.text-\[\#013B42\] {
-  --tw-text-opacity: 1;
-  color: rgb(1 59 66 / var(--tw-text-opacity));
-}
-
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1882,6 +1974,18 @@ video {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

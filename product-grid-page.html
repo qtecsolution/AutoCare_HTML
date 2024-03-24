@@ -203,9 +203,9 @@
 
   <!-- main section -->
   <main>
-    <section class="container mx-auto">
-      <div class="flex justify-between">
-        <div class="flex gap-[75px]">
+    <section class="container mx-auto mb-10">
+      <div class="flex justify-between mb-6">
+        <div class="flex items-center gap-[75px]">
           <div class="">
             <p class="text-[#525468] text-xs">
               <span>Home</span>
@@ -219,20 +219,9 @@
             <h2 class="text-[#0F766D] text-2xl font-semibold">26 Fuel Filters </h2>
           </div>
 
-          <div class="">
-            <!-- <select name="" id="">
-              <option value="">
-                <img src="" alt="">
-                <span>Dhaka</span>
-              </option>
-
-              <option value="">
-                <img src="" alt="">
-                <span>Dhaka</span>
-              </option>
-            </select> -->
+          <div class="flex  gap-2">
             <div class="box">
-              <select class="selectize">
+              <select class="selectize dhaka">
                 <option data-display="Select">Dhaka</option>
                 <option value="1">Some option</option>
                 <option value="2">Another option</option>
@@ -241,8 +230,8 @@
             </div>
 
             <div class="box">
-              <select class="selectize">
-                <option data-display="Select">Nothing</option>
+              <select class="selectize recommended">
+                <option data-display="Select">Recommended</option>
                 <option value="1">Some option</option>
                 <option value="2">Another option</option>
                 <option value="4">Potato</option>
@@ -251,13 +240,13 @@
           </div>
         </div>
 
-        <div class="flex ">
-          <div class="flex items-center">
+        <div class="flex gap-2">
+          <div class="flex items-center bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3 gap-3">
             <div class="">
               <span>View</span>
             </div>
 
-            <button>
+            <button class="bg-white rounded-md p-[5px]">
               <img src="./src/assets/image/product-grid-page/grid.svg" alt="">
             </button>
             <button>
@@ -271,21 +260,654 @@
             </button>
           </div>
 
-          <div class="flex items-center">
+          <div class="flex items-center gap-5 bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3">
             <div class="">
-              <p>1-10 of 10</p>
+              <p class="text-[#09090B] text-xs">1-10 of 10</p>
             </div>
 
-            <div class="">
-              <button>
+            <div class="flex gap-1">
+              <button class="bg-white rounded shadow p-2 flex justify-center items-center">
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
-              <button>
+              <button class="bg-white rounded shadow p-2 flex justify-center items-center">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
 
           </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 gap-12">
+        <div class="border border-white shadow">
+          <div class="flex gap-1.5 py-[18px] px-6 bg-[#0273710d] rounded-t-2xl border-4 border-white">
+            <img src="./src/assets/image/product-grid-page/Filters.svg" alt="">
+            <h4 class="text-base font-bold uppercase text-[#09090B]">Filters</h4>
+          </div>
+
+          <div class="mt-5 ml-7">
+            <div class="">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Steering
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Brakes & Suspension
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Tires & Wheels
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Steering
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Brakes & Suspension
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Tires & Wheels
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-[#09090B] text-base font-bold">Category </p>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="mt-[18px]">
+                <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <input type="checkbox" class="hidden">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 col-span-3">
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel1.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel2.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel3.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel1.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel2.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel3.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel1.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel2.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+            <div
+              class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+              <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                <p class="text-base font-semibold text-white">20% Off</p>
+              </div>
+              <img src="./src/assets/image/home/carousel3.png" alt="">
+            </div>
+
+            <div class="p-3">
+              <div class="flex justify-between">
+                <p class="flex">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <span class="text-[10px] text-[#09090B]">
+                    5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                  </span>
+                </p>
+                <p class="flex">
+                  <img src="./src/assets/image/home/location-block.svg" alt="">
+                  <span class="text-[10px] text-[#474957]">Dhaka</span>
+                </p>
+              </div>
+
+              <div class="pt-[8px] pb-5">
+                <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                  For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                </h2>
+              </div>
+
+              <div class="mb-6">
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Manufacturer:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Part Number:</span>
+                  <span class="text-[#09090B]">ZZVF</span>
+                </p>
+
+                <p class="text-[10px]">
+                  <span class="text-[#525468]">Vehicle Model:</span>
+                  <span class="text-[#09090B]">i20, i20 Elite</span>
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                <img src="./src/assets/image/home/delivery.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
