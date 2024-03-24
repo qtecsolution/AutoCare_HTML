@@ -26,3 +26,7 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.select .nice-select{
+  border: none;
+}
