@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCare</title>
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+</head>
+
+<body class="font-inter">
+  <!-- Header section -->
+  <header class="">
+    <!-- menu section -->
+    <nav class="shadow">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center py-5">
+          <ul class="flex items-center gap-10">
+            <li>
+              <a href="#">
+                <img src="./assets/image/home/logo.png" alt="logo">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">Blog & News</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">Become A seller</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">List your Garage</a>
+            </li>
+          </ul>
+
+          <div class="flex items-center gap-4">
+            <div>
+              <a class="relative" href="#">
+                <img src="./assets/image/home/cart.svg" alt="cart">
+                <span
+                  class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+              </a>
+            </div>
+
+            <div class="flex items-center bg-[#F4F5F7] ps-2 pe-5 py-[6px] gap-6 rounded-xl">
+              <button
+                class="flex border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+                <img src="./assets/image/home/user.svg" alt="user">
+                <span>Login</span>
+              </button>
+
+              <button class="text-[#09090B] font-bold text-base">
+                Sign Up
+              </button>
+            </div>
+
+            <button class="flex items-center gap-2 bg-[#0F766D] rounded-[10px] p-3">
+              <img src="./assets/image/product-grid-page/download-mobile-app.svg" alt="app">
+              <span class="text-white font-semibold ">Download Mobile App</span>
+              <i class="fa-solid fa-chevron-down text-white font-semibold"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search for Products -->
+    <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
+      <div class="container mx-auto">
+        <div class="py-10">
+          <div class="flex justify-center gap-5 mb-1">
+            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+              <img src="./assets/image/home/search-for-products.svg" alt="">
+              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
+            </div>
+
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="./assets/image/product-grid-page/search-for-services.svg" alt="">
+              <h3 class="font-semibold text-sm">Search for Services...</h3>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center">
+            <div class="flex justify-center ps-4 pr-1.5 py-2 bg-white shadow items-center gap-2 rounded-lg">
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+                  <option class="text-base text-[10px]" data-display="Select">Product Category</option>
+                  <option class="text-base text-[10px]" value="1">Some option2</option>
+                  <option class="text-base text-[10px]" value="2">Some option3</option>
+                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+                  <option class="text-base text-[10px]" data-display="Select">Select Brand</option>
+                  <option class="text-base text-[10px]" value="1">Some option2</option>
+                  <option class="text-base text-[10px]" value="2">Some option3</option>
+                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+                  <option class="text-base text-[10px]" data-display="Select">Select Model</option>
+                  <option class="text-base text-[10px]" value="1">Some option2</option>
+                  <option class="text-base text-[10px]" value="2">Some option3</option>
+                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+                  <option class="text-base text-[10px]" data-display="Select">Model Year</option>
+                  <option class="text-base text-[10px]" value="1">Some option2</option>
+                  <option class="text-base text-[10px]" value="2">Some option3</option>
+                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
+                  <option class="text-base text-[10px]" data-display="Select">Engine (Optional)</option>
+                  <option class="text-base text-[10px]" value="1">Some option2</option>
+                  <option class="text-base text-[10px]" value="2">Some option3</option>
+                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="">
+                <input class="border-none focus:ring-0" type="text" name="" id="" placeholder="Keyword">
+              </div>
+
+              <div class="">
+                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                  <span class="font-bold text-white text-xs">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Ad section -->
+    <section class="w-[970px] mx-auto mb-10">
+      <div class="bg-no-repeat" style="background-image: url('./assets/image/product-grid-page/ad.png')">
+        <div class="flex justify-between items-center">
+          <div class="">
+            <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
+          </div>
+          <div class="flex gap-3 mr-2 mt-1">
+            <i class="fa-solid fa-ellipsis-vertical text-white cursor-pointer"></i>
+            <i class="fa-solid fa-x text-white cursor-pointer"></i>
+          </div>
+        </div>
+        <div class="flex justify-around">
+          <div class="mt-[-13px] ml-[-20px]">
+            <img src="./assets/image/product-grid-page/car.png" alt="">
+          </div>
+
+          <div class="">
+            <p class="text-white font-medium text-xs">Summer SALE</p>
+            <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
+            <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
+          </div>
+          <div class="">
+            <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
+              Lets book a test drive
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main>
+    <section class="container mx-auto mb-5">
+      <div class="flex justify-between mb-6">
+        <div class="flex items-center gap-[75px]">
+          <div class="">
+            <p class="text-[#525468] text-xs">
+              <span>Home</span>
+              <i class="fa-solid fa-angle-right"></i>
+              <span>Car parts</span>
+              <i class="fa-solid fa-angle-right"></i>
+              <span>Filters</span>
+              <i class="fa-solid fa-angle-right"></i>
+              <span class="text-[#0F766D]">Fuel Filters</span>
+            </p>
+            <h2 class="text-[#0F766D] text-2xl font-semibold">26 Fuel Filters </h2>
+          </div>
+
+          <div class="flex  gap-2">
+            <div class="box">
+              <select class="selectize dhaka">
+                <option data-display="Select">Dhaka</option>
+                <option value="1">Some option</option>
+                <option value="2">Another option</option>
+                <option value="4">Potato</option>
+              </select>
+            </div>
+
+            <div class="box">
+              <select class="selectize recommended">
+                <option data-display="Select">Recommended</option>
+                <option value="1">Some option</option>
+                <option value="2">Another option</option>
+                <option value="4">Potato</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <div class="flex items-center bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3 gap-3">
+            <div class="">
+              <span>View</span>
+            </div>
+
+            <button class="bg-white rounded-md p-[5px]">
+              <img src="./assets/image/product-grid-page/grid.svg" alt="">
+            </button>
+            <button>
+              <img src="./assets/image/product-grid-page/three-line.svg" alt="">
+            </button>
+            <button>
+              <img src="./assets/image/product-grid-page/line.svg" alt="">
+            </button>
+            <button>
+              <img src="./assets/image/product-grid-page/location.svg" alt="">
+            </button>
+          </div>
+
+          <div class="flex items-center gap-5 bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3">
+            <div class="">
+              <p class="text-[#09090B] text-xs">1-10 of 10</p>
+            </div>
+
+            <div class="flex gap-1">
+              <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 gap-12">
+        <div class="">
+          <div class="border border-white shadow">
+            <div class="flex gap-1.5 py-[18px] px-6 bg-[#0273710d] rounded-t-2xl border-4 border-white">
+              <img src="./assets/image/product-grid-page/Filters.svg" alt="">
+              <h4 class="text-base font-bold uppercase text-[#09090B]">Filters</h4>
+            </div>
+
+            <div class="mt-5 ml-7">
+              <div class="">
+                <p class="text-[#09090B] text-base font-bold">Category </p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Steering
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Brakes & Suspension
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Tires & Wheels
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F5F7] border border-white rounded-lg p-[22px] max-w-56 mt-4">
+                <div class="">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Steering
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Brakes & Suspension
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Tires & Wheels
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Manufacturer</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Toyota
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Volkswagen Group
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">General Motors (GM)
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Ford
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Honda
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Brand Class</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Warranty</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Shipping Options</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Material/Composition</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Pricing</p>
+                <div class="mt-3">
+                  <button
+                    class="rounded-md border border-[#0000000d] text-[#7D7F85] text-[13px] leading-5 py-1.5 ps-2.5 pr-9">Min</button>
+                  <button
+                    class="rounded-md border border-[#0000000d] text-[#7D7F85] text-[13px] leading-5 py-1.5 ps-2.5 pr-9 ml-1.5 mr-4">Max</button>
+                  <button class="text-[#0F766D] font-semibold text-[13px]">Apply</button>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <p class="text-[#09090B] text-base font-bold">Service Rating/Reviews</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-8 mb-10">
+                <p class="text-[#09090B] text-base font-bold">Certifications</p>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[18px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-3">
+          <div class="grid grid-cols-3">
+            <div class="md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel1.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel2.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel3.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel1.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel2.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel3.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel1.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel2.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+              <div
+                class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                  <p class="text-base font-semibold text-white">20% Off</p>
+                </div>
+                <img src="./assets/image/home/carousel3.png" alt="">
+              </div>
+
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <p class="flex">
+                    <img src="./assets/image/home/star.svg" alt="">
+                    <span class="text-[10px] text-[#09090B]">
+                      5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                    </span>
+                  </p>
+                  <p class="flex">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <span class="text-[10px] text-[#474957]">Dhaka</span>
+                  </p>
+                </div>
+
+                <div class="pt-[8px] pb-5">
+                  <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+                    For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                  </h2>
+                </div>
+
+                <div class="mb-6">
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Manufacturer:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Part Number:</span>
+                    <span class="text-[#09090B]">ZZVF</span>
+                  </p>
+
+                  <p class="text-[10px]">
+                    <span class="text-[#525468]">Vehicle Model:</span>
+                    <span class="text-[#09090B]">i20, i20 Elite</span>
+                  </p>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                  <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                  <img src="./assets/image/home/delivery.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-8">
+            <nav aria-label="Page navigation example">
+              <ul class="flex items-center -space-x-px h-8 text-sm gap-2">
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <span class="sr-only">Previous</span>
+                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                </li>
+                <li>
+                  <a href="#" aria-current="page"
+                    class="z-10 flex items-center justify-center px-3 h-8 rounded-lg leading-tight text-[#0F766D] border border-[#0F766D] dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border rounded-lg border-gray-300  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border rounded-lg border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <i class="fa-solid fa-ellipsis text-[#A7AAB9]"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <span class="sr-only">Next</span>
+                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add section -->
+    <section class="container mx-auto mb-10">
+      <div class="grid grid-cols-4 gap-12">
+        <div class="">
+          <div class="relative">
+            <img src="./assets/image/product-grid-page/add2.png" alt="add2">
+            <i class="fa-solid fa-x absolute top-3 right-5 cursor-pointer text-[#CBCBCB]"></i>
+            <i class="fa-solid fa-ellipsis-vertical absolute top-3 right-12 cursor-pointer text-[#CBCBCB]"></i>
+          </div>
+        </div>
+
+        <div class="col-span-3 bg-no-repeat"
+          style="background-image: url('./assets/image/product-grid-page/all-product.png');">
+          <h1>
+            Browse All <span>Product</span> and Get delivery from your nearest store
+          </h1>
+          <button>Browse All Product</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="bg-[#1F1E28]">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <img src="./assets/image/home/auto-care-logo.svg" alt="">
+            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
+          </div>
+          <p class="text-[#BABABA] text-sm mt-6 text-center md:text-left">Rent your belongings to people in your area to
+            make some extra cash.
+          </p>
+          <div class="flex justify-center md:justify-start gap-3 mt-6">
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Facebook-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Instagram-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Twitter-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/LinkedIn-footer.svg" alt="">
+            </a>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-center md:text-left text-lg font-bold text-white">Need Assistance?</h3>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Get In Touch :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">+14 88854874124</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">contactus@autocare.com</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Address :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="col-span-2">
+          <div class="flex flex-col justify-center md:flex-row md:justify-between">
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Company
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Legal
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Terms of Use
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Refund Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Service Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Affiliates
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Shop Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Service Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex">
+            <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold md:text-lg">Download Customer App</legend>
+              <div class="flex gap-3 md:px-24 md:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold md:text-lg">Download Vendor App</legend>
+              <div class="flex gap-3 md:px-24 md:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row justify-between sm:items-center mt-8 mb-5 bg-[#14050B] sm:rounded-[22px] py-5 px-4 sm:px-11">
+        <div class="flex gap-6 items-center sm:w-1/2">
+          <img src="./assets/image/home/email.png" alt="">
+          <h2 class="text-lg sm:text-2xl font-semibold text-white leading-normal">
+            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
+          </h2>
+        </div>
+
+
+        <form
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          <input
+            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
+            type="text" placeholder="Enter Your Email">
+          <button
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-4  md:absolute top-[-7px] right-[-36px]">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
+          <img src="./assets/image/home/copyright.svg" alt="">
+          <p class="text-[#ffffff99] font-medium text-sm">
+            2024-2025 autocare. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/image/home/Payment Method1.png" alt="">
+          <img src="./assets/image/home/Payment Method2.png" alt="">
+          <img src="./assets/image/home/Payment Method3.png" alt="">
+          <img src="./assets/image/home/Payment Method4.png" alt="">
+          <img src="./assets/image/home/Payment Method5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
+
+  <!-- Custom main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
