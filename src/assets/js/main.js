@@ -42,6 +42,7 @@ var swiper1 = new Swiper(".mySwiper1", {
   },
 });
 
+//Featured Product
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -61,6 +62,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+//Just for you
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
   navigation: {
@@ -80,5 +82,21 @@ var swiper3 = new Swiper(".mySwiper3", {
       slidesPerView: 4,
       spaceBetween: 50,
     },
+  },
+});
+
+//Featured Shop
+var swiper4 = new Swiper(".mySwiper4", {
+  navigation: {
+    nextEl: "#button-next-relacionados3",
+    prevEl: "#button-prev-relacionados3",
+  },
+});
+
+//Featured Garage
+var swiper5 = new Swiper(".mySwiper5", {
+  navigation: {
+    nextEl: "#button-next-relacionados4",
+    prevEl: "#button-prev-relacionados4",
   },
 });
