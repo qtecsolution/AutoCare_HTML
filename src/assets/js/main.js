@@ -100,3 +100,13 @@ var swiper5 = new Swiper(".mySwiper5", {
     prevEl: "#button-prev-relacionados4",
   },
 });
+
+
+// 
+$('#lightSlider').lightSlider({
+  gallery: true,
+  item: 1,
+  loop: true,
+  slideMargin: 0,
+  thumbItem: 6
+});

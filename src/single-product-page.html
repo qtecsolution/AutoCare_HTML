@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product-list-page</title>
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--  -->
+  <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+</head>
+
+<body class="font-inter">
+  <!-- Header section -->
+  <header class="">
+    <!-- menu section -->
+    <nav class="shadow">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center py-5">
+          <ul class="flex items-center gap-10">
+            <li>
+              <a href="#">
+                <img src="./assets/image/home/logo.png" alt="logo">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">Blog & News</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">Become A seller</a>
+            </li>
+
+            <li>
+              <a href="#" class="text-[#09090B] text-base ">List your Garage</a>
+            </li>
+          </ul>
+
+          <div class="flex items-center gap-4">
+            <div>
+              <a class="relative" href="#">
+                <img src="./assets/image/home/cart.svg" alt="cart">
+                <span
+                  class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+              </a>
+            </div>
+
+            <div class="flex items-center bg-[#F4F5F7] ps-2 pe-5 py-[6px] gap-6 rounded-xl">
+              <button
+                class="flex border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+                <img src="./assets/image/home/user.svg" alt="user">
+                <span>Login</span>
+              </button>
+
+              <button class="text-[#09090B] font-bold text-base">
+                Sign Up
+              </button>
+            </div>
+
+            <button class="flex items-center gap-2 bg-[#0F766D] rounded-[10px] p-3">
+              <img src="./assets/image/product-grid-page/download-mobile-app.svg" alt="app">
+              <span class="text-white font-semibold ">Download Mobile App</span>
+              <i class="fa-solid fa-chevron-down text-white font-semibold"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search for Products -->
+    <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
+      <div class="container mx-auto pt-16 pb-44">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+
+            <li class="inline-flex items-center">
+              <a href="#"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <a href="#"
+                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Car
+                  parts</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <a href="#"
+                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Filters</a>
+              </div>
+            </li>
+
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2 dark:text-gray-400">Fuel Filters</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container mx-auto -mt-40">
+      <div class="grid grid-cols-3">
+        <div class="">
+          <ul id="lightSlider">
+            <li data-thumb="./assets/image/single-product-page/product1.png">
+              <img src="./assets/image/single-product-page/product1.png" />
+            </li>
+            <li data-thumb="./assets/image/single-product-page/product2.png">
+              <img src="./assets/image/single-product-page/product2.png" />
+            </li>
+            <li data-thumb="./assets/image/single-product-page/product3.png">
+              <img src="./assets/image/single-product-page/product3.png" />
+            </li>
+            <li data-thumb="./assets/image/single-product-page/product4.png">
+              <img src="./assets/image/single-product-page/product4.png" />
+            </li>
+            <li data-thumb="./assets/image/single-product-page/product5.png">
+              <img src="./assets/image/single-product-page/product5.png" />
+            </li>
+            <li data-thumb="./assets/image/single-product-page/product6.png">
+              <img src="./assets/image/single-product-page/product6.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <div class="w-full md:w-[644px] p-7">
+            <p class="flex items-center gap-1">
+              <img src="./assets/image/home/star.svg" alt="">
+              <span class="text-[10px] text-[#09090B]">
+                5.0 <span class="text-[#474957]">(3 Reviews)</span>
+              </span>
+            </p>
+
+            <h2 class="text-[#09090B] font-bold text-[15px] leading-5">
+              Purolator Oil Filter 133500I99 – Fits Toyota Qualis
+            </h2>
+
+            <h4>In-Line Filter, 6mm, 6,1mm </h4>
+
+            <p class="text-[10px]">
+              <span class="text-[#525468]">Manufacturer:</span>
+              <span class="text-[#09090B]">ZZVF</span>
+            </p>
+
+            <p class="text-[10px]">
+              <span class="text-[#525468]">Part Number:</span>
+              <span class="text-[#09090B]">ZZVF</span>
+            </p>
+
+            <p class="text-[10px]">
+              <span class="text-[#525468]">SKU:</span>
+              <span class="text-[#09090B]">OEM-RA-13622</span>
+            </p>
+            <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+            <p>Select Size</p>
+            <div class="">
+              <button>17 (11.5cm)</button>
+            </div>
+
+            <p>Quantity: <span>37 in stock</span></p>
+
+
+
+            <div class="inline-flex rounded-md shadow-sm">
+              <a href="#" aria-current="page"
+                class="px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+                Profile
+              </a>
+              <a href="#"
+                class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+                Settings
+              </a>
+              <a href="#"
+                class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+                Messages
+              </a>
+            </div>
+
+            <div class="">
+              <button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</button>
+              <button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</button>
+            </div>
+
+            <div class="">
+              <a href="">
+                <img src="" alt="">
+                <span>Add to list</span>
+              </a>
+              <a href="">
+                <img src="" alt="">
+                <span>Add to Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=""></div>
+      </div>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main>
+
+  </main>
+
+  <!-- footer section -->
+  <footer class="bg-[#1F1E28]">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <img src="./assets/image/home/auto-care-logo.svg" alt="">
+            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
+          </div>
+          <p class="text-[#BABABA] text-sm mt-6 text-center md:text-left">Rent your belongings to people in your area to
+            make some extra cash.
+          </p>
+          <div class="flex justify-center md:justify-start gap-3 mt-6">
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Facebook-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Instagram-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Twitter-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/LinkedIn-footer.svg" alt="">
+            </a>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-center md:text-left text-lg font-bold text-white">Need Assistance?</h3>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Get In Touch :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">+14 88854874124</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">contactus@autocare.com</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Address :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="col-span-2">
+          <div class="flex flex-col justify-center md:flex-row md:justify-between">
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Company
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Legal
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Terms of Use
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Refund Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Service Policy
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Affiliates
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Shop Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul>
+                <li class="mb-8">
+                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                    Service Category
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    About US
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    How It Work
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Career
+                  </a>
+                </li>
+
+                <li class="mb-9">
+                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                    Quick Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex">
+            <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold md:text-lg">Download Customer App</legend>
+              <div class="flex gap-3 md:px-24 md:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold md:text-lg">Download Vendor App</legend>
+              <div class="flex gap-3 md:px-24 md:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="w-24">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row justify-between sm:items-center mt-8 mb-5 bg-[#14050B] sm:rounded-[22px] py-5 px-4 sm:px-11">
+        <div class="flex gap-6 items-center sm:w-1/2">
+          <img src="./assets/image/home/email.png" alt="">
+          <h2 class="text-lg sm:text-2xl font-semibold text-white leading-normal">
+            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
+          </h2>
+        </div>
+
+
+        <form
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          <input
+            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
+            type="text" placeholder="Enter Your Email">
+          <button
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-4  md:absolute top-[-7px] right-[-36px]">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
+          <img src="./assets/image/home/copyright.svg" alt="">
+          <p class="text-[#ffffff99] font-medium text-sm">
+            2024-2025 autocare. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/image/home/Payment Method1.png" alt="">
+          <img src="./assets/image/home/Payment Method2.png" alt="">
+          <img src="./assets/image/home/Payment Method3.png" alt="">
+          <img src="./assets/image/home/Payment Method4.png" alt="">
+          <img src="./assets/image/home/Payment Method5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- alpinejs -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script>
+
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
+
+  <!--  -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+
+  <!-- Custom main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
