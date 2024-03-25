@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoCare</title>
+  <title>product-grid-page</title>
 
   <!-- font-awesome cnd -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -203,6 +203,7 @@
 
   <!-- main section -->
   <main>
+    <!--  -->
     <section class="container mx-auto mb-5">
       <div class="flex justify-between mb-6">
         <div class="flex items-center gap-[75px]">
@@ -1093,6 +1094,7 @@
         </div>
       </div>
     </section>
+
     <!-- add section -->
     <section class="container mx-auto mb-10">
       <div class="grid grid-cols-4 gap-12">
@@ -1104,13 +1106,56 @@
           </div>
         </div>
 
-        <div class="col-span-3 bg-no-repeat"
+        <div class="col-span-3 bg-no-repeat py-8 ps-11"
           style="background-image: url('./assets/image/product-grid-page/all-product.png');">
-          <h1>
-            Browse All <span>Product</span> and Get delivery from your nearest store
+          <h1 class="font-bold text-2xl text-white max-w-[410px]">
+            Browse All <span class="text-[#5EEADE]">Product</span> and Get delivery from your nearest store
           </h1>
-          <button>Browse All Product</button>
+          <button class="bg-[#0F766D] py-2 px-4 rounded font-semibold text-[9px] text-white mt-4">Browse All Product</button>
         </div>
+      </div>
+    </section>
+
+    <!-- Get Clients  -->
+    <section class="container mx-auto my-10">
+      <div class="md:grid md:grid-cols-2 md:gap-7">
+        <aside class="bg-no-repeat" style="background-image: url('./assets/image/home/get-clients1.png')">
+          <div class="">
+            <h1 class="pt-[217px] ps-12 pr-11 text-2xl md:text-[40px] font-bold text-white">
+              Want to Provide Automobile <br> Service? and Get Clients
+            </h1>
+            <p class="ps-12 text-lg md:text-xl text-white">
+              Rent your belongings to people in your area to make <br class="hidden md:block"> some extra cash.
+            </p>
+            <div class="ps-8 mt-10">
+              <button class="px-6 py-4 bg-white rounded-[50px] text-[#027371] text-lg font-bold mb-20">
+                List Your Garage
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="bg-no-repeat mt-5 md:mt-0" style="background-image: url('./assets/image/home/get-clients3.png')">
+          <div class="flex justify-center flex-col">
+            <h1 class="mx-20 mt-10 font-bold text-[#27272E] text-[28px] md:text-[40px] text-center">Open Store to sell
+              automobile
+              spare parts
+            </h1>
+            <p class="text-lg text-center mb-6">
+              Rent your belongings to people in your area to <br /> make some extra cash.
+            </p>
+
+            <div class="flex justify-center">
+              <button class="px-6 py-4 bg-[#027371] rounded-[50px] text-white text-lg font-bold">
+                List Your Garage
+              </button>
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <img src="./assets/image/home/get-clients2.png" alt="">
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
