@@ -650,8 +650,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-content: '';
   content: var(--tw-content);
-  /* border-radius: 16px 16px 0px 0px;
-border: 4px solid var(--White-Base, #FFF); */
 }
 
 .sr-only {
@@ -1747,6 +1745,10 @@ border: 4px solid var(--White-Base, #FFF); */
 
 .to-white {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-no-repeat {

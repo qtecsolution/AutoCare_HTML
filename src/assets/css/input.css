@@ -39,7 +39,5 @@
   /* Style the checkmark/indicator */
   .label .checkmark:after {
     @apply left-[5px] top-[2px] w-[5px] h-[9px] border-white border-t-[2px] border-l-[2px] transform rotate-[216deg] content-[''];
-    /* border-radius: 16px 16px 0px 0px;
-border: 4px solid var(--White-Base, #FFF); */
   }
 }
