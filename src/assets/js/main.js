@@ -32,11 +32,15 @@ var swiper1 = new Swiper(".mySwiper1", {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+    1280: {
+      slidesPerView: 5,
       spaceBetween: 50,
     },
   },
@@ -53,11 +57,11 @@ var swiper2 = new Swiper(".mySwiper2", {
   breakpoints: {
     640: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
-    768: {
+    1024: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
   },
 });
@@ -101,12 +105,11 @@ var swiper5 = new Swiper(".mySwiper5", {
   },
 });
 
-
-// 
-$('#lightSlider').lightSlider({
+//
+$("#lightSlider").lightSlider({
   gallery: true,
   item: 1,
   loop: true,
   slideMargin: 0,
-  thumbItem: 6
+  thumbItem: 6,
 });
