@@ -987,6 +987,10 @@ video {
   margin-top: 18px;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1077,6 +1081,22 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[250px\] {
+  max-height: 250px;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.max-h-\[320px\] {
+  max-height: 320px;
 }
 
 .w-12 {
@@ -1923,6 +1943,10 @@ video {
   padding-bottom: 2.75rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1973,6 +1997,10 @@ video {
 
 .ps-12 {
   padding-inline-start: 3rem;
+}
+
+.ps-16 {
+  padding-inline-start: 4rem;
 }
 
 .ps-2 {
@@ -2033,6 +2061,18 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -2806,6 +2846,10 @@ video {
     width: 845px;
   }
 
+  .md\:max-w-\[983px\] {
+    max-width: 983px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2897,6 +2941,79 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bg-cover {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:m-3 {
+    margin: 0.75rem;
+  }
+
+  .\32xl\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .\32xl\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .\32xl\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .\32xl\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .\32xl\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .\32xl\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .\32xl\:bg-cover {
+    background-size: cover;
+  }
+
+  .\32xl\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .\32xl\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .\32xl\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .\32xl\:pb-\[\] {
+    padding-bottom: ;
+  }
+
+  .\32xl\:pb-\[70px\] {
+    padding-bottom: 70px;
+  }
+
+  .\32xl\:pb-\[px\] {
+    padding-bottom: px;
+  }
+
+  .\32xl\:pb-\[66px\] {
+    padding-bottom: 66px;
+  }
+
+  .\32xl\:pb-\[68px\] {
+    padding-bottom: 68px;
   }
 }
 
