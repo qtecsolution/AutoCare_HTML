@@ -1161,6 +1161,14 @@ video {
   width: 392px;
 }
 
+.w-\[1px\] {
+  width: 1px;
+}
+
+.w-\[145px\] {
+  width: 145px;
+}
+
 .max-w-56 {
   max-width: 14rem;
 }
@@ -2151,6 +2159,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[27px\] {
+  font-size: 27px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2844,6 +2856,10 @@ video {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2988,8 +3004,16 @@ video {
     width: 330px;
   }
 
+  .lg\:w-\[150px\] {
+    width: 150px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:justify-center {
@@ -3008,6 +3032,22 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .lg\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .lg\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 }
 
@@ -3034,6 +3074,10 @@ video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
