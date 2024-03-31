@@ -3160,6 +3160,14 @@ video {
     width: 100%;
   }
 
+  .\32xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .\32xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .\32xl\:bg-cover {
     background-size: cover;
   }

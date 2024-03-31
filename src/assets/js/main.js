@@ -33,15 +33,15 @@ var swiper1 = new Swiper(".mySwiper1", {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
     1280: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
   },
 });
