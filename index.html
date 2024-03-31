@@ -30,7 +30,7 @@
 <body class="font-inter">
   <header class="">
     <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px]">
+    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3">
       <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
 
         <ul class="flex gap-[40px]">
@@ -79,29 +79,29 @@
     </section>
 
     <!-- main menu  -->
-    <section class="menu py-[16px] shadow">
+    <section class="menu py-[16px] shadow px-3">
       <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center gap-[70px]">
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[70px]">
         <div>
           <a href="#">
             <img src="./src/assets/image/home/logo.png" alt="logo">
           </a>
         </div>
-
+  
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex w-[655px] bg-[#F4F5F7] rounded-lg px-4 py-2">
-
+          <form class="flex xl:w-[640px] bg-[#F4F5F7] rounded-lg px-4 py-2">
+  
             <img src="./src/assets/image/home/search.svg" alt="search">
-
+  
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
               font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
               placeholder="Search Anything" required />
           </form>
-
+  
           <div>
             <ul class="flex gap-7">
-
+  
               <li>
                 <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
                   <img src="./src/assets/image/home/location.svg" alt="location">
@@ -110,7 +110,7 @@
                     class="absolute top-[9px] right-[-20px] border-r-4 border-r-transparent border-l-4 border-l-transparent border-t-8 border-[#B5B5BD]"></span>
                 </button>
               </li>
-
+  
               <div id="dropdown"
                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
@@ -124,7 +124,7 @@
                   </li>
                 </ul>
               </div>
-
+  
               <li class="ms-5">
                 <a class="relative" href="#">
                   <img src="./src/assets/image/home/cart.svg" alt="cart">
@@ -134,14 +134,14 @@
               </li>
             </ul>
           </div>
-
+  
           <div class="flex items-center bg-[#F4F5F7] ps-2 pe-5 py-[6px] gap-6 rounded-xl">
             <button
               class="flex border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
               <img src="./src/assets/image/home/user.svg" alt="user">
               <span>Login</span>
             </button>
-
+  
             <button class="text-[#09090B] font-bold text-base">
               Sign Up
             </button>
@@ -151,95 +151,97 @@
     </section>
 
     <!-- Search for Products -->
-    <section class="container mx-auto my-6">
-      <div class="bg-no-repeat 2xl:bg-cover ps-16"
-        style="background-image: url('./src/assets/image/home/search-for-products.png')">
-        <div class="pt-9">
-          <h1 class="text-[32px] font-semibold text-white">
-            Find Your Automotive Parts and Services
-          </h1>
-        </div>
-
-        <div class="2xl:mb-6 2xl:mt-3">
-          <p class="text-[#F0FDFC] text-sm">
-            Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
-            specific components or specialized maintenance
-          </p>
-        </div>
-
-        <div class="flex gap-5 mb-1 mt-3">
-
-          <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
-            <img src="./src/assets/image/home/search-for-products.svg" alt="">
-            <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
+    <section class="container mx-auto my-6 px-3">
+      <div class="">
+        <div class="bg-no-repeat 2xl:bg-cover lg:px-10  xl:ps-16 rounded-3xl overflow-hidden"
+          style="background-image: url('./src/assets/image/home/search-for-products.png')">
+          <div class=" lg:pt-4 xl:pt-9">
+            <h1 class="text-[32px] font-semibold text-white">
+              Find Your Automotive Parts and Services
+            </h1>
           </div>
-
-          <div class="flex items-center gap-2 cursor-pointer">
-            <img src="./src/assets/image/home/search-for-services.svg" alt="">
-            <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
+  
+          <div class="2xl:mb-6 2xl:mt-3">
+            <p class="text-[#F0FDFC] text-sm">
+              Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
+              specific components or specialized maintenance
+            </p>
           </div>
-
-        </div>
-
-        <div class="pb-16">
-          <div
-            class="flex px-4 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
-
-            <div class="border-r-2 border-[#E4E5E9]">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">Product Category</option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
-              </select>
+  
+          <div class="flex gap-5 mb-2 mt-3">
+  
+            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+              <img src="./src/assets/image/home/search-for-products.svg" alt="">
+              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
             </div>
-
-            <div class="border-r-2 border-[#E4E5E9]">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">Select Brand</option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
-              </select>
+  
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="./src/assets/image/home/search-for-services.svg" alt="">
+              <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
             </div>
-
-            <div class="border-r-2 border-[#E4E5E9]">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">Select Model</option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
-              </select>
-            </div>
-
-            <div class="border-r-2 border-[#E4E5E9]">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">Model Year</option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
-              </select>
-            </div>
-
-            <div class="border-r-2 border-[#E4E5E9]">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
-              </select>
-            </div>
-
-
-            <div class="">
-              <input class="border-none focus:ring-0 text-[10px]" type="text" name="" id="" placeholder="Keyword">
-            </div>
-
-            <div class="">
-              <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
-                <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
-                <span class="font-bold text-white text-xs">Search</span>
-              </button>
+  
+          </div>
+  
+          <div class="pb-9 2xl:pb-16">
+            <div
+              class="flex px-4 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
+  
+              <div class="border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">Product Category</option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+  
+              <div class="border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">Select Brand</option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+  
+              <div class="border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">Select Model</option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+  
+              <div class="border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">Model Year</option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+  
+              <div class="border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+  
+  
+              <div class="">
+                <input class="border-none focus:ring-0 text-[10px]" type="text" name="" id="" placeholder="Keyword">
+              </div>
+  
+              <div class="">
+                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                  <span class="font-bold text-white text-xs">Search</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -247,7 +249,7 @@
     </section>
 
     <!-- hero section -->
-    <section class="container mx-auto mt-6 mb-10">
+    <section class="container mx-auto mt-6 mb-10 px-3">
       <div class="grid md:grid-cols-3 gap-3">
         <aside class="col-span-2">
           <div class="swiper mySwiper w-full h-full">
@@ -352,7 +354,7 @@
             </div>
           </div>
 
-          <div class="grid sm:grid-cols-2 md:grid-cols-2 md:gap-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
             <div class=" w-full md:w-56 lg:w-60 rounded-xl bg-white shadow">
               <div class="flex gap-2 p-[14px] border-b">
@@ -1030,7 +1032,7 @@
             </div>
           </div>
 
-          <div class="grid sm:grid-cols-2 md:grid-cols-2 md:gap-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
             <div class=" w-full md:w-56 lg:w-60 rounded-xl bg-white shadow">
               <div class="flex gap-2 p-[14px] border-b">
@@ -2778,8 +2780,8 @@
     </section>
 
     <!-- Browse All Product -->
-    <section class="container mx-auto my-10">
-      <div class="bg-no-repeat bg-cover py-11 px-16"
+    <section class="container mx-auto my-10 px-3">
+      <div class="py-5 px-10 xl:py-11 xl:px-16 bg-no-repeat 2xl:bg-cover rounded-3xl overflow-hidden"
         style="background-image: url('./src/assets/image/home/browse-all-product.png')">
         <div class="mb-5">
           <h1 class="text-xl md:text-[32px] font-bold text-white leading-[140%]">
@@ -3266,8 +3268,8 @@
     </section>
 
     <!-- Car Servicing Centre -->
-    <section class="container mx-auto my-10">
-      <div class="bg-no-repeat bg-cover pt-9 pb-11 px-16"
+    <section class="container mx-auto my-10 px-3">
+      <div class="py-5 px-10 xl:py-11 xl:px-16 bg-no-repeat 2xl:bg-cover rounded-3xl overflow-hidden"
         style="background-image: url('./src/assets/image/home/car-servicing-centre.png')">
         <div class="flex justify-between">
           <div class="">
@@ -3283,9 +3285,9 @@
               </button>
             </div>
           </div>
-
+  
           <div class="self-end">
-
+  
             <div class="flex gap-2 mb-2">
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">Dhaka</button>
@@ -3294,7 +3296,7 @@
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">khulna</button>
             </div>
-
+  
             <div class="flex gap-2">
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">SYLHET</button>
@@ -3303,7 +3305,7 @@
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">RAJSHAHI</button>
             </div>
-
+  
           </div>
         </div>
       </div>
@@ -3932,7 +3934,7 @@
   <!-- footer section -->
   <footer class="bg-[#1F1E28]">
     <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center justify-center md:justify-start gap-3">
             <img src="./src/assets/image/home/auto-care-logo.svg" alt="">
@@ -4130,8 +4132,8 @@
 
           <div class="flex">
             <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold md:text-lg">Download Customer App</legend>
-              <div class="flex gap-3 md:px-24 md:gap-6">
+              <legend class="text-[#15B7B7] font-bold md:text-base lg:text-lg">Download Customer App</legend>
+              <div class="flex gap-3 lg:px-8 xl:px-24 md:gap-4 lg:gap-6 ">
                 <div class="flex-shrink-0">
                   <a href="#">
                     <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
@@ -4146,8 +4148,8 @@
             </fieldset>
 
             <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold md:text-lg">Download Vendor App</legend>
-              <div class="flex gap-3 md:px-24 md:gap-6">
+              <legend class="text-[#FFA47C] font-bold md:text-base lg:text-lg">Download Vendor App</legend>
+              <div class="flex gap-3 lg:px-8 xl:px-24 md:gap-4 lg:gap-6">
                 <div class="flex-shrink-0">
                   <a href="#">
                     <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
@@ -4165,10 +4167,10 @@
       </div>
 
       <div
-        class="flex flex-col sm:flex-row justify-between sm:items-center mt-8 mb-5 bg-[#14050B] sm:rounded-[22px] py-5 px-4 sm:px-11">
+        class="flex flex-col md:flex-col lg:flex-row justify-between md:items-center md:gap-4 mt-8 mb-5 bg-[#14050B] rounded-[22px] py-5 px-4 sm:px-11">
         <div class="flex gap-6 items-center sm:w-1/2">
           <img src="./src/assets/image/home/email.png" alt="">
-          <h2 class="text-lg sm:text-2xl font-semibold text-white leading-normal">
+          <h2 class="text-xs md:text-sm lg:text-xl xl:text-2xl font-semibold text-white leading-normal">
             Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
           </h2>
         </div>
@@ -4180,7 +4182,7 @@
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email">
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-4  md:absolute top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">
