@@ -43,13 +43,33 @@
           <li>
             <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
           </li>
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">List your Garage</a>
-          </li>
         </ul>
 
         <ul class="flex gap-[18px] items-center">
-          <div class="flex gap-[12px]">
+          <div class="flex gap-[12px] items-center">
+            <li class="mr-6">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="flex gap-[7px]  relative">
+                <img src="./src/assets/image/home/lang.svg" alt="location">
+                <span class="text-base font-medium">English</span>
+                <span
+                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
+              </button>
+            </li>
+
+            <div id="dropdown1"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bangla</a>
+                </li>
+              </ul>
+            </div>
+
             <li>
               <a href="#"><img src="./src/assets/image/home/fb.svg" alt="fb"></a>
             </li>
@@ -81,36 +101,37 @@
     <!-- main menu  -->
     <section class="menu py-[16px] shadow px-3">
       <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[70px]">
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
         <div>
           <a href="#">
             <img src="./src/assets/image/home/logo.png" alt="logo">
           </a>
         </div>
-  
+
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex xl:w-[640px] bg-[#F4F5F7] rounded-lg px-4 py-2">
-  
+          <form class="flex items-center xl:w-[620px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+
             <img src="./src/assets/image/home/search.svg" alt="search">
-  
+
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
-              font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
               placeholder="Search Anything" required />
           </form>
-  
+
           <div>
             <ul class="flex gap-7">
-  
-              <li>
+
+              <li class="mr-6">
                 <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
                   <img src="./src/assets/image/home/location.svg" alt="location">
                   <span class="text-base font-medium">Dhaka</span>
                   <span
-                    class="absolute top-[9px] right-[-20px] border-r-4 border-r-transparent border-l-4 border-l-transparent border-t-8 border-[#B5B5BD]"></span>
+                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
                 </button>
               </li>
-  
+
               <div id="dropdown"
                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
@@ -124,7 +145,7 @@
                   </li>
                 </ul>
               </div>
-  
+
               <li class="ms-5">
                 <a class="relative" href="#">
                   <img src="./src/assets/image/home/cart.svg" alt="cart">
@@ -134,15 +155,15 @@
               </li>
             </ul>
           </div>
-  
-          <div class="flex items-center bg-[#F4F5F7] ps-2 pe-5 py-[6px] gap-6 rounded-xl">
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
             <button
-              class="flex border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
               <img src="./src/assets/image/home/user.svg" alt="user">
               <span>Login</span>
             </button>
-  
-            <button class="text-[#09090B] font-bold text-base">
+
+            <button class="text-[#09090B] font-bold text-sm">
               Sign Up
             </button>
           </div>
@@ -153,39 +174,39 @@
     <!-- Search for Products -->
     <section class="container mx-auto my-6 px-3">
       <div class="">
-        <div class="bg-no-repeat 2xl:bg-cover lg:px-10  xl:ps-16 rounded-3xl overflow-hidden"
+        <div class="bg-no-repeat bg-right 2xl:bg-cover lg:px-10  xl:ps-16 rounded-3xl overflow-hidden"
           style="background-image: url('./src/assets/image/home/search-for-products.png')">
           <div class=" lg:pt-4 xl:pt-9">
             <h1 class="text-[32px] font-semibold text-white">
               Find Your Automotive Parts and Services
             </h1>
           </div>
-  
+
           <div class="2xl:mb-6 2xl:mt-3">
             <p class="text-[#F0FDFC] text-sm">
               Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
               specific components or specialized maintenance
             </p>
           </div>
-  
+
           <div class="flex gap-5 mb-2 mt-3">
-  
+
             <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
               <img src="./src/assets/image/home/search-for-products.svg" alt="">
               <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
             </div>
-  
+
             <div class="flex items-center gap-2 cursor-pointer">
               <img src="./src/assets/image/home/search-for-services.svg" alt="">
               <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
             </div>
-  
+
           </div>
-  
+
           <div class="pb-9 2xl:pb-16">
             <div
-              class="flex px-4 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
-  
+              class="flex ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
+
               <div class="border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Product Category</option>
@@ -194,7 +215,7 @@
                   <option class="text-[10px]" value="4">Some option4</option>
                 </select>
               </div>
-  
+
               <div class="border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Select Brand</option>
@@ -203,7 +224,7 @@
                   <option class="text-[10px]" value="4">Some option4</option>
                 </select>
               </div>
-  
+
               <div class="border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Select Model</option>
@@ -212,7 +233,7 @@
                   <option class="text-[10px]" value="4">Some option4</option>
                 </select>
               </div>
-  
+
               <div class="border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Model Year</option>
@@ -221,7 +242,7 @@
                   <option class="text-[10px]" value="4">Some option4</option>
                 </select>
               </div>
-  
+
               <div class="border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
@@ -230,12 +251,12 @@
                   <option class="text-[10px]" value="4">Some option4</option>
                 </select>
               </div>
-  
-  
+
+
               <div class="">
                 <input class="border-none focus:ring-0 text-[10px]" type="text" name="" id="" placeholder="Keyword">
               </div>
-  
+
               <div class="">
                 <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
                   <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
@@ -269,7 +290,7 @@
           </div>
         </aside>
 
-        <aside class="flex-shrink-0 rounded-[24px] pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
+        <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
 
           <div class="relative z-10">
             <img src="./src/assets/image/home/hero-right1.png" alt="">
@@ -285,7 +306,7 @@
 
   <main>
     <section class="container mx-auto mt-10 px-3">
-      <div class="flex flex-wrap justify-center md:justify-between gap-4">
+      <div class="flex flex-wrap justify-center md:grid md:grid-cols-4 gap-4">
         <div class="flex items-center gap-4">
 
           <div class="bg-[#E0EAC8] w-12 h-12 flex justify-center items-center rounded-full">
@@ -319,7 +340,7 @@
           </span>
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 ">
 
           <div class="bg-[#ece4fb] w-12 h-12 flex justify-center items-center rounded-full">
             <img src="./src/assets/image/home/bestpricegarantee.png" alt="verified">
@@ -343,10 +364,10 @@
               </h3>
             </div>
 
-            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 text-center md:text-right">
+            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 text-center md:text-left">
               Purchase Atumobile Parts and Enginge Oil fro any where
             </h2>
-            <img class="w-full" src="./src/assets/image/home/product-category.png" alt="">
+            <img class="w-full mt-2" src="./src/assets/image/home/product-category.png" alt="">
             <div class="flex justify-center md:block mt-8">
               <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
                 Browse All Product
@@ -549,7 +570,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -588,7 +609,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -627,7 +648,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -666,7 +687,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -705,7 +726,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -744,7 +765,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -783,7 +804,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -822,7 +843,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -861,7 +882,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -900,7 +921,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -939,7 +960,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -978,7 +999,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1016,15 +1037,15 @@
         <div class="md:flex 2xl:justify-between gap-6 md:gap-7 p-6 ">
           <div class="mb-5">
             <div class="flex justify-center md:justify-start ">
-              <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#E27B3D] text-xs font-semibold uppercase">
-                Product Category
+              <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#4E5AC7] text-xs font-semibold uppercase">
+                Service Category
               </h3>
             </div>
 
-            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 md:text-right text-center">
-              Purchase Atumobile Parts and Enginge Oil fro any where
+            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 md:text-left text-center">
+              Find Best Car Servicing Centre near you
             </h2>
-            <img class="w-full" src="./src/assets/image/home/product-category.png" alt="">
+            <img class="w-full mt-2" src="./src/assets/image/home/product-category.png" alt="">
             <div class="flex justify-center md:block mt-8">
               <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
                 Browse All Product
@@ -1223,7 +1244,76 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <p class="text-[10px]">
+                    <span class="text-[#282728]">5.0</span>
+                    <span class="text-[#4A5568]">Average Rating</span>
+                  </p>
+                </div>
+
+                <div class="mt-2">
+                  <p class="text-xs font-bold text-[#B36C7D]">
+                    Tires/Wheels Sales Change
+                  </p>
+                </div>
+
+                <div class="">
+                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                </div>
+
+                <div class="">
+                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                </div>
+
+                <div class="mt-2">
+                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex gap-3 bg-white rounded-2xl lg:w-[392px] lg:jus mt-5 md:mt-0 shadow">
+              <div class="flex justify-center items-center">
+                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
+              </div>
+
+              <div class="pt-3 pb-4">
+                <div class="flex items-center gap-1 -ml-1">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <p class="text-[10px] ">
+                    <span class="text-[#282728]">5.0</span>
+                    <span class="text-[#4A5568]">Average Rating</span>
+                  </p>
+                </div>
+
+                <div class="mt-2">
+                  <p class="text-xs font-bold text-[#B36C7D]">
+                    Tires/Wheels Sales Change
+                  </p>
+                </div>
+
+                <div class="">
+                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                </div>
+
+                <div class="">
+                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                </div>
+
+                <div class="mt-2">
+                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-3 bg-white rounded-2xl lg:w-[392px] lg:jus mt-5 md:mt-0 shadow">
+              <div class="flex justify-center items-center">
+                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
+              </div>
+
+              <div class="pt-3 pb-4">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -1258,41 +1348,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <p class="text-[10px] ">
-                    <span class="text-[#282728]">5.0</span>
-                    <span class="text-[#4A5568]">Average Rating</span>
-                  </p>
-                </div>
-
-                <div class="mt-2">
-                  <p class="text-xs font-bold text-[#B36C7D]">
-                    Tires/Wheels Sales Change
-                  </p>
-                </div>
-
-                <div class="">
-                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                </div>
-
-                <div class="">
-                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                </div>
-
-                <div class="mt-2">
-                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex gap-3 bg-white rounded-2xl lg:w-[392px] lg:jus mt-5 md:mt-0 shadow">
-              <div class="flex justify-center items-center">
-                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
-              </div>
-
-              <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -1327,7 +1383,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -1362,42 +1418,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <p class="text-[10px] ">
-                    <span class="text-[#282728]">5.0</span>
-                    <span class="text-[#4A5568]">Average Rating</span>
-                  </p>
-                </div>
-
-                <div class="mt-2">
-                  <p class="text-xs font-bold text-[#B36C7D]">
-                    Tires/Wheels Sales Change
-                  </p>
-                </div>
-
-                <div class="">
-                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                </div>
-
-                <div class="">
-                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                </div>
-
-                <div class="mt-2">
-                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="flex gap-3 bg-white rounded-2xl lg:w-[392px] lg:jus mt-5 md:mt-0 shadow">
-              <div class="flex justify-center items-center">
-                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
-              </div>
-
-              <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -1465,7 +1486,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1521,7 +1542,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1577,7 +1598,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1633,7 +1654,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1689,7 +1710,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1745,7 +1766,7 @@
 
                   <div class="p-3">
                     <div class="flex justify-between">
-                      <p class="flex">
+                      <p class="flex -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[10px] text-[#09090B]">
                           5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -1824,7 +1845,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1846,7 +1867,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1870,7 +1891,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1892,7 +1913,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1918,7 +1939,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1940,7 +1961,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1964,7 +1985,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -1986,7 +2007,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -2011,7 +2032,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -2033,7 +2054,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -2057,7 +2078,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -2079,7 +2100,7 @@
 
                     <div class="">
                       <h2 class="text-[#042F2B] font-semibold text-base">Nextage</h2>
-                      <p class="flex text-xs gap-1 mt-1">
+                      <p class="flex text-xs gap-1 mt-1 -ml-1">
                         <img src="./src/assets/image/home/star.svg" alt="">
                         <span class="text-[#282728]">5.0</span>
                         <span class="text-[#474957]">(210 Reviews) </span>
@@ -2148,7 +2169,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2181,7 +2202,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2214,7 +2235,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2247,7 +2268,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2281,7 +2302,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2314,7 +2335,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2347,7 +2368,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2380,7 +2401,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2414,7 +2435,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2447,7 +2468,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2480,7 +2501,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2513,7 +2534,7 @@
                         </div>
 
                         <div class="">
-                          <p class="flex text-xs gap-1 mt-1">
+                          <p class="flex text-xs gap-1 mt-1 -ml-1">
                             <img src="./src/assets/image/home/star.svg" alt="">
                             <span class="text-[#282728]">5.0</span>
                             <span class="text-[#474957]">(210 Reviews) </span>
@@ -2566,7 +2587,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -2601,7 +2622,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -2635,42 +2656,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
-                  <img src="./src/assets/image/home/star.svg" alt="">
-                  <p class="text-[10px] ">
-                    <span class="text-[#282728]">5.0</span>
-                    <span class="text-[#4A5568]">Average Rating</span>
-                  </p>
-                </div>
-
-                <div class="mt-2">
-                  <p class="text-xs font-bold text-[#B36C7D]">
-                    Tires/Wheels Sales Change
-                  </p>
-                </div>
-
-                <div class="">
-                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                </div>
-
-                <div class="">
-                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                </div>
-
-                <div class="mt-2">
-                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="flex gap-3 bg-white rounded-2xl xl:w-[392px] mt-5 xl:mt-0 shadow">
-              <div class="flex justify-center items-center">
-                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
-              </div>
-
-              <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -2705,7 +2691,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -2740,7 +2726,42 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
+                  <img src="./src/assets/image/home/star.svg" alt="">
+                  <p class="text-[10px] ">
+                    <span class="text-[#282728]">5.0</span>
+                    <span class="text-[#4A5568]">Average Rating</span>
+                  </p>
+                </div>
+
+                <div class="mt-2">
+                  <p class="text-xs font-bold text-[#B36C7D]">
+                    Tires/Wheels Sales Change
+                  </p>
+                </div>
+
+                <div class="">
+                  <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                </div>
+
+                <div class="">
+                  <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                </div>
+
+                <div class="mt-2">
+                  <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex gap-3 bg-white rounded-2xl xl:w-[392px] mt-5 xl:mt-0 shadow">
+              <div class="flex justify-center items-center">
+                <img class="h-[130px]" src="./src/assets/image/home/service-carousel.png" alt="">
+              </div>
+
+              <div class="pt-3 pb-4">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -2826,7 +2847,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -2882,7 +2903,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -2938,7 +2959,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -2994,7 +3015,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3050,7 +3071,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3106,7 +3127,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3162,7 +3183,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3218,7 +3239,7 @@
 
                 <div class="p-3">
                   <div class="flex justify-between">
-                    <p class="flex">
+                    <p class="flex -ml-1">
                       <img src="./src/assets/image/home/star.svg" alt="">
                       <span class="text-[10px] text-[#09090B]">
                         5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3285,9 +3306,9 @@
               </button>
             </div>
           </div>
-  
+
           <div class="self-end">
-  
+
             <div class="flex gap-2 mb-2">
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">Dhaka</button>
@@ -3296,7 +3317,7 @@
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">khulna</button>
             </div>
-  
+
             <div class="flex gap-2">
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">SYLHET</button>
@@ -3305,7 +3326,7 @@
               <button
                 class="py-2 px-3 bg-[#d9d9d99e] rounded-[37px] uppercase text-sm font-semibold text-white">RAJSHAHI</button>
             </div>
-  
+
           </div>
         </div>
       </div>
@@ -3343,7 +3364,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3380,7 +3401,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3417,7 +3438,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3454,7 +3475,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3491,7 +3512,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3528,7 +3549,7 @@
 
               <div class="py-6 px-4">
                 <div class="flex justify-between">
-                  <p class="flex">
+                  <p class="flex -ml-1">
                     <img src="./src/assets/image/home/star.svg" alt="">
                     <span class="text-[10px] text-[#09090B]">
                       5.0 <span class="text-[#474957]">(3 Reviews)</span>
@@ -3568,7 +3589,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -3602,7 +3623,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -3636,7 +3657,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -3670,7 +3691,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -3704,7 +3725,7 @@
               </div>
 
               <div class="pt-3 pb-4">
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-1 -ml-1">
                   <img src="./src/assets/image/home/star.svg" alt="">
                   <p class="text-[10px] ">
                     <span class="text-[#282728]">5.0</span>
@@ -3890,10 +3911,10 @@
         <aside class="bg-no-repeat bg-cover rounded-[32px]"
           style="background-image: url('./src/assets/image/home/get-clients1.png')">
           <div class="">
-            <h1 class="pt-[217px] ps-12 pr-11 text-2xl lg:text-[40px] font-bold text-white">
+            <h1 class="pt-[200px] ps-12 pr-11 text-2xl lg:text-[35px] font-bold text-white leading-10">
               Want to Provide Automobile <br> Service? and Get Clients
             </h1>
-            <p class="ps-12 text-lg md:text-xl text-white">
+            <p class="ps-12 text-lg xl:text-xl text-white">
               Rent your belongings to people in your area to make <br class="hidden md:block"> some extra cash.
             </p>
             <div class="ps-8 mt-10">
@@ -3968,196 +3989,192 @@
         </div>
 
         <div class="col-span-2">
-          <div class="flex flex-col justify-center md:flex-row md:justify-between">
-            <div class="">
-              <ul>
-                <li class="mb-8">
-                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                    Company
-                  </a>
-                </li>
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Company
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    About US
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Contact Us
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    How It Work
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Career
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Quick Guide
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
 
-            <div class="">
-              <ul>
-                <li class="mb-8">
-                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                    Legal
-                  </a>
-                </li>
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Legal
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Terms of Use
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Terms of Use
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Privacy Policy
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Privacy Policy
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Refund Policy
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Refund Policy
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Service Policy
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Service Policy
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Affiliates
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Affiliates
+                </a>
+              </li>
+            </ul>
 
-            <div class="">
-              <ul>
-                <li class="mb-8">
-                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                    Shop Category
-                  </a>
-                </li>
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Shop Category
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    About US
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Contact Us
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    How It Work
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Career
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Quick Guide
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
 
-            <div class="">
-              <ul>
-                <li class="mb-8">
-                  <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                    Service Category
-                  </a>
-                </li>
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Service Category
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    About US
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Contact Us
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    How It Work
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Career
-                  </a>
-                </li>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
 
-                <li class="mb-9">
-                  <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                    Quick Guide
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="flex">
             <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold md:text-base lg:text-lg">Download Customer App</legend>
-              <div class="flex gap-3 lg:px-8 xl:px-24 md:gap-4 lg:gap-6 ">
+              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                Download Customer App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
                   </a>
                 </div>
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-24">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
                   </a>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold md:text-base lg:text-lg">Download Vendor App</legend>
-              <div class="flex gap-3 lg:px-8 xl:px-24 md:gap-4 lg:gap-6">
+              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                Download Vendor App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-24">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
                   </a>
                 </div>
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-24">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
                   </a>
                 </div>
               </div>
