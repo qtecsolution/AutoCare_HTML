@@ -1151,6 +1151,10 @@ video {
   width: auto;
 }
 
+.w-\[460px\] {
+  width: 460px;
+}
+
 .max-w-56 {
   max-width: 14rem;
 }
@@ -2848,6 +2852,18 @@ video {
     width: 644px;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[460\] {
+    width: 460;
+  }
+
+  .md\:w-\[460px\] {
+    width: 460px;
+  }
+
   .md\:max-w-\[983px\] {
     max-width: 983px;
   }
@@ -2967,6 +2983,10 @@ video {
     width: 650px;
   }
 
+  .lg\:w-\[460px\] {
+    width: 460px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3060,6 +3080,38 @@ video {
     width: 100%;
   }
 
+  .xl\:w-72 {
+    width: 18rem;
+  }
+
+  .xl\:w-64 {
+    width: 16rem;
+  }
+
+  .xl\:w-\[\] {
+    width: ;
+  }
+
+  .xl\:w-\[250\] {
+    width: 250;
+  }
+
+  .xl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .xl\:w-\[2px\] {
+    width: 2px;
+  }
+
+  .xl\:w-\[245px\] {
+    width: 245px;
+  }
+
+  .xl\:w-\[392px\] {
+    width: 392px;
+  }
+
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3120,6 +3172,22 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .xl\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .xl\:leading-8 {
+    line-height: 2rem;
+  }
+
+  .xl\:leading-7 {
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-\[\] {
+    color: ;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -3179,6 +3247,34 @@ video {
     width: 484px;
   }
 
+  .\32xl\:w-\[620px\] {
+    width: 620px;
+  }
+
+  .\32xl\:w-\[820px\] {
+    width: 820px;
+  }
+
+  .\32xl\:w-\[880px\] {
+    width: 880px;
+  }
+
+  .\32xl\:w-\[900px\] {
+    width: 900px;
+  }
+
+  .\32xl\:w-72 {
+    width: 18rem;
+  }
+
+  .\32xl\:w-\[480px\] {
+    width: 480px;
+  }
+
+  .\32xl\:w-7 {
+    width: 1.75rem;
+  }
+
   .\32xl\:justify-between {
     justify-content: space-between;
   }
@@ -3189,6 +3285,26 @@ video {
 
   .\32xl\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .\32xl\:text-\[19px\] {
+    font-size: 19px;
+  }
+
+  .\32xl\:leading-7 {
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:leading-9 {
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:text-\[\] {
+    color: ;
+  }
+
+  .\32xl\:text-\[19\] {
+    color: 19;
   }
 }
 
