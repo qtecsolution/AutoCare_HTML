@@ -2191,6 +2191,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2518,10 +2526,24 @@ video {
   color: 15px;
 }
 
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-500 {
@@ -2688,6 +2710,24 @@ video {
   font-size: 15px;
 }
 
+.placeholder\:text-\[11px\]::-moz-placeholder {
+  font-size: 11px;
+}
+
+.placeholder\:text-\[11px\]::placeholder {
+  font-size: 11px;
+}
+
+.placeholder\:text-base::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.placeholder\:text-base::placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .placeholder\:font-medium::-moz-placeholder {
   font-weight: 500;
 }
@@ -2704,6 +2744,22 @@ video {
 .placeholder\:text-\[\#7A828A\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(122 130 138 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\]::-moz-placeholder {
+  color: ;
+}
+
+.placeholder\:text-\[\]::placeholder {
+  color: ;
+}
+
+.placeholder\:text-\[11\]::-moz-placeholder {
+  color: 11;
+}
+
+.placeholder\:text-\[11\]::placeholder {
+  color: 11;
 }
 
 .hover\:border-\[\#0F766D\]:hover {
@@ -3092,6 +3148,10 @@ video {
     width: 245px;
   }
 
+  .xl\:w-\[306px\] {
+    width: 306px;
+  }
+
   .xl\:w-\[382px\] {
     width: 382px;
   }
@@ -3126,6 +3186,10 @@ video {
 
   .xl\:gap-\[60px\] {
     gap: 60px;
+  }
+
+  .xl\:gap-2 {
+    gap: 0.5rem;
   }
 
   .xl\:bg-left {
@@ -3173,7 +3237,27 @@ video {
     line-height: 1.75rem;
   }
 
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .xl\:placeholder\:text-base::-moz-placeholder {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:placeholder\:text-base::placeholder {
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 }
@@ -3199,8 +3283,16 @@ video {
     width: 18rem;
   }
 
+  .\32xl\:w-\[183px\] {
+    width: 183px;
+  }
+
   .\32xl\:w-\[362px\] {
     width: 362px;
+  }
+
+  .\32xl\:w-\[370px\] {
+    width: 370px;
   }
 
   .\32xl\:w-\[470px\] {
@@ -3227,14 +3319,6 @@ video {
     width: 100%;
   }
 
-  .\32xl\:w-\[\] {
-    width: ;
-  }
-
-  .\32xl\:w-\[183px\] {
-    width: 183px;
-  }
-
   .\32xl\:justify-between {
     justify-content: space-between;
   }
@@ -3249,6 +3333,11 @@ video {
 
   .\32xl\:text-\[19px\] {
     font-size: 19px;
+  }
+
+  .\32xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .\32xl\:leading-9 {
