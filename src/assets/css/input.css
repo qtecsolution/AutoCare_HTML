@@ -40,4 +40,25 @@
   .label .checkmark:after {
     @apply left-[5px] top-[2px] w-[5px] h-[9px] border-white border-t-[2px] border-l-[2px] transform rotate-[216deg] content-[''];
   }
+
+  .myshadow {
+    box-shadow: 0px 0px 1.277px 0px rgba(12, 26, 75, 0.24), 0px 3.831px 10.216px -1.277px rgba(50, 50, 71, 0.05);
+  }
+
+  .hotServiceShadow {
+    box-shadow: 0px 0px 0.938px 0px rgba(12, 26, 75, 0.24), 0px 2.815px 7.508px -0.938px rgba(50, 50, 71, 0.05);
+  }
+
+  .featuredShopShadow {
+    box-shadow: 0px 0px 1.086px 0px rgba(12, 26, 75, 0.24), 0px 3.257px 8.684px -1.086px rgba(50, 50, 71, 0.05);
+
+  }
+
+  .category-shadow {
+    box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  }
+
+  .recentlyViewedShadow {
+    box-shadow: 0px 0px 1.063px 0px rgba(12, 26, 75, 0.24), 0px 3.189px 8.503px -1.063px rgba(50, 50, 71, 0.05);
+  }
 }
