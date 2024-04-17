@@ -2146,6 +2146,10 @@ video {
   font-size: 13px;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -2189,14 +2193,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
 }
 
 .font-bold {
@@ -2526,10 +2522,6 @@ video {
   color: 15px;
 }
 
-.opacity-5 {
-  opacity: 0.05;
-}
-
 .opacity-50 {
   opacity: 0.5;
 }
@@ -2702,14 +2694,6 @@ video {
   font-family: Inter, sans-serif;
 }
 
-.placeholder\:text-\[15px\]::-moz-placeholder {
-  font-size: 15px;
-}
-
-.placeholder\:text-\[15px\]::placeholder {
-  font-size: 15px;
-}
-
 .placeholder\:text-\[11px\]::-moz-placeholder {
   font-size: 11px;
 }
@@ -2718,14 +2702,12 @@ video {
   font-size: 11px;
 }
 
-.placeholder\:text-base::-moz-placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.placeholder\:text-\[15px\]::-moz-placeholder {
+  font-size: 15px;
 }
 
-.placeholder\:text-base::placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.placeholder\:text-\[15px\]::placeholder {
+  font-size: 15px;
 }
 
 .placeholder\:font-medium::-moz-placeholder {
@@ -2744,22 +2726,6 @@ video {
 .placeholder\:text-\[\#7A828A\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(122 130 138 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-\[\]::-moz-placeholder {
-  color: ;
-}
-
-.placeholder\:text-\[\]::placeholder {
-  color: ;
-}
-
-.placeholder\:text-\[11\]::-moz-placeholder {
-  color: 11;
-}
-
-.placeholder\:text-\[11\]::placeholder {
-  color: 11;
 }
 
 .hover\:border-\[\#0F766D\]:hover {
@@ -3184,12 +3150,12 @@ video {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .xl\:gap-\[60px\] {
-    gap: 60px;
-  }
-
   .xl\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .xl\:gap-\[60px\] {
+    gap: 60px;
   }
 
   .xl\:bg-left {
@@ -3232,11 +3198,6 @@ video {
     font-size: 20px;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3244,6 +3205,11 @@ video {
 
   .xl\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
