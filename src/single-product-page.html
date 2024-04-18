@@ -19,7 +19,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!--  -->
+  <!-- lightslider -->
   <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
   <!-- tailwind css -->
@@ -53,7 +53,8 @@
         <ul class="flex gap-[18px] items-center">
           <div class="flex gap-[12px] items-center">
             <li class="mr-6">
-              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="flex gap-[7px]  relative">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+                class="flex items-center gap-[7px]  relative">
                 <img src="./assets/image/home/lang.svg" alt="location">
                 <span class="text-base font-medium">English</span>
                 <span
@@ -114,13 +115,13 @@
         </div>
 
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
 
             <img src="./assets/image/home/search.svg" alt="search">
 
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
-                      font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
               placeholder="Search Anything" required />
           </form>
 
@@ -176,9 +177,9 @@
       </div>
     </section>
 
-    <!-- Search for Products -->
+    <!-- Breadcrumb -->
     <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
-      <div class="container mx-auto pt-16 pb-44">
+      <div class="container mx-auto pt-16 pb-44 px-3">
         <nav class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
 
@@ -229,9 +230,10 @@
       </div>
     </section>
 
-    <section class="container mx-auto -mt-40">
-      <div class="grid grid-cols-3 gap-11">
-        <div class="">
+    <!-- prosuct details -->
+    <section class="container mx-auto -mt-40 px-3">
+      <div class="grid grid-cols-3">
+        <div class="mr-5 xl:mr-11">
           <ul id="lightSlider">
             <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product1.png">
               <div class="">
@@ -266,8 +268,8 @@
           </ul>
         </div>
 
-        <div class="">
-          <div class="w-full md:w-[644px]">
+        <div class="mr-2">
+          <div class="">
             <p class="flex items-center gap-1">
               <img src="./assets/image/home/star.svg" alt="">
               <span class="text-[12px] text-[#282728] font-medium">
@@ -279,7 +281,9 @@
               Purolator Oil Filter 133500I99 <br> - Fits Toyota Qualis
             </h2>
 
-            <h4 class="text-black text-sm font-medium">In-Line Filter, 6mm, 6,1mm </h4>
+            <h4 class="text-black text-sm font-medium">
+              In-Line Filter, 6mm, 6,1mm
+            </h4>
 
             <p class="text-[12px] mt-3">
               <span class="text-[#A7AAB9]">Manufacturer:</span>
@@ -295,34 +299,75 @@
               <span class="text-[#A7AAB9]">SKU:</span>
               <span class="text-black">OEM-RA-13622</span>
             </p>
+
             <h3 class="text-[#0F766D] text-2xl font-semibold">$ 112.99</h3>
             <p class="text-[#525468] text-[12px] my-2">Select Size</p>
+
             <div class="">
-              <div class="flex gap-1 mb-1">
+              <div class="grid grid-cols-3 xl:grid-cols-5 gap-1 mb-1 w-full">
                 <div class="">
                   <button
                     class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
                     (11.5cm)
                   </button>
                 </div>
+
                 <div class="">
                   <button
                     class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
                     (11.5cm)
                   </button>
                 </div>
+
                 <div class="">
                   <button
                     class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
                     (11.5cm)
                   </button>
                 </div>
+
                 <div class="">
                   <button
                     class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
                     (11.5cm)
                   </button>
                 </div>
+
+                <div class="">
+                  <button
+                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                    (11.5cm)
+                  </button>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                    (11.5cm)
+                  </button>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                    (11.5cm)
+                  </button>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                    (11.5cm)
+                  </button>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                    (11.5cm)
+                  </button>
+                </div>
+
                 <div class="">
                   <button
                     class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
@@ -330,40 +375,6 @@
                   </button>
                 </div>
               </div>
-
-              <div class="flex gap-1">
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-              </div>
-
             </div>
 
             <p class="text-sm my-5">
@@ -387,12 +398,12 @@
 
             <div class="flex gap-2">
               <button type="button"
-                class="bg-[#0F766D] flex items-center gap-2 px-9 py-3 rounded-[10px] text-white text-base font-semibold">
+                class="bg-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-5 xl:px-9 py-3 rounded-[10px] text-white text-base font-semibold">
                 <img src="./assets/image/single-product-page/buynow.svg" alt="">
                 Buy Now
               </button>
               <button type="button"
-                class="border border-[#0F766D] flex items-center gap-2 px-8 py-3 rounded-[10px] text-[#09090B] text-base font-semibold">
+                class="border border-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-4 xl:px-8 py-3 rounded-[10px] text-[#09090B] text-base font-semibold">
                 <img src="./assets/image/single-product-page/cart.svg" alt="">
                 Add to Cart
               </button>
@@ -542,30 +553,91 @@
 
   <!-- main section -->
   <main>
-    <section class="container mx-auto">
-      <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:border-gray-700 dark:text-gray-400">
-        <li class="me-2">
-          <a href="" aria-current="page">Profile</a>
-        </li>
-        <li class="me-2">
-          <a href=""
-            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 active:text-blue-500 dark:hover:text-gray-300">Dashboard</a>
-        </li>
-        <li class="me-2">
-          <a href="#"
-            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</a>
-        </li>
-        <li class="me-2">
-          <a href="#"
-            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</a>
-        </li>
-        <li>
-          <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
-        </li>
-      </ul>
+    <section class="container mx-auto px-3">
+      <div class="mt-10">
+        <ul class="flex gap-10 font-medium text-center ">
+          <li class="">
+            <a href="#specifications" class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path
+                  d="M7.95032 1.69336C7.34761 1.69336 6.85267 2.15636 6.80078 2.74711H9.10386C9.05197 2.15636 8.55303 1.69336 7.95032 1.69336Z"
+                  fill="#0F766D" />
+                <path
+                  d="M10.2273 15.4043H4.10836C3.94472 15.4043 3.809 15.2726 3.809 15.105C3.809 14.9413 3.94472 14.8056 4.10836 14.8056H10.355C10.8579 13.0454 12.4266 11.7282 14.3145 11.6005V5.6133C14.3145 4.9068 13.7397 4.33203 13.0332 4.33203H10.8938V4.48371C10.8938 5.40973 10.1394 6.16412 9.21344 6.16412H6.69481C5.76882 6.16412 5.01043 5.40973 5.01043 4.48371V4.33203H2.87501C2.16852 4.33203 1.59375 4.9068 1.59375 5.6133V17.9269C1.59375 18.6334 2.16852 19.2082 2.87501 19.2082H11.5444C10.6982 18.3899 10.1834 17.2484 10.1834 16.019C10.1834 15.8115 10.1993 15.6039 10.2273 15.4043ZM4.10963 8.41681H11.7978C11.9631 8.41681 12.0972 8.5509 12.0972 8.71617C12.0972 8.88144 11.9631 9.01553 11.7978 9.01553H4.10963C3.94436 9.01553 3.81027 8.88144 3.81027 8.71617C3.81027 8.5509 3.94436 8.41681 4.10963 8.41681ZM4.10963 11.2058H11.7978C11.9631 11.2058 12.0972 11.3398 12.0972 11.5051C12.0972 11.6704 11.9631 11.8045 11.7978 11.8045H4.10963C3.94436 11.8045 3.81027 11.6704 3.81027 11.5051C3.81027 11.3398 3.94436 11.2058 4.10963 11.2058Z"
+                  fill="#0F766D" />
+                <path
+                  d="M6.69504 5.56495H9.21367C9.80839 5.56495 10.2953 5.08197 10.2953 4.48326V4.03622C10.2953 4.03622 10.2953 4.03622 10.2953 4.03222C10.2953 4.03222 10.2953 4.03222 10.2953 4.02823V3.83664C10.2953 3.56523 10.0758 3.3457 9.80439 3.3457H6.10431C5.8329 3.3457 5.60938 3.56523 5.60938 3.83664V4.02423C5.61337 4.02823 5.61337 4.02823 5.61337 4.03222C5.61337 4.03622 5.61337 4.04021 5.60938 4.04421V4.48326C5.60938 5.08197 6.09632 5.56495 6.69504 5.56495Z"
+                  fill="#0F766D" />
+                <path
+                  d="M14.6122 12.2266C12.5207 12.2305 10.8203 13.9309 10.8203 16.0184C10.8203 17.7068 11.9539 19.2036 13.5784 19.6626C13.9097 19.7584 14.2569 19.8063 14.6162 19.8063C16.7037 19.8063 18.4041 18.106 18.4041 16.0184C18.4041 13.9269 16.7037 12.2266 14.6122 12.2266ZM16.0246 15.5605L14.4916 16.9217C14.4347 16.9719 14.3637 16.9971 14.2928 16.9971C14.2218 16.9971 14.1509 16.9719 14.094 16.9217L13.1994 16.1279C13.0759 16.0181 13.0646 15.8289 13.1745 15.7053C13.2836 15.5812 13.4727 15.5703 13.597 15.68L14.2928 16.2974L15.627 15.1126C15.7502 15.0037 15.9404 15.014 16.0496 15.1378C16.1595 15.2615 16.1482 15.4506 16.0246 15.5605Z"
+                  fill="#0F766D" />
+              </svg>
+              Specifications
+            </a>
+          </li>
+          <li class="">
+            <a href="#descriptions"
+              class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow"
+              aria-current="page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M16.847 3.86279C15.6589 2.48909 13.0986 1.66797 9.99969 1.66797H9.99886C6.89949 1.66797 4.33928 2.48829 3.15072 3.86279C1.17886 6.14388 1.17886 12.1921 3.15112 14.474C3.54383 14.9034 4.00722 15.2623 4.52116 15.5352L4.79826 17.201C4.84381 17.4757 4.95749 17.7346 5.12892 17.954C5.30035 18.1734 5.52404 18.3464 5.77956 18.4571C6.03508 18.5677 6.31426 18.6126 6.59158 18.5875C6.8689 18.5624 7.13551 18.4682 7.36703 18.3135L9.64404 16.7949C9.78319 16.7053 9.94565 16.6586 10.1112 16.6607C13.1621 16.6403 15.68 15.8224 16.847 14.4732C18.8189 12.1921 18.8189 6.14388 16.847 3.86279ZM9.99886 4.79297C10.2049 4.79297 10.4063 4.85406 10.5776 4.96852C10.7489 5.08298 10.8824 5.24567 10.9612 5.43601C11.0401 5.62635 11.0607 5.83579 11.0205 6.03785C10.9803 6.23992 10.8811 6.42553 10.7354 6.57121C10.5897 6.71689 10.4041 6.81609 10.2021 6.85629C10 6.89648 9.79057 6.87585 9.60023 6.79701C9.40989 6.71817 9.24721 6.58466 9.13275 6.41335C9.01829 6.24205 8.95719 6.04066 8.95719 5.83464C8.95719 5.69784 8.98413 5.56238 9.03647 5.436C9.08882 5.30962 9.16555 5.19478 9.26228 5.09805C9.359 5.00132 9.47384 4.92459 9.60022 4.87225C9.72661 4.8199 9.86206 4.79296 9.99886 4.79297ZM10.8322 13.7513H9.16553C8.94451 13.7513 8.73255 13.6635 8.57627 13.5072C8.41999 13.3509 8.33219 13.139 8.33219 12.918C8.33219 12.697 8.41999 12.485 8.57627 12.3287C8.73255 12.1724 8.94451 12.0846 9.16553 12.0846V9.58464C8.94451 9.58464 8.73255 9.49684 8.57627 9.34056C8.41999 9.18428 8.33219 8.97232 8.33219 8.7513C8.33219 8.53029 8.41999 8.31833 8.57627 8.16205C8.73255 8.00577 8.94451 7.91797 9.16553 7.91797H9.99886C10.1083 7.91794 10.2167 7.93948 10.3178 7.98134C10.4189 8.02321 10.5108 8.0846 10.5882 8.16198C10.6656 8.23937 10.7269 8.33125 10.7688 8.43237C10.8107 8.53348 10.8322 8.64186 10.8322 8.7513V12.0846C11.0532 12.0846 11.2652 12.1724 11.4214 12.3287C11.5777 12.485 11.6655 12.697 11.6655 12.918C11.6655 13.139 11.5777 13.3509 11.4214 13.5072C11.2652 13.6635 11.0532 13.7513 10.8322 13.7513Z"
+                  fill="#525468" />
+              </svg>
+              Descriptions
+            </a>
+          </li>
+          <li class="">
+            <a href="#compatibility"
+              class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M10.1951 8.89512C9.81922 9.02883 9.41406 8.74996 9.41406 8.34238V4.72656H6.62285C6.11711 4.72656 5.84926 5.32621 6.18625 5.70332C6.37852 5.91789 6.48438 6.19543 6.48438 6.48438C6.48438 7.13039 5.95852 7.65625 5.3125 7.65625C4.66648 7.65625 4.14062 7.13039 4.14062 6.48438C4.14062 6.19543 4.24648 5.91789 4.43875 5.70332C4.77574 5.32621 4.50789 4.72656 4.00215 4.72656H1.75781C0.788516 4.72656 0 5.51508 0 6.48438V13.5156C0 14.4849 0.788516 15.2734 1.75781 15.2734H2.96875C2.96875 16.5661 4.01988 17.6172 5.3125 17.6172C6.60512 17.6172 7.65625 16.5661 7.65625 15.2734H9.41406V11.6577C9.41406 11.2555 9.8325 10.9792 10.1951 11.105C10.923 11.3642 11.7572 10.7794 11.7578 10C11.7578 9.21957 10.9241 8.63531 10.1951 8.89512Z"
+                  fill="#525468" />
+                <path
+                  d="M18.2422 4.72656H17.0312C17.0312 3.43395 15.9801 2.38281 14.6875 2.38281C13.3949 2.38281 12.3438 3.43395 12.3438 4.72656H10.5859V7.65625C11.8786 7.65625 12.9297 8.70738 12.9297 10C12.9297 11.2926 11.8786 12.3438 10.5859 12.3438V15.2734H18.2422C19.2115 15.2734 20 14.4849 20 13.5156V6.48438C20 5.51508 19.2115 4.72656 18.2422 4.72656Z"
+                  fill="#525468" />
+              </svg>
+              Compatibility
+            </a>
+          </li>
+          <li class="">
+            <a href="#reviews"
+              class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_217_18501)">
+                  <path
+                    d="M10 13.7183L14.8575 15.6283C16.4517 16.255 17.5 17.7933 17.5 19.5058V20H3.78167L2.26417 18.6433C1.5 17.9283 1.46417 16.7208 2.1825 15.9517C2.9 15.1833 4.11 15.1433 4.87833 15.8608C4.90667 15.8875 5.76917 16.6092 6.66583 17.3475V10C6.66583 8.9875 7.56833 8.18667 8.6125 8.35583C9.43167 8.48917 9.99917 9.25833 9.99917 10.0892V13.7183H10ZM16.25 0H3.75C1.67917 0 0 1.67917 0 3.75V6.25C0 8.32083 1.67917 10 3.75 10H5C5 9.02083 5.42833 8.095 6.17417 7.46083C6.7525 6.96833 7.47667 6.69417 8.22667 6.67C8.22667 6.62917 8.23333 6.5875 8.24583 6.5475L8.6375 5.29083L7.64667 4.485C7.51333 4.37167 7.465 4.1875 7.525 4.02417C7.585 3.86 7.74167 3.75083 7.91583 3.75083H9.16583L9.60833 2.50917C9.66917 2.34583 9.825 2.23833 9.99917 2.23833C10.1733 2.23833 10.3292 2.34667 10.39 2.50917L10.8325 3.75083H12.0825C12.2575 3.75083 12.4142 3.86 12.4742 4.025C12.5342 4.19 12.485 4.37417 12.3508 4.48667L11.365 5.29L11.7725 6.53167C11.8283 6.7 11.7725 6.885 11.6317 6.9925C11.4908 7.1 11.2983 7.1075 11.15 7.01167L10.0025 6.26417L9.22083 6.7875C10.6092 7.17583 11.6258 8.49167 11.665 10.0008H16.2492C18.32 10.0008 19.9992 8.32167 19.9992 6.25083V3.75083C19.9992 1.68 18.32 0.000833333 16.2492 0.000833333L16.25 0ZM7.35167 4.48583L6.36583 5.28917L6.77333 6.53083C6.82917 6.69917 6.77333 6.88417 6.6325 6.99167C6.49167 7.09917 6.29917 7.10667 6.15083 7.01083L5.00333 6.26333L3.875 7.01833C3.805 7.065 3.72417 7.08833 3.64333 7.08833C3.555 7.08833 3.4675 7.06083 3.39333 7.005C3.25167 6.89917 3.1925 6.715 3.24583 6.54667L3.6375 5.29L2.64667 4.48417C2.51333 4.37083 2.465 4.18667 2.525 4.02333C2.585 3.85917 2.74167 3.75 2.91583 3.75H4.16583L4.60833 2.50833C4.66917 2.345 4.825 2.2375 4.99917 2.2375C5.17333 2.2375 5.32917 2.34583 5.39 2.50833L5.8325 3.75H7.0825C7.2575 3.75 7.41417 3.85917 7.47417 4.02417C7.53417 4.18917 7.48583 4.37333 7.35167 4.48583ZM17.3517 4.48583L16.3658 5.28917L16.7733 6.53083C16.8292 6.69917 16.7733 6.88417 16.6325 6.99167C16.4917 7.09917 16.2992 7.10667 16.1508 7.01083L15.0033 6.26333L13.875 7.01833C13.805 7.065 13.7242 7.08833 13.6433 7.08833C13.555 7.08833 13.4675 7.06083 13.3933 7.005C13.2517 6.89917 13.1925 6.715 13.2458 6.54667L13.6375 5.29L12.6467 4.48417C12.5133 4.37083 12.465 4.18667 12.525 4.02333C12.585 3.85917 12.7417 3.75 12.9158 3.75H14.1658L14.6083 2.50833C14.6692 2.345 14.825 2.2375 14.9992 2.2375C15.1733 2.2375 15.3292 2.34583 15.39 2.50833L15.8325 3.75H17.0825C17.2575 3.75 17.4142 3.85917 17.4742 4.02417C17.5342 4.18917 17.485 4.37333 17.3508 4.48583H17.3517Z"
+                    fill="#525468" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_18501">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Reviews
+            </a>
+          </li>
+          <li class="">
+            <a href="#questions"
+              class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M8.0625 11.1305H4.375C4.025 11.1305 3.75 10.8555 3.75 10.5055C3.75 10.1617 4.025 9.88047 4.375 9.88047H7.325C7.15 9.50547 7.0125 9.11172 6.9125 8.69922H4.375C4.025 8.69922 3.75 8.41797 3.75 8.07422C3.75 7.73047 4.025 7.44922 4.375 7.44922H6.73125C6.725 7.34297 6.725 7.24297 6.725 7.13672C6.725 6.39297 6.85 5.68047 7.075 5.01172H3.5C2.25625 5.01172 1.25 6.02422 1.25 7.26172V13.7492C1.25 14.9055 2.13125 15.868 3.2625 15.9805V17.2992C3.2625 17.668 3.46875 17.993 3.8 18.1555C3.93125 18.218 4.075 18.2492 4.2125 18.2492C4.425 18.2492 4.63125 18.1805 4.8 18.043L6.20625 16.9367C6.96875 16.3305 7.93125 15.993 8.9125 15.993H13.2375C14.475 15.993 15.4875 14.9867 15.4875 13.7492V13.4242C14.8188 13.6492 14.1062 13.7742 13.3625 13.7742C11.2 13.7742 9.275 12.7367 8.0625 11.1305ZM8.36875 13.568H4.375C4.025 13.568 3.75 13.2867 3.75 12.943C3.75 12.5992 4.025 12.318 4.375 12.318H8.36875C8.7125 12.318 8.99375 12.5992 8.99375 12.943C8.99375 13.2867 8.7125 13.568 8.36875 13.568Z"
+                  fill="#525468" />
+                <path
+                  d="M13.3641 1.75C10.3891 1.75 7.97656 4.16875 7.97656 7.1375C7.97656 10.1125 10.3891 12.525 13.3641 12.525C16.3328 12.525 18.7516 10.1125 18.7516 7.1375C18.7516 4.16875 16.3328 1.75 13.3641 1.75ZM13.3578 10.6062C13.0141 10.6062 12.7328 10.325 12.7328 9.98125C12.7328 9.6375 13.0078 9.35625 13.3516 9.35625H13.3578C13.7016 9.35625 13.9828 9.6375 13.9828 9.98125C13.9828 10.325 13.7016 10.6062 13.3578 10.6062ZM13.9891 7.71875V8.1C13.9891 8.44375 13.7078 8.725 13.3641 8.725C13.0203 8.725 12.7391 8.44375 12.7391 8.1V7.2125C12.7391 6.86875 13.0203 6.5875 13.3641 6.5875C13.6578 6.5875 13.9016 6.35 13.9016 6.05C13.9016 5.75625 13.6578 5.51875 13.3641 5.51875C13.0703 5.51875 12.8266 5.75625 12.8266 6.05C12.8266 6.4 12.5453 6.675 12.2016 6.675C11.8578 6.675 11.5766 6.4 11.5766 6.05C11.5766 5.06875 12.3766 4.26875 13.3641 4.26875C14.3453 4.26875 15.1516 5.06875 15.1516 6.05C15.1516 6.81875 14.6641 7.4625 13.9891 7.71875Z"
+                  fill="#525468" />
+              </svg>
+              Questions
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      <div class="max-w-[900px] shadow py-10 px-14 mb-16">
-        <div class="">
+      <div class="max-w-[900px] category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-14 mb-16">
+        <div id="specifications" class="">
           <h2 class="text-[20px] font-semibold text-black mt-10 mb-4">Specifications</h2>
           <div class="flex justify-between">
             <div class="flex gap-12">
@@ -658,7 +730,7 @@
           </div>
         </div>
 
-        <div class="my-10">
+        <div id="descriptions" class="my-10">
           <h2 class="text-[20px] font-semibold text-black">Descriptions</h2>
           <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
             Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively with the
@@ -690,8 +762,8 @@
           </ul>
         </div>
 
-        <div class="">
-          <h2 class="text-[20px] font-semibold text-black">Descriptions</h2>
+        <div id="compatibility">
+          <h2 class="text-[20px] font-semibold text-black">Compatibility</h2>
           <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
             Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively with the
             delicate touch that your baby deserves. Dress your precious one in the
@@ -885,7 +957,7 @@
           </div>
         </div>
 
-        <div class="">
+        <div id="reviews">
           <div class="flex justify-between mb-7">
             <div class="flex gap-4">
               <h2 class="text-xl font-semibold text-black">20 Reviews </h2>
@@ -983,7 +1055,7 @@
           </div>
         </div>
 
-        <div class="">
+        <div id="questions">
           <h3 class="text-black font-semibold text-xl ">FAQs</h3>
           <p class="text-[#7D7F85] text-sm my-4 ">Dress your precious one in the soft embrace of the Lil' Blossom Baby
             Dress
@@ -991,14 +1063,14 @@
 
 
           <div id="accordion-color" data-accordion="collapse"
-            data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+            data-active-classes="bg-blue-100 dark:bg-gray-800 text-teal-500 dark:text-white">
 
             <h2 id="accordion-color-heading-1">
               <button type="button"
                 class="flex items-center justify-between w-full p-5 font-semibold  border border-b-0 border-gray-200 rounded-t-xl text-[#383941]"
                 data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                 aria-controls="accordion-color-body-1">
-                <span>What are automobile parts?</span>
+                <span class="">What are automobile parts?</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1008,10 +1080,8 @@
             </h2>
             <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
               <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p class="text-[#383941] text-sm text-justify">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolorem, cupiditate impedit
-                  doloribus fugit dignissimos eius assumenda fuga iste sit voluptate vitae veniam nobis non. Dignissimos
-                  pariatur officia, repellendus magni aliquid quod iste nisi sunt eius vel. Nisi, qui voluptatem.
+                <p class="text-[#383941] text-xs text-justify font-inter">
+                  Automobile parts are available from a variety of sources, including dealerships, automotive parts stores, online retailers, salvage yards, and independent auto repair shops.
                 </p>
               </div>
             </div>
@@ -1109,11 +1179,11 @@
       </div>
     </section>
 
-    <section class="container mx-auto gap-4 ">
+    <section class="container mx-auto gap-4 px-3">
       <h2 class="text-[#282728] text-2xl font-semibold">Related Product</h2>
 
-      <div class=" flex mb-10 justify-between">
-        <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+      <div class=" flex mb-10 justify-between gap-5">
+        <div class="rounded-xl myshadow">
           <div
             class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
             <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
@@ -1167,7 +1237,7 @@
           </div>
         </div>
 
-        <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+        <div class="rounded-xl myshadow">
           <div
             class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
             <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
@@ -1221,7 +1291,7 @@
           </div>
         </div>
 
-        <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+        <div class="rounded-xl myshadow">
           <div
             class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
             <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
@@ -1275,7 +1345,7 @@
           </div>
         </div>
 
-        <div class="mt-5 md-mt-0 md:w-[306px] bg-white rounded-xl shadow">
+        <div class="rounded-xl myshadow">
           <div
             class="h-[230px] bg-[#F6F6F6] border-4 border-white rounded-xl flex justify-center items-center relative">
             <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
@@ -1332,273 +1402,6 @@
     </section>
   </main>
 
-  <!-- footer section -->
-  <footer class="bg-[#1F1E28]">
-    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div>
-          <div class="flex items-center justify-center md:justify-start gap-3">
-            <img src="./assets/image/home/auto-care-logo.svg" alt="">
-            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
-          </div>
-          <p class="text-[#BABABA] text-sm mt-6 text-center md:text-left">Rent your belongings to people in your area to
-            make some extra cash.
-          </p>
-          <div class="flex justify-center md:justify-start gap-3 mt-6">
-            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
-              <img src="./assets/image/home/Facebook-footer.svg" alt="">
-            </a>
-            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
-              <img src="./assets/image/home/Instagram-footer.svg" alt="">
-            </a>
-            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
-              <img src="./assets/image/home/Twitter-footer.svg" alt="">
-            </a>
-            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
-              <img src="./assets/image/home/LinkedIn-footer.svg" alt="">
-            </a>
-          </div>
-          <div class="mt-8">
-            <h3 class="text-center md:text-left text-lg font-bold text-white">Need Assistance?</h3>
-            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Get In Touch :</p>
-            <p class="text-center md:text-left text-[#BABABA] text-sm">+14 88854874124</p>
-            <p class="text-center md:text-left text-[#BABABA] text-sm">contactus@autocare.com</p>
-            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Address :</p>
-            <p class="text-center md:text-left text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
-          </div>
-        </div>
-
-        <div class="col-span-2">
-          <div class="flex flex-col md:flex-row md:justify-between">
-            <ul>
-              <li class="mb-8 text-center md:text-left">
-                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                  Company
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  About US
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Contact Us
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  How It Work
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Career
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Quick Guide
-                </a>
-              </li>
-            </ul>
-
-            <ul>
-              <li class="mb-8 text-center md:text-left">
-                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                  Legal
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Terms of Use
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Privacy Policy
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Refund Policy
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Service Policy
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Affiliates
-                </a>
-              </li>
-            </ul>
-
-            <ul>
-              <li class="mb-8 text-center md:text-left">
-                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                  Shop Category
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  About US
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Contact Us
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  How It Work
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Career
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Quick Guide
-                </a>
-              </li>
-            </ul>
-
-            <ul>
-              <li class="mb-8 text-center md:text-left">
-                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
-                  Service Category
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  About US
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Contact Us
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  How It Work
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Career
-                </a>
-              </li>
-
-              <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
-                  Quick Guide
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col md:flex-col lg:flex-row justify-between md:items-center md:gap-4 mt-8 mb-5 bg-[#14050B] rounded-[22px] py-5 px-4 sm:px-11">
-        <div class="flex gap-6 items-center sm:w-1/2">
-          <img src="./assets/image/home/email.png" alt="">
-          <h2 class="text-xs md:text-sm lg:text-xl xl:text-2xl font-semibold text-white leading-normal">
-            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
-          </h2>
-        </div>
-
-
-        <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
-          <input
-            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
-            type="text" placeholder="Enter Your Email">
-          <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
-        </form>
-      </div>
-      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
-        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
-          <img src="./assets/image/home/copyright.svg" alt="">
-          <p class="text-[#ffffff99] font-medium text-sm">
-            2024-2025 autocare. All Rights Reserved.
-          </p>
-        </div>
-        <div class="flex gap-3">
-          <img src="./assets/image/home/Payment Method1.png" alt="">
-          <img src="./assets/image/home/Payment Method2.png" alt="">
-          <img src="./assets/image/home/Payment Method3.png" alt="">
-          <img src="./assets/image/home/Payment Method4.png" alt="">
-          <img src="./assets/image/home/Payment Method5.png" alt="">
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
