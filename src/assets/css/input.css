@@ -45,6 +45,10 @@
     box-shadow: 0px 0px 1.277px 0px rgba(12, 26, 75, 0.24), 0px 3.831px 10.216px -1.277px rgba(50, 50, 71, 0.05);
   }
 
+  .hoverShadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
   .hotServiceShadow {
     box-shadow: 0px 0px 0.938px 0px rgba(12, 26, 75, 0.24), 0px 2.815px 7.508px -0.938px rgba(50, 50, 71, 0.05);
   }

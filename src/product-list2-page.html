@@ -7,7 +7,6 @@
   <meta http-equiv="Content-Language" content="en">
   <meta name="language" content="English">
   <title>product-list-page</title>
-
   <!-- favicon  -->
   <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
 
@@ -19,14 +18,12 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <link rel="stylesheet" href="./assets/css/custom.css">
-
   <!-- nice-select2 -->
   <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 
 <body class="font-inter">
@@ -51,7 +48,8 @@
         <ul class="flex gap-[18px] items-center">
           <div class="flex gap-[12px] items-center">
             <li class="mr-6">
-              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="flex gap-[7px]  relative">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+                class="flex items-center gap-[7px]  relative">
                 <img src="./assets/image/home/lang.svg" alt="location">
                 <span class="text-base font-medium">English</span>
                 <span
@@ -112,13 +110,13 @@
         </div>
 
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
 
             <img src="./assets/image/home/search.svg" alt="search">
 
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
-                      font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
               placeholder="Search Anything" required />
           </form>
 
@@ -188,59 +186,60 @@
               <img src="./assets/image/product-grid-page/search-for-services.svg" alt="">
               <h3 class="font-semibold text-sm">Search for Services...</h3>
             </div>
-
           </div>
 
           <div class="flex justify-center">
-            <div class="flex justify-center ps-4 pr-1.5 py-2 bg-white shadow items-center gap-2 rounded-lg">
+            <div class="flex justify-center ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
 
               <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
-                  <option class="text-base text-[10px]" data-display="Select">Product Category</option>
-                  <option class="text-base text-[10px]" value="1">Some option2</option>
-                  <option class="text-base text-[10px]" value="2">Some option3</option>
-                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Product Category</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
                 </select>
               </div>
 
               <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
-                  <option class="text-base text-[10px]" data-display="Select">Select Brand</option>
-                  <option class="text-base text-[10px]" value="1">Some option2</option>
-                  <option class="text-base text-[10px]" value="2">Some option3</option>
-                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Select Brand</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
                 </select>
               </div>
 
               <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
-                  <option class="text-base text-[10px]" data-display="Select">Select Model</option>
-                  <option class="text-base text-[10px]" value="1">Some option2</option>
-                  <option class="text-base text-[10px]" value="2">Some option3</option>
-                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Select Model</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
                 </select>
               </div>
 
               <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
-                  <option class="text-base text-[10px]" data-display="Select">Model Year</option>
-                  <option class="text-base text-[10px]" value="1">Some option2</option>
-                  <option class="text-base text-[10px]" value="2">Some option3</option>
-                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Model Year</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
                 </select>
               </div>
 
               <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-base cursor-pointer">
-                  <option class="text-base text-[10px]" data-display="Select">Engine (Optional)</option>
-                  <option class="text-base text-[10px]" value="1">Some option2</option>
-                  <option class="text-base text-[10px]" value="2">Some option3</option>
-                  <option class="text-base text-[10px]" value="4">Some option4</option>
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Engine (Optional)</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
                 </select>
               </div>
 
               <div class="">
-                <input class="border-none focus:ring-0" type="text" name="" id="" placeholder="Keyword">
+                <input
+                  class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base"
+                  type="text" name="" id="" placeholder="Keyword">
               </div>
 
               <div class="">
@@ -252,47 +251,46 @@
             </div>
           </div>
         </div>
-
       </div>
 
-    </section>
+      <!-- Ad section -->
+      <div class="w-[970px] mx-auto mb-10">
+        <div class="bg-no-repeat" style="background-image: url('./assets/image/product-grid-page/ad.png')">
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
+            </div>
+            <div class="flex gap-3 mr-2 mt-1">
+              <i class="fa-solid fa-ellipsis-vertical text-white cursor-pointer opacity-50"></i>
+              <i class="fa-solid fa-x text-white cursor-pointer opacity-50"></i>
+            </div>
+          </div>
+          <div class="flex justify-around">
+            <div class="mt-[-13px] ml-[-20px]">
+              <img src="./assets/image/product-grid-page/car.png" alt="">
+            </div>
 
-    <!-- Ad section -->
-    <section class="w-[970px] mx-auto mb-10">
-      <div class="bg-no-repeat" style="background-image: url('./assets/image/product-grid-page/ad.png')">
-        <div class="flex justify-between items-center">
-          <div class="">
-            <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
-          </div>
-          <div class="flex gap-3 mr-2 mt-1">
-            <i class="fa-solid fa-ellipsis-vertical text-white cursor-pointer"></i>
-            <i class="fa-solid fa-x text-white cursor-pointer"></i>
-          </div>
-        </div>
-        <div class="flex justify-around">
-          <div class="mt-[-13px] ml-[-20px]">
-            <img src="./assets/image/product-grid-page/car.png" alt="">
-          </div>
-
-          <div class="">
-            <p class="text-white font-medium text-xs">Summer SALE</p>
-            <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
-            <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
-          </div>
-          <div class="">
-            <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
-              Lets book a test drive
-            </button>
+            <div class="">
+              <p class="text-white font-medium text-xs">Summer SALE</p>
+              <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
+              <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
+            </div>
+            <div class="">
+              <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
+                Lets book a test drive
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
   </header>
 
   <!-- main section -->
   <main>
-    <!--  -->
-    <section class="container mx-auto mb-5">
+    <!-- product-list section -->
+    <section class="container mx-auto mb-5 px-3">
       <div class="flex justify-between mb-6">
         <div class="flex items-center gap-[75px]">
           <div class="">
@@ -335,13 +333,13 @@
               <span>View</span>
             </div>
 
-            <a href="./product-grid-page.html" class="bg-white rounded-md p-[5px]">
+            <a href="./product-grid-page.html">
               <img src="./assets/image/product-grid-page/grid.svg" alt="">
             </a>
             <a href="./product-list-page.html">
               <img src="./assets/image/product-grid-page/three-line.svg" alt="">
             </a>
-            <a href="./product-list2-page.html">
+            <a href="./product-list2-page.html" class="bg-white rounded-md p-[5px]">
               <img src="./assets/image/product-grid-page/line.svg" alt="">
             </a>
             <a href="./product-map-page.html">
@@ -369,7 +367,7 @@
 
       <div class="grid grid-cols-4 gap-12">
         <div class="">
-          <div class="border border-white shadow">
+          <div class="border border-white category-shadow rounded-2xl">
             <div class="flex gap-1.5 py-[18px] px-6 bg-[#0273710d] rounded-t-2xl border-4 border-white">
               <img src="./assets/image/product-grid-page/Filters.svg" alt="">
               <h4 class="text-base font-bold uppercase text-[#09090B]">Filters</h4>
@@ -379,31 +377,35 @@
               <div class="">
                 <p class="text-[#09090B] text-base font-bold">Category </p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Engine & Transmission
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Engine &
+                    Transmission
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Electrical & Electronics
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Electrical &
+                    Electronics
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Steering
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Steering
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Brakes & Suspension
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Brakes &
+                    Suspension
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Tires & Wheels
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Tires &
+                    Wheels
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -446,31 +448,33 @@
               <div class="mt-8">
                 <p class="text-[#09090B] text-base font-bold">Manufacturer</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Toyota
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Toyota
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Volkswagen Group
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Volkswagen
+                    Group
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">General Motors (GM)
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">General
+                    Motors (GM)
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Ford
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Ford
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Honda
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Honda
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -480,13 +484,14 @@
               <div class="mt-8">
                 <p class="text-[#09090B] text-base font-bold">Brand Class</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -496,13 +501,14 @@
               <div class="mt-8">
                 <p class="text-[#09090B] text-base font-bold">Warranty</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                  <label class="label flex items-center text-[#525468] text- 2xl:text-base font-medium ">Premium
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -512,13 +518,14 @@
               <div class="mt-8">
                 <p class="text-[#09090B] text-base font-bold">Shipping Options</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -528,13 +535,14 @@
               <div class="mt-8">
                 <p class="text-[#09090B] text-base font-bold">Material/Composition</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -625,13 +633,14 @@
               <div class="mt-8 mb-10">
                 <p class="text-[#09090B] text-base font-bold">Certifications</p>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Premium
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div class="mt-[18px]">
-                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Price/Performance
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
                     <input type="checkbox" class="hidden">
                     <span class="checkmark"></span>
                   </label>
@@ -643,7 +652,7 @@
 
         <div class="col-span-3">
           <div class=" grid grid-cols-2 gap-x-3 gap-y-2">
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel1.png" alt="">
@@ -680,7 +689,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel2.png" alt="">
@@ -717,7 +726,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel3.png" alt="">
@@ -754,7 +763,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe5.png" alt="">
@@ -791,7 +800,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe6.png" alt="">
@@ -828,7 +837,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe4.png" alt="">
@@ -865,7 +874,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel1.png" alt="">
@@ -902,7 +911,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel2.png" alt="">
@@ -939,7 +948,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel3.png" alt="">
@@ -976,7 +985,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe5.png" alt="">
@@ -1013,7 +1022,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe6.png" alt="">
@@ -1050,7 +1059,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe4.png" alt="">
@@ -1087,7 +1096,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel1.png" alt="">
@@ -1124,7 +1133,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel2.png" alt="">
@@ -1161,7 +1170,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel3.png" alt="">
@@ -1198,7 +1207,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe5.png" alt="">
@@ -1235,7 +1244,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe6.png" alt="">
@@ -1272,7 +1281,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe4.png" alt="">
@@ -1309,7 +1318,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/carousel3.png" alt="">
@@ -1346,7 +1355,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe5.png" alt="">
@@ -1383,7 +1392,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe6.png" alt="">
@@ -1420,7 +1429,7 @@
               </div>
             </div>
 
-            <div class="flex items-center bg-white rounded-xl shadow w-full">
+            <div class="flex items-center bg-white rounded-xl myshadow w-full cursor-pointer transition-all hover:hoverShadow">
               <div
                 class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 relative">
                 <img class="w-full" src="./assets/image/home/recently-viewe4.png" alt="">
@@ -1463,8 +1472,7 @@
               <ul class="flex items-center -space-x-px h-8 text-sm gap-2">
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                    <span class="sr-only">Previous</span>
+                    class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
                     <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                       fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1474,29 +1482,24 @@
                 </li>
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">1</a>
                 </li>
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                </li>
-                <li>
-                  <a href="#" aria-current="page"
-                    class="z-10 flex items-center justify-center px-3 h-8 rounded-lg leading-tight text-[#0F766D] border border-[#0F766D] dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">2</a>
                 </li>
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border rounded-lg border-gray-300  dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">3</a>
                 </li>
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border rounded-lg border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                    <i class="fa-solid fa-ellipsis text-[#A7AAB9]"></i></a>
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                    <i class="fa-solid fa-ellipsis"></i></a>
                 </li>
                 <li>
                   <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-[#A7AAB9] bg-white border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                    <span class="sr-only">Next</span>
+                    class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
                     <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                       fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1517,12 +1520,13 @@
         <div class="">
           <div class="relative">
             <img src="./assets/image/product-grid-page/add2.png" alt="add2">
-            <i class="fa-solid fa-x absolute top-3 right-5 cursor-pointer text-[#CBCBCB]"></i>
-            <i class="fa-solid fa-ellipsis-vertical absolute top-3 right-12 cursor-pointer text-[#CBCBCB]"></i>
+            <i class="fa-solid fa-x absolute top-3 right-5 2xl:right-24 cursor-pointer text-[#CBCBCB]"></i>
+            <i
+              class="fa-solid fa-ellipsis-vertical absolute top-3 right-12 2xl:right-36 cursor-pointer text-[#CBCBCB]"></i>
           </div>
         </div>
 
-        <div class="col-span-3 bg-no-repeat py-8 ps-11"
+        <div class="col-span-3 bg-no-repeat bg-right xl:bg-left rounded-[18px] py-8 ps-11"
           style="background-image: url('./assets/image/product-grid-page/all-product.png');">
           <h1 class="font-bold text-2xl text-white max-w-[410px]">
             Browse All <span class="text-[#5EEADE]">Product</span> and Get delivery from your nearest store
@@ -1537,7 +1541,7 @@
     <section class="container mx-auto my-10 px-3">
       <div class="md:grid md:grid-cols-2 md:gap-7">
         <aside class="bg-no-repeat bg-cover rounded-[32px]"
-          style="background-image: url('./src/assets/image/home/get-clients1.png')">
+          style="background-image: url('./assets/image/home/get-clients1.png')">
           <div class="">
             <h1 class="pt-[200px] ps-12 pr-11 text-base sm:text-2xl lg:text-[35px] font-bold text-white leading-10">
               Want to Provide Automobile <br class="hidden md:block"> Service? and Get Clients
@@ -1554,9 +1558,10 @@
         </aside>
 
         <aside class="bg-no-repeat bg-cover mt-5 md:mt-0 rounded-[32px]"
-          style="background-image: url('./src/assets/image/home/get-clients3.png')">
+          style="background-image: url('./assets/image/home/get-clients3.png')">
           <div class="flex justify-center flex-col">
-            <h1 class="mx-20 mt-10 font-bold text-[#27272E] text-base sm:text-[26px] lg:text-[40px] text-center leading-10">
+            <h1
+              class="mx-20 mt-10 font-bold text-[#27272E] text-base sm:text-[26px] lg:text-[40px] text-center leading-10">
               Open Store to sell automobile spare parts
             </h1>
             <p class="text-[10px] sm:text-xs md:text-base xl:text-xl text-center mb-6">
@@ -1570,7 +1575,7 @@
             </div>
 
             <div class="flex justify-center mt-5">
-              <img src="./src/assets/image/home/get-clients2.png" alt="">
+              <img src="./assets/image/home/get-clients2.png" alt="">
             </div>
           </div>
         </aside>
