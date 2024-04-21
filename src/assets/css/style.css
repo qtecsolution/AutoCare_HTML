@@ -3463,6 +3463,11 @@ video {
     padding-bottom: 2.75rem;
   }
 
+  .xl\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .xl\:pl-36 {
     padding-left: 9rem;
   }
