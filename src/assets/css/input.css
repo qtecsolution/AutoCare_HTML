@@ -5,7 +5,7 @@
 @layer components {
   .label {
     @apply block relative cursor-pointer;
-    padding-left: 35px;
+    padding-left: 28px;
   }
 
   /* Hide the browser's default checkbox */

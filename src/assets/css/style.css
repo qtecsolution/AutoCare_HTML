@@ -582,7 +582,7 @@ video {
   position: relative;
   display: block;
   cursor: pointer;
-  padding-left: 35px;
+  padding-left: 28px;
 }
 
 /* Hide the browser's default checkbox */
@@ -1032,6 +1032,10 @@ video {
   margin-top: -5px;
 }
 
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+
 .mt-\[14px\] {
   margin-top: 14px;
 }
@@ -1204,6 +1208,14 @@ video {
   width: 100%;
 }
 
+.w-\[9\] {
+  width: 9;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1374,10 +1386,6 @@ video {
   gap: 12px;
 }
 
-.gap-\[14px\] {
-  gap: 14px;
-}
-
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -1409,6 +1417,10 @@ video {
 
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
@@ -2124,31 +2136,6 @@ video {
   padding-bottom: 6px;
 }
 
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[40px\] {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.px-\[44px\] {
-  padding-left: 44px;
-  padding-right: 44px;
-}
-
-.px-\[4px\] {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.px-\[45px\] {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2429,14 +2416,6 @@ video {
 
 .leading-normal {
   line-height: 1.5;
-}
-
-.leading-\[\] {
-  line-height: ;
-}
-
-.leading-\[40px\] {
-  line-height: 40px;
 }
 
 .tracking-\[-0\.09px\] {
@@ -3083,10 +3062,6 @@ video {
     line-height: 1rem;
   }
 
-  .sm\:leading-3 {
-    line-height: .75rem;
-  }
-
   .sm\:leading-10 {
     line-height: 2.5rem;
   }
@@ -3438,6 +3413,11 @@ video {
     padding-right: 0px;
   }
 
+  .xl\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3461,11 +3441,6 @@ video {
   .xl\:py-11 {
     padding-top: 2.75rem;
     padding-bottom: 2.75rem;
-  }
-
-  .xl\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .xl\:pl-36 {
@@ -3516,10 +3491,6 @@ video {
     line-height: 1.5rem;
   }
 
-  .xl\:leading-\[40px\] {
-    line-height: 40px;
-  }
-
   .xl\:leading-\[42px\] {
     line-height: 42px;
   }
@@ -3536,12 +3507,20 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:right-12 {
+    right: 3rem;
+  }
+
   .\32xl\:right-24 {
     right: 6rem;
   }
 
   .\32xl\:right-36 {
     right: 9rem;
+  }
+
+  .\32xl\:right-5 {
+    right: 1.25rem;
   }
 
   .\32xl\:mb-6 {
