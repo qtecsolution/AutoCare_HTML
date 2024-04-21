@@ -17,6 +17,9 @@
   .checkmark {
     @apply absolute top-0 left-0 h-4 w-4 bg-white border-2 border-[#E4E5E9];
   }
+  .checkmark-shopping-cart {
+    @apply absolute -top-[9px] left-0 h-4 w-4 bg-white border-2 border-[#E4E5E9];
+  }
 
   /* When the checkbox is checked, add a ##0F766D background */
   .label input:checked~.checkmark {
