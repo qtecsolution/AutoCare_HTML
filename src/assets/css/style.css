@@ -952,6 +952,10 @@ video {
   margin-left: -20px;
 }
 
+.ml-\[7px\] {
+  margin-left: 7px;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1188,6 +1192,10 @@ video {
   width: 59px;
 }
 
+.w-\[72\%\] {
+  width: 72%;
+}
+
 .w-\[970px\] {
   width: 970px;
 }
@@ -1364,6 +1372,10 @@ video {
 
 .gap-\[12px\] {
   gap: 12px;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
 }
 
 .gap-\[18px\] {
@@ -2112,6 +2124,31 @@ video {
   padding-bottom: 6px;
 }
 
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-\[44px\] {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.px-\[4px\] {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.px-\[45px\] {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2392,6 +2429,14 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .tracking-\[-0\.09px\] {
@@ -3038,6 +3083,14 @@ video {
     line-height: 1rem;
   }
 
+  .sm\:leading-3 {
+    line-height: .75rem;
+  }
+
+  .sm\:leading-10 {
+    line-height: 2.5rem;
+  }
+
   .sm\:placeholder-\[17px\]::-moz-placeholder {
     color: 17px;
   }
@@ -3336,6 +3389,10 @@ video {
     width: 620px;
   }
 
+  .xl\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .xl\:w-full {
     width: 100%;
   }
@@ -3374,6 +3431,11 @@ video {
 
   .xl\:bg-left {
     background-position: left;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .xl\:px-10 {
@@ -3449,6 +3511,14 @@ video {
     line-height: 1.5rem;
   }
 
+  .xl\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .xl\:leading-\[42px\] {
+    line-height: 42px;
+  }
+
   .xl\:placeholder\:text-base::-moz-placeholder {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3505,6 +3575,10 @@ video {
     width: 484px;
   }
 
+  .\32xl\:w-\[83\%\] {
+    width: 83%;
+  }
+
   .\32xl\:w-\[900px\] {
     width: 900px;
   }
@@ -3523,6 +3597,11 @@ video {
 
   .\32xl\:bg-cover {
     background-size: cover;
+  }
+
+  .\32xl\:px-\[45px\] {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .\32xl\:pb-16 {
