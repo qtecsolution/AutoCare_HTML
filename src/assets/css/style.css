@@ -585,9 +585,23 @@ video {
   padding-left: 28px;
 }
 
+.label-radio {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
 /* Hide the browser's default checkbox */
 
 .label input {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.label-radio input {
   position: absolute;
   height: 0px;
   width: 0px;
@@ -603,6 +617,20 @@ video {
   left: 0px;
   height: 1rem;
   width: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(228 229 233 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.checkmark-radio {
+  position: absolute;
+  top: 0px;
+  left: 2rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 9999px;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(228 229 233 / var(--tw-border-opacity));
@@ -631,6 +659,12 @@ video {
   background-color: rgb(15 118 109 / var(--tw-bg-opacity));
 }
 
+.label-radio input:checked~.checkmark-radio {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(15 118 109 / var(--tw-border-opacity));
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 
 .checkmark:after {
@@ -642,9 +676,22 @@ video {
   display: none;
 }
 
+.checkmark-radio:after {
+  /* @apply absolute block content ""; */
+  position: absolute;
+  display: block;
+  --tw-content: '';
+  content: var(--tw-content);
+  display: none;
+}
+
 /* Show the checkmark when checked */
 
 .label input:checked~.checkmark:after {
+  display: block;
+}
+
+.label-radio input:checked~.checkmark-radio:after {
   display: block;
 }
 
@@ -661,6 +708,18 @@ video {
   border-left-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.label-radio .checkmark-radio:after {
+  left: 3px;
+  top: 3px;
+  height: 8px;
+  width: 8px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 109 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -803,6 +862,18 @@ video {
 
 .top-\[9px\] {
   top: 9px;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[43px\] {
+  left: 43px;
 }
 
 .z-0 {
@@ -1060,6 +1131,10 @@ video {
   margin-top: 51px;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1148,24 +1223,16 @@ video {
   height: 230px;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .h-\[calc\(100\%-1rem\)\] {
   height: calc(100% - 1rem);
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
 }
 
 .max-h-full {
@@ -1252,6 +1319,10 @@ video {
   max-width: 14rem;
 }
 
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
 .max-w-\[410px\] {
   max-width: 410px;
 }
@@ -1278,14 +1349,6 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[340px\] {
-  max-width: 340px;
 }
 
 .flex-shrink-0 {
@@ -1344,6 +1407,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1422,6 +1489,10 @@ video {
   gap: 12px;
 }
 
+.gap-\[14px\] {
+  gap: 14px;
+}
+
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -1432,10 +1503,6 @@ video {
 
 .gap-\[40px\] {
   gap: 40px;
-}
-
-.gap-\[75px\] {
-  gap: 75px;
 }
 
 .gap-\[7px\] {
@@ -1542,6 +1609,10 @@ video {
   border-radius: 50px;
 }
 
+.rounded-\[51px\] {
+  border-radius: 51px;
+}
+
 .rounded-\[53px\] {
   border-radius: 53px;
 }
@@ -1568,14 +1639,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[\] {
-  border-radius: ;
-}
-
-.rounded-\[51px\] {
-  border-radius: 51px;
 }
 
 .rounded-b-lg {
@@ -1847,6 +1910,11 @@ video {
   background-color: rgb(241 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F49D0C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 157 12 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F4F4F4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
@@ -1912,15 +1980,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#F49D0C\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 157 12 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -2242,6 +2301,14 @@ video {
   padding-left: 1.75rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pl-9 {
+  padding-left: 2.25rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -2268,6 +2335,10 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pr-9 {
@@ -2344,18 +2415,6 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pl-9 {
-  padding-left: 2.25rem;
 }
 
 .text-left {
@@ -2454,14 +2513,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[1px\] {
-  font-size: 1px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .font-bold {
@@ -2798,6 +2849,10 @@ video {
   color: ;
 }
 
+.text-\[\#\] {
+  color: #;
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -2818,10 +2873,6 @@ video {
 
 .placeholder-\[15px\]::placeholder {
   color: 15px;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow {
@@ -3510,10 +3561,6 @@ video {
     background-size: cover;
   }
 
-  .xl\:bg-left {
-    background-position: left;
-  }
-
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -3616,16 +3663,44 @@ video {
     right: 3rem;
   }
 
-  .\32xl\:right-24 {
-    right: 6rem;
-  }
-
-  .\32xl\:right-36 {
-    right: 9rem;
-  }
-
   .\32xl\:right-5 {
     right: 1.25rem;
+  }
+
+  .\32xl\:top-\[\] {
+    top: ;
+  }
+
+  .\32xl\:top-\[41px\] {
+    top: 41px;
+  }
+
+  .\32xl\:top-\[4px\] {
+    top: 4px;
+  }
+
+  .\32xl\:top-0 {
+    top: 0px;
+  }
+
+  .\32xl\:top-0\.5 {
+    top: 0.125rem;
+  }
+
+  .\32xl\:left-\[41\] {
+    left: 41;
+  }
+
+  .\32xl\:left-\[41px\] {
+    left: 41px;
+  }
+
+  .\32xl\:left-\[43px\] {
+    left: 43px;
+  }
+
+  .\32xl\:left-\[56px\] {
+    left: 56px;
   }
 
   .\32xl\:mb-6 {
