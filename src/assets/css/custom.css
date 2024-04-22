@@ -72,19 +72,21 @@
 
 .homeSelect .selectize {
   border: none;
+  padding-right: 45px;
+  padding-left: 5px;
 }
 
 .homeSelect .nice-select .option {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .homeSelect .nice-select:after {
   top: 22px;
-  right: 4px;
+  right: 10px;
 }
 
 .homeSelect .selectize .current {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .nice-select:after {

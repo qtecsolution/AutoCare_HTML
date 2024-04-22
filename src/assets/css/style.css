@@ -1156,6 +1156,18 @@ video {
   height: 100%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -2405,6 +2417,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1px\] {
+  font-size: 1px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-bold {
