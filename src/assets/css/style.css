@@ -761,6 +761,14 @@ video {
   right: -36px;
 }
 
+.right-\[-63px\] {
+  right: -63px;
+}
+
+.right-\[-80px\] {
+  right: -80px;
+}
+
 .right-\[2px\] {
   right: 2px;
 }
@@ -789,32 +797,12 @@ video {
   top: 2px;
 }
 
-.top-\[9px\] {
-  top: 9px;
-}
-
-.right-\[-px\] {
-  right: -px;
-}
-
-.right-\[-73px\] {
-  right: -73px;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[38px\] {
-  left: 38px;
-}
-
 .top-\[6px\] {
   top: 6px;
 }
 
-.right-\[-80px\] {
-  right: -80px;
+.top-\[9px\] {
+  top: 9px;
 }
 
 .z-0 {
@@ -1068,12 +1056,32 @@ video {
   margin-top: 18px;
 }
 
-.me-2 {
-  margin-inline-end: 0.5rem;
+.ml-2\.5 {
+  margin-left: 0.625rem;
 }
 
-.me-2\.5 {
-  margin-inline-end: 0.625rem;
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[50\] {
+  margin-top: 50;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[52px\] {
+  margin-top: 52px;
+}
+
+.mt-\[51px\] {
+  margin-top: 51px;
 }
 
 .block {
@@ -1442,10 +1450,6 @@ video {
   gap: 8px;
 }
 
-.gap-\[\] {
-  gap: ;
-}
-
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -1760,10 +1764,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[E4E5E9\] {
-  border-color: E4E5E9;
 }
 
 .border-l-transparent {
@@ -2176,16 +2176,6 @@ video {
   padding-bottom: 6px;
 }
 
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -2339,20 +2329,8 @@ video {
   padding-top: 8px;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-\[10\] {
-  padding-bottom: 10;
-}
-
-.pb-\[10px\] {
-  padding-bottom: 10px;
-}
-
-.pb-\[11px\] {
-  padding-bottom: 11px;
+.pl-2\.5 {
+  padding-left: 0.625rem;
 }
 
 .text-left {
@@ -2420,6 +2398,10 @@ video {
   font-size: 32px;
 }
 
+.text-\[8px\] {
+  font-size: 8px;
+}
+
 .text-\[9px\] {
   font-size: 9px;
 }
@@ -2447,10 +2429,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
 }
 
 .font-bold {
@@ -2783,11 +2761,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .line-through {
   text-decoration-line: line-through;
 }
@@ -3057,11 +3030,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3433,6 +3401,10 @@ video {
     width: 9rem;
   }
 
+  .xl\:w-\[1123px\] {
+    width: 1123px;
+  }
+
   .xl\:w-\[245px\] {
     width: 245px;
   }
@@ -3461,10 +3433,6 @@ video {
     width: 100%;
   }
 
-  .xl\:w-\[1123px\] {
-    width: 1123px;
-  }
-
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3479,6 +3447,10 @@ video {
 
   .xl\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
   }
 
   .xl\:gap-2 {
@@ -3540,6 +3512,10 @@ video {
     padding-bottom: 2.75rem;
   }
 
+  .xl\:pb-\[11px\] {
+    padding-bottom: 11px;
+  }
+
   .xl\:pl-36 {
     padding-left: 9rem;
   }
@@ -3560,8 +3536,12 @@ video {
     padding-top: 2.25rem;
   }
 
-  .xl\:pb-\[11px\] {
-    padding-bottom: 11px;
+  .xl\:pl-2 {
+    padding-left: 0.5rem;
+  }
+
+  .xl\:pl-2\.5 {
+    padding-left: 0.625rem;
   }
 
   .xl\:text-2xl {
@@ -3636,10 +3616,6 @@ video {
     width: 18rem;
   }
 
-  .\32xl\:w-\[1123px\] {
-    width: 1123px;
-  }
-
   .\32xl\:w-\[183px\] {
     width: 183px;
   }
@@ -3693,12 +3669,28 @@ video {
     padding-right: 45px;
   }
 
-  .\32xl\:pb-16 {
-    padding-bottom: 4rem;
+  .\32xl\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  .\32xl\:pb-\[11px\] {
-    padding-bottom: 11px;
+  .\32xl\:px-\[54px\] {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  .\32xl\:px-\[56px\] {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .\32xl\:px-\[px\] {
+    padding-left: px;
+    padding-right: px;
+  }
+
+  .\32xl\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .\32xl\:text-2xl {

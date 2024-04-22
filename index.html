@@ -19,20 +19,18 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <!-- tailwind css -->
   <link rel="stylesheet" href="./src/assets/css/style.css">
-
-  <link rel="stylesheet" href="./src/assets/css/custom.css">
-
   <!-- nice-select2 -->
   <link rel="stylesheet" href="./src/assets/css/nice-select2.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./src/assets/css/custom.css">
 </head>
 
 <body class="font-inter">
   <header class="">
     <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3">
+    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 xl:px-0">
       <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
 
         <ul class="flex gap-[40px]">
@@ -102,7 +100,7 @@
     </section>
 
     <!-- main menu  -->
-    <section class="menu py-[16px] shadow px-3">
+    <section class="menu py-[16px] shadow px-3 xl:px-0">
       <div
         class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
         <div>
@@ -177,7 +175,7 @@
     <!-- Search for Products -->
     <section class="px-3">
       <div class="container mx-auto my-6">
-        <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl overflow-hidden"
+        <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
           style="background-image: url('./src/assets/image/home/search-for-products.png')">
           <div class=" lg:pt-4 xl:pt-9">
             <h1 class="text-[32px] font-semibold text-white">
@@ -210,7 +208,7 @@
             <div
               class="flex ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
 
-              <div class="border-r-2 border-[#E4E5E9]">
+              <div  class="border-r-2 border-[#E4E5E9] homeSelect">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Product Category</option>
                   <option class="text-[10px]" value="1">Some option2</option>
@@ -219,7 +217,7 @@
                 </select>
               </div>
 
-              <div class="border-r-2 border-[#E4E5E9]">
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Select Brand</option>
                   <option class="text-[10px]" value="1">Some option2</option>
@@ -228,7 +226,7 @@
                 </select>
               </div>
 
-              <div class="border-r-2 border-[#E4E5E9]">
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Select Model</option>
                   <option class="text-[10px]" value="1">Some option2</option>
@@ -237,7 +235,7 @@
                 </select>
               </div>
 
-              <div class="border-r-2 border-[#E4E5E9]">
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Model Year</option>
                   <option class="text-[10px]" value="1">Some option2</option>
@@ -246,7 +244,7 @@
                 </select>
               </div>
 
-              <div class="border-r-2 border-[#E4E5E9]">
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
                   <option class="text-[10px]" value="1">Some option2</option>
@@ -310,7 +308,7 @@
   </header>
 
   <main>
-    <section class="container mx-auto mt-10 px-3 xl:px-0.5">
+    <section class="container mx-auto mt-10 pl-2.5">
       <div class="flex flex-wrap justify-center md:grid md:grid-cols-4 gap-4">
         <div class="flex items-center gap-4">
 
@@ -3963,11 +3961,11 @@
         <aside class="mt-5 lg:mt-0">
           <div class=" mt-5 md:mt-0 rounded-3xl bg-gradient-to-br from-gray-100 via-teal-100 to-purple-100">
             <div class="flex justify-center flex-col px-12">
-              <h1 class="text-black mt-10 text-lg sm:text-2xl font-semibold text-center">
+              <h1 class="text-black mt-[51px] text-lg sm:text-2xl font-semibold text-center">
                 A powerful mobile app for quick & easy buying
               </h1>
               <p class="text-[#070707] text-center text-xs font-light my-6">
-                Precision, Expertise, and Quality Service – Your Car Deserves the Best!
+                Precision, Expertise, and Quality Service - Your Car Deserves the Best!
               </p>
 
               <div class="flex justify-center gap-3">
@@ -4302,13 +4300,13 @@
     </div>
   </footer>
 
+
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- nice-select2 -->
-  <link rel="stylesheet" href="./src/assets/js/nice-select2.js">
+  <!-- nice select -->
+  <script src="./src/assets/js/nice-select2.js"></script>
   <!-- Custom main js -->
   <script src="./src/assets/js/main.js"></script>
 </body>
