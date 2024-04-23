@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>product-list-page</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- lightslider -->
+  <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+</head>
+
+<body class="font-inter">
+  <!-- Header section -->
+  <header class="">
+    <!-- main menu  -->
+    <section class="menu py-[16px] shadow px-3">
+      <nav class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class="flex gap-10 items-center">
+          <a href="#">
+            <img src="./assets/image/home/logo.png" alt="logo">
+          </a>
+
+          <ul class="flex gap-12">
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">List your Garage</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <div>
+            <ul class="flex gap-7">
+              <li class="ms-5">
+                <a class="relative" href="#">
+                  <img src="./assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-1.5 gap-4 rounded-xl">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[512px] max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-10">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome! Please Login to continue.
+                    </h3>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="">
+                    <form action="#">
+                      <div>
+                        <label for="number"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <input type="number" name="number" id="number"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your Phone Number" required />
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <input type="password" name="password" id="password"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your password" required />
+                      </div>
+
+                      <div class="text-right mt-2">
+                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                          Password?
+                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                        Log in
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Didn't have any account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="text-[#09090B] font-bold text-sm">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="hidden xl:block">
+            <button
+              class="flex items-center bg-[#0F766D] rounded-[10px] px-3 py-[14px] font-semibold text-base text-white gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_217_19181)">
+                  <path
+                    d="M16.25 13.75C16.4158 13.75 16.5747 13.6842 16.6919 13.5669C16.8092 13.4497 16.875 13.2908 16.875 13.125V3.125C16.875 2.2962 16.5458 1.50134 15.9597 0.915291C15.3737 0.32924 14.5788 0 13.75 0L6.25 0C5.4212 0 4.62634 0.32924 4.04029 0.915291C3.45424 1.50134 3.125 2.2962 3.125 3.125V16.875C3.125 17.7038 3.45424 18.4987 4.04029 19.0847C4.62634 19.6708 5.4212 20 6.25 20H13.75C14.5788 20 15.3737 19.6708 15.9597 19.0847C16.5458 18.4987 16.875 17.7038 16.875 16.875V15.625C16.875 15.4592 16.8092 15.3003 16.6919 15.1831C16.5747 15.0658 16.4158 15 16.25 15C16.0842 15 15.9253 15.0658 15.8081 15.1831C15.6908 15.3003 15.625 15.4592 15.625 15.625V16.875C15.625 17.3723 15.4275 17.8492 15.0758 18.2008C14.7242 18.5525 14.2473 18.75 13.75 18.75H6.25C5.75272 18.75 5.27581 18.5525 4.92417 18.2008C4.57254 17.8492 4.375 17.3723 4.375 16.875V3.125C4.37609 2.73816 4.4968 2.36112 4.72059 2.04558C4.94437 1.73004 5.26028 1.49145 5.625 1.3625V1.75625C5.625 2.28503 5.83506 2.79214 6.20896 3.16604C6.58286 3.53994 7.08997 3.75 7.61875 3.75H12.3812C12.6431 3.75 12.9023 3.69843 13.1442 3.59823C13.3861 3.49804 13.6059 3.35118 13.791 3.16604C13.9762 2.98091 14.123 2.76112 14.2232 2.51923C14.3234 2.27733 14.375 2.01807 14.375 1.75625V1.3625C14.7397 1.49145 15.0556 1.73004 15.2794 2.04558C15.5032 2.36112 15.6239 2.73816 15.625 3.125V13.125C15.625 13.2908 15.6908 13.4497 15.8081 13.5669C15.9253 13.6842 16.0842 13.75 16.25 13.75ZM13.125 1.75625C13.125 1.85392 13.1058 1.95063 13.0684 2.04087C13.031 2.13111 12.9762 2.2131 12.9072 2.28216C12.8381 2.35122 12.7561 2.40601 12.6659 2.44339C12.5756 2.48076 12.4789 2.5 12.3812 2.5H7.61875C7.42149 2.5 7.23232 2.42164 7.09284 2.28216C6.95336 2.14268 6.875 1.9535 6.875 1.75625V1.25H13.125V1.75625Z"
+                    fill="white" />
+                  <path
+                    d="M13.125 11.25C12.9592 11.25 12.8003 11.3158 12.6831 11.4331C12.5658 11.5503 12.5 11.7092 12.5 11.875V12.5C12.5 12.6658 12.4342 12.8247 12.3169 12.9419C12.1997 13.0592 12.0408 13.125 11.875 13.125H8.125C7.95924 13.125 7.80027 13.0592 7.68306 12.9419C7.56585 12.8247 7.5 12.6658 7.5 12.5V11.875C7.5 11.7092 7.43415 11.5503 7.31694 11.4331C7.19973 11.3158 7.04076 11.25 6.875 11.25C6.70924 11.25 6.55027 11.3158 6.43306 11.4331C6.31585 11.5503 6.25 11.7092 6.25 11.875V12.5C6.25 12.9973 6.44754 13.4742 6.79917 13.8258C7.15081 14.1775 7.62772 14.375 8.125 14.375H11.875C12.3723 14.375 12.8492 14.1775 13.2008 13.8258C13.5525 13.4742 13.75 12.9973 13.75 12.5V11.875C13.75 11.7092 13.6842 11.5503 13.5669 11.4331C13.4497 11.3158 13.2908 11.25 13.125 11.25Z"
+                    fill="#CCFBF7" />
+                  <path
+                    d="M9.5549 11.6937C9.613 11.7523 9.68213 11.7988 9.75829 11.8306C9.83445 11.8623 9.91614 11.8786 9.99865 11.8786C10.0812 11.8786 10.1628 11.8623 10.239 11.8306C10.3152 11.7988 10.3843 11.7523 10.4424 11.6937L12.3174 9.81875C12.3757 9.76048 12.4219 9.69129 12.4534 9.61516C12.485 9.53902 12.5012 9.45741 12.5012 9.375C12.5012 9.29259 12.485 9.21098 12.4534 9.13484C12.4219 9.05871 12.3757 8.98952 12.3174 8.93125C12.2591 8.87298 12.1899 8.82675 12.1138 8.79521C12.0377 8.76367 11.9561 8.74744 11.8737 8.74744C11.7912 8.74744 11.7096 8.76367 11.6335 8.79521C11.5574 8.82675 11.4882 8.87298 11.4299 8.93125L10.6237 9.74375V6.25C10.6237 6.08424 10.5578 5.92527 10.4406 5.80806C10.3234 5.69085 10.1644 5.625 9.99865 5.625C9.83289 5.625 9.67392 5.69085 9.55671 5.80806C9.4395 5.92527 9.37365 6.08424 9.37365 6.25V9.74375L8.5674 8.93125C8.44971 8.81356 8.29009 8.74744 8.12365 8.74744C7.95721 8.74744 7.79759 8.81356 7.6799 8.93125C7.56221 9.04894 7.49609 9.20856 7.49609 9.375C7.49609 9.54144 7.56221 9.70106 7.6799 9.81875L9.5549 11.6937Z"
+                    fill="#CCFBF7" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_19181">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Download Mobile App</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.21934 8.22015C5.35997 8.0797 5.55059 8.00081 5.74934 8.00081C5.94809 8.00081 6.13871 8.0797 6.27934 8.22015L9.99934 11.9402L13.7193 8.22015C13.788 8.14647 13.8708 8.08736 13.9628 8.04637C14.0548 8.00538 14.1541 7.98334 14.2548 7.98156C14.3555 7.97979 14.4555 7.99831 14.5489 8.03603C14.6423 8.07375 14.7272 8.1299 14.7984 8.20112C14.8696 8.27233 14.9257 8.35717 14.9635 8.45056C15.0012 8.54394 15.0197 8.64397 15.0179 8.74468C15.0162 8.84538 14.9941 8.94469 14.9531 9.03669C14.9121 9.12869 14.853 9.21149 14.7793 9.28015L10.5293 13.5302C10.3887 13.6706 10.1981 13.7495 9.99934 13.7495C9.80059 13.7495 9.60997 13.6706 9.46934 13.5302L5.21934 9.28015C5.07889 9.13953 5 8.9489 5 8.75015C5 8.5514 5.07889 8.36078 5.21934 8.22015Z"
+                  fill="#CCFBF7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main class="">
+    <section class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
+      <div class="max-w-[1260px] container mx-auto px-3 pt-16">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+
+            <li class="inline-flex items-center">
+              <a href="#"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <a href="#"
+                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Car
+                  parts</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <a href="#"
+                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Filters</a>
+              </div>
+            </li>
+
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2 dark:text-gray-400">Fuel Filters</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class=" bg-[#f4f4f4fc]">
+      <div class="max-w-[1260px] container mx-auto px-3 pt-10">
+        <div class="grid grid-cols-3 gap-16">
+          <div class="col-span-2">
+            <div class="bg-white rounded-2xl category-shadow px-8 py-5">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-5">
+                  <h2 class="text-[#09090B] text-2xl font-semibold">
+                    Tires/Wheels Sales Change
+                  </h2>
+                  <div class="flex items-center gap-1 mb-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                        fill="#F49D0C" />
+                    </svg>
+                    <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                  </div>
+                </div>
+                <h3 class="text-[#0F766D] text-base font-bold">
+                  1000 Tk - 2000 Tk
+                </h3>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <div class=" flex items-center gap-2.5">
+                  <img src="./assets/image/service-2-col-list-Page/nextage.png" alt="">
+                  <div class="">
+                    <h4 class="text-[#1A202C] text-base font-semibold mb-1.5">
+                      Nextage
+                    </h4>
+                    <div class="flex items-center gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path
+                          d="M10.9478 10.3265L8.31715 12.9572C8.20211 13.0724 8.06549 13.1637 7.91512 13.226C7.76474 13.2884 7.60356 13.3205 7.44078 13.3205C7.278 13.3205 7.11682 13.2884 6.96644 13.226C6.81607 13.1637 6.67946 13.0724 6.56441 12.9572L3.93313 10.3265C3.23949 9.63285 2.76712 8.74907 2.57576 7.78693C2.3844 6.82479 2.48263 5.82751 2.85805 4.92121C3.23347 4.0149 3.86921 3.24027 4.68487 2.69527C5.50053 2.15027 6.45949 1.85938 7.44047 1.85938C8.42146 1.85938 9.38041 2.15027 10.1961 2.69527C11.0117 3.24027 11.6475 4.0149 12.0229 4.92121C12.3983 5.82751 12.4965 6.82479 12.3052 7.78693C12.1138 8.74907 11.6415 9.63285 10.9478 10.3265V10.3265Z"
+                          stroke="#7B7F95" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M9.30008 6.82094C9.30008 7.31424 9.10411 7.78734 8.7553 8.13616C8.40648 8.48497 7.93338 8.68094 7.44008 8.68094C6.94678 8.68094 6.47368 8.48497 6.12486 8.13616C5.77604 7.78734 5.58008 7.31424 5.58008 6.82094C5.58008 6.32763 5.77604 5.85454 6.12486 5.50572C6.47368 5.1569 6.94678 4.96094 7.44008 4.96094C7.93338 4.96094 8.40648 5.1569 8.7553 5.50572C9.10411 5.85454 9.30008 6.32763 9.30008 6.82094V6.82094Z"
+                          stroke="#7B7F95" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <p class="text-[#7B7F95] text-[11.5px]">
+                        Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="flex items-center gap-1.5 bg-[#0F766D] py-3 px-[76px] rounded-[10px] text-white text-base font-semibold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_308_10177)">
+                      <path
+                        d="M12.5 13.7183L20 16.6667V20H6.28167L4.76417 18.6433C4 17.9283 3.96417 16.7208 4.6825 15.9517C5.4 15.1833 6.61 15.1433 7.37833 15.8608C7.40667 15.8875 8.26917 16.6092 9.16583 17.3475V10C9.16583 8.9875 10.0683 8.18667 11.1125 8.35583C11.9317 8.48917 12.4992 9.25833 12.4992 10.0892V13.7183H12.5ZM17.5 5.83333V4.16667C17.5 2.78833 16.3783 1.66667 15 1.66667H13.3333V0H11.6667V1.66667H5.83333V0H4.16667V1.66667H2.5C1.12167 1.66667 0 2.78833 0 4.16667V5.83333H17.5ZM3.46583 14.8133C4.52333 13.6817 6.1525 13.3925 7.5 13.9758V10C7.5 9.03917 7.91667 8.13333 8.63667 7.5H0V16.6667H2.55417C2.665 15.9942 2.96667 15.3467 3.46583 14.8133ZM14.1667 10.0892V12.5825L17.5 13.8933V7.50083H13.0058C13.7167 8.13583 14.1667 9.07 14.1667 10.0892Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_308_10177">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <ul class="flex gap-10 font-medium text-center ">
+                <li class="">
+                  <a href="#descriptions"
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path
+                        d="M16.849 4.36279C15.6608 2.98909 13.1006 2.16797 10.0016 2.16797H10.0008C6.90145 2.16797 4.34123 2.98829 3.15267 4.36279C1.18081 6.64388 1.18081 12.6921 3.15307 14.974C3.54579 15.4034 4.00917 15.7623 4.52311 16.0352L4.80021 17.701C4.84576 17.9757 4.95944 18.2346 5.13087 18.454C5.3023 18.6734 5.526 18.8464 5.78152 18.9571C6.03703 19.0677 6.31622 19.1126 6.59353 19.0875C6.87085 19.0624 7.13746 18.9682 7.36898 18.8135L9.646 17.2949C9.78514 17.2053 9.94761 17.1586 10.1131 17.1607C13.1641 17.1403 15.682 16.3224 16.849 14.9732C18.8208 12.6921 18.8208 6.64388 16.849 4.36279ZM10.0008 5.29297C10.2068 5.29297 10.4082 5.35406 10.5795 5.46852C10.7508 5.58298 10.8843 5.74567 10.9632 5.93601C11.042 6.12635 11.0627 6.33579 11.0225 6.53785C10.9823 6.73992 10.8831 6.92553 10.7374 7.07121C10.5917 7.21689 10.4061 7.31609 10.204 7.35629C10.002 7.39648 9.79252 7.37585 9.60218 7.29701C9.41184 7.21817 9.24916 7.08466 9.1347 6.91335C9.02024 6.74205 8.95915 6.54066 8.95915 6.33464C8.95914 6.19784 8.98608 6.06238 9.03843 5.936C9.09077 5.80962 9.1675 5.69478 9.26423 5.59805C9.36096 5.50132 9.47579 5.42459 9.60218 5.37225C9.72856 5.3199 9.86402 5.29296 10.0008 5.29297ZM10.8341 14.2513H9.16748C8.94647 14.2513 8.7345 14.1635 8.57822 14.0072C8.42194 13.8509 8.33415 13.639 8.33415 13.418C8.33415 13.197 8.42194 12.985 8.57822 12.8287C8.7345 12.6724 8.94647 12.5846 9.16748 12.5846V10.0846C8.94647 10.0846 8.7345 9.99684 8.57822 9.84056C8.42194 9.68428 8.33415 9.47232 8.33415 9.2513C8.33415 9.03029 8.42194 8.81833 8.57822 8.66205C8.7345 8.50577 8.94647 8.41797 9.16748 8.41797H10.0008C10.1103 8.41794 10.2186 8.43948 10.3197 8.48134C10.4209 8.52321 10.5127 8.5846 10.5901 8.66198C10.6675 8.73937 10.7289 8.83125 10.7708 8.93237C10.8126 9.03348 10.8342 9.14186 10.8341 9.2513V12.5846C11.0552 12.5846 11.2671 12.6724 11.4234 12.8287C11.5797 12.985 11.6675 13.197 11.6675 13.418C11.6675 13.639 11.5797 13.8509 11.4234 14.0072C11.2671 14.1635 11.0552 14.2513 10.8341 14.2513Z"
+                        fill="#0F766D" />
+                    </svg>
+                    Descriptions
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="#reviews"
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g clip-path="url(#clip0_217_18501)">
+                        <path
+                          d="M10 13.7183L14.8575 15.6283C16.4517 16.255 17.5 17.7933 17.5 19.5058V20H3.78167L2.26417 18.6433C1.5 17.9283 1.46417 16.7208 2.1825 15.9517C2.9 15.1833 4.11 15.1433 4.87833 15.8608C4.90667 15.8875 5.76917 16.6092 6.66583 17.3475V10C6.66583 8.9875 7.56833 8.18667 8.6125 8.35583C9.43167 8.48917 9.99917 9.25833 9.99917 10.0892V13.7183H10ZM16.25 0H3.75C1.67917 0 0 1.67917 0 3.75V6.25C0 8.32083 1.67917 10 3.75 10H5C5 9.02083 5.42833 8.095 6.17417 7.46083C6.7525 6.96833 7.47667 6.69417 8.22667 6.67C8.22667 6.62917 8.23333 6.5875 8.24583 6.5475L8.6375 5.29083L7.64667 4.485C7.51333 4.37167 7.465 4.1875 7.525 4.02417C7.585 3.86 7.74167 3.75083 7.91583 3.75083H9.16583L9.60833 2.50917C9.66917 2.34583 9.825 2.23833 9.99917 2.23833C10.1733 2.23833 10.3292 2.34667 10.39 2.50917L10.8325 3.75083H12.0825C12.2575 3.75083 12.4142 3.86 12.4742 4.025C12.5342 4.19 12.485 4.37417 12.3508 4.48667L11.365 5.29L11.7725 6.53167C11.8283 6.7 11.7725 6.885 11.6317 6.9925C11.4908 7.1 11.2983 7.1075 11.15 7.01167L10.0025 6.26417L9.22083 6.7875C10.6092 7.17583 11.6258 8.49167 11.665 10.0008H16.2492C18.32 10.0008 19.9992 8.32167 19.9992 6.25083V3.75083C19.9992 1.68 18.32 0.000833333 16.2492 0.000833333L16.25 0ZM7.35167 4.48583L6.36583 5.28917L6.77333 6.53083C6.82917 6.69917 6.77333 6.88417 6.6325 6.99167C6.49167 7.09917 6.29917 7.10667 6.15083 7.01083L5.00333 6.26333L3.875 7.01833C3.805 7.065 3.72417 7.08833 3.64333 7.08833C3.555 7.08833 3.4675 7.06083 3.39333 7.005C3.25167 6.89917 3.1925 6.715 3.24583 6.54667L3.6375 5.29L2.64667 4.48417C2.51333 4.37083 2.465 4.18667 2.525 4.02333C2.585 3.85917 2.74167 3.75 2.91583 3.75H4.16583L4.60833 2.50833C4.66917 2.345 4.825 2.2375 4.99917 2.2375C5.17333 2.2375 5.32917 2.34583 5.39 2.50833L5.8325 3.75H7.0825C7.2575 3.75 7.41417 3.85917 7.47417 4.02417C7.53417 4.18917 7.48583 4.37333 7.35167 4.48583ZM17.3517 4.48583L16.3658 5.28917L16.7733 6.53083C16.8292 6.69917 16.7733 6.88417 16.6325 6.99167C16.4917 7.09917 16.2992 7.10667 16.1508 7.01083L15.0033 6.26333L13.875 7.01833C13.805 7.065 13.7242 7.08833 13.6433 7.08833C13.555 7.08833 13.4675 7.06083 13.3933 7.005C13.2517 6.89917 13.1925 6.715 13.2458 6.54667L13.6375 5.29L12.6467 4.48417C12.5133 4.37083 12.465 4.18667 12.525 4.02333C12.585 3.85917 12.7417 3.75 12.9158 3.75H14.1658L14.6083 2.50833C14.6692 2.345 14.825 2.2375 14.9992 2.2375C15.1733 2.2375 15.3292 2.34583 15.39 2.50833L15.8325 3.75H17.0825C17.2575 3.75 17.4142 3.85917 17.4742 4.02417C17.5342 4.18917 17.485 4.37333 17.3508 4.48583H17.3517Z"
+                          fill="#525468" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_217_18501">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Reviews
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="#questions"
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M8.0625 11.1305H4.375C4.025 11.1305 3.75 10.8555 3.75 10.5055C3.75 10.1617 4.025 9.88047 4.375 9.88047H7.325C7.15 9.50547 7.0125 9.11172 6.9125 8.69922H4.375C4.025 8.69922 3.75 8.41797 3.75 8.07422C3.75 7.73047 4.025 7.44922 4.375 7.44922H6.73125C6.725 7.34297 6.725 7.24297 6.725 7.13672C6.725 6.39297 6.85 5.68047 7.075 5.01172H3.5C2.25625 5.01172 1.25 6.02422 1.25 7.26172V13.7492C1.25 14.9055 2.13125 15.868 3.2625 15.9805V17.2992C3.2625 17.668 3.46875 17.993 3.8 18.1555C3.93125 18.218 4.075 18.2492 4.2125 18.2492C4.425 18.2492 4.63125 18.1805 4.8 18.043L6.20625 16.9367C6.96875 16.3305 7.93125 15.993 8.9125 15.993H13.2375C14.475 15.993 15.4875 14.9867 15.4875 13.7492V13.4242C14.8188 13.6492 14.1062 13.7742 13.3625 13.7742C11.2 13.7742 9.275 12.7367 8.0625 11.1305ZM8.36875 13.568H4.375C4.025 13.568 3.75 13.2867 3.75 12.943C3.75 12.5992 4.025 12.318 4.375 12.318H8.36875C8.7125 12.318 8.99375 12.5992 8.99375 12.943C8.99375 13.2867 8.7125 13.568 8.36875 13.568Z"
+                        fill="#525468" />
+                      <path
+                        d="M13.3641 1.75C10.3891 1.75 7.97656 4.16875 7.97656 7.1375C7.97656 10.1125 10.3891 12.525 13.3641 12.525C16.3328 12.525 18.7516 10.1125 18.7516 7.1375C18.7516 4.16875 16.3328 1.75 13.3641 1.75ZM13.3578 10.6062C13.0141 10.6062 12.7328 10.325 12.7328 9.98125C12.7328 9.6375 13.0078 9.35625 13.3516 9.35625H13.3578C13.7016 9.35625 13.9828 9.6375 13.9828 9.98125C13.9828 10.325 13.7016 10.6062 13.3578 10.6062ZM13.9891 7.71875V8.1C13.9891 8.44375 13.7078 8.725 13.3641 8.725C13.0203 8.725 12.7391 8.44375 12.7391 8.1V7.2125C12.7391 6.86875 13.0203 6.5875 13.3641 6.5875C13.6578 6.5875 13.9016 6.35 13.9016 6.05C13.9016 5.75625 13.6578 5.51875 13.3641 5.51875C13.0703 5.51875 12.8266 5.75625 12.8266 6.05C12.8266 6.4 12.5453 6.675 12.2016 6.675C11.8578 6.675 11.5766 6.4 11.5766 6.05C11.5766 5.06875 12.3766 4.26875 13.3641 4.26875C14.3453 4.26875 15.1516 5.06875 15.1516 6.05C15.1516 6.81875 14.6641 7.4625 13.9891 7.71875Z"
+                        fill="#525468" />
+                    </svg>
+                    Questions
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-14 mb-16 bg-white">
+              <div id="descriptions" class="my-10">
+                <h2 class="text-[20px] font-semibold text-black">Descriptions</h2>
+                <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
+                  Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively with
+                  the
+                  delicate touch that your baby deserves. Dress your precious one in the
+                </p>
+                <img src="./assets/image/service-2-col-list-Page/descriptions.png" alt="">
+                <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
+                  Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively with
+                  the
+                  delicate touch that your baby deserves. Dress your precious one in the soft embrace of the Lil'
+                  Blossom
+                  Baby
+                  Dress, designed exclusively with the delicate touch that your baby deserves.
+                </p>
+
+                <h3 class="text-black text-base font-medium">
+                  Key Features:
+                </h3>
+                <ul class="mt-4">
+                  <li class="text-[#7D7F85] text-sm list-disc list-inside">
+                    Easy to Install
+                  </li>
+                  <li class="text-[#7D7F85] text-sm list-disc list-inside">
+                    Design for Optimal Cooling
+                  </li>
+                  <li class="text-[#7D7F85] text-sm list-disc list-inside">
+                    Manufacturer Backed Warranty
+                  </li>
+                  <li class="text-[#7D7F85] text-sm list-disc list-inside">
+                    Includes Fittings where applicable
+                  </li>
+                </ul>
+              </div>
+
+              <div id="reviews">
+                <div class="flex justify-between mb-7">
+                  <div class="flex gap-4">
+                    <h2 class="text-xl font-semibold text-black">20 Reviews </h2>
+                    <p>
+                      <i class="fa-solid fa-star text-[#F29232]"></i>
+                      <span class="text-[#4A5568] text-xs">5.0 (210 Reviews)</span>
+                    </p>
+                  </div>
+
+                  <button
+                    class="border border-[#14B8A9] py-2 px-6 rounded-lg dark:bg-black bg-white text-[##0D9488] text-xs font-semibold">
+                    Write Review
+                  </button>
+                </div>
+
+                <div class="flex gap-20 justify-between mb-10">
+                  <div class="">
+                    <div class="flex gap-4 items-center">
+                      <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+                      <div class="">
+                        <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                        <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                    </div>
+                  </div>
+                  <div class="max-w-[513px]">
+                    <p class="text-justify text-[#383941] text-sm font-medium">
+                      “You made it so simple. My new site is so much faster and easier to work with than my old site. I
+                      just
+                      choose the page, make the change & it is a good channel for us.”
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-20 justify-between mb-10">
+                  <div class="">
+                    <div class="flex gap-4 items-center">
+                      <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+                      <div class="">
+                        <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                        <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                    </div>
+                  </div>
+                  <div class="max-w-[513px]">
+                    <p class="text-justify text-[#383941] text-sm font-medium">
+                      “You made it so simple. My new site is so much faster and easier to work with than my old site. I
+                      just
+                      choose the page, make the change & it is a good channel for us.”
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-20 justify-between">
+                  <div class="">
+                    <div class="flex gap-4 items-center">
+                      <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+                      <div class="">
+                        <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                        <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                      <i class="fa-solid fa-star text-[#FABE25]"></i>
+                    </div>
+                  </div>
+                  <div class="max-w-[513px]">
+                    <p class="text-justify text-[#383941] text-sm font-medium">
+                      “You made it so simple. My new site is so much faster and easier to work with than my old site. I
+                      just
+                      choose the page, make the change & it is a good channel for us.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="my-10">
+                  <button class="text-[#0D9488] text-sm">
+                    See All
+                    <i class="fa-solid fa-arrow-right ml-3
+                    "></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="questions">
+                <h3 class="text-black font-semibold text-xl ">FAQs</h3>
+                <p class="text-[#7D7F85] text-sm my-4 ">Dress your precious one in the soft embrace of the Lil' Blossom
+                  Baby
+                  Dress
+                </p>
+
+
+                <div id="accordion-color" data-accordion="collapse"
+                  data-active-classes="bg-blue-100 dark:bg-gray-800 text-teal-500 dark:text-white">
+
+                  <h2 id="accordion-color-heading-1">
+                    <button type="button"
+                      class="flex items-center justify-between w-full p-5 font-semibold  border border-b-0 border-gray-200 rounded-t-xl text-[#383941]"
+                      data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                      aria-controls="accordion-color-body-1">
+                      <span class="">What are automobile parts?</span>
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                      <p class="text-[#383941] text-xs text-justify font-inter">
+                        Automobile parts are available from a variety of sources, including dealerships, automotive
+                        parts
+                        stores, online retailers, salvage yards, and independent auto repair shops.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h2 id="accordion-color-heading-2">
+                    <button type="button"
+                      class="flex items-center justify-between w-full p-5 font-semibold rtl:text-right border border-b-0 border-gray-200 text-[#383941]"
+                      data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                      aria-controls="accordion-color-body-2">
+                      <span>What types of automobile parts are there?</span>
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                      <p class="text-[#383941] text-sm text-justify">
+                        Automobile parts are available from a variety of sources, including dealerships, automotive
+                        parts
+                        stores, online retailers, salvage yards, and independent auto repair shops.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h2 id="accordion-color-heading-3">
+                    <button type="button"
+                      class="flex items-center justify-between w-full p-5 font-semibold rtl:text-right border border-b-0 border-gray-200 text-[#383941]"
+                      data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                      aria-controls="accordion-color-body-3">
+                      <span>Where can I buy automobile parts?</span>
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                      <p class="text-[#383941] text-sm text-justify">
+                        Automobile parts are available from a variety of sources, including dealerships, automotive
+                        parts
+                        stores, online retailers, salvage yards, and independent auto repair shops.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h2 id="accordion-color-heading-4">
+                    <button type="button"
+                      class="flex items-center justify-between w-full p-5 font-semibold rtl:text-right border border-b-0 border-gray-200 text-[#383941]"
+                      data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                      aria-controls="accordion-color-body-4">
+                      <span>What are automobile parts?</span>
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                      <p class="text-[#383941] text-sm text-justify">
+                        Automobile parts are available from a variety of sources, including dealerships, automotive
+                        parts
+                        stores, online retailers, salvage yards, and independent auto repair shops.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h2 id="accordion-color-heading-5">
+                    <button type="button"
+                      class="flex items-center justify-between w-full p-5 font-semibold rtl:text-right border border-gray-200 text-[#383941]"
+                      data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+                      aria-controls="accordion-color-body-5">
+                      <span>What are automobile parts?</span>
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                    <div class="p-5 border border-gray-200 dark:border-gray-700">
+                      <p class="text-[#383941] text-sm text-justify">
+                        Automobile parts are available from a variety of sources, including dealerships, automotive
+                        parts
+                        stores, online retailers, salvage yards, and independent auto repair shops.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="shadow p-7 rounded-2xl w-[302px] bg-white">
+              <div class="flex gap-3 items-center mb-6">
+                <div class="">
+                  <img src="./assets/image/single-product-page/verified-product.svg" alt="">
+                </div>
+                <div class="">
+                  <h4 class="text-xs text-[#383941] font-semibold">Verified Product</h4>
+                  <p class="text-[10px] text-[#525468]">We check if the part fits your car</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-center mb-6">
+                <div class="">
+                  <img src="./assets/image/single-product-page/Express-delivery.svg" alt="">
+                </div>
+                <div class="">
+                  <h4 class="text-xs text-[#383941] font-semibold">
+                    Express Delivery</h4>
+                  <p class="text-[10px] text-[#525468]">
+                    Will be deliveries in same day
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-center mb-6">
+                <div class="">
+                  <img src="./assets/image/single-product-page/return-available .svg" alt="">
+                </div>
+                <div class="">
+                  <h4 class="text-xs text-[#383941] font-semibold">
+                    Return Available
+                  </h4>
+                  <p class="text-[10px] text-[#525468]">
+                    Product return within 30 days. <a class="font-medium text-[#09090B]" href="#">Return Terms</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-center mb-6">
+                <div class="">
+                  <img src="./assets/image/single-product-page/cash-on-delivery-available.svg" alt="">
+                </div>
+                <div class="">
+                  <h4 class="text-xs text-[#383941] font-semibold">
+                    Cash on Delivery Available
+                  </h4>
+                  <p class="text-[10px] text-[#525468]">
+                    Product return within 30 days
+                    <a class="font-medium text-[#09090B]" href="#">see terms</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-center">
+                <div class="">
+                  <img src="./assets/image/single-product-page/do-you-have-questions.svg" alt="">
+                </div>
+                <div class="">
+                  <h4 class="text-xs text-[#383941] font-semibold">
+                    Do you have questions?
+                  </h4>
+                  <p class="text-[10px] text-[#D87607] font-semibold">
+                    Ask Here
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow rounded-2xl w-[302px] my-2 bg-white">
+              <div class="p-5 pb-0">
+                <div class="flex justify-between items-center">
+                  <h5 class="text-[#60637A] text-[10px] font-medium uppercase">Store</h5>
+                  <img src="./assets/image/single-product-page/Store.svg" alt="">
+                </div>
+
+                <div class="flex items-center justify-between mb-3 mt-2">
+                  <div class="">
+                    <img src="./assets/image/single-product-page/Nextage.svg" alt="">
+                  </div>
+
+                  <div class="">
+                    <h4 class="text-[#1A202C] font-semibold text-base">Nextage</h4>
+                    <p>
+                      <i class="fa-solid fa-star text-[#F29232]"></i>
+                      <span class="text-[#4A5568] text-xs">5.0 (210 Reviews)</span>
+                    </p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <img src="./assets/image/home/location-block.svg" alt="">
+                    <p class="text-[#7B7F95] text-[10px]">Dhaka</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center border-t py-3">
+                <a href="" class="text-[#383941] text-sm font-semibold">
+                  Visit Store
+                </a>
+              </div>
+            </div>
+
+            <div class="shadow ps-8 p-5  rounded-2xl w-[302px] flex justify-between bg-white">
+              <p>Share</p>
+              <div class="flex gap-2">
+                <a href="#" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+                  <i class="fa-brands fa-facebook-f  text-white text-[12px]"></i>
+                </a>
+                <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+                  <i class="fa-brands fa-instagram text-white text-[12px]"></i>
+                </a>
+                <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+                  <i class="fa-brands fa-x-twitter text-white text-[12px]"></i>
+                </a>
+                <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+                  <i class="fa-brands fa-pinterest-p text-white text-[12px]"></i>
+                </a>
+                <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+                  <i class="fa-brands fa-whatsapp text-white text-[12px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- alpinejs -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script>
+
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
+
+  <!--  -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+
+  <!-- Custom main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

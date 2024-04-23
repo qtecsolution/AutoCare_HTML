@@ -30,124 +30,35 @@
 <body class="font-inter">
   <!-- Header section -->
   <header class="">
-    <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
-      <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
-
-        <ul class="flex gap-[40px]">
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
-          </li>
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
-          </li>
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
-          </li>
-        </ul>
-
-        <ul class="flex gap-[18px] items-center">
-          <div class="flex gap-[12px] items-center">
-            <li class="mr-6">
-              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
-                class="flex items-center gap-[7px]  relative">
-                <img src="./assets/image/home/lang.svg" alt="location">
-                <span class="text-base font-medium">English</span>
-                <span
-                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
-              </button>
-            </li>
-
-            <div id="dropdown1"
-              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
-                <li>
-                  <a href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bangla</a>
-                </li>
-              </ul>
-            </div>
-
-            <li>
-              <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
-            </li>
-          </div>
-
-          <div class="flex gap-[8px]">
-            <li>
-              <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
-            </li>
-
-            <li>
-              <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
-            </li>
-          </div>
-        </ul>
-
-      </nav>
-    </section>
-
     <!-- main menu  -->
-    <section class="menu py-[16px] shadow px-3 2xl:px-0">
-      <div
+    <section class="menu py-[16px] shadow px-3">
+      <nav
         class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
-        <div>
+        <div class="flex gap-10 items-center">
           <a href="#">
             <img src="./assets/image/home/logo.png" alt="logo">
           </a>
+
+          <ul class="flex gap-12">
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">List your Garage</a>
+            </li>
+          </ul>
         </div>
 
+
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
-
-            <img src="./assets/image/home/search.svg" alt="search">
-
-            <input type="text" id="first_name"
-              class="border-0 bg-transparent block w-full focus:ring-0
-                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
-              placeholder="Search Anything" required />
-          </form>
-
           <div>
             <ul class="flex gap-7">
-
-              <li class="mr-6">
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
-                  <img src="./assets/image/home/location.svg" alt="location">
-                  <span class="text-base font-medium">Dhaka</span>
-                  <span
-                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
-                  </span>
-                </button>
-              </li>
-
-              <div id="dropdown"
-                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                  <li>
-                    <a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                  </li>
-                </ul>
-              </div>
-
               <li class="ms-5">
                 <a class="relative" href="#">
                   <img src="./assets/image/home/cart.svg" alt="cart">
@@ -155,22 +66,116 @@
                     class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
                 </a>
               </li>
+
             </ul>
           </div>
 
-          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
-            <button
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-1.5 gap-4 rounded-xl">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
               class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
               <img src="./assets/image/home/user.svg" alt="user">
               <span>Login</span>
             </button>
 
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[512px] max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-10">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome! Please Login to continue.
+                    </h3>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="">
+                    <form action="#">
+                      <div>
+                        <label for="number"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <input type="number" name="number" id="number"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your Phone Number" required />
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <input type="password" name="password" id="password"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your password" required />
+                      </div>
+
+                      <div class="text-right mt-2">
+                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                          Password?
+                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                        Log in
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Didn't have any account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <button class="text-[#09090B] font-bold text-sm">
               Sign Up
             </button>
           </div>
+
+          <div class="hidden xl:block">
+            <button
+              class="flex items-center bg-[#0F766D] rounded-[10px] px-3 py-[14px] font-semibold text-base text-white gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_217_19181)">
+                  <path
+                    d="M16.25 13.75C16.4158 13.75 16.5747 13.6842 16.6919 13.5669C16.8092 13.4497 16.875 13.2908 16.875 13.125V3.125C16.875 2.2962 16.5458 1.50134 15.9597 0.915291C15.3737 0.32924 14.5788 0 13.75 0L6.25 0C5.4212 0 4.62634 0.32924 4.04029 0.915291C3.45424 1.50134 3.125 2.2962 3.125 3.125V16.875C3.125 17.7038 3.45424 18.4987 4.04029 19.0847C4.62634 19.6708 5.4212 20 6.25 20H13.75C14.5788 20 15.3737 19.6708 15.9597 19.0847C16.5458 18.4987 16.875 17.7038 16.875 16.875V15.625C16.875 15.4592 16.8092 15.3003 16.6919 15.1831C16.5747 15.0658 16.4158 15 16.25 15C16.0842 15 15.9253 15.0658 15.8081 15.1831C15.6908 15.3003 15.625 15.4592 15.625 15.625V16.875C15.625 17.3723 15.4275 17.8492 15.0758 18.2008C14.7242 18.5525 14.2473 18.75 13.75 18.75H6.25C5.75272 18.75 5.27581 18.5525 4.92417 18.2008C4.57254 17.8492 4.375 17.3723 4.375 16.875V3.125C4.37609 2.73816 4.4968 2.36112 4.72059 2.04558C4.94437 1.73004 5.26028 1.49145 5.625 1.3625V1.75625C5.625 2.28503 5.83506 2.79214 6.20896 3.16604C6.58286 3.53994 7.08997 3.75 7.61875 3.75H12.3812C12.6431 3.75 12.9023 3.69843 13.1442 3.59823C13.3861 3.49804 13.6059 3.35118 13.791 3.16604C13.9762 2.98091 14.123 2.76112 14.2232 2.51923C14.3234 2.27733 14.375 2.01807 14.375 1.75625V1.3625C14.7397 1.49145 15.0556 1.73004 15.2794 2.04558C15.5032 2.36112 15.6239 2.73816 15.625 3.125V13.125C15.625 13.2908 15.6908 13.4497 15.8081 13.5669C15.9253 13.6842 16.0842 13.75 16.25 13.75ZM13.125 1.75625C13.125 1.85392 13.1058 1.95063 13.0684 2.04087C13.031 2.13111 12.9762 2.2131 12.9072 2.28216C12.8381 2.35122 12.7561 2.40601 12.6659 2.44339C12.5756 2.48076 12.4789 2.5 12.3812 2.5H7.61875C7.42149 2.5 7.23232 2.42164 7.09284 2.28216C6.95336 2.14268 6.875 1.9535 6.875 1.75625V1.25H13.125V1.75625Z"
+                    fill="white" />
+                  <path
+                    d="M13.125 11.25C12.9592 11.25 12.8003 11.3158 12.6831 11.4331C12.5658 11.5503 12.5 11.7092 12.5 11.875V12.5C12.5 12.6658 12.4342 12.8247 12.3169 12.9419C12.1997 13.0592 12.0408 13.125 11.875 13.125H8.125C7.95924 13.125 7.80027 13.0592 7.68306 12.9419C7.56585 12.8247 7.5 12.6658 7.5 12.5V11.875C7.5 11.7092 7.43415 11.5503 7.31694 11.4331C7.19973 11.3158 7.04076 11.25 6.875 11.25C6.70924 11.25 6.55027 11.3158 6.43306 11.4331C6.31585 11.5503 6.25 11.7092 6.25 11.875V12.5C6.25 12.9973 6.44754 13.4742 6.79917 13.8258C7.15081 14.1775 7.62772 14.375 8.125 14.375H11.875C12.3723 14.375 12.8492 14.1775 13.2008 13.8258C13.5525 13.4742 13.75 12.9973 13.75 12.5V11.875C13.75 11.7092 13.6842 11.5503 13.5669 11.4331C13.4497 11.3158 13.2908 11.25 13.125 11.25Z"
+                    fill="#CCFBF7" />
+                  <path
+                    d="M9.5549 11.6937C9.613 11.7523 9.68213 11.7988 9.75829 11.8306C9.83445 11.8623 9.91614 11.8786 9.99865 11.8786C10.0812 11.8786 10.1628 11.8623 10.239 11.8306C10.3152 11.7988 10.3843 11.7523 10.4424 11.6937L12.3174 9.81875C12.3757 9.76048 12.4219 9.69129 12.4534 9.61516C12.485 9.53902 12.5012 9.45741 12.5012 9.375C12.5012 9.29259 12.485 9.21098 12.4534 9.13484C12.4219 9.05871 12.3757 8.98952 12.3174 8.93125C12.2591 8.87298 12.1899 8.82675 12.1138 8.79521C12.0377 8.76367 11.9561 8.74744 11.8737 8.74744C11.7912 8.74744 11.7096 8.76367 11.6335 8.79521C11.5574 8.82675 11.4882 8.87298 11.4299 8.93125L10.6237 9.74375V6.25C10.6237 6.08424 10.5578 5.92527 10.4406 5.80806C10.3234 5.69085 10.1644 5.625 9.99865 5.625C9.83289 5.625 9.67392 5.69085 9.55671 5.80806C9.4395 5.92527 9.37365 6.08424 9.37365 6.25V9.74375L8.5674 8.93125C8.44971 8.81356 8.29009 8.74744 8.12365 8.74744C7.95721 8.74744 7.79759 8.81356 7.6799 8.93125C7.56221 9.04894 7.49609 9.20856 7.49609 9.375C7.49609 9.54144 7.56221 9.70106 7.6799 9.81875L9.5549 11.6937Z"
+                    fill="#CCFBF7" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_19181">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Download Mobile App</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.21934 8.22015C5.35997 8.0797 5.55059 8.00081 5.74934 8.00081C5.94809 8.00081 6.13871 8.0797 6.27934 8.22015L9.99934 11.9402L13.7193 8.22015C13.788 8.14647 13.8708 8.08736 13.9628 8.04637C14.0548 8.00538 14.1541 7.98334 14.2548 7.98156C14.3555 7.97979 14.4555 7.99831 14.5489 8.03603C14.6423 8.07375 14.7272 8.1299 14.7984 8.20112C14.8696 8.27233 14.9257 8.35717 14.9635 8.45056C15.0012 8.54394 15.0197 8.64397 15.0179 8.74468C15.0162 8.84538 14.9941 8.94469 14.9531 9.03669C14.9121 9.12869 14.853 9.21149 14.7793 9.28015L10.5293 13.5302C10.3887 13.6706 10.1981 13.7495 9.99934 13.7495C9.80059 13.7495 9.60997 13.6706 9.46934 13.5302L5.21934 9.28015C5.07889 9.13953 5 8.9489 5 8.75015C5 8.5514 5.07889 8.36078 5.21934 8.22015Z"
+                  fill="#CCFBF7" />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
+      </nav>
     </section>
 
     <!-- Search for Products -->
