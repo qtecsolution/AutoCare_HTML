@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>Service 1 col list Page</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body class="font-inter">
+  <!-- Header section -->
+  <header class="">
+    <!-- main menu  -->
+    <section class="menu py-[16px] shadow px-3">
+      <nav
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class="flex gap-10 items-center">
+          <a href="#">
+            <img src="./assets/image/home/logo.png" alt="logo">
+          </a>
+
+          <ul class="flex gap-12">
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+            </li>
+            <li>
+              <a class="font-inter text-[12px] text-[#383941]" href="#">List your Garage</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <div>
+            <ul class="flex gap-7">
+              <li class="ms-5">
+                <a class="relative" href="#">
+                  <img src="./assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-1.5 gap-4 rounded-xl">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[512px] max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-10">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome! Please Login to continue.
+                    </h3>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="">
+                    <form action="#">
+                      <div>
+                        <label for="number"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <input type="number" name="number" id="number"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your Phone Number" required />
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <input type="password" name="password" id="password"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your password" required />
+                      </div>
+
+                      <div class="text-right mt-2">
+                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                          Password?
+                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                        Log in
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Didn't have any account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="text-[#09090B] font-bold text-sm">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="hidden xl:block">
+            <button
+              class="flex items-center bg-[#0F766D] rounded-[10px] px-3 py-[14px] font-semibold text-base text-white gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_217_19181)">
+                  <path
+                    d="M16.25 13.75C16.4158 13.75 16.5747 13.6842 16.6919 13.5669C16.8092 13.4497 16.875 13.2908 16.875 13.125V3.125C16.875 2.2962 16.5458 1.50134 15.9597 0.915291C15.3737 0.32924 14.5788 0 13.75 0L6.25 0C5.4212 0 4.62634 0.32924 4.04029 0.915291C3.45424 1.50134 3.125 2.2962 3.125 3.125V16.875C3.125 17.7038 3.45424 18.4987 4.04029 19.0847C4.62634 19.6708 5.4212 20 6.25 20H13.75C14.5788 20 15.3737 19.6708 15.9597 19.0847C16.5458 18.4987 16.875 17.7038 16.875 16.875V15.625C16.875 15.4592 16.8092 15.3003 16.6919 15.1831C16.5747 15.0658 16.4158 15 16.25 15C16.0842 15 15.9253 15.0658 15.8081 15.1831C15.6908 15.3003 15.625 15.4592 15.625 15.625V16.875C15.625 17.3723 15.4275 17.8492 15.0758 18.2008C14.7242 18.5525 14.2473 18.75 13.75 18.75H6.25C5.75272 18.75 5.27581 18.5525 4.92417 18.2008C4.57254 17.8492 4.375 17.3723 4.375 16.875V3.125C4.37609 2.73816 4.4968 2.36112 4.72059 2.04558C4.94437 1.73004 5.26028 1.49145 5.625 1.3625V1.75625C5.625 2.28503 5.83506 2.79214 6.20896 3.16604C6.58286 3.53994 7.08997 3.75 7.61875 3.75H12.3812C12.6431 3.75 12.9023 3.69843 13.1442 3.59823C13.3861 3.49804 13.6059 3.35118 13.791 3.16604C13.9762 2.98091 14.123 2.76112 14.2232 2.51923C14.3234 2.27733 14.375 2.01807 14.375 1.75625V1.3625C14.7397 1.49145 15.0556 1.73004 15.2794 2.04558C15.5032 2.36112 15.6239 2.73816 15.625 3.125V13.125C15.625 13.2908 15.6908 13.4497 15.8081 13.5669C15.9253 13.6842 16.0842 13.75 16.25 13.75ZM13.125 1.75625C13.125 1.85392 13.1058 1.95063 13.0684 2.04087C13.031 2.13111 12.9762 2.2131 12.9072 2.28216C12.8381 2.35122 12.7561 2.40601 12.6659 2.44339C12.5756 2.48076 12.4789 2.5 12.3812 2.5H7.61875C7.42149 2.5 7.23232 2.42164 7.09284 2.28216C6.95336 2.14268 6.875 1.9535 6.875 1.75625V1.25H13.125V1.75625Z"
+                    fill="white" />
+                  <path
+                    d="M13.125 11.25C12.9592 11.25 12.8003 11.3158 12.6831 11.4331C12.5658 11.5503 12.5 11.7092 12.5 11.875V12.5C12.5 12.6658 12.4342 12.8247 12.3169 12.9419C12.1997 13.0592 12.0408 13.125 11.875 13.125H8.125C7.95924 13.125 7.80027 13.0592 7.68306 12.9419C7.56585 12.8247 7.5 12.6658 7.5 12.5V11.875C7.5 11.7092 7.43415 11.5503 7.31694 11.4331C7.19973 11.3158 7.04076 11.25 6.875 11.25C6.70924 11.25 6.55027 11.3158 6.43306 11.4331C6.31585 11.5503 6.25 11.7092 6.25 11.875V12.5C6.25 12.9973 6.44754 13.4742 6.79917 13.8258C7.15081 14.1775 7.62772 14.375 8.125 14.375H11.875C12.3723 14.375 12.8492 14.1775 13.2008 13.8258C13.5525 13.4742 13.75 12.9973 13.75 12.5V11.875C13.75 11.7092 13.6842 11.5503 13.5669 11.4331C13.4497 11.3158 13.2908 11.25 13.125 11.25Z"
+                    fill="#CCFBF7" />
+                  <path
+                    d="M9.5549 11.6937C9.613 11.7523 9.68213 11.7988 9.75829 11.8306C9.83445 11.8623 9.91614 11.8786 9.99865 11.8786C10.0812 11.8786 10.1628 11.8623 10.239 11.8306C10.3152 11.7988 10.3843 11.7523 10.4424 11.6937L12.3174 9.81875C12.3757 9.76048 12.4219 9.69129 12.4534 9.61516C12.485 9.53902 12.5012 9.45741 12.5012 9.375C12.5012 9.29259 12.485 9.21098 12.4534 9.13484C12.4219 9.05871 12.3757 8.98952 12.3174 8.93125C12.2591 8.87298 12.1899 8.82675 12.1138 8.79521C12.0377 8.76367 11.9561 8.74744 11.8737 8.74744C11.7912 8.74744 11.7096 8.76367 11.6335 8.79521C11.5574 8.82675 11.4882 8.87298 11.4299 8.93125L10.6237 9.74375V6.25C10.6237 6.08424 10.5578 5.92527 10.4406 5.80806C10.3234 5.69085 10.1644 5.625 9.99865 5.625C9.83289 5.625 9.67392 5.69085 9.55671 5.80806C9.4395 5.92527 9.37365 6.08424 9.37365 6.25V9.74375L8.5674 8.93125C8.44971 8.81356 8.29009 8.74744 8.12365 8.74744C7.95721 8.74744 7.79759 8.81356 7.6799 8.93125C7.56221 9.04894 7.49609 9.20856 7.49609 9.375C7.49609 9.54144 7.56221 9.70106 7.6799 9.81875L9.5549 11.6937Z"
+                    fill="#CCFBF7" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_19181">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Download Mobile App</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.21934 8.22015C5.35997 8.0797 5.55059 8.00081 5.74934 8.00081C5.94809 8.00081 6.13871 8.0797 6.27934 8.22015L9.99934 11.9402L13.7193 8.22015C13.788 8.14647 13.8708 8.08736 13.9628 8.04637C14.0548 8.00538 14.1541 7.98334 14.2548 7.98156C14.3555 7.97979 14.4555 7.99831 14.5489 8.03603C14.6423 8.07375 14.7272 8.1299 14.7984 8.20112C14.8696 8.27233 14.9257 8.35717 14.9635 8.45056C15.0012 8.54394 15.0197 8.64397 15.0179 8.74468C15.0162 8.84538 14.9941 8.94469 14.9531 9.03669C14.9121 9.12869 14.853 9.21149 14.7793 9.28015L10.5293 13.5302C10.3887 13.6706 10.1981 13.7495 9.99934 13.7495C9.80059 13.7495 9.60997 13.6706 9.46934 13.5302L5.21934 9.28015C5.07889 9.13953 5 8.9489 5 8.75015C5 8.5514 5.07889 8.36078 5.21934 8.22015Z"
+                  fill="#CCFBF7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Search for Products -->
+    <section class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
+      <div class="container mx-auto">
+        <div class="py-10">
+          <div class="flex justify-center gap-5 mb-1">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                  <path
+                    d="M11.879 0C12.376 0 12.779 0.402948 12.779 0.9V1.8C11.279 1.8 9.95898 1.8 8.45898 1.8V0.9C8.45898 0.402948 8.86193 0 9.35898 0H11.879Z"
+                    fill="#09090B" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.68 3.41953C13.68 2.92248 13.277 2.51953 12.78 2.51953H6.50216C6.02679 2.51953 5.57073 2.70756 5.23352 3.04259L0.53136 7.7142C0.19125 8.0521 0 8.51171 0 8.99114V16.1995C0 17.1937 0.805896 17.9995 1.8 17.9995H8.87292C7.33313 17.0918 6.3 15.4163 6.3 13.4995C6.3 10.6166 8.63706 8.27953 11.52 8.27953C12.2904 8.27953 13.0218 8.44641 13.68 8.74598V3.41953ZM8.29667 4.78136C8.84997 5.33466 8.84997 6.23172 8.29667 6.78501L4.44548 10.6362C3.89219 11.1895 2.99513 11.1895 2.44183 10.6362C1.88854 10.0829 1.88854 9.18585 2.44183 8.63254L6.29301 4.78136C6.84632 4.22805 7.74338 4.22807 8.29667 4.78136Z"
+                    fill="#09090B" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.5195 18C14.0048 18 16.0195 15.9853 16.0195 13.5C16.0195 11.0147 14.0048 9 11.5195 9C9.03425 9 7.01953 11.0147 7.01953 13.5C7.01953 15.9853 9.03425 18 11.5195 18ZM13.3195 14.0279C13.3195 15.0287 12.5137 15.84 11.5195 15.84C10.5254 15.84 9.71953 15.0287 9.71953 14.0279C9.71953 13.2544 10.7948 11.8647 11.2832 11.2734C11.4081 11.1222 11.631 11.1222 11.7559 11.2734C12.2443 11.8647 13.3195 13.2544 13.3195 14.0279Z"
+                    fill="#09090B" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-sm">
+                Search for Products...
+              </h3>
+            </div>
+
+            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M16.0006 2V5.052C16.0006 5.7884 15.4036 6.3854 14.6672 6.3854C13.9308 6.3854 13.334 5.7884 13.334 5.052V2C12.1582 2.515 11.334 3.6862 11.334 5.052C11.334 6.1386 11.8626 7.095 12.6672 7.7038V16C12.6672 17.1042 13.563 18 14.6672 18C15.7714 18 16.6672 17.1042 16.6672 16V7.7038C17.4726 7.095 18.0006 6.1386 18.0006 5.052C18.0006 3.6856 17.177 2.515 16.0006 2Z"
+                    fill="#0F766D" />
+                  <path
+                    d="M11.3334 11.3348V8.66797H4C2.8958 8.66797 2 9.56317 2 10.6674L2.0006 10.668H2V15.3348H3.3334V17.3348C3.3334 17.702 3.6334 18.0014 4 18.0014H5.3334C5.6998 18.0014 6 17.702 6 17.3348V15.3348H11.3334V12.668H6.6666V11.3348H11.3334ZM4.6666 12.8348C4.207 12.8348 3.8334 12.4618 3.8334 12.0014C3.8334 11.5404 4.207 11.168 4.6666 11.168C5.1264 11.168 5.5 11.5404 5.5 12.0014C5.5 12.4618 5.1264 12.8348 4.6666 12.8348Z"
+                    fill="#0F766D" />
+                  <path
+                    d="M9.9998 5.05278C9.9998 4.45118 10.1262 3.87318 10.341 3.33398H6.2094C5.6574 3.33398 5.1574 3.55798 4.7954 3.91998C4.6118 4.10418 4.4634 4.32418 4.3626 4.56838L3.2168 7.33398H10.6042C10.214 6.64718 9.9998 5.86858 9.9998 5.05278Z"
+                    fill="#0F766D" />
+                </svg>
+              </div>
+              <h3 class="text-[#0F766D] font-semibold text-sm">
+                Search for Services...
+              </h3>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="flex justify-center ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">
+                    Dhaka
+                  </option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">
+                    Servicing Type
+                  </option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">Select</option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">
+                    Car Type (Optional)
+                  </option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="select border-r-2 border-[#E4E5E9]">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                  <option class="text-xs xl:text-base" data-display="Select">
+                    Brand (Optional)
+                  </option>
+                  <option class="text-xs xl:text-base" value="1">Some option2</option>
+                  <option class="text-xs xl:text-base" value="2">Some option3</option>
+                  <option class="text-xs xl:text-base" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="">
+                <input
+                  class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base"
+                  type="text" name="" id="" placeholder="Keyword">
+              </div>
+
+              <div class="">
+                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                  <span class="font-bold text-white text-xs">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ad section -->
+      <div class=" w-[970px] xl:w-[1100px] mx-auto">
+        <div class="bg-no-repeat xl:bg-cover  rounded-xl"
+          style="background-image: url('./assets/image/service-2-col-list-Page/adbg.png')">
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
+            </div>
+            <div class="flex gap-3 mr-2.5 mt-2">
+              <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                fill="none">
+                <g opacity="0.5">
+                  <path
+                    d="M10 5.625C9.83424 5.625 9.67527 5.55915 9.55806 5.44194C9.44085 5.32473 9.375 5.16576 9.375 5C9.375 4.83424 9.44085 4.67527 9.55806 4.55806C9.67527 4.44085 9.83424 4.375 10 4.375C10.1658 4.375 10.3247 4.44085 10.4419 4.55806C10.5592 4.67527 10.625 4.83424 10.625 5C10.625 5.16576 10.5592 5.32473 10.4419 5.44194C10.3247 5.55915 10.1658 5.625 10 5.625ZM10 10.625C9.83424 10.625 9.67527 10.5592 9.55806 10.4419C9.44085 10.3247 9.375 10.1658 9.375 10C9.375 9.83424 9.44085 9.67527 9.55806 9.55806C9.67527 9.44085 9.83424 9.375 10 9.375C10.1658 9.375 10.3247 9.44085 10.4419 9.55806C10.5592 9.67527 10.625 9.83424 10.625 10C10.625 10.1658 10.5592 10.3247 10.4419 10.4419C10.3247 10.5592 10.1658 10.625 10 10.625ZM10 15.625C9.83424 15.625 9.67527 15.5592 9.55806 15.4419C9.44085 15.3247 9.375 15.1658 9.375 15C9.375 14.8342 9.44085 14.6753 9.55806 14.5581C9.67527 14.4408 9.83424 14.375 10 14.375C10.1658 14.375 10.3247 14.4408 10.4419 14.5581C10.5592 14.6753 10.625 14.8342 10.625 15C10.625 15.1658 10.5592 15.3247 10.4419 15.4419C10.3247 15.5592 10.1658 15.625 10 15.625Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+              <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                fill="none">
+                <g opacity="0.5">
+                  <path d="M5 15L15 5M5 5L15 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="flex justify-around -mt-1">
+            <div class="">
+              <p class="text-white font-medium text-xs">Summer SALE</p>
+              <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
+              <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
+            </div>
+
+            <div class="">
+              <img src="./assets/image/service-2-col-list-Page/ad.png" alt="">
+            </div>
+
+            <div class="mt-2 mr-20">
+              <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
+                Lets book a test drive
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main class="bg-[#f4f4f4fc] pt-10">
+    <!-- product-list section -->
+    <section class="container mx-auto mb-5 px-3 2xl:px-0">
+      <div class="grid grid-cols-4 gap-12">
+        <div class="">
+          <div class="mb-5">
+            <!-- Breadcrumb -->
+            <nav class="flex" aria-label="Breadcrumb">
+              <ol class="inline-flex items-center rtl:space-x-reverse">
+
+                <li class="inline-flex items-center">
+                  <a href="#"
+                    class="inline-flex items-center text-[8px] xl:text-xs 2xl:text-sm text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                    <a href="#"
+                      class="inline-flex items-center text-[8px] xl:text-xs 2xl:text-sm text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                      Car parts
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                    <a href="#"
+                      class="inline-flex items-center text-[8px] xl:text-xs 2xl:text-sm text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                      Filters
+                    </a>
+                  </div>
+                </li>
+
+                <li aria-current="page">
+                  <div class="flex items-center">
+                    <svg class="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="text-[8px] xl:text-xs 2xl:text-sm text-[#0F766D]  dark:text-gray-400">Fuel
+                      Filters</span>
+                  </div>
+                </li>
+              </ol>
+            </nav>
+
+            <h2 class="text-[#0F766D] text-2xl font-semibold">
+              Conventional Oil
+            </h2>
+          </div>
+
+          <div class="border border-white category-shadow rounded-2xl bg-white">
+            <div class="flex gap-1.5 py-[18px] px-6 bg-[#0273710d] rounded-t-2xl border-4 border-white">
+              <img src="./assets/image/product-grid-page/Filters.svg" alt="">
+              <h4 class="text-base font-bold uppercase text-[#09090B]">Filters</h4>
+            </div>
+
+            <div class="mt-4 ml-7">
+              <div class="">
+                <p class="text-[#09090B] text-base font-bold">
+                  Service type
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Engine &
+                    Transmission
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Electrical &
+                    Electronics
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Steering
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Brakes &
+                    Suspension
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Tires &
+                    Wheels
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="bg-[#F4F5F7] border border-white rounded-lg p-[22px] max-w-56 mt-4">
+                <div class="">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">Duratread Elite
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">TerrainGrip Pro
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">PrecisionTread Sport
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs font-medium ">AllSeason Shield
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Service Duration
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">30 Min
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">
+                    1 Hr
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Appointment Availability
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Morning
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Evening
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Certifications
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text- 2xl:text-base font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Brand
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Toyota
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Volkswagen
+                    Group
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">General
+                    Motors (GM)
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Ford
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Honda
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Vehicle Model
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-[#09090B] text-base font-bold">
+                  Service Duration
+                </p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label
+                    class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mt-6 mb-10">
+                <p class="text-[#09090B] text-base font-bold">Service Rating/Reviews</p>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="mt-[14px]">
+                  <label class="label flex items-center text-xs font-medium ">
+                    <div class="">
+                      <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                    </div>
+                    <input type="checkbox" class="hidden">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="w-full mt-4" src="./assets/image/service-2-col-list-Page/service-1-col-list-page-add.png" alt="">
+        </div>
+
+        <div class="col-span-3">
+          <div class="flex justify-between items-center mb-5">
+            <div class="flex items-center gap-2 xl:gap-10">
+              <div class="w-44 border border-[#E4E5E9] rounded-lg py-[7px] px-3">
+                <button id="dhaka" data-dropdown-toggle="dhaka1" class="flex gap-[7px] items-center relative">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                      d="M11.25 7.875C11.25 8.47174 11.0129 9.04403 10.591 9.46599C10.169 9.88795 9.59674 10.125 9 10.125C8.40326 10.125 7.83097 9.88795 7.40901 9.46599C6.98705 9.04403 6.75 8.47174 6.75 7.875C6.75 7.27826 6.98705 6.70597 7.40901 6.28401C7.83097 5.86205 8.40326 5.625 9 5.625C9.59674 5.625 10.169 5.86205 10.591 6.28401C11.0129 6.70597 11.25 7.27826 11.25 7.875Z"
+                      stroke="#09090B" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M14.625 7.875C14.625 13.2315 9 16.3125 9 16.3125C9 16.3125 3.375 13.2315 3.375 7.875C3.375 6.38316 3.96763 4.95242 5.02252 3.89752C6.07742 2.84263 7.50816 2.25 9 2.25C10.4918 2.25 11.9226 2.84263 12.9775 3.89752C14.0324 4.95242 14.625 6.38316 14.625 7.875Z"
+                      stroke="#09090B" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span class="text-xs font-medium">Dhaka</span>
+                  <span
+                    class="absolute top-[6px] right-[-80px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+
+                <div id="dhaka1"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dhaka">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="w-44 border border-[#E4E5E9] rounded-lg py-2 px-3">
+                <button id="recommended" data-dropdown-toggle="recommended1"
+                  class="flex gap-[7px] items-center relative">
+                  <span class="text-xs font-medium">Recommended</span>
+                  <span
+                    class="absolute top-[6px] right-[-63px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+
+                <div id="recommended1"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="recommended">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Recommended</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Recommended1</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-2">
+              <div class="flex items-center bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3 gap-3">
+                <div class="">
+                  <span>View</span>
+                </div>
+
+                <a href="./product-grid-page.html" class="bg-white rounded-md p-[5px]">
+                  <img src="./assets/image/product-grid-page/grid.svg" alt="">
+                </a>
+                <a href="./product-list-page.html">
+                  <img src="./assets/image/product-grid-page/three-line.svg" alt="">
+                </a>
+                <a href="./product-list2-page.html">
+                  <img src="./assets/image/product-grid-page/line.svg" alt="">
+                </a>
+                <a href="./product-map-page.html">
+                  <img src="./assets/image/product-grid-page/location.svg" alt="">
+                </a>
+              </div>
+
+              <div class="flex items-center gap-5 bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3">
+                <div class="">
+                  <p class="text-[#09090B] text-xs">1-10 of 10</p>
+                </div>
+
+                <div class="flex gap-1">
+                  <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.2005 5.99993C10.2005 6.11928 10.1531 6.23374 10.0687 6.31813C9.9843 6.40252 9.86984 6.44993 9.75049 6.44993H3.36769L5.86249 8.82593C5.9071 8.86639 5.94313 8.9154 5.96845 8.97004C5.99377 9.02468 6.00787 9.08385 6.0099 9.14404C6.01193 9.20423 6.00187 9.26422 5.98029 9.32044C5.95872 9.37667 5.92607 9.428 5.8843 9.47138C5.84253 9.51476 5.79247 9.54931 5.7371 9.57299C5.68172 9.59667 5.62216 9.609 5.56194 9.60923C5.50171 9.60947 5.44206 9.59762 5.3865 9.57438C5.33094 9.55114 5.28061 9.51698 5.23849 9.47393L1.93849 6.32393C1.89494 6.28195 1.8603 6.23163 1.83664 6.17596C1.81298 6.12029 1.80078 6.06042 1.80078 5.99993C1.80078 5.93944 1.81298 5.87957 1.83664 5.8239C1.8603 5.76824 1.89494 5.71791 1.93849 5.67593L5.23849 2.52593C5.28061 2.48288 5.33094 2.44873 5.3865 2.42548C5.44206 2.40224 5.50171 2.39039 5.56194 2.39063C5.62216 2.39087 5.68172 2.40319 5.7371 2.42687C5.79247 2.45055 5.84253 2.48511 5.8843 2.52849C5.92607 2.57187 5.95872 2.62319 5.98029 2.67942C6.00187 2.73565 6.01193 2.79563 6.0099 2.85582C6.00787 2.91601 5.99377 2.97518 5.96845 3.02982C5.94313 3.08446 5.9071 3.13347 5.86249 3.17393L3.36769 5.54993H9.75049C9.86984 5.54993 9.9843 5.59734 10.0687 5.68173C10.1531 5.76612 10.2005 5.88058 10.2005 5.99993Z"
+                        fill="#A7AAB9" />
+                    </svg>
+                  </button>
+                  <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.79951 6.00007C1.79951 5.88072 1.84692 5.76626 1.93131 5.68187C2.0157 5.59748 2.13016 5.55007 2.24951 5.55007L8.63231 5.55007L6.13751 3.17407C6.0929 3.13361 6.05687 3.0846 6.03155 3.02996C6.00623 2.97532 5.99213 2.91615 5.9901 2.85596C5.98807 2.79577 5.99814 2.73578 6.01971 2.67956C6.04128 2.62333 6.07393 2.572 6.1157 2.52862C6.15747 2.48524 6.20753 2.45069 6.2629 2.42701C6.31828 2.40333 6.37784 2.391 6.43806 2.39077C6.49829 2.39053 6.55795 2.40238 6.6135 2.42562C6.66906 2.44886 6.71939 2.48302 6.76151 2.52607L10.0615 5.67607C10.1051 5.71805 10.1397 5.76837 10.1634 5.82404C10.187 5.87971 10.1992 5.93958 10.1992 6.00007C10.1992 6.06056 10.187 6.12043 10.1634 6.1761C10.1397 6.23176 10.1051 6.28209 10.0615 6.32407L6.76151 9.47407C6.71939 9.51712 6.66906 9.55127 6.6135 9.57452C6.55794 9.59776 6.49829 9.60961 6.43806 9.60937C6.37784 9.60913 6.31828 9.59681 6.2629 9.57313C6.20753 9.54945 6.15747 9.51489 6.1157 9.47151C6.07393 9.42813 6.04128 9.37681 6.01971 9.32058C5.99813 9.26435 5.98807 9.20437 5.9901 9.14418C5.99213 9.08399 6.00623 9.02482 6.03155 8.97018C6.05687 8.91553 6.0929 8.86653 6.13751 8.82607L8.63231 6.45007L2.24951 6.45007C2.13016 6.45007 2.0157 6.40266 1.93131 6.31827C1.84692 6.23387 1.79951 6.11942 1.79951 6.00007Z"
+                        fill="#09090B" />
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class=" grid grid-cols-1 gap-x-3 2xl:gap-x-4 gap-y-[13px] 2xl:gap-y-5">
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[14px] hotServiceShadow rounded-xl hover:hoverShadow bg-white cursor-pointer">
+              <img class="h-full" src="./assets/image/service-2-col-list-Page/Rectangle 4509.png" alt="Rectangle">
+
+              <div class="py-4">
+                <div class="flex items-center gap-1 mb-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M6.79269 2.19828C7.01792 1.50682 7.99618 1.50682 8.22066 2.19828L9.02398 4.66981C9.07306 4.82033 9.16847 4.95149 9.29656 5.04453C9.42466 5.13757 9.57889 5.18773 9.73721 5.18784H12.3364C13.0639 5.18784 13.3657 6.1188 12.7778 6.54674L10.6757 8.0738C10.5473 8.16692 10.4517 8.29829 10.4026 8.44908C10.3535 8.59986 10.3535 8.76232 10.4024 8.91316L11.2057 11.3847C11.4309 12.0762 10.6389 12.652 10.0495 12.2241L7.94738 10.697C7.81915 10.6039 7.66476 10.5538 7.5063 10.5538C7.34784 10.5538 7.19345 10.6039 7.06522 10.697L4.96307 12.2241C4.37447 12.652 3.58316 12.0762 3.80764 11.3847L4.61096 8.91316C4.65989 8.76232 4.6598 8.59986 4.61071 8.44908C4.56161 8.29829 4.46604 8.16692 4.33768 8.0738L2.23628 6.54749C1.64842 6.11955 1.95098 5.1886 2.67773 5.1886H5.27614C5.43459 5.18864 5.58899 5.13855 5.71723 5.0455C5.84548 4.95245 5.941 4.82121 5.99012 4.67056L6.79345 2.19903L6.79269 2.19828Z"
+                      fill="#F49D0C" />
+                  </svg>
+                  <span class="text-[#4A5568] text-[10px]">5.0 Average Rating </span>
+                </div>
+                <h4 class="text-[#F49D0C] text-[10px] font-bold">
+                  Tires/Wheels Sales Change
+                </h4>
+                <h3 class="text-[#09090B] text-sm font-semibold mb-0.5">
+                  Alisha Garage
+                </h3>
+                <p class="text-[#7B7F95] text-[10px] mb-3">
+                  Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...
+                </p>
+                <h2 class="text-[#0F766D] text-sm font-bold">
+                  1000 Tk - 2000 Tk
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-9">
+            <nav aria-label="Page navigation example">
+              <ul class="flex items-center -space-x-px h-8 text-sm gap-2">
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-sm transition-all border-[#0F766D] text-[#0F766D]">1</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">2</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">3</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                    <i class="fa-solid fa-ellipsis"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Clients  -->
+    <section class="container mx-auto my-10 px-3 2xl:px-0">
+      <div class="md:grid md:grid-cols-2 md:gap-7">
+        <aside class="bg-no-repeat bg-cover rounded-[32px]"
+          style="background-image: url('./assets/image/home/get-clients1.png')">
+          <div class="">
+            <h1
+              class="pt-[200px] ps-12 pr-11 sm:leading-10 text-base sm:text-2xl lg:text-[35px] font-bold text-white xl:leading-[42px]">
+              Want to Provide Automobile <br class="hidden md:block"> Service? and Get Clients
+            </h1>
+            <p class="ps-12 text-[10px] sm:text-xs md:text-base xl:text-xl text-white">
+              Rent your belongings to people in your area to make <br class="hidden md:block"> some extra cash.
+            </p>
+            <div class="ps-8 mt-10">
+              <button class="px-6 py-4 bg-white rounded-[50px] text-[#027371] text-lg font-bold mb-20">
+                List Your Garage
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="bg-no-repeat bg-cover mt-5 md:mt-0 rounded-[32px]"
+          style="background-image: url('./assets/image/home/get-clients3.png')">
+          <div class="flex justify-center flex-col">
+            <h1
+              class="mx-20 mt-10 font-bold text-[#27272E] text-base sm:text-[26px] lg:text-[40px] text-center leading-10">
+              Open Store to sell automobile spare parts
+            </h1>
+            <p class="text-[10px] sm:text-xs md:text-base xl:text-xl text-center mb-6">
+              Rent your belongings to people in your area to <br class="hidden md:block" /> make some extra cash.
+            </p>
+
+            <div class="flex justify-center">
+              <button class="px-6 py-4 bg-[#027371] rounded-[50px] text-white text-lg font-bold">
+                List Your Garage
+              </button>
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <img src="./assets/image/home/get-clients2.png" alt="">
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="bg-[#1F1E28]">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 xl:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <img src="./assets/image/home/auto-care-logo.svg" alt="">
+            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
+          </div>
+          <p class="text-[#BABABA] text-sm mt-6 text-center md:text-left">Rent your belongings to people in your area to
+            make some extra cash.
+          </p>
+          <div class="flex justify-center md:justify-start gap-3 mt-6">
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Facebook-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Instagram-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Twitter-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/LinkedIn-footer.svg" alt="">
+            </a>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-center md:text-left text-lg font-bold text-white">Need Assistance?</h3>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Get In Touch :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">+14 88854874124</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">contactus@autocare.com</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Address :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="col-span-2">
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Company
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Legal
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Terms of Use
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Refund Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Service Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Affiliates
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Shop Category
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Service Category
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex">
+            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                Download Customer App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                Download Vendor App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-col lg:flex-row justify-between md:items-center md:gap-4 mt-8 mb-5 bg-[#14050B] rounded-[22px] py-5 px-4 sm:px-11">
+        <div class="flex gap-6 items-center sm:w-1/2">
+          <img src="./assets/image/home/email.png" alt="">
+          <h2 class="text-xs md:text-sm lg:text-xl xl:text-2xl font-semibold text-white leading-normal">
+            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
+          </h2>
+        </div>
+
+
+        <form
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          <input
+            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
+            type="text" placeholder="Enter Your Email">
+          <button
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
+          <img src="./assets/image/home/copyright.svg" alt="">
+          <p class="text-[#ffffff99] font-medium text-sm">
+            2024-2025 autocare. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/image/home/Payment Method1.png" alt="">
+          <img src="./assets/image/home/Payment Method2.png" alt="">
+          <img src="./assets/image/home/Payment Method3.png" alt="">
+          <img src="./assets/image/home/Payment Method4.png" alt="">
+          <img src="./assets/image/home/Payment Method5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
+
+  <!-- Custom main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
