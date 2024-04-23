@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>AutoCare</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body class="font-inter">
+  <header class="">
+    <!-- top menu -->
+    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+      <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
+
+        <ul class="flex gap-[40px]">
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+          </li>
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+          </li>
+          <li>
+            <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+          </li>
+        </ul>
+
+        <ul class="flex gap-[18px] items-center">
+          <div class="flex gap-[12px] items-center">
+            <li class="mr-6">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+                class="flex items-center gap-[7px]  relative">
+                <img src="./assets/image/home/lang.svg" alt="location">
+                <span class="text-base font-medium">English</span>
+                <span
+                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
+              </button>
+            </li>
+
+            <div id="dropdown1"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bangla</a>
+                </li>
+              </ul>
+            </div>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
+            </li>
+          </div>
+
+          <div class="flex gap-[8px]">
+            <li>
+              <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
+            </li>
+          </div>
+        </ul>
+
+      </nav>
+    </section>
+
+    <!-- main menu  -->
+    <section class="menu py-[16px] shadow px-3 2xl:px-0">
+      <div
+        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div>
+          <a href="#">
+            <img src="./assets/image/home/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+
+            <img src="./assets/image/home/search.svg" alt="search">
+
+            <input type="text" id="first_name"
+              class="border-0 bg-transparent block w-full focus:ring-0
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+              placeholder="Search Anything" required />
+          </form>
+
+          <div>
+            <ul class="flex gap-7">
+
+              <li class="mr-6">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
+                  <img src="./assets/image/home/location.svg" alt="location">
+                  <span class="text-base font-medium">Dhaka</span>
+                  <span
+                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+              </li>
+
+              <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                </ul>
+              </div>
+
+              <li class="ms-5">
+                <a class="relative" href="#">
+                  <img src="./assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
+            <button
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <button class="text-[#09090B] font-bold text-sm">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search for Products -->
+    <section class="px-3">
+      <div class="container mx-auto my-6">
+        <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
+          style="background-image: url('./assets/image/home/search-for-products.png')">
+          <div class=" lg:pt-4 xl:pt-9">
+            <h1 class="text-[32px] font-semibold text-white">
+              Find Your Automotive Parts and Services
+            </h1>
+          </div>
+
+          <div class="2xl:mb-6 2xl:mt-3">
+            <p class="text-[#F0FDFC] text-sm">
+              Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
+              specific components or specialized maintenance
+            </p>
+          </div>
+
+          <div class="flex gap-5 mb-2 mt-3">
+
+            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+              <img src="./assets/image/home/search-for-products.svg" alt="">
+              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
+            </div>
+
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="./assets/image/home/search-for-services.svg" alt="">
+              <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
+            </div>
+
+          </div>
+
+          <div class="pb-9 2xl:pb-16">
+            <div
+              class="flex ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
+
+              <div  class="border-r-2 border-[#E4E5E9] homeSelect">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">
+                    Dhaka
+                  </option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">
+                    Servicing Type
+                  </option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">
+                    Select
+                  </option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">
+                    Car Type (Optional)
+                  </option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+              <div class="border-r-2 border-[#E4E5E9] homeSelect">
+                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                  <option class="text-[10px]" data-display="Select">
+                    Brand (Optional)
+                  </option>
+                  <option class="text-[10px]" value="1">Some option2</option>
+                  <option class="text-[10px]" value="2">Some option3</option>
+                  <option class="text-[10px]" value="4">Some option4</option>
+                </select>
+              </div>
+
+
+              <div class="">
+                <input class="border-none focus:ring-0 text-[12px]" type="text" name="" id="" placeholder="Keyword">
+              </div>
+
+              <div class="">
+                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                  <span class="font-bold text-white text-xs">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section -->
+    <section class="container mx-auto mt-6 mb-10 px-3 2xl:px-0">
+      <div class="grid md:grid-cols-3 gap-3">
+        <aside class="col-span-2">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="">
+              </div>
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="">
+              </div>
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="">
+              </div>
+              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+                <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </aside>
+
+        <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
+
+          <div class="relative z-10">
+            <img class="w-[72%] xl:w-[80%] 2xl:w-[83%]" src="./assets/image/home/hero-right1.png" alt="">
+          </div>
+          <div class="absolute bottom-6 right-0 z-0">
+            <img src="./assets/image/home/hero-right2.png" alt="">
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <section class="container mx-auto mt-10 pl-2.5">
+      <div class="flex flex-wrap justify-center md:grid md:grid-cols-4 gap-4">
+        <div class="flex items-center gap-4">
+
+          <div class="bg-[#E0EAC8] w-12 h-12 flex justify-center items-center rounded-full">
+            <img src="./assets/image/home/orginalbrandproduct.png" alt="Orginal">
+          </div>
+
+          <span class="text-[#09090B] text-[10px] lg:text-sm font-semibold">
+            Orginal Brand Product
+          </span>
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <div class="bg-[#E9D8BF] w-12 h-12 flex justify-center items-center rounded-full">
+            <img src="./assets/image/home/nationwidedelivery.png" alt="Nationwide">
+          </div>
+
+          <span class="text-[#09090B] text-[10px] lg:text-sm font-semibold">
+            Nationwide Delivery
+          </span>
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <div class="bg-[#F0FDFC] w-12 h-12 flex justify-center items-center rounded-full">
+            <img src="./assets/image/home/verified-service-center.png" alt="verified">
+          </div>
+
+          <span class="text-[#09090B] text-[10px] lg:text-sm font-semibold">
+            Verified Service Center
+          </span>
+        </div>
+
+        <div class="flex items-center gap-4 ">
+
+          <div class="bg-[#ece4fb] w-12 h-12 flex justify-center items-center rounded-full">
+            <img src="./assets/image/home/bestpricegarantee.png" alt="verified">
+          </div>
+
+          <span class="text-[#09090B] text-[10px] lg:text-sm font-semibold">
+            Best Price Garantee
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot Product Category -->
+    <section class="container mx-auto my-10 px-3 2xl:px-0">
+      <div class="bg-[#F4F4F4] rounded-3xl">
+        <div class="md:flex 2xl:justify-between gap-6 md:gap-7 p-6 ">
+          <div class="mb-5">
+            <div class="flex justify-center md:justify-start ">
+              <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#E27B3D] text-xs font-semibold uppercase">
+                Product Category
+              </h3>
+            </div>
+
+            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 text-center md:text-left">
+              Purchase Atumobile Parts and Enginge Oil fro any where
+            </h2>
+            <div class="product-category"></div>
+            <div class="flex justify-center md:block mt-8">
+              <button class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
+                Browse All Product
+              </button>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
+
+            <div
+              class=" w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/engine.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Engine & Transmission
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/electrical.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Electrical & Electronics
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/steering.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Steering
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/brakes.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Brakes & Suspension
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/Tires.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Tires & Wheels
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/paint.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Paint Sealants
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/turbo.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Turbo Traverse
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+            <div
+              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+              <div class="flex gap-2 p-[14px] border-b">
+                <img src="./assets/image/home/fuel.svg" alt="engine">
+                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                  Fuel System
+                </h4>
+              </div>
+
+              <ul class="ps-10 py-2 list-disc">
+                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+              </ul>
+
+              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="#">
+                <span>See All</span>
+                <img src="./assets/image/home/rightarray.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Hot Product carousel -->
+        <div class="p-6 pt-0">
+          <div class="flex justify-between items-center">
+            <h1 class="font-semibold text-2xl text-[#09090B]">Hot Product</h1>
+            <div class="flex gap-2">
+
+              <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center relative">
+                <div id="button-prev-relacionados" class="swiper-button-prev left-[1px] text-[#027371]"></div>
+              </button>
+
+              <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center relative">
+                <div id="button-next-relacionados" class="swiper-button-next right-[2px] text-[#027371]"></div>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper mySwiper1 block md:flex justify-between pt-6">
+            <div class="swiper-wrapper p-0.5 ">
+              <div class="swiper-slide">
+                <div class="w-full bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="w-full bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="w-full bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="w-full bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="w-full mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-48 flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#6EA838] rounded-md absolute top-3 right-3">
+                      <p class="text-[10px] font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[90%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[6px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-[15px] 2xl:text-[19px] leading-5 2xl:leading-9">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
+  <!-- Custom main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
