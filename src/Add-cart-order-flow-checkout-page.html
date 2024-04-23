@@ -685,7 +685,8 @@
                 </div>
                 <div class="p-5">
                   <form class="bg-[#F6F6F6] rounded-lg flex gap-1 p-1.5">
-                    <input class="border-none focus:ring-0 bg-transparent p-0 placeholder:text-xs" type="text" name="" id="" placeholder="Discount Coupon">
+                    <input class="border-none focus:ring-0 bg-transparent p-0 placeholder:text-xs" type="text" name=""
+                      id="" placeholder="Discount Coupon">
                     <button class="py-2.5 px-5 bg-[#0F766D] text-xs font-medium text-white rounded">Apply</button>
                   </form>
 
@@ -698,7 +699,8 @@
                     </p>
                   </div>
 
-                  <div class="flex justify-between gap-3 xl:gap-8 items-center rounded mt-2 pb-2 border-b border-dashed">
+                  <div
+                    class="flex justify-between gap-3 xl:gap-8 items-center rounded mt-2 pb-2 border-b border-dashed">
                     <div class="flex items-center gap-1.5">
                       <div class="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -723,7 +725,8 @@
                     </p>
                   </div>
 
-                  <div class="flex justify-between gap-3 xl:gap-8 items-center rounded mt-2 pb-2 border-b border-dashed">
+                  <div
+                    class="flex justify-between gap-3 xl:gap-8 items-center rounded mt-2 pb-2 border-b border-dashed">
                     <div class="flex items-center gap-1.5">
                       <div class="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -760,16 +763,57 @@
                       </p>
                     </div>
                     <p class="text-sm text-[#383941] font-semibold">
-                      520.5 TK 
+                      520.5 TK
                     </p>
                   </div>
 
-                  <button class="mt-6 py-3 bg-[#0F766D] rounded-[10px] w-full text-white font-semibold text-base">
+                  <button data-modal-target="placeOrder-modal" data-modal-toggle="placeOrder-modal" type="button"
+                    class="mt-6 py-3 bg-[#0F766D] rounded-[10px] w-full text-white font-semibold text-base transition-all hover:bg-white hover:text-[#0F766D] border hover:border-[#BFD4D3]">
                     Place Order
                   </button>
 
+                  <!-- Place Order modal -->
+                  <div id="placeOrder-modal" tabindex="-1"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-full max-w-xl max-h-full">
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="p-14 text-center">
+
+                          <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M31.5199 17.7769L25.9199 19.1814V3.55469H38.1155V19.2347L32.5155 17.7769C32.1886 17.6956 31.8468 17.6956 31.5199 17.7769Z"
+                                fill="#0F766D" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M48.2483 36.0703C45.8355 36.0703 43.4769 36.786 41.471 38.1269C39.465 39.4677 37.9019 41.3735 36.9794 43.6029C36.0568 45.8324 35.8164 48.2855 36.2884 50.6516C36.7604 53.0178 37.9237 55.1908 39.631 56.8957C41.3384 58.6006 43.5131 59.7607 45.88 60.2293C48.2468 60.6978 50.6995 60.4538 52.9277 59.528C55.1558 58.6022 57.0592 57.0363 58.3972 55.0284C59.7351 53.0205 60.4474 50.6609 60.4438 48.2481C60.4391 45.0167 59.1522 41.9193 56.8656 39.636C54.579 37.3528 51.4797 36.0703 48.2483 36.0703ZM48.6749 52.7459C48.2888 53.1202 47.7727 53.3305 47.2349 53.3325C46.7022 53.3315 46.1913 53.1208 45.8127 52.7459L41.7416 48.6748L44.6038 45.7948L47.2172 48.4436L51.8927 43.7681L54.7549 46.6481L48.6749 52.7459Z"
+                                fill="#0F766D" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M58.0614 5.93691C56.5377 4.41461 54.4729 3.55803 52.3191 3.55469H42.1502V21.848C42.1511 22.155 42.0829 22.4582 41.9505 22.7352C41.8182 23.0122 41.6252 23.2558 41.3858 23.448C41.1352 23.6373 40.8459 23.7688 40.5386 23.8334C40.2313 23.8979 39.9136 23.8938 39.608 23.8214L31.9991 21.9014L24.3725 23.8036C24.0717 23.8791 23.7578 23.8852 23.4544 23.8214C23.1509 23.7577 22.866 23.6258 22.6211 23.4357C22.3761 23.2456 22.1777 23.0022 22.0407 22.7241C21.9037 22.4459 21.8317 22.1403 21.8302 21.8302V3.55469H11.6791C9.52584 3.55938 7.46208 4.41686 5.93947 5.93947C4.41686 7.46208 3.55938 9.52584 3.55469 11.6791V52.3191C3.55938 54.4724 4.41686 56.5362 5.93947 58.0588C7.46208 59.5814 9.52584 60.4389 11.6791 60.4436H37.528C35.8766 58.9737 34.5429 57.1819 33.6087 55.1781C32.6745 53.1743 32.1595 51.0008 32.0953 48.7909C32.0311 46.581 32.4191 44.3812 33.2354 42.3266C34.0517 40.272 35.2792 38.4058 36.8425 36.8425C38.4058 35.2792 40.272 34.0517 42.3266 33.2354C44.3812 32.4191 46.581 32.0311 48.7909 32.0953C51.0008 32.1595 53.1743 32.6745 55.1781 33.6087C57.1819 34.5429 58.9737 35.8766 60.4436 37.528V11.6791C60.4402 9.52532 59.5837 7.46057 58.0614 5.93691ZM13.7058 52.3191C13.305 52.3191 12.9131 52.2003 12.5798 51.9776C12.2466 51.7549 11.9868 51.4384 11.8334 51.068C11.68 50.6977 11.6399 50.2902 11.7181 49.8971C11.7963 49.5039 11.9893 49.1428 12.2727 48.8594C12.5562 48.576 12.9173 48.3829 13.3104 48.3047C13.7036 48.2265 14.111 48.2667 14.4814 48.4201C14.8517 48.5735 15.1682 48.8332 15.3909 49.1665C15.6136 49.4998 15.7325 49.8916 15.7325 50.2925C15.7278 50.8285 15.5128 51.3413 15.1337 51.7204C14.7547 52.0995 14.2419 52.3145 13.7058 52.3191ZM21.8302 52.3191C21.4294 52.3191 21.0376 52.2003 20.7043 51.9776C20.371 51.7549 20.1112 51.4384 19.9578 51.068C19.8045 50.6977 19.7643 50.2902 19.8425 49.8971C19.9207 49.5039 20.1137 49.1428 20.3972 48.8594C20.6806 48.576 21.0417 48.3829 21.4349 48.3047C21.828 48.2265 22.2355 48.2667 22.6058 48.4201C22.9761 48.5735 23.2927 48.8332 23.5154 49.1665C23.7381 49.4998 23.8569 49.8916 23.8569 50.2925C23.8524 50.8255 23.6398 51.3357 23.2645 51.7143C22.8893 52.0928 22.381 52.3099 21.848 52.3191H21.8302Z"
+                                fill="#2DD4C5" />
+                            </svg>
+                          </div>
+
+                          <h3 class="my-4 font-semibold text-black text-xl">
+                            Your Order Placed Sucessfully
+                          </h3>
+
+                          <button data-modal-hide="placeOrder-modal" type="button"
+                            class="text-[#0F766D] text-xs font-semibold border border-[#BFD4D3] px-6 py-2 rounded transition-all hover:bg-[#0F766D] hover:text-white">
+                            Continue Shopping
+                          </button>
+                          <button data-modal-hide="placeOrder-modal" type="button"
+                            class="text-[#D9801B] text-xs font-semibold border border-[#FEE2B1] px-6 py-2 rounded transition-all hover:bg-[#D9801B] hover:text-white">
+                            Check Order Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="mt-4">
-                    <label class="label flex items-center text-[#383941] text-xs 2xl:text-base font-medium pl-9">I agree with terms and conditions and privacy policy
+                    <label class="label flex items-center text-[#383941] text-xs 2xl:text-base font-medium pl-9">I agree
+                      with terms and conditions and privacy policy
                       <input type="checkbox" class="hidden">
                       <span class="checkmark"></span>
                     </label>
