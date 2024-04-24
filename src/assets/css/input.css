@@ -23,7 +23,7 @@
 
   /* Create a custom checkbox */
   .checkmark {
-    @apply absolute top-0 2xl:top-[3px] left-0 h-4 w-4 bg-white border-2 border-[#E4E5E9] rounded;
+    @apply absolute top-0 2xl:top-[5px] left-0 h-4 w-4 bg-white border-2 border-[#E4E5E9] rounded;
 
   }
   
