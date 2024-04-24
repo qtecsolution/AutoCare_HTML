@@ -3716,6 +3716,18 @@ video {
     width: 113px;
   }
 
+  .xl\:w-\[11px\] {
+    width: 11px;
+  }
+
+  .xl\:w-\[12px\] {
+    width: 12px;
+  }
+
+  .xl\:w-\[1210px\] {
+    width: 1210px;
+  }
+
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3936,6 +3948,10 @@ video {
 
   .\32xl\:w-full {
     width: 100%;
+  }
+
+  .\32xl\:w-\[1210px\] {
+    width: 1210px;
   }
 
   .\32xl\:justify-between {
