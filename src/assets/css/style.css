@@ -661,6 +661,7 @@ video {
 /* When the checkbox is checked, add a ##0F766D background */
 
 .label input:checked~.checkmark {
+  border-radius: 0px;
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 109 / var(--tw-bg-opacity));
@@ -1366,12 +1367,12 @@ video {
   width: 59px;
 }
 
-.w-\[72\%\] {
-  width: 72%;
+.w-\[60\%\] {
+  width: 60%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.w-\[72\%\] {
+  width: 72%;
 }
 
 .w-\[90\%\] {
@@ -1386,8 +1387,28 @@ video {
   width: 100%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[\] {
+  width: ;
+}
+
+.w-\[10\] {
+  width: 10;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[0\%\] {
+  width: 0%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .max-w-4xl {
@@ -3684,6 +3705,10 @@ video {
     width: 1143px;
   }
 
+  .xl\:w-\[1210px\] {
+    width: 1210px;
+  }
+
   .xl\:w-\[245px\] {
     width: 245px;
   }
@@ -3712,20 +3737,20 @@ video {
     width: 100%;
   }
 
-  .xl\:w-\[113px\] {
-    width: 113px;
-  }
-
-  .xl\:w-\[11px\] {
-    width: 11px;
+  .xl\:w-\[1px\] {
+    width: 1px;
   }
 
   .xl\:w-\[12px\] {
     width: 12px;
   }
 
-  .xl\:w-\[1210px\] {
-    width: 1210px;
+  .xl\:w-\[10px\] {
+    width: 10px;
+  }
+
+  .xl\:w-\[12100px\] {
+    width: 12100px;
   }
 
   .xl\:grid-cols-2 {
@@ -3894,16 +3919,16 @@ video {
     top: 0.125rem;
   }
 
+  .\32xl\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .\32xl\:mb-6 {
     margin-bottom: 1.5rem;
   }
 
   .\32xl\:mt-3 {
     margin-top: 0.75rem;
-  }
-
-  .\32xl\:mb-5 {
-    margin-bottom: 1.25rem;
   }
 
   .\32xl\:w-72 {
@@ -3948,10 +3973,6 @@ video {
 
   .\32xl\:w-full {
     width: 100%;
-  }
-
-  .\32xl\:w-\[1210px\] {
-    width: 1210px;
   }
 
   .\32xl\:justify-between {
