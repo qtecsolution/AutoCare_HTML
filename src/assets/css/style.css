@@ -744,6 +744,10 @@ video {
   box-shadow: 0px 0px 1.063px 0px rgba(12, 26, 75, 0.24), 0px 3.189px 8.503px -1.063px rgba(50, 50, 71, 0.05);
 }
 
+.bookingShadow{
+  box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.10), 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -794,6 +798,10 @@ video {
 
 .left-\[43px\] {
   left: 43px;
+}
+
+.left-\[91px\] {
+  left: 91px;
 }
 
 .right-0 {
@@ -866,6 +874,22 @@ video {
 
 .top-\[9px\] {
   top: 9px;
+}
+
+.left-\[px\] {
+  left: px;
+}
+
+.left-\[110px\] {
+  left: 110px;
+}
+
+.top-0\.5 {
+  top: 0.125rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-0 {
@@ -1279,6 +1303,10 @@ video {
   width: 0.75rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-44 {
   width: 11rem;
 }
@@ -1331,6 +1359,10 @@ video {
   width: 100%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1361,6 +1393,10 @@ video {
 
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .max-w-\[900px\] {
@@ -1828,6 +1864,11 @@ video {
 .border-\[\#BFD4D3\] {
   --tw-border-opacity: 1;
   border-color: rgb(191 212 211 / var(--tw-border-opacity));
+}
+
+.border-\[\#CBCDD6\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 205 214 / var(--tw-border-opacity));
 }
 
 .border-\[\#D7DFE9\] {
@@ -2501,6 +2542,10 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -3177,6 +3222,10 @@ video {
   color: rgb(122 130 138 / var(--tw-text-opacity));
 }
 
+.hover\:border:hover {
+  border-width: 1px;
+}
+
 .hover\:border-\[\#0F766D\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(15 118 109 / var(--tw-border-opacity));
@@ -3220,6 +3269,14 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
+.hover\:text-\[\#\]:hover {
+  color: #;
 }
 
 .hover\:underline:hover {
@@ -3847,6 +3904,10 @@ video {
 
   .\32xl\:justify-between {
     justify-content: space-between;
+  }
+
+  .\32xl\:gap-16 {
+    gap: 4rem;
   }
 
   .\32xl\:gap-x-4 {
