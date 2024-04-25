@@ -627,7 +627,7 @@ video {
 
 @media (min-width: 1536px) {
   .checkmark {
-    top: 5px;
+    top: 3px;
   }
 }
 
@@ -1281,6 +1281,34 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[0\%\] {
+  height: 0%;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[93\%\] {
+  height: 93%;
+}
+
+.h-\[\%\] {
+  height: %;
 }
 
 .max-h-full {
@@ -3897,6 +3925,10 @@ video {
 
   .\32xl\:w-72 {
     width: 18rem;
+  }
+
+  .\32xl\:w-\[1288px\] {
+    width: 1288px;
   }
 
   .\32xl\:w-\[183px\] {
