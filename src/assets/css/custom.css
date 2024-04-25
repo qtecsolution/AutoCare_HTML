@@ -39,12 +39,12 @@
 }
 
 #lightSlider {
-  height: 317px !important;
+  height: 500px !important;
   box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
 }
 
 #lightSlider li {
-  height: 317px !important;
+  height: 500px !important;
   border-radius: 24px;
   border: 10px solid #FFF;
   background: #F6F6F6;

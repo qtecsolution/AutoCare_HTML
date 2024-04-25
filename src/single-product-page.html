@@ -33,642 +33,624 @@
 
 <body class="font-inter">
   <!-- Header section -->
-  <header class="">
-    <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3">
-      <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
+  <!-- top menu -->
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3">
+    <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
 
-        <ul class="flex gap-[40px]">
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+      <ul class="flex gap-[40px]">
+        <li>
+          <a class="font-inter text-[12px] text-[#383941]" href="#">About</a>
+        </li>
+        <li>
+          <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
+        </li>
+        <li>
+          <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
+        </li>
+      </ul>
+
+      <ul class="flex gap-[18px] items-center">
+        <div class="flex gap-[12px] items-center">
+          <li class="mr-6">
+            <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+              class="flex items-center gap-[7px]  relative">
+              <img src="./assets/image/home/lang.svg" alt="location">
+              <span class="text-base font-medium">English</span>
+              <span
+                class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
+            </button>
           </li>
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">Blog & News</a>
-          </li>
-          <li>
-            <a class="font-inter text-[12px] text-[#383941]" href="#">Become A seller</a>
-          </li>
-        </ul>
 
-        <ul class="flex gap-[18px] items-center">
-          <div class="flex gap-[12px] items-center">
-            <li class="mr-6">
-              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
-                class="flex items-center gap-[7px]  relative">
-                <img src="./assets/image/home/lang.svg" alt="location">
-                <span class="text-base font-medium">English</span>
-                <span
-                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
-              </button>
-            </li>
-
-            <div id="dropdown1"
-              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
-                <li>
-                  <a href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bangla</a>
-                </li>
-              </ul>
-            </div>
-
-            <li>
-              <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
-            </li>
-          </div>
-
-          <div class="flex gap-[8px]">
-            <li>
-              <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
-            </li>
-
-            <li>
-              <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
-            </li>
-          </div>
-        </ul>
-
-      </nav>
-    </section>
-
-    <!-- main menu  -->
-    <section class="menu py-[16px] shadow px-3">
-      <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
-        <div>
-          <a href="#">
-            <img src="./assets/image/home/logo.png" alt="logo">
-          </a>
-        </div>
-
-        <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
-
-            <img src="./assets/image/home/search.svg" alt="search">
-
-            <input type="text" id="first_name"
-              class="border-0 bg-transparent block w-full focus:ring-0
-                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
-              placeholder="Search Anything" required />
-          </form>
-
-          <div>
-            <ul class="flex gap-7">
-
-              <li class="mr-6">
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
-                  <img src="./assets/image/home/location.svg" alt="location">
-                  <span class="text-base font-medium">Dhaka</span>
-                  <span
-                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
-                  </span>
-                </button>
+          <div id="dropdown1"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
               </li>
-
-              <div id="dropdown"
-                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                  <li>
-                    <a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                  </li>
-                </ul>
-              </div>
-
-              <li class="ms-5">
-                <a class="relative" href="#">
-                  <img src="./assets/image/home/cart.svg" alt="cart">
-                  <span
-                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
-                </a>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bangla</a>
               </li>
             </ul>
           </div>
 
-          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
-            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
-              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
-              <img src="./assets/image/home/user.svg" alt="user">
-              <span>Login</span>
-            </button>
+          <li>
+            <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
+          </li>
+        </div>
 
-            <!-- Login modal -->
-            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
-              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-              <div class="relative p-4 w-full max-w-[512px] max-h-full">
-                <!-- Modal content -->
-                <div
-                  class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
-                  <!-- Modal header -->
-                  <div class="mb-10">
-                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
-                      Welcome! Please Login to continue.
-                    </h3>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="">
-                    <form action="#">
-                      <div>
-                        <label for="number"
-                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
-                          Phone Number
-                        </label>
+        <div class="flex gap-[8px]">
+          <li>
+            <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
+          </li>
 
-                        <input type="number" name="number" id="number"
-                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                          placeholder="Enter your Phone Number" required />
-                      </div>
+          <li>
+            <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
+          </li>
+        </div>
+      </ul>
 
-                      <div class="mt-6">
-                        <label for="password"
-                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
-                          Password
-                        </label>
+    </nav>
+  </section>
 
-                        <input type="password" name="password" id="password"
-                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                          placeholder="Enter your password" required />
-                      </div>
+  <!-- main menu  -->
+  <header class="menu py-[16px] shadow px-3">
+    <div
+      class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+      <div>
+        <a href="#">
+          <img src="./assets/image/home/logo.png" alt="logo">
+        </a>
+      </div>
 
-                      <div class="text-right mt-2">
-                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
-                          Password?
-                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
-                      </div>
+      <div class="flex justify-between gap-[32px] items-center">
+        <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
 
-                      <button type="submit"
-                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
-                        Log in
-                      </button>
+          <img src="./assets/image/home/search.svg" alt="search">
 
-                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
-                        Didn't have any account?
-                        <a href="#" class="text-[#115E57] hover:underline font-bold">
-                          SIGN UP
-                        </a>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+          <input type="text" id="first_name"
+            class="border-0 bg-transparent block w-full focus:ring-0
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+            placeholder="Search Anything" required />
+        </form>
+
+        <div>
+          <ul class="flex gap-7">
+
+            <li class="mr-6">
+              <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
+                <img src="./assets/image/home/location.svg" alt="location">
+                <span class="text-base font-medium">Dhaka</span>
+                <span
+                  class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                </span>
+              </button>
+            </li>
+
+            <div id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+              </ul>
             </div>
 
-            <button class="text-[#09090B] font-bold text-sm">
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Breadcrumb -->
-    <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
-      <div class="container mx-auto pt-16 pb-44 px-3">
-        <nav class="flex" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-
-            <li class="inline-flex items-center">
-              <a href="#"
-                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
-                Home
+            <li class="ms-5">
+              <a class="relative" href="#">
+                <img src="./assets/image/home/cart.svg" alt="cart">
+                <span
+                  class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
               </a>
-            </li>
-
-            <li>
-              <div class="flex items-center">
-                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <a href="#"
-                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Car
-                  parts</a>
-              </div>
-            </li>
-
-            <li>
-              <div class="flex items-center">
-                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <a href="#"
-                  class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Filters</a>
-              </div>
-            </li>
-
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2 dark:text-gray-400">Fuel Filters</span>
-              </div>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </section>
-
-    <!-- prosuct details -->
-    <section class="container mx-auto -mt-40 px-3">
-      <div class="grid grid-cols-3">
-        <div class="mr-5 xl:mr-11">
-          <ul id="lightSlider">
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product1.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product1.png" />
-              </div>
-            </li>
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product2.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product2.png" />
-              </div>
-            </li>
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product3.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product3.png" />
-              </div>
-            </li>
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product4.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product4.png" />
-              </div>
-            </li>
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product5.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product5.png" />
-              </div>
-            </li>
-            <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product6.png">
-              <div class="">
-                <img src="./assets/image/single-product-page/product6.png" />
-              </div>
             </li>
           </ul>
         </div>
 
-        <div class="mr-2">
-          <div class="">
-            <p class="flex items-center gap-1">
-              <img src="./assets/image/home/star.svg" alt="">
-              <span class="text-[12px] text-[#282728] font-medium">
-                5.0 <span class="text-[#4A5568]">(3 Reviews)</span>
-              </span>
-            </p>
+        <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
+          <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+            class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+            <img src="./assets/image/home/user.svg" alt="user">
+            <span>Login</span>
+          </button>
 
-            <h2 class="text-[#09090B] font-semibold text-2xl leading-8 my-1">
-              Purolator Oil Filter 133500I99 <br> - Fits Toyota Qualis
-            </h2>
-
-            <h4 class="text-black text-sm font-medium">
-              In-Line Filter, 6mm, 6,1mm
-            </h4>
-
-            <p class="text-[12px] mt-3">
-              <span class="text-[#A7AAB9]">Manufacturer:</span>
-              <span class="text-[#525468]">ZZVF</span>
-            </p>
-
-            <p class="text-[12px]">
-              <span class="text-[#A7AAB9]">Part Number:</span>
-              <span class="text-[#525468]">ZZVF</span>
-            </p>
-
-            <p class="text-[12px] my-7">
-              <span class="text-[#A7AAB9]">SKU:</span>
-              <span class="text-black">OEM-RA-13622</span>
-            </p>
-
-            <h3 class="text-[#0F766D] text-2xl font-semibold">$ 112.99</h3>
-            <p class="text-[#525468] text-[12px] my-2">Select Size</p>
-
-            <div class="">
-              <div class="grid grid-cols-3 xl:grid-cols-5 gap-1 mb-1 w-full">
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
+          <!-- Login modal -->
+          <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-[512px] max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="mb-10">
+                  <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                    Welcome! Please Login to continue.
+                  </h3>
                 </div>
-
+                <!-- Modal body -->
                 <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                  <form action="#">
+                    <div>
+                      <label for="number"
+                        class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                        Phone Number
+                      </label>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                      <input type="number" name="number" id="number"
+                        class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Enter your Phone Number" required />
+                    </div>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                    <div class="mt-6">
+                      <label for="password"
+                        class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                        Password
+                      </label>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                      <input type="password" name="password" id="password"
+                        class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Enter your password" required />
+                    </div>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                    <div class="text-right mt-2">
+                      <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                        Password?
+                        <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                    </div>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
+                    <button type="submit"
+                      class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                      Log in
+                    </button>
 
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
-                    (11.5cm)
-                  </button>
+                    <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                      Didn't have any account?
+                      <a href="#" class="text-[#115E57] hover:underline font-bold">
+                        SIGN UP
+                      </a>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
+          </div>
 
-            <p class="text-sm my-5">
-              <span class="text-[#7D7F85]">Quantity:</span>
-              <span class="text-[#107231]">37 in stock</span>
-            </p>
+          <button class="text-[#09090B] font-bold text-sm">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Breadcrumb -->
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
+    <div class="container mx-auto pt-16 pb-44 px-3">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
 
+          <li class="inline-flex items-center">
+            <a href="#"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+              Home
+            </a>
+          </li>
 
-            <div class="inline-flex gap-6 rounded-lg border border-[#0000001a] p-1 justify-center items-center mb-6">
-              <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
-                +
-              </button>
-              <button class="">
-                6
-              </button>
-              <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
-                -
-              </button>
+          <li>
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <a href="#"
+                class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Car
+                parts</a>
             </div>
+          </li>
 
-            <div class="flex gap-2">
-              <button type="button"
-                class="bg-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-5 xl:px-9 py-3 rounded-[10px] text-white text-base font-semibold">
-                <img src="./assets/image/single-product-page/buynow.svg" alt="">
-                Buy Now
-              </button>
-              <button data-modal-target="addToCart-modal" data-modal-toggle="addToCart-modal" type="button"
-                class="border border-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-4 xl:px-8 py-3 rounded-[10px] text-[#09090B] text-base font-semibold">
-                <img src="./assets/image/single-product-page/cart.svg" alt="">
-                Add to Cart
-              </button>
+          <li>
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <a href="#"
+                class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400 dark:hover:text-white">Filters</a>
             </div>
+          </li>
 
-            <!-- add to cart modal -->
-            <div id="addToCart-modal" tabindex="-1" aria-hidden="true"
-              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-              <div class="relative p-4 w-full max-w-xl max-h-full">
-                <!-- Modal content -->
-                <div
-                  class="relative bg-white border-[5px] border-white category-shadow px-10 py-8 rounded-3xl shadow dark:bg-gray-700">
-                  <!-- Modal header -->
-                  <div class="">
-                    <h3 class="text-xl font-semibold text-black ml-1 mb-5 dark:text-white">
-                      1 new item(s) have been added to your cart
-                    </h3>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="">
-                    <div class="flex items-center justify-between bg-white ">
-                      <div class="flex items-center gap-2">
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2 dark:text-gray-400">Fuel Filters</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
 
-                        <img src="./assets/image/single-product-page/addToCart-modal.png" alt="">
+  <!-- prosuct details -->
+  <section class="container mx-auto -mt-40 px-3">
+    <div class="grid grid-cols-3 gap-8">
+      <ul id="lightSlider" class="h-full">
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product1.png">
+          <img src="./assets/image/single-product-page/product1.png" />
+        </li>
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product2.png">
+          <img src="./assets/image/single-product-page/product2.png" />
+        </li>
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product3.png">
+          <img src="./assets/image/single-product-page/product3.png" />
+        </li>
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product4.png">
+          <img src="./assets/image/single-product-page/product4.png" />
+        </li>
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product5.png">
+          <img src="./assets/image/single-product-page/product5.png" />
+        </li>
+        <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product6.png">
+          <img src="./assets/image/single-product-page/product6.png" />
+        </li>
+      </ul>
 
-                        <div>
-                          <h2 class="text-black font-semibold text-[12px] leading-5">
-                            For Harley Sportster 883 X....
-                          </h2>
-                          <p class="">
-                            <span class="text-[10px] mr-2">
-                              <span class="text-[#525468]">Manufacturer:</span>
-                              <span class="text-[#09090B]">ZZVF</span>
-                            </span>
-                            <span class="text-[10px]">
-                              <span class="text-[#525468]">Part Number:</span>
-                              <span class="text-[#09090B]">ZZVF</span>
-                            </span>
-                          </p>
-                        </div>
-                      </div>
+      <div class="">
+        <div class="">
+          <p class="flex items-center gap-1">
+            <img src="./assets/image/home/star.svg" alt="">
+            <span class="text-[12px] text-[#282728] font-medium">
+              5.0 <span class="text-[#4A5568]">(3 Reviews)</span>
+            </span>
+          </p>
 
-                      <div class="flex justify-between items-center gap-2">
-                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                        <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+          <h2 class="text-[#09090B] font-semibold text-2xl leading-8 my-1">
+            Purolator Oil Filter 133500I99 <br> - Fits Toyota Qualis
+          </h2>
+
+          <h4 class="text-black text-sm font-medium">
+            In-Line Filter, 6mm, 6,1mm
+          </h4>
+
+          <p class="text-[12px] mt-3">
+            <span class="text-[#A7AAB9]">Manufacturer:</span>
+            <span class="text-[#525468]">ZZVF</span>
+          </p>
+
+          <p class="text-[12px]">
+            <span class="text-[#A7AAB9]">Part Number:</span>
+            <span class="text-[#525468]">ZZVF</span>
+          </p>
+
+          <p class="text-[12px] my-3">
+            <span class="text-[#A7AAB9]">SKU:</span>
+            <span class="text-black">OEM-RA-13622</span>
+          </p>
+
+          <h3 class="text-[#0F766D] text-2xl font-semibold">$ 112.99</h3>
+          <p class="text-[#525468] text-[12px] my-2">Select Size</p>
+
+          <div class="">
+            <div class="grid grid-cols-3 xl:grid-cols-5 gap-1 mb-1 w-full">
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+
+              <div class="">
+                <button
+                  class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500">17
+                  (11.5cm)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-sm my-3">
+            <span class="text-[#7D7F85]">Quantity:</span>
+            <span class="text-[#107231]">37 in stock</span>
+          </p>
+
+          <div class="inline-flex gap-6 rounded-lg border border-[#0000001a] p-1 justify-center items-center mb-4">
+            <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
+              +
+            </button>
+            <button class="">
+              6
+            </button>
+            <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
+              -
+            </button>
+          </div>
+
+          <div class="flex gap-2">
+            <button type="button"
+              class="bg-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-5 xl:px-9 py-3 rounded-[10px] text-white text-base font-semibold">
+              <img src="./assets/image/single-product-page/buynow.svg" alt="">
+              Buy Now
+            </button>
+            <button data-modal-target="addToCart-modal" data-modal-toggle="addToCart-modal" type="button"
+              class="border border-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-4 xl:px-8 py-3 rounded-[10px] text-[#09090B] text-base font-semibold">
+              <img src="./assets/image/single-product-page/cart.svg" alt="">
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- add to cart modal -->
+          <div id="addToCart-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-xl max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative bg-white border-[5px] border-white category-shadow px-10 py-8 rounded-3xl shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="">
+                  <h3 class="text-xl font-semibold text-black ml-1 mb-5 dark:text-white">
+                    1 new item(s) have been added to your cart
+                  </h3>
+                </div>
+                <!-- Modal body -->
+                <div class="">
+                  <div class="flex items-center justify-between bg-white ">
+                    <div class="flex items-center gap-2">
+
+                      <img src="./assets/image/single-product-page/addToCart-modal.png" alt="">
+
+                      <div>
+                        <h2 class="text-black font-semibold text-[12px] leading-5">
+                          For Harley Sportster 883 X....
+                        </h2>
+                        <p class="">
+                          <span class="text-[10px] mr-2">
+                            <span class="text-[#525468]">Manufacturer:</span>
+                            <span class="text-[#09090B]">ZZVF</span>
+                          </span>
+                          <span class="text-[10px]">
+                            <span class="text-[#525468]">Part Number:</span>
+                            <span class="text-[#09090B]">ZZVF</span>
+                          </span>
+                        </p>
                       </div>
                     </div>
-                  </div>
-                  <!-- Modal footer -->
-                  <div class="flex items-center gap-2 mt-6">
-                    <button type="button"
-                      class="border border-[#BFD4D3] px-6 py-2 rounded text-xs font-semibold text-[#0F766D] transition-all hover:bg-[#0F766D] hover:text-white">
-                      Continue Shopping
-                    </button>
-                    <button type="button"
-                      class="border border-[#FEE2B1] px-8 py-2 rounded text-xs font-semibold text-[#D9801B] transition-all hover:bg-[#D9801B] hover:text-white">
-                      Go To Cart
-                    </button>
+
+                    <div class="flex justify-between items-center gap-2">
+                      <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                      <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="flex gap-16 ml-11 mt-5">
-              <button class="flex items-center gap-1 text-sm font-medium">
-                <img src="./assets/image/single-product-page/add-to-list.svg" alt="">
-                <span class="text-[#536AC3]">Add to list</span>
-              </button>
-
-              <label class="label ps-6 flex items-center text-[#D87607] text-sm font-medium ">Add to Compare
-                <input type="checkbox" class="hidden">
-                <span class="checkmark top-[2px]"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="shadow p-7 rounded-2xl w-[302px]">
-            <div class="flex gap-3 items-center mb-6">
-              <div class="">
-                <img src="./assets/image/single-product-page/verified-product.svg" alt="">
-              </div>
-              <div class="">
-                <h4 class="text-xs text-[#383941] font-semibold">Verified Product</h4>
-                <p class="text-[10px] text-[#525468]">We check if the part fits your car</p>
-              </div>
-            </div>
-
-            <div class="flex gap-3 items-center mb-6">
-              <div class="">
-                <img src="./assets/image/single-product-page/Express-delivery.svg" alt="">
-              </div>
-              <div class="">
-                <h4 class="text-xs text-[#383941] font-semibold">
-                  Express Delivery</h4>
-                <p class="text-[10px] text-[#525468]">
-                  Will be deliveries in same day
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-3 items-center mb-6">
-              <div class="">
-                <img src="./assets/image/single-product-page/return-available .svg" alt="">
-              </div>
-              <div class="">
-                <h4 class="text-xs text-[#383941] font-semibold">
-                  Return Available
-                </h4>
-                <p class="text-[10px] text-[#525468]">
-                  Product return within 30 days. <a class="font-medium text-[#09090B]" href="#">Return Terms</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-3 items-center mb-6">
-              <div class="">
-                <img src="./assets/image/single-product-page/cash-on-delivery-available.svg" alt="">
-              </div>
-              <div class="">
-                <h4 class="text-xs text-[#383941] font-semibold">
-                  Cash on Delivery Available
-                </h4>
-                <p class="text-[10px] text-[#525468]">
-                  Product return within 30 days
-                  <a class="font-medium text-[#09090B]" href="#">see terms</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-3 items-center">
-              <div class="">
-                <img src="./assets/image/single-product-page/do-you-have-questions.svg" alt="">
-              </div>
-              <div class="">
-                <h4 class="text-xs text-[#383941] font-semibold">
-                  Do you have questions?
-                </h4>
-                <p class="text-[10px] text-[#D87607] font-semibold">
-                  Ask Here
-                </p>
+                <!-- Modal footer -->
+                <div class="flex items-center gap-2 mt-6">
+                  <button type="button"
+                    class="border border-[#BFD4D3] px-6 py-2 rounded text-xs font-semibold text-[#0F766D] transition-all hover:bg-[#0F766D] hover:text-white">
+                    Continue Shopping
+                  </button>
+                  <button type="button"
+                    class="border border-[#FEE2B1] px-8 py-2 rounded text-xs font-semibold text-[#D9801B] transition-all hover:bg-[#D9801B] hover:text-white">
+                    Go To Cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="shadow rounded-2xl w-[302px] my-2">
-            <div class="p-5 pb-0">
-              <div class="flex justify-between items-center">
-                <h5 class="text-[#60637A] text-[10px] font-medium uppercase">Store</h5>
-                <img src="./assets/image/single-product-page/Store.svg" alt="">
-              </div>
+          <div class="flex gap-16 ml-11 mt-5">
+            <button class="flex items-center gap-1 text-sm font-medium">
+              <img src="./assets/image/single-product-page/add-to-list.svg" alt="">
+              <span class="text-[#536AC3]">Add to list</span>
+            </button>
 
-              <div class="flex items-center justify-between mb-3 mt-2">
-                <div class="">
-                  <img src="./assets/image/single-product-page/Nextage.svg" alt="">
-                </div>
-
-                <div class="">
-                  <h4 class="text-[#1A202C] font-semibold text-base">Nextage</h4>
-                  <p>
-                    <i class="fa-solid fa-star text-[#F29232]"></i>
-                    <span class="text-[#4A5568] text-xs">5.0 (210 Reviews)</span>
-                  </p>
-                </div>
-
-                <div class="flex items-center">
-                  <img src="./assets/image/home/location-block.svg" alt="">
-                  <p class="text-[#7B7F95] text-[10px]">Dhaka</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex justify-center border-t py-3">
-              <a href="" class="text-[#383941] text-sm font-semibold">
-                Visit Store
-              </a>
-            </div>
-          </div>
-
-          <div class="shadow ps-8 p-5  rounded-2xl w-[302px] flex justify-between">
-            <p>Share</p>
-            <div class="flex gap-2">
-              <a href="#" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
-                <i class="fa-brands fa-facebook-f  text-white text-[12px]"></i>
-              </a>
-              <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
-                <i class="fa-brands fa-instagram text-white text-[12px]"></i>
-              </a>
-              <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
-                <i class="fa-brands fa-x-twitter text-white text-[12px]"></i>
-              </a>
-              <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
-                <i class="fa-brands fa-pinterest-p text-white text-[12px]"></i>
-              </a>
-              <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
-                <i class="fa-brands fa-whatsapp text-white text-[12px]"></i>
-              </a>
-            </div>
+            <label class="label ps-6 flex items-center text-[#D87607] text-sm font-medium ">Add to Compare
+              <input type="checkbox" class="hidden">
+              <span class="checkmark top-[2px]"></span>
+            </label>
           </div>
         </div>
       </div>
-    </section>
-  </header>
+
+      <div class="">
+        <div class="shadow p-7 rounded-2xl w-[302px]">
+          <div class="flex gap-3 items-center mb-6">
+            <div class="">
+              <img src="./assets/image/single-product-page/verified-product.svg" alt="">
+            </div>
+            <div class="">
+              <h4 class="text-xs text-[#383941] font-semibold">Verified Product</h4>
+              <p class="text-[10px] text-[#525468]">We check if the part fits your car</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 items-center mb-6">
+            <div class="">
+              <img src="./assets/image/single-product-page/Express-delivery.svg" alt="">
+            </div>
+            <div class="">
+              <h4 class="text-xs text-[#383941] font-semibold">
+                Express Delivery</h4>
+              <p class="text-[10px] text-[#525468]">
+                Will be deliveries in same day
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 items-center mb-6">
+            <div class="">
+              <img src="./assets/image/single-product-page/return-available .svg" alt="">
+            </div>
+            <div class="">
+              <h4 class="text-xs text-[#383941] font-semibold">
+                Return Available
+              </h4>
+              <p class="text-[10px] text-[#525468]">
+                Product return within 30 days. <a class="font-medium text-[#09090B]" href="#">Return Terms</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 items-center mb-6">
+            <div class="">
+              <img src="./assets/image/single-product-page/cash-on-delivery-available.svg" alt="">
+            </div>
+            <div class="">
+              <h4 class="text-xs text-[#383941] font-semibold">
+                Cash on Delivery Available
+              </h4>
+              <p class="text-[10px] text-[#525468]">
+                Product return within 30 days
+                <a class="font-medium text-[#09090B]" href="#">see terms</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 items-center">
+            <div class="">
+              <img src="./assets/image/single-product-page/do-you-have-questions.svg" alt="">
+            </div>
+            <div class="">
+              <h4 class="text-xs text-[#383941] font-semibold">
+                Do you have questions?
+              </h4>
+              <p class="text-[10px] text-[#D87607] font-semibold">
+                Ask Here
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow rounded-2xl w-[302px] my-2">
+          <div class="p-5 pb-0">
+            <div class="flex justify-between items-center">
+              <h5 class="text-[#60637A] text-[10px] font-medium uppercase">Store</h5>
+              <img src="./assets/image/single-product-page/Store.svg" alt="">
+            </div>
+
+            <div class="flex items-center justify-between mb-3 mt-2">
+              <div class="">
+                <img src="./assets/image/single-product-page/Nextage.svg" alt="">
+              </div>
+
+              <div class="">
+                <h4 class="text-[#1A202C] font-semibold text-base">Nextage</h4>
+                <p>
+                  <i class="fa-solid fa-star text-[#F29232]"></i>
+                  <span class="text-[#4A5568] text-xs">5.0 (210 Reviews)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center">
+                <img src="./assets/image/home/location-block.svg" alt="">
+                <p class="text-[#7B7F95] text-[10px]">Dhaka</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center border-t py-3">
+            <a href="" class="text-[#383941] text-sm font-semibold">
+              Visit Store
+            </a>
+          </div>
+        </div>
+
+        <div class="shadow ps-8 p-5  rounded-2xl w-[302px] flex justify-between">
+          <p>Share</p>
+          <div class="flex gap-2">
+            <a href="#" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+              <i class="fa-brands fa-facebook-f  text-white text-[12px]"></i>
+            </a>
+            <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+              <i class="fa-brands fa-instagram text-white text-[12px]"></i>
+            </a>
+            <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+              <i class="fa-brands fa-x-twitter text-white text-[12px]"></i>
+            </a>
+            <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+              <i class="fa-brands fa-pinterest-p text-white text-[12px]"></i>
+            </a>
+            <a href="" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
+              <i class="fa-brands fa-whatsapp text-white text-[12px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- main section -->
   <main>
