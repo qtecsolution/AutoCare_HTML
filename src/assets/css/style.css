@@ -1471,6 +1471,14 @@ video {
   max-width: 20rem;
 }
 
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[1220px\] {
+  max-width: 1220px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -3743,6 +3751,14 @@ video {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-\[1220px\] {
+    width: 1220px;
+  }
+
+  .xl\:max-w-\[1220px\] {
+    max-width: 1220px;
   }
 
   .xl\:grid-cols-2 {
