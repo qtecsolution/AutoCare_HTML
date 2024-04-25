@@ -51,6 +51,11 @@
   background: #F6F6F6;
 }
 
+.lSPager {
+  display: flex !important;
+  gap: 5px !important;
+}
+
 .lSPager li a img {
   width: 77px !important;
   height: 77px !important;
