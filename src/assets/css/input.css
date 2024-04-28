@@ -104,4 +104,21 @@
   .bookingShadow {
     box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.10), 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
   }
+
+  .profile-hover {
+    transition: all .3s ease-in-out;
+  }
+
+  .profile-hover:hover {
+    color: #0F766D;
+    font-weight: 700;
+  }
+
+  .profile-hover svg {
+    transition: all .3s ease-in-out;
+  }
+
+  .profile-hover:hover svg {
+    fill: #0F766D;
+  }
 }
