@@ -1021,6 +1021,26 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-\[18\] {
+  margin-top: 18;
+  margin-bottom: 18;
+}
+
+.my-\[18px\] {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -1231,6 +1251,10 @@ video {
 
 .mt-\[51px\] {
   margin-top: 51px;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .block {
@@ -2252,6 +2276,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#D9D9D9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2767,6 +2796,10 @@ video {
   padding-top: 8px;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3211,18 +3244,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[\#\#7B7F95\] {
-  color: ##7B7F95;
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .line-through {
