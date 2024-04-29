@@ -905,6 +905,10 @@ video {
   top: 0.25rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .top-2 {
   top: 0.5rem;
 }
@@ -931,10 +935,6 @@ video {
 
 .top-\[9px\] {
   top: 9px;
-}
-
-.top-10 {
-  top: 2.5rem;
 }
 
 .z-0 {
@@ -1113,6 +1113,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.ml-20 {
+  margin-left: 5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1235,14 +1239,6 @@ video {
 
 .mt-\[51px\] {
   margin-top: 51px;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .block {
@@ -2339,22 +2335,6 @@ video {
   fill: #fff;
 }
 
-.fill-\[\#000\] {
-  fill: #000;
-}
-
-.fill-\[\] {
-  fill: ;
-}
-
-.fill-\[\#\] {
-  fill: #;
-}
-
-.fill-\[\#09090B\] {
-  fill: #09090B;
-}
-
 .p-0 {
   padding: 0px;
 }
@@ -2464,6 +2444,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-8 {
@@ -2589,16 +2574,6 @@ video {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-\[1px\] {
-  padding-top: 1px;
-  padding-bottom: 1px;
 }
 
 .pb-0 {
@@ -2975,6 +2950,11 @@ video {
   color: ##0D9488;
 }
 
+.text-\[\#000520\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 5 32 / var(--tw-text-opacity));
+}
+
 .text-\[\#013B42\] {
   --tw-text-opacity: 1;
   color: rgb(1 59 66 / var(--tw-text-opacity));
@@ -3215,6 +3195,11 @@ video {
   color: rgb(244 157 12 / var(--tw-text-opacity));
 }
 
+.text-\[\#F9851A\] {
+  --tw-text-opacity: 1;
+  color: rgb(249 133 26 / var(--tw-text-opacity));
+}
+
 .text-\[\#FABE25\] {
   --tw-text-opacity: 1;
   color: rgb(250 190 37 / var(--tw-text-opacity));
@@ -3257,23 +3242,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#000520\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 5 32 / var(--tw-text-opacity));
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.overline {
-  text-decoration-line: overline;
 }
 
 .line-through {
@@ -3559,10 +3527,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#\]:hover {
-  background-color: #;
-}
-
 .hover\:text-\[\#0F766D\]:hover {
   --tw-text-opacity: 1;
   color: rgb(15 118 109 / var(--tw-text-opacity));
@@ -3576,10 +3540,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\]:hover {
-  color: ;
 }
 
 .hover\:underline:hover {
