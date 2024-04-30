@@ -361,7 +361,7 @@
               </div>
 
               <div class=" mx-6 py-6 flex items-center justify-between gap-32 border-b border-[#D9D9D9]">
-                <div class="">
+                <div>
                   <label class="label-radio flex items-center text-[#0F766D]text-sm pl-6 2xl:pl-8">
                     Mirpur
                     <input type="radio" name="delivery" class="hidden">
@@ -369,7 +369,7 @@
                   </label>
                 </div>
 
-                <div class="">
+                <div>
                   <h4 class="text-[#0F766D] text-sm font-semibold">
                     Nasiruddin
                   </h4>
@@ -414,7 +414,7 @@
               </div>
 
               <div class=" mx-6 py-6 flex items-center justify-between gap-32">
-                <div class="">
+                <div>
                   <label class="label-radio flex items-center text-[#0F766D]text-sm pl-6 2xl:pl-8">
                     Mirpur
                     <input type="radio" name="delivery" class="hidden">
@@ -422,7 +422,7 @@
                   </label>
                 </div>
 
-                <div class="">
+                <div>
                   <h4 class="text-[#0F766D] text-sm font-semibold">
                     Nasiruddin
                   </h4>
@@ -475,16 +475,14 @@
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-4xl max-h-full">
           <!-- Modal content -->
-          <div class="relative bg-white rounded-2xl shadow dark:bg-gray-700">
+          <div class="relative bg-white rounded-2xl shadow dark:bg-gray-700 ">
             <!-- Modal header -->
             <div
               class="flex items-center justify-between p-6 bg-[#F4F5F7] rounded-tl-2xl rounded-tr-2xl border-t-[5px] border-l-[5px] border-r-[5px] border-white">
               <h3 class="text-base text-[#09090B] dark:text-white">
                 Edit Address
               </h3>
-              <button type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="default-modal">
+              <button type="button" data-modal-hide="default-modal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <g clip-path="url(#clip0_308_13219)">
                     <path
@@ -575,7 +573,7 @@
 
               <div class="flex justify-between items-center gap-6 ">
                 <div class="w-full">
-                  <div class="">
+                  <div>
                     <label class="inline-block text-[#09090B] text-sm font-medium mb-2" for="Province">
                       Province
                     </label>
@@ -611,18 +609,18 @@
                   </p>
 
                   <div class="border border-[#E7EAEF] rounded-lg px-4 pt-4 pb-8">
-                    <div class="">
+                    <div>
                       <label class="label-radio flex items-center text-[#0F766D]text-sm pl-6 2xl:pl-8">
                         Default delivery address
-                        <input type="radio" name="delivery" class="hidden">
+                        <input type="radio" name="d-address" class="hidden">
                         <span class="checkmark-radio left-0 top-1 2xl:top-0"></span>
                       </label>
                     </div>
 
-                    <div class="">
+                    <div class="mt-2.5 mb-4">
                       <label class="label-radio flex items-center text-[#0F766D]text-sm pl-6 2xl:pl-8">
                         Default delivery address
-                        <input type="radio" name="delivery" class="hidden">
+                        <input type="radio" name="d-address" class="hidden">
                         <span class="checkmark-radio left-0 top-1 2xl:top-0"></span>
                       </label>
                     </div>
@@ -634,12 +632,11 @@
               </div>
             </div>
             <!-- Modal footer -->
-            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <div class="flex justify-end mr-7 pb-6">
               <button data-modal-hide="default-modal" type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
-                accept</button>
-              <button data-modal-hide="default-modal" type="button"
-                class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                class="px-7 py-3 bg-[#0F766D] rounded-lg border border-[#0F766D] text-white text-sm font-semibold transition-all hover:bg-white hover:text-[#0F766D]">
+                Save
+              </button>
             </div>
           </div>
         </div>
