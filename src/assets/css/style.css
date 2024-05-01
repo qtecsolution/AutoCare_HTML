@@ -1047,6 +1047,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -2953,6 +2958,10 @@ video {
   padding-top: 8px;
 }
 
+.ps-1 {
+  padding-inline-start: 0.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4346,6 +4355,10 @@ video {
 
   .xl\:pt-9 {
     padding-top: 2.25rem;
+  }
+
+  .xl\:ps-4 {
+    padding-inline-start: 1rem;
   }
 
   .xl\:text-2xl {
