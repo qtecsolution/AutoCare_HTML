@@ -1287,6 +1287,10 @@ video {
   margin-top: 51px;
 }
 
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1579,6 +1583,18 @@ video {
   width: 15rem;
 }
 
+.w-\[px\] {
+  width: px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1629,6 +1645,14 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[5px\] {
+  max-width: 5px;
+}
+
+.max-w-\[560px\] {
+  max-width: 560px;
 }
 
 .flex-shrink-0 {
