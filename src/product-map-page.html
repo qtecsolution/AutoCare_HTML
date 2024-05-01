@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="language" content="English">
-  <title>product-map-page</title>
+  <title>AutoCare - Product Category</title>
   <!-- favicon  -->
   <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
 
@@ -104,7 +104,7 @@
       <div
         class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
         <div>
-          <a href="#">
+          <a href="../index.html">
             <img src="./assets/image/home/logo.png" alt="logo">
           </a>
         </div>
@@ -158,11 +158,72 @@
           </div>
 
           <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
-            <button
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
               class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
               <img src="./assets/image/home/user.svg" alt="user">
               <span>Login</span>
             </button>
+
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[512px] max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-[#F1F4F6] px-16 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-10">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome! Please Login to continue.
+                    </h3>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <form action="#">
+                      <div>
+                        <label for="number"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <input type="number" name="number" id="number"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your Phone Number" required />
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <input type="password" name="password" id="password"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your password" required />
+                      </div>
+
+                      <div class="text-right mt-2">
+                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                          Password?
+                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                        Log in
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Didn't have any account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <button class="text-[#09090B] font-bold text-sm">
               Sign Up
@@ -189,7 +250,8 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="flex justify-center ps-1 xl:ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
+            <div
+              class="flex justify-center ps-1 xl:ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
 
               <div class="select border-r-2 border-[#E4E5E9]">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
@@ -568,7 +630,12 @@
                 </div>
 
                 <a href="./product-grid-page.html">
-                  <img src="./assets/image/product-grid-page/grid.svg" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                    <rect width="6.25" height="6.25" rx="1" fill="#CBCDD6"/>
+                    <rect y="8.75" width="6.25" height="6.25" rx="1" fill="#CBCDD6"/>
+                    <rect x="8.75" width="6.25" height="6.25" rx="1" fill="#CBCDD6"/>
+                    <rect x="8.75" y="8.75" width="6.25" height="6.25" rx="1" fill="#CBCDD6"/>
+                  </svg>
                 </a>
                 <a href="./product-list-page.html">
                   <img src="./assets/image/product-grid-page/three-line.svg" alt="">
@@ -577,7 +644,11 @@
                   <img src="./assets/image/product-grid-page/line.svg" alt="">
                 </a>
                 <a href="./product-map-page.html" class="bg-white rounded-md p-[5px]">
-                  <img src="./assets/image/product-grid-page/location.svg" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.90224 14.9391L5.90489 14.94C6.07869 15.0159 6.17574 14.9982 6.17574 14.9982C6.17574 14.9982 6.27278 15.0159 6.44747 14.94L6.44924 14.9391L6.45453 14.9365L6.47041 14.9294C6.55416 14.8905 6.63682 14.8493 6.71832 14.8059C6.88242 14.7212 7.1118 14.5942 7.38618 14.4239C7.93318 14.0851 8.66103 13.5716 9.39242 12.8667C10.8534 11.4586 12.3515 9.25743 12.3515 6.17574C12.3515 5.36473 12.1917 4.56166 11.8814 3.81239C11.571 3.06311 11.1161 2.3823 10.5426 1.80883C9.96917 1.23536 9.28837 0.78046 8.53909 0.4701C7.78982 0.15974 6.98675 0 6.17574 0C5.36473 0 4.56166 0.15974 3.81239 0.4701C3.06311 0.78046 2.3823 1.23536 1.80883 1.80883C1.23536 2.3823 0.78046 3.06311 0.4701 3.81239C0.15974 4.56166 -1.2085e-08 5.36473 0 6.17574C0 9.25655 1.49806 11.4586 2.95994 12.8667C3.572 13.4546 4.24415 13.9765 4.96529 14.4239C5.24461 14.5973 5.53195 14.7575 5.82637 14.9038L5.88107 14.9294L5.89695 14.9365L5.90224 14.9391ZM6.17574 8.1608C6.70221 8.1608 7.20712 7.95166 7.57939 7.57939C7.95166 7.20712 8.1608 6.70221 8.1608 6.17574C8.1608 5.64927 7.95166 5.14436 7.57939 4.77209C7.20712 4.39982 6.70221 4.19068 6.17574 4.19068C5.64927 4.19068 5.14436 4.39982 4.77209 4.77209C4.39982 5.14436 4.19068 5.64927 4.19068 6.17574C4.19068 6.70221 4.39982 7.20712 4.77209 7.57939C5.14436 7.95166 5.64927 8.1608 6.17574 8.1608Z"
+                      fill="#60637A" />
+                  </svg>
                 </a>
               </div>
 

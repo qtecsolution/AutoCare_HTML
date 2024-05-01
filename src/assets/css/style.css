@@ -817,10 +817,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .-right-6 {
   right: -1.5rem;
 }
@@ -965,10 +961,6 @@ video {
   z-index: 50;
 }
 
-.z-\[5\] {
-  z-index: 5;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1045,11 +1037,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .-ml-1 {
@@ -1488,6 +1475,10 @@ video {
   width: 20rem;
 }
 
+.w-\[1020px\] {
+  width: 1020px;
+}
+
 .w-\[145px\] {
   width: 145px;
 }
@@ -1566,10 +1557,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[1020px\] {
-  width: 1020px;
 }
 
 .max-w-4xl {
@@ -2870,6 +2857,10 @@ video {
   padding-right: 2.25rem;
 }
 
+.ps-1 {
+  padding-inline-start: 0.25rem;
+}
+
 .ps-10 {
   padding-inline-start: 2.5rem;
 }
@@ -2956,10 +2947,6 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.ps-1 {
-  padding-inline-start: 0.25rem;
 }
 
 .text-left {
@@ -4349,16 +4336,16 @@ video {
     padding-inline-start: 4rem;
   }
 
+  .xl\:ps-4 {
+    padding-inline-start: 1rem;
+  }
+
   .xl\:pt-8 {
     padding-top: 2rem;
   }
 
   .xl\:pt-9 {
     padding-top: 2.25rem;
-  }
-
-  .xl\:ps-4 {
-    padding-inline-start: 1rem;
   }
 
   .xl\:text-2xl {
