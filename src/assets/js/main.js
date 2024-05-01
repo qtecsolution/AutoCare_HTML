@@ -115,5 +115,5 @@ $("#lightSlider").lightSlider({
   item: 1,
   loop: true,
   slideMargin: 0,
-  thumbItem: 6,
+  thumbItem: 5,
 });
