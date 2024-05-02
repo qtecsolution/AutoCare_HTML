@@ -24,6 +24,7 @@
 
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
 
   <!-- nice-select2 -->
   <link rel="stylesheet" href="./assets/css/nice-select2.css">
@@ -32,7 +33,6 @@
 </head>
 
 <body class="font-inter">
-  <!-- Header section -->
   <header>
     <!-- main menu  -->
     <div class="menu py-[16px] shadow px-3">
@@ -436,20 +436,22 @@
               </div>
             </div>
 
-            <div>
-              <p class="text-[#09090B] text-sm font-medium">
+            <div class="">
+              <p class="text-[#09090B] text-sm font-medium mb-1">
                 Date
               </p>
 
-              <div>
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer ">
-                  <option class="text-[10px]" data-display="Select">
-                    Select
-                  </option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
+              <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M12.9109 1.23252H12.3141V0.628628C12.3141 0.283594 12.0344 0.00390625 11.6894 0.00390625C11.3444 0.00390625 11.0647 0.283594 11.0647 0.628628V1.23252H4.9353V0.628628C4.9353 0.283594 4.65561 0.00390625 4.31058 0.00390625C3.96555 0.00390625 3.68586 0.283594 3.68586 0.628628V1.23252H3.08909C1.38576 1.23252 0 2.61827 0 4.32158V12.9077C0 14.611 1.38576 15.9968 3.08909 15.9968H12.9109C14.6142 15.9968 16 14.611 16 12.9077V4.32158C16 2.61827 14.6142 1.23252 12.9109 1.23252ZM3.08909 2.48196H3.68586V3.70017C3.68586 4.0452 3.96555 4.32489 4.31058 4.32489C4.65561 4.32489 4.9353 4.0452 4.9353 3.70017V2.48196H11.0647V3.70017C11.0647 4.0452 11.3444 4.32489 11.6894 4.32489C12.0345 4.32489 12.3141 4.0452 12.3141 3.70017V2.48196H12.9109C13.9253 2.48196 14.7506 3.30722 14.7506 4.32158V4.91837H1.24944V4.32158C1.24944 3.30722 2.0747 2.48196 3.08909 2.48196ZM12.9109 14.7473H3.08909C2.0747 14.7473 1.24944 13.9221 1.24944 12.9077V6.16782H14.7506V12.9077C14.7506 13.9221 13.9253 14.7473 12.9109 14.7473ZM5.54962 8.62507C5.54962 8.9701 5.26993 9.24979 4.9249 9.24979H3.69629C3.35126 9.24979 3.07157 8.9701 3.07157 8.62507C3.07157 8.28003 3.35126 8.00035 3.69629 8.00035H4.9249C5.2699 8.00035 5.54962 8.28003 5.54962 8.62507ZM12.9285 8.62507C12.9285 8.9701 12.6488 9.24979 12.3037 9.24979H11.0751C10.7301 9.24979 10.4504 8.9701 10.4504 8.62507C10.4504 8.28003 10.7301 8.00035 11.0751 8.00035H12.3037C12.6487 8.00035 12.9285 8.28003 12.9285 8.62507ZM9.23548 8.62507C9.23548 8.9701 8.95579 9.24979 8.61076 9.24979H7.38215C7.03712 9.24979 6.75743 8.9701 6.75743 8.62507C6.75743 8.28003 7.03712 8.00035 7.38215 8.00035H8.61076C8.95576 8.00035 9.23548 8.28003 9.23548 8.62507ZM5.54962 12.3109C5.54962 12.656 5.26993 12.9356 4.9249 12.9356H3.69629C3.35126 12.9356 3.07157 12.656 3.07157 12.3109C3.07157 11.9659 3.35126 11.6862 3.69629 11.6862H4.9249C5.2699 11.6862 5.54962 11.9659 5.54962 12.3109ZM12.9285 12.3109C12.9285 12.656 12.6488 12.9356 12.3037 12.9356H11.0751C10.7301 12.9356 10.4504 12.656 10.4504 12.3109C10.4504 11.9659 10.7301 11.6862 11.0751 11.6862H12.3037C12.6487 11.6862 12.9285 11.9659 12.9285 12.3109ZM9.23548 12.3109C9.23548 12.656 8.95579 12.9356 8.61076 12.9356H7.38215C7.03712 12.9356 6.75743 12.656 6.75743 12.3109C6.75743 11.9659 7.03712 11.6862 7.38215 11.6862H8.61076C8.95576 11.6862 9.23548 11.9659 9.23548 12.3109Z"
+                      fill="#7B7F95" />
+                  </svg>
+                </div>
+                <input datepicker datepicker-title="Flowbite datepicker" type="text"
+                  class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-[322px] ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Select date">
               </div>
             </div>
           </div>
@@ -596,7 +598,7 @@
       <div class="flex justify-center mt-6 pb-10">
         <button
           class="bg-[#0F766D] rounded-[10px] px-6 py-3 font-semibold text-base text-white transition-all hover:bg-white hover:text-[#0F766D] border hover:border-[#0F766D]">
-          <span>Continue To Booking</span>
+          <span>Continue to Booking</span>
         </button>
       </div>
     </section>
@@ -605,6 +607,7 @@
 
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 
   <!-- Swiper JS -->
   <script src="./assets/js/swiper.js"></script>

@@ -16,19 +16,15 @@
   <!-- flowbite cdn -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <!-- daterangepicker -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-  <!-- lightslider -->
-  <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
   <link rel="stylesheet" href="./assets/css/custom.css">
-
-  <!-- nice-select2 -->
-  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- daterangepicker -->
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
 </head>
 
 <body class="font-inter">
@@ -387,9 +383,9 @@
                       <h4 class="text-[#383941] text-[10px] font-bold">
                         Suggested Delivery Time
                       </h4>
-                      <p class="text-[#525468] text-[10px] font-medium">
-                        Pick a date
-                      </p>
+                      <input class="text-[#0F766D] text-[10px] px-0 py-0 font-medium border-none focus:ring-0"
+                        type="text" name="datefilter" value="" placeholder="Pick a date" />
+
                     </div>
                   </div>
                 </div>
@@ -525,9 +521,8 @@
                       <h4 class="text-[#383941] text-[10px] font-bold">
                         Suggested Delivery Time
                       </h4>
-                      <p class="text-[#0F766D] text-[10px] font-medium">
-                        20-23 Feb 2024
-                      </p>
+                      <input class="text-[#0F766D] text-[10px] px-0 py-0 font-medium border-none focus:ring-0"
+                        type="text" name="datefilter" value="" placeholder="Pick a date" />
                     </div>
                   </div>
                 </div>
@@ -631,9 +626,8 @@
                       <h4 class="text-[#383941] text-[10px] font-bold">
                         Suggested Delivery Time
                       </h4>
-                      <p class="text-[#525468] text-[10px] font-medium">
-                        Pick a date
-                      </p>
+                      <input class="text-[#0F766D] text-[10px] px-0 py-0 font-medium border-none focus:ring-0"
+                        type="text" name="datefilter" value="" placeholder="Pick a date" />
                     </div>
                   </div>
                 </div>
@@ -795,17 +789,14 @@
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="./assets/js/swiper.js"></script>
-
-  <!-- alpinejs -->
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script>
-
-  <!-- nice select -->
-  <script src="./assets/js/nice-select2.js"></script>
+  <!-- momentjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="a.js"></script>
 
   <!-- Custom main js -->
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/daterangepicker.js"></script>
 </body>
 
 </html>
