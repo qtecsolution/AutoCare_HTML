@@ -1303,6 +1303,10 @@ video {
   margin-top: 51px;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -4559,6 +4563,10 @@ video {
 
   .\32xl\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .\32xl\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .\32xl\:w-28 {
