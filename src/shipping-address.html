@@ -19,9 +19,13 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./assets/css/swiper.css">
-
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
 </head>
 
 <body class="font-inter">
@@ -412,8 +416,17 @@
                             <label class="inline-block text-[#09090B] text-sm font-medium mb-2" for="Country">
                               Country's
                             </label>
-                            <input class="w-full border border-[#E7EAEF] rounded-lg" type="text" name="Country"
-                              id="Country" placeholder="Bangladesh">
+
+                            <div class="w-full">
+                              <select class="selectize w-[99%] focus:ring-0 cursor-pointer">
+                                <option class="text-[10px]" data-display="Select">
+                                  Bangladesh
+                                </option>
+                                <option class="text-[10px]" value="1">Some option2</option>
+                                <option class="text-[10px]" value="2">Some option3</option>
+                                <option class="text-[10px]" value="4">Some option4</option>
+                              </select>
+                            </div>
                           </div>
 
                           <div class="w-full">
@@ -645,14 +658,13 @@
     </section>
   </main>
 
-
-
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
   <!-- Swiper JS -->
   <script src="./assets/js/swiper.js"></script>
-
+  <!-- nice select -->
+  <script src="./assets/js/nice-select2.js"></script>
   <!-- Custom main js -->
   <script src="./assets/js/main.js"></script>
 </body>

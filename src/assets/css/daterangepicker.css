@@ -67,3 +67,11 @@
 .selected {
   background: #D87607;
 }
+
+.selectize{
+  width: 99%;
+}
+
+.nice-select-dropdown{
+  width: 100%;
+}
