@@ -12,10 +12,10 @@
   <link rel="shortcut icon" href="./src/assets/image/home/favicon.ico" type="image/x-icon">
 
   <!-- font-awesome cnd -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
 
   <!-- flowbite cdn -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./src/assets/css/swiper.css">
@@ -28,9 +28,9 @@
 </head>
 
 <body class="font-inter">
-  <header>
-    <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 xl:px-0">
+  <!-- top menu -->
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 xl:px-0">
+    <div class="container mx-auto">
       <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
 
         <ul class="flex gap-[40px]">
@@ -97,13 +97,13 @@
         </ul>
 
       </nav>
-    </section>
-
+    </div>
+  </section>
+  <header class=" sticky top-0 z-50  py-[16px] bg-white menu  shadow px-3">
     <!-- main menu  -->
-    <section class="menu py-[16px] shadow px-3 xl:px-0">
-      <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
-        <div>
+    <section class=" xl:px-0">
+      <div class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class=" flex  shrink-0 ">
           <a href="./index.html">
             <img src="./src/assets/image/home/logo.png" alt="logo">
           </a>
@@ -116,7 +116,7 @@
 
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
-                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
               placeholder="Search anything" required />
           </form>
 
@@ -232,143 +232,144 @@
         </div>
       </div>
     </section>
+  </header>
 
-    <!-- Search for Products -->
-    <section class="px-3">
-      <div class="container mx-auto my-6">
-        <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
-          style="background-image: url('./src/assets/image/home/search-for-products.png')">
-          <div class=" lg:pt-4 xl:pt-9">
-            <h1 class="text-[32px] font-semibold text-white">
-              Find Your Automotive Parts and Services
-            </h1>
+
+  <!-- hero section -->
+  <section class="container mx-auto mt-6 mb-10 px-3 xl:px-0">
+    <div class="grid md:grid-cols-3 gap-3">
+      <aside class="col-span-2">
+        <div class="swiper mySwiper w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
+            </div>
+            <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
+            </div>
+            <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
+            </div>
+            <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
+              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </aside>
 
-          <div class="2xl:mb-6 2xl:mt-3">
-            <p class="text-[#F0FDFC] text-sm">
-              Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
-              specific components or specialized maintenance
-            </p>
-          </div>
+      <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
 
-          <div class="flex items-center gap-5 mb-2 mt-3">
-            <a href="./index.html">
-              <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
-                <img src="./src/assets/image/home/search-for-products.svg" alt="">
-                <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
-              </div>
-            </a>
-
-            <a href="./src/service-home.html">
-              <div class="flex items-center gap-2 cursor-pointer">
-                <img src="./src/assets/image/home/search-for-services.svg" alt="">
-                <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="pb-9 2xl:pb-16">
-            <div
-              class="flex ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
-
-              <div class="border-r-2 border-[#E4E5E9] homeSelect">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">Product Category</option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="border-r-2 border-[#E4E5E9] homeSelect">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">Select Brand</option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="border-r-2 border-[#E4E5E9] homeSelect">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">Select Model</option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="border-r-2 border-[#E4E5E9] homeSelect">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">Model Year</option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="border-r-2 border-[#E4E5E9] homeSelect">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
+        <div class="relative z-10">
+          <img class="w-[72%] xl:w-[80%] 2xl:w-[83%]" src="./src/assets/image/home/hero-right1.png" alt="">
+        </div>
+        <div class="absolute bottom-6 right-0 z-0">
+          <img src="./src/assets/image/home/hero-right2.png" alt="">
+        </div>
+      </aside>
+    </div>
+  </section>
 
 
-              <div>
-                <input class="border-none focus:ring-0 text-[12px]" type="text" name="" id="" placeholder="Keyword">
-              </div>
+  <!-- Search for Products -->
+  <section class="px-3">
+    <div class="container mx-auto my-6">
+      <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
+        style="background-image: url('./src/assets/image/home/search-for-products.png')">
+        <div class=" lg:pt-4 xl:pt-9">
+          <h1 class="text-[32px] font-semibold text-white">
+            Find Your Automotive Parts and Services
+          </h1>
+        </div>
 
-              <div>
-                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
-                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
-                  <span class="font-bold text-white text-xs">Search</span>
-                </button>
-              </div>
+        <div class="2xl:mb-6 2xl:mt-3">
+          <p class="text-[#F0FDFC] text-sm">
+            Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
+            specific components or specialized maintenance
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5 mb-2 mt-3">
+          <a href="./index.html">
+            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+              <img src="./src/assets/image/home/search-for-products.svg" alt="">
+              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
+            </div>
+          </a>
+
+          <a href="./src/service-home.html">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="./src/assets/image/home/search-for-services.svg" alt="">
+              <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Services...</h3>
+            </div>
+          </a>
+        </div>
+
+        <div class="pb-9 2xl:pb-16">
+          <div
+            class="flex flex-wrap ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-b-lg rounded-se-lg">
+
+            <div class="border-r-2 border-[#E4E5E9] homeSelect">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                <option class="text-[10px]" data-display="Select">Product Category</option>
+                <option class="text-[10px]" value="1">Some option2</option>
+                <option class="text-[10px]" value="2">Some option3</option>
+                <option class="text-[10px]" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] homeSelect">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                <option class="text-[10px]" data-display="Select">Select Brand</option>
+                <option class="text-[10px]" value="1">Some option2</option>
+                <option class="text-[10px]" value="2">Some option3</option>
+                <option class="text-[10px]" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] homeSelect">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                <option class="text-[10px]" data-display="Select">Select Model</option>
+                <option class="text-[10px]" value="1">Some option2</option>
+                <option class="text-[10px]" value="2">Some option3</option>
+                <option class="text-[10px]" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] homeSelect">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                <option class="text-[10px]" data-display="Select">Model Year</option>
+                <option class="text-[10px]" value="1">Some option2</option>
+                <option class="text-[10px]" value="2">Some option3</option>
+                <option class="text-[10px]" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] homeSelect">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
+                <option class="text-[10px]" data-display="Select">Engine (Optional)</option>
+                <option class="text-[10px]" value="1">Some option2</option>
+                <option class="text-[10px]" value="2">Some option3</option>
+                <option class="text-[10px]" value="4">Some option4</option>
+              </select>
+            </div>
+
+
+            <div>
+              <input class="border-none focus:ring-0 text-[12px]" type="text" name="" id="" placeholder="Keyword">
+            </div>
+
+            <div>
+              <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                <span class="font-bold text-white text-xs">Search</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- hero section -->
-    <section class="container mx-auto mt-6 mb-10 px-3 xl:px-0">
-      <div class="grid md:grid-cols-3 gap-3">
-        <aside class="col-span-2">
-          <div class="swiper mySwiper w-full h-full">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-                <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
-              </div>
-              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-                <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
-              </div>
-              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-                <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
-              </div>
-              <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-                <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </aside>
-
-        <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
-
-          <div class="relative z-10">
-            <img class="w-[72%] xl:w-[80%] 2xl:w-[83%]" src="./src/assets/image/home/hero-right1.png" alt="">
-          </div>
-          <div class="absolute bottom-6 right-0 z-0">
-            <img src="./src/assets/image/home/hero-right2.png" alt="">
-          </div>
-        </aside>
-      </div>
-    </section>
-
-  </header>
+    </div>
+  </section>
 
   <main>
     <section class="container mx-auto mt-10 pl-2.5">
@@ -444,8 +445,7 @@
 
           <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
 
-            <div
-              class=" w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/engine.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -465,8 +465,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/electrical.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -486,8 +485,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/steering.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -507,8 +505,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/brakes.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -528,8 +525,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/Tires.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -549,8 +545,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/paint.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -570,8 +565,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/turbo.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -591,8 +585,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/fuel.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1168,6 +1161,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -1196,8 +1190,7 @@
 
           <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
 
-            <div
-              class=" w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class="  rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/engine.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1217,8 +1210,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/electrical.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1238,8 +1230,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/steering.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1259,8 +1250,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/brakes.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1280,8 +1270,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/Tires.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1301,8 +1290,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/paint.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1322,8 +1310,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/turbo.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -1343,8 +1330,7 @@
               </a>
             </div>
 
-            <div
-              class="w-full md:w-56 lg:w-60 xl:w-[245px] 2xl:w-72 rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
+            <div class=" rounded-xl bg-white category-shadow cursor-pointer transition-all hover:hoverShadow">
               <div class="flex gap-2 p-[14px] border-b">
                 <img src="./src/assets/image/home/fuel.svg" alt="engine">
                 <h4 class="text-[15px] font-bold text-[#3D3D3D]">
@@ -2806,7 +2792,7 @@
           </div>
 
           <div class="pt-3 lg:grid xl:grid-cols-2 gap-4">
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -2844,7 +2830,7 @@
               </div>
             </a>
 
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -2882,7 +2868,7 @@
               </div>
             </a>
 
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -2920,7 +2906,7 @@
               </div>
             </a>
 
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -2958,7 +2944,7 @@
               </div>
             </a>
 
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -2996,7 +2982,7 @@
               </div>
             </a>
 
-            <a href="./src/service-grid-page.html">
+            <a href="./src/service-grid-page.html" class="mb-3">
               <div
                 class="flex gap-3 bg-white rounded-2xl xl:w-[382px] 2xl:w-[470px] hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                 <div class="flex justify-center items-center">
@@ -3046,7 +3032,7 @@
     </section>
 
     <!-- Car Servicing Centre -->
-    <section class="container mx-auto my-10 px-3 xl:px-0">
+    <section class="container mx-auto my-10 px-3">
       <div class="py-5 px-10 xl:py-11 xl:px-16 bg-no-repeat 2xl:bg-cover rounded-3xl overflow-hidden"
         style="background-image: url('./src/assets/image/home/car-servicing-centre.png')">
         <div class="md:flex justify-between">
@@ -3090,7 +3076,7 @@
     </section>
 
     <!-- Just for you section -->
-    <section class="container mx-auto my-10 px-3 xl:px-0">
+    <section class="container mx-auto my-10 px-3">
       <div class="px-6 md:p-0">
         <div class="flex justify-between items-center">
           <h1 class="font-semibold text-2xl text-[#09090B]">
@@ -4281,7 +4267,7 @@
 
   <!-- footer section -->
   <footer class="bg-[#1F1E28]">
-    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 xl:px-0">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 xl:px-4">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center justify-center md:justify-start gap-3">
@@ -4319,37 +4305,38 @@
           <div class="flex flex-col md:flex-row md:justify-between">
             <ul>
               <li class="mb-8 text-center md:text-left">
-                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                <a class="text-white text-lg  text font-bold tracking-[-0.09px] " href="#">
                   Company
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium transition-colors duration-300 hover:text-gray-400"
+                  href="#">
                   About US
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Contact Us
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   How It Work
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Career
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Quick Guide
                 </a>
               </li>
@@ -4363,31 +4350,31 @@
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Terms of Use
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Privacy Policy
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Refund Policy
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Service Policy
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Affiliates
                 </a>
               </li>
@@ -4401,31 +4388,31 @@
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   About US
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Contact Us
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   How It Work
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Career
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Quick Guide
                 </a>
               </li>
@@ -4439,31 +4426,31 @@
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   About US
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Contact Us
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   How It Work
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Career
                 </a>
               </li>
 
               <li class="mb-9 text-center md:text-left">
-                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                <a class="text-[#E6E6E6] text-sm  sm:text-base font-medium" href="#">
                   Quick Guide
                 </a>
               </li>
@@ -4471,39 +4458,37 @@
           </div>
 
           <div class="flex justify-center sm:justify-start">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-[10px] sm:text-xs md:text-base lg:text-lg xl:ml-10">
+            <fieldset class="border border-r-0 border-gray-300 p-4  rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold text-[10px] sm:text-xs md:text-base lg:text-lg">
                 Download Customer App
               </legend>
               <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play"
-                      class="w-[59px] sm:w-full xl:w-36">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-[59px] sm:w-full">
                   </a>
                 </div>
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-[59px] sm:w-full xl:w-36">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-[59px] sm:w-full">
                   </a>
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-[10px] sm:text-xs  md:text-base lg:text-lg xl:ml-10">
+            <fieldset class="border  border-gray-300 p-4  rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold text-[10px] sm:text-xs  md:text-base lg:text-lg ">
                 Download Vendor App
               </legend>
               <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play"
-                      class="w-[59px] sm:w-full xl:w-36">
+                    <img src="./src/assets/image/home/googlePlay.png" alt="Google Play" class="w-[59px] sm:w-full ">
                   </a>
                 </div>
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-[59px] sm:w-full xl:w-36">
+                    <img src="./src/assets/image/home/appStore.png" alt="App Store" class="w-[59px] sm:w-full">
                   </a>
                 </div>
               </div>
@@ -4556,7 +4541,7 @@
   <!-- nice select -->
   <script src="./src/assets/js/nice-select2.js"></script>
   <!-- Custom main js -->
-  <script src="./src/assets/js/main.js"></script>
+  <!-- <script src="./src/assets/js/main.js"></script> -->
 </body>
 
 </html>
