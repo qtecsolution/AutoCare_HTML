@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>AutoCare - Store Profile</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="font-inter">
+  <!-- top menu -->
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+    <div class="container mx-auto">
+      <nav class="md:flex  justify-between items-center">
+        <ul class="flex gap-[40px]">
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#">About</a>
+          </li>
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#">Blog & News</a>
+          </li>
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#"> Become a Seller</a>
+          </li>
+        </ul>
+
+        <ul class="flex gap-[18px] items-center">
+          <div class="flex gap-[12px] items-center">
+            <li class="mr-6">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+                class="flex items-center gap-[7px]  relative">
+                <img src="./assets/image/home/lang.svg" alt="location">
+                <span class="text-base font-medium">English</span>
+                <span
+                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
+              </button>
+            </li>
+
+            <div id="dropdown1"
+              class="z-[100] hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bangla</a>
+                </li>
+              </ul>
+            </div>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
+            </li>
+          </div>
+
+          <div class="flex gap-[8px]">
+            <li>
+              <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- main menu  -->
+  <header class=" sticky top-0 z-50  py-[16px] bg-white menu  shadow px-3">
+    <section class="2xl:px-0">
+      <div class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class=" flex  shrink-0 ">
+          <a href="../index.html">
+            <img src="./assets/image/home/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[849px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+
+            <img src="./assets/image/home/search.svg" alt="search">
+
+            <input type="text" id="first_name"
+              class="border-0 bg-transparent block w-full focus:ring-0
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
+              placeholder="Search anything" required />
+          </form>
+
+          <div>
+            <ul class="flex gap-7">
+
+              <li class="mr-6">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
+                  <img src="./assets/image/home/location.svg" alt="location">
+                  <span class="text-base font-medium">Dhaka</span>
+                  <span
+                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+              </li>
+
+              <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                </ul>
+              </div>
+
+              <li class="ms-5">
+                <a class="relative" href="./Add-cart-order-flow-shopping-cart.html">
+                  <img src="./assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[560px] max-h-full">
+                <!-- Modal content -->
+                <div
+                  class="relative bg-[#F1F4F6] px-12 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-10">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome! Please Login to Continue.
+                    </h3>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <form action="#">
+                      <div>
+                        <label for="number"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <input type="number" name="number" id="number"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your Phone Number" required />
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <input type="password" name="password" id="password"
+                          class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Enter your password" required />
+                      </div>
+
+                      <div class="text-right mt-2">
+                        <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
+                          Password?
+                          <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
+                        Log in
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Didn't have any account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="text-[#09090B] font-bold text-sm w-16">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- store hero section -->
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-[#F4F4F4]">
+    <div class="container mx-auto px-3 2xl:px-0">
+      <!-- Breadcrumb -->
+      <nav class="flex py-5" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+
+          <li class="inline-flex items-center">
+            <a href="#"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <a href="#"
+                class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400">
+                Store
+              </a>
+            </div>
+          </li>
+
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2">Alisha Garage</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-white rounded-2xl category-shadow">
+        <figure>
+          <img class="w-full" src="./assets/image/store-profile/store-profile-hero.png" alt="">
+        </figure>
+
+        <div class="flex justify-between mt-8 pl-12 pr-6">
+          <div>
+            <div class="flex gap-4">
+              <figure>
+                <img src="./assets/image/store-profile/cars.png" alt="">
+              </figure>
+              <div>
+                <div class="flex items-center gap-1">
+                  <h2 class="text-[#1A202C] text-xl font-semibold">Mayer Doa Parts Store</h2>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.6598 6.91606L10.9234 5.42383L10.1869 6.91606C10.1111 7.06957 9.96471 7.17601 9.79522 7.20061L8.14844 7.43991L9.34009 8.60144C9.46265 8.72098 9.51862 8.89312 9.4897 9.06193L9.20837 10.7021L10.6813 9.92767C10.757 9.88782 10.8402 9.86795 10.9234 9.86795C11.0065 9.86795 11.0897 9.88787 11.1654 9.92767L12.6383 10.7021L12.357 9.06193C12.3281 8.89317 12.3841 8.72098 12.5066 8.60144L13.6983 7.43991L12.0515 7.20061C11.8821 7.17601 11.7356 7.06957 11.6598 6.91606Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M18.4074 8.52464C18.3628 8.38756 18.3628 8.24263 18.4074 8.1055L18.8289 6.8081C19.0598 6.0978 18.8088 5.32559 18.2046 4.88654L17.1009 4.08468C16.9843 3.99994 16.8991 3.88268 16.8546 3.74555L16.433 2.44814C16.2021 1.73785 15.5453 1.2606 14.7984 1.2606H13.4342C13.29 1.2606 13.1522 1.21581 13.0355 1.13107L11.9319 0.329216C11.3276 -0.109739 10.5157 -0.109739 9.91146 0.329216L8.80783 1.13107C8.6912 1.21581 8.55334 1.2606 8.40919 1.2606H7.04498C6.29817 1.2606 5.64124 1.73785 5.41037 2.4482L4.98879 3.74566C4.94426 3.88273 4.85905 3.99999 4.74242 4.08473L3.63879 4.88659C3.03462 5.32559 2.78367 6.0978 3.01448 6.8081L3.43606 8.10556C3.48065 8.24263 3.48065 8.38756 3.43606 8.52469L3.01448 9.82215C2.78367 10.5325 3.03462 11.3047 3.63884 11.7437L4.74253 12.5456C4.85916 12.6303 4.94432 12.7476 4.98885 12.8847L5.41043 14.1822C5.6413 14.8925 6.29817 15.3697 7.04504 15.3697H8.40924C8.55339 15.3697 8.69125 15.4145 8.80788 15.4992L9.91156 16.301C10.2138 16.5206 10.5677 16.6303 10.9218 16.6303C11.2758 16.6303 11.6299 16.5206 11.932 16.3011L13.0357 15.4992C13.1523 15.4145 13.2901 15.3697 13.4343 15.3697H14.7985C15.5453 15.3697 16.2022 14.8925 16.4331 14.1821L16.8547 12.8846C16.8992 12.7476 16.9844 12.6303 17.1011 12.5456L18.2047 11.7437C18.8089 11.3047 19.0598 10.5325 18.829 9.8221L18.4074 8.52464ZM15.1777 7.44952L13.4272 9.15587L13.8404 11.5653C13.8739 11.7605 13.7936 11.9577 13.6334 12.0742C13.5428 12.14 13.4354 12.1735 13.3276 12.1735C13.2448 12.1735 13.1617 12.1538 13.0856 12.1138L10.9217 10.9761L8.75784 12.1137C8.58263 12.2058 8.37017 12.1906 8.21 12.0742C8.04983 11.9578 7.96956 11.7605 8.00301 11.5653L8.41626 9.15587L6.6657 7.44952C6.52389 7.3113 6.47291 7.10457 6.53408 6.91625C6.59531 6.72793 6.75809 6.5907 6.954 6.56219L9.3733 6.21063L10.4552 4.01841C10.5428 3.84086 10.7237 3.72844 10.9217 3.72844C11.1198 3.72844 11.3006 3.84086 11.3882 4.01841L12.4701 6.21063L14.8894 6.56219C15.0854 6.59065 15.2482 6.72793 15.3093 6.91625C15.3705 7.10457 15.3195 7.3113 15.1777 7.44952Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M20.7129 15.3213L18.2555 12.8633L17.717 13.254L17.3212 14.4718C16.9648 15.5694 15.9499 16.3066 14.796 16.3066H13.5158L13.0117 16.6723L16.1871 19.8471C16.2854 19.9454 16.4186 19.9996 16.5549 19.9996C16.5903 19.9996 16.6262 19.9959 16.6615 19.9881C16.8332 19.9522 16.9752 19.832 17.0392 19.6687L18.0224 17.1561L20.5345 16.1734C20.6984 16.1094 20.8185 15.9674 20.8544 15.7952C20.8903 15.6235 20.8373 15.4451 20.7129 15.3213Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M8.3223 16.3066H7.04206C5.88823 16.3066 4.8733 15.5694 4.51695 14.4718L4.12107 13.254L3.58265 12.8633L1.12517 15.3213C1.00084 15.4451 0.947774 15.6235 0.983669 15.7952C1.01956 15.9674 1.13973 16.1094 1.3036 16.1734L3.8157 17.1561L4.7989 19.6687C4.86289 19.832 5.00491 19.9522 5.17658 19.9881C5.21195 19.9959 5.24785 19.9996 5.28322 19.9996C5.41952 19.9996 5.55269 19.9454 5.65101 19.8471L8.82639 16.6723L8.3223 16.3066Z"
+                      fill="#0D941B" />
+                  </svg>
+                </div>
+                <div class="flex items-center gap-1 py-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                    <path
+                      d="M6.58489 0.587138C6.84462 -0.195713 7.97268 -0.195713 8.23154 0.587138L9.15788 3.38534C9.21448 3.55575 9.32449 3.70424 9.47221 3.80958C9.61992 3.91491 9.79777 3.97171 9.98034 3.97184H12.9775C13.8164 3.97184 14.1645 5.02584 13.4866 5.51034L11.0625 7.23924C10.9145 7.34466 10.8043 7.4934 10.7477 7.66411C10.6911 7.83483 10.691 8.01876 10.7474 8.18954L11.6737 10.9877C11.9335 11.7706 11.0201 12.4225 10.3405 11.938L7.91641 10.2091C7.76854 10.1037 7.59051 10.047 7.40778 10.047C7.22506 10.047 7.04702 10.1037 6.89916 10.2091L4.47508 11.938C3.79634 12.4225 2.88384 11.7706 3.1427 10.9877L4.06904 8.18954C4.12547 8.01876 4.12537 7.83483 4.06876 7.66411C4.01214 7.4934 3.90193 7.34466 3.75391 7.23924L1.3307 5.51119C0.652823 5.02669 1.00172 3.97269 1.83976 3.97269H4.83609C5.01881 3.97273 5.19685 3.91602 5.34474 3.81068C5.49263 3.70533 5.60277 3.55674 5.65941 3.38619L6.58576 0.587987L6.58489 0.587138Z"
+                      fill="#F29232" />
+                  </svg>
+                  <p class="text-[#282728] text-xs">
+                    5.0 <span class="text-[#4A5568]">(210 Reviews)</span>
+                  </p>
+                </div>
+                <p class="text-[#7B7F95] text-xs max-w-44">
+                  Plot- 105, Road- 01, Block- A Shagufta Housing, Dhaka 1216,
+                </p>
+              </div>
+            </div>
+
+            <ul class="flex flex-wrap xl:flex-nowrap gap-3 font-medium text-center mt-8">
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow">
+                  Store Home
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow"
+                  aria-current="page">
+                  All Service
+                </a>
+              </li>
+              <li>
+                <a href="#reviews"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+                  Reviews
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-end gap-2 mb-14">
+              <a href="#"
+                class="text-[#0F766D] text-sm font-medium py-3 px-5 border border-[E4E5E9] bg-white rounded-lg flex items-center gap-1.5 transition-all hover:bg-[#0F766D] hover:text-white store-profile-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M10.7738 9.81686L11.0013 11.6602C11.0596 12.1443 10.5404 12.4827 10.1263 12.2318L7.68208 10.7793C7.41375 10.7793 7.15126 10.7619 6.89459 10.7269C7.32626 10.2194 7.58292 9.57767 7.58292 8.8835C7.58292 7.22684 6.14792 5.8852 4.37459 5.8852C3.69792 5.8852 3.07375 6.07768 2.55459 6.41602C2.53709 6.27018 2.53125 6.12434 2.53125 5.97268C2.53125 3.31851 4.83542 1.16602 7.68208 1.16602C10.5288 1.16602 12.8329 3.31851 12.8329 5.97268C12.8329 7.54768 12.0221 8.94186 10.7738 9.81686Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M7.58366 8.88502C7.58366 9.57919 7.327 10.2209 6.89533 10.7284C6.31783 11.4284 5.40199 11.8775 4.37533 11.8775L2.85283 12.7817C2.59616 12.9392 2.26949 12.7234 2.30449 12.4259L2.45032 11.2767C1.66866 10.7342 1.16699 9.86502 1.16699 8.88502C1.16699 7.85836 1.71533 6.9542 2.55533 6.41754C3.0745 6.0792 3.69866 5.88672 4.37533 5.88672C6.14866 5.88672 7.58366 7.22836 7.58366 8.88502Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                Chat
+              </a>
+              <a href="#"
+                class="text-[#0F766D] text-sm font-medium py-3 px-5 border border-[E4E5E9] bg-white rounded-lg flex items-center gap-1.5 transition-all hover:bg-[#0F766D] hover:text-white store-profile-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M4.36328 10.7044L6.17161 12.1044C6.40495 12.3378 6.92995 12.4544 7.27995 12.4544H9.49662C10.1966 12.4544 10.9549 11.9294 11.1299 11.2294L12.5299 6.9711C12.8216 6.15443 12.2966 5.45443 11.4216 5.45443H9.08828C8.73828 5.45443 8.44661 5.16277 8.50495 4.75443L8.79661 2.88777C8.91328 2.36277 8.56328 1.77943 8.03828 1.60443C7.57161 1.42943 6.98828 1.66277 6.75495 2.01277L4.36328 5.5711"
+                    stroke="#0F766D" stroke-miterlimit="10" />
+                  <path
+                    d="M1.38867 10.7039V4.98724C1.38867 4.17057 1.73867 3.87891 2.55534 3.87891H3.13867C3.95534 3.87891 4.30534 4.17057 4.30534 4.98724V10.7039C4.30534 11.5206 3.95534 11.8122 3.13867 11.8122H2.55534C1.73867 11.8122 1.38867 11.5206 1.38867 10.7039Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                Follow
+              </a>
+            </div>
+
+            <form class="flex items-center bg-white border border-[#E4E5E9] rounded-lg px-4 py-0.5 w-80">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/linear/search-normal">
+                  <g id="search-normal">
+                    <path id="Vector"
+                      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                      stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path id="Vector_2" d="M22 22L20 20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                </g>
+              </svg>
+              <input type="text" id="first_name"
+                class="border-0 bg-transparent block w-full focus:ring-0
+                    font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
+                placeholder="Search anything" required />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- main section -->
+  <main class="bg-[#F4F4F4]">
+    <!-- product-grid section -->
+    <section class="py-12">
+      <div class="container mx-auto px-3 2xl:px-0">
+        <div class="grid grid-cols-4 gap-12">
+          <div>
+            <div class="bg-white category-shadow rounded-2xl">
+              <div class="flex gap-1.5 py-[18px] px-6 bg-[#0273710d] rounded-t-2xl border-4 border-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M16.684 2.5H3.31522C2.97584 2.50027 2.64383 2.59904 2.35949 2.78432C2.07514 2.96961 1.8507 3.23345 1.71338 3.54381C1.57607 3.85417 1.53179 4.19772 1.58592 4.53276C1.64006 4.8678 1.79028 5.17992 2.01835 5.43125L7.8121 11.8031V17.8125C7.81215 17.93 7.8453 18.045 7.90776 18.1445C7.97022 18.244 8.05945 18.3239 8.16522 18.375C8.24976 18.4167 8.34285 18.4381 8.4371 18.4375C8.57915 18.4374 8.71692 18.3889 8.82772 18.3L9.9996 17.3625L11.9527 15.8C12.0258 15.7415 12.0848 15.6673 12.1254 15.5829C12.1659 15.4985 12.187 15.4061 12.1871 15.3125V11.8031L17.9808 5.43125C18.2089 5.17992 18.3591 4.8678 18.4133 4.53276C18.4674 4.19772 18.4231 3.85417 18.2858 3.54381C18.1485 3.23345 17.9241 2.96961 17.6397 2.78432C17.3554 2.59904 17.0234 2.50027 16.684 2.5Z"
+                    fill="#09090B" />
+                </svg>
+                <h4 class="text-base font-bold uppercase text-[#09090B]">Filters</h4>
+              </div>
+
+              <div class="mt-4 ml-7">
+                <div>
+                  <p class="text-[#09090B] text-base font-bold">
+                    Service type
+                  </p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Engine &
+                      Transmission
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Electrical
+                      &
+                      Electronics
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Steering
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Brakes &
+                      Suspension
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Tires &
+                      Wheels
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="bg-[#F4F5F7] border border-white rounded-lg p-1 xl:p-[22px] mr-1 xl:mr-6 mt-4">
+                  <div>
+                    <label class="label flex items-center text-[#525468] text-xs font-medium ">Duratread Elite
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark top-0"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs font-medium ">TerrainGrip Pro
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark top-0"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs font-medium ">PrecisionTread Sport
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark top-0"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs font-medium ">AllSeason Shield
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark top-0"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">Service Duration</p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">30 Min
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">1 Hr
+                      Group
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">
+                    Appointment Availability
+                  </p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Morning
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Evening
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">Certifications</p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text- 2xl:text-base font-medium ">Premium
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label
+                      class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">
+                    Brand
+                  </p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Toyota
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Volkswagen
+                      Group
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">General
+                      Motors (GM)
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Ford
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Honda
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">
+                    Vehicle Model
+                  </p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label
+                      class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">
+                    Service Duration
+                  </p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Premium
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label
+                      class="label flex items-center text-[#525468] text-xs 2xl:text-base font-medium ">Price/Performance
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mt-6 pb-8 2xl:mt-3">
+                  <p class="text-[#09090B] text-base font-bold">Service Rating/Reviews</p>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-xs font-medium ">
+                      <div>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                      </div>
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-xs font-medium ">
+                      <div>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      </div>
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-xs font-medium ">
+                      <div>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      </div>
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-xs font-medium ">
+                      <div>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      </div>
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+
+                  <div class="mt-[14px]">
+                    <label class="label flex items-center text-xs font-medium ">
+                      <div>
+                        <i class="fa-solid fa-star text-[#F49D0C]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                        <i class="fa-solid fa-star text-[#CBCDD6]"></i>
+                      </div>
+                      <input type="checkbox" class="hidden">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mt-4">
+              <img class="w-full" src="./assets/image/product-grid-page/add2.png" alt="add2">
+              <i class="fa-solid fa-x absolute top-3 right-5 2xl:right-5 cursor-pointer text-[#CBCBCB]"></i>
+              <i
+                class="fa-solid fa-ellipsis-vertical absolute top-3 right-12 2xl:right-12 cursor-pointer text-[#CBCBCB]"></i>
+            </div>
+          </div>
+
+          <div class="col-span-3">
+            <div class="flex justify-between items-center mb-5">
+              <div class="w-48 border border-[#E4E5E9] bg-white rounded-lg py-2 px-3">
+                <button id="recommended" data-dropdown-toggle="recommended1"
+                  class="flex gap-[7px] items-center relative">
+                  <span class="text-xs font-medium">New Product</span>
+                  <span
+                    class="absolute top-[6px] right-[-100px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+
+                <div id="recommended1"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-48 dark:bg-gray-700 newProduct-dropdown">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="recommended">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">New
+                        Product1</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">New
+                        Product2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <div class="flex items-center bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3 gap-3">
+                  <div>
+                    <span>View</span>
+                  </div>
+
+                  <a href="./product-grid-page.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <rect width="5.83333" height="5.83333" rx="1" fill="#CBCDD6" />
+                      <rect y="8.16602" width="5.83333" height="5.83333" rx="1" fill="#CBCDD6" />
+                      <rect x="8.16699" width="5.83333" height="5.83333" rx="1" fill="#CBCDD6" />
+                      <rect x="8.16699" y="8.16602" width="5.83333" height="5.83333" rx="1" fill="#CBCDD6" />
+                    </svg>
+                  </a>
+                  <a href="./product-list-page.html">
+                    <img src="./assets/image/product-grid-page/three-line.svg" alt="">
+                  </a>
+                  <a href="./product-list2-page.html" class="bg-white rounded-md p-[5px] flex gap-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="15" viewBox="0 0 7 15" fill="none">
+                      <rect width="7" height="3" rx="1" fill="#60637A" />
+                      <rect y="6" width="7" height="3" rx="1" fill="#60637A" />
+                      <rect y="12" width="7" height="3" rx="1" fill="#60637A" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="15" viewBox="0 0 7 15" fill="none">
+                      <rect width="7" height="3" rx="1" fill="#60637A" />
+                      <rect y="6" width="7" height="3" rx="1" fill="#60637A" />
+                      <rect y="12" width="7" height="3" rx="1" fill="#60637A" />
+                    </svg>
+                  </a>
+                  <a href="./product-map-page.html">
+                    <img src="./assets/image/product-grid-page/location.svg" alt="">
+                  </a>
+                </div>
+
+                <div class="flex items-center gap-5 bg-[#F4F5F7] border border-[#E4E5E9] rounded-lg py-2 px-3">
+                  <div>
+                    <p class="text-[#09090B] text-xs">1-10 of 10</p>
+                  </div>
+
+                  <div class="flex gap-1">
+                    <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.2005 5.99993C10.2005 6.11928 10.1531 6.23374 10.0687 6.31813C9.9843 6.40252 9.86984 6.44993 9.75049 6.44993H3.36769L5.86249 8.82593C5.9071 8.86639 5.94313 8.9154 5.96845 8.97004C5.99377 9.02468 6.00787 9.08385 6.0099 9.14404C6.01193 9.20423 6.00187 9.26422 5.98029 9.32044C5.95872 9.37667 5.92607 9.428 5.8843 9.47138C5.84253 9.51476 5.79247 9.54931 5.7371 9.57299C5.68172 9.59667 5.62216 9.609 5.56194 9.60923C5.50171 9.60947 5.44206 9.59762 5.3865 9.57438C5.33094 9.55114 5.28061 9.51698 5.23849 9.47393L1.93849 6.32393C1.89494 6.28195 1.8603 6.23163 1.83664 6.17596C1.81298 6.12029 1.80078 6.06042 1.80078 5.99993C1.80078 5.93944 1.81298 5.87957 1.83664 5.8239C1.8603 5.76824 1.89494 5.71791 1.93849 5.67593L5.23849 2.52593C5.28061 2.48288 5.33094 2.44873 5.3865 2.42548C5.44206 2.40224 5.50171 2.39039 5.56194 2.39063C5.62216 2.39087 5.68172 2.40319 5.7371 2.42687C5.79247 2.45055 5.84253 2.48511 5.8843 2.52849C5.92607 2.57187 5.95872 2.62319 5.98029 2.67942C6.00187 2.73565 6.01193 2.79563 6.0099 2.85582C6.00787 2.91601 5.99377 2.97518 5.96845 3.02982C5.94313 3.08446 5.9071 3.13347 5.86249 3.17393L3.36769 5.54993H9.75049C9.86984 5.54993 9.9843 5.59734 10.0687 5.68173C10.1531 5.76612 10.2005 5.88058 10.2005 5.99993Z"
+                          fill="#A7AAB9" />
+                      </svg>
+                    </button>
+                    <button class="bg-white rounded shadow p-2 flex justify-center items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.79951 6.00007C1.79951 5.88072 1.84692 5.76626 1.93131 5.68187C2.0157 5.59748 2.13016 5.55007 2.24951 5.55007L8.63231 5.55007L6.13751 3.17407C6.0929 3.13361 6.05687 3.0846 6.03155 3.02996C6.00623 2.97532 5.99213 2.91615 5.9901 2.85596C5.98807 2.79577 5.99814 2.73578 6.01971 2.67956C6.04128 2.62333 6.07393 2.572 6.1157 2.52862C6.15747 2.48524 6.20753 2.45069 6.2629 2.42701C6.31828 2.40333 6.37784 2.391 6.43806 2.39077C6.49829 2.39053 6.55795 2.40238 6.6135 2.42562C6.66906 2.44886 6.71939 2.48302 6.76151 2.52607L10.0615 5.67607C10.1051 5.71805 10.1397 5.76837 10.1634 5.82404C10.187 5.87971 10.1992 5.93958 10.1992 6.00007C10.1992 6.06056 10.187 6.12043 10.1634 6.1761C10.1397 6.23176 10.1051 6.28209 10.0615 6.32407L6.76151 9.47407C6.71939 9.51712 6.66906 9.55127 6.6135 9.57452C6.55794 9.59776 6.49829 9.60961 6.43806 9.60937C6.37784 9.60913 6.31828 9.59681 6.2629 9.57313C6.20753 9.54945 6.15747 9.51489 6.1157 9.47151C6.07393 9.42813 6.04128 9.37681 6.01971 9.32058C5.99813 9.26435 5.98807 9.20437 5.9901 9.14418C5.99213 9.08399 6.00623 9.02482 6.03155 8.97018C6.05687 8.91553 6.0929 8.86653 6.13751 8.82607L8.63231 6.45007L2.24951 6.45007C2.13016 6.45007 2.0157 6.40266 1.93131 6.31827C1.84692 6.23387 1.79951 6.11942 1.79951 6.00007Z"
+                          fill="#09090B" />
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4">
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel3.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel2.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./single-product-page.html">
+                <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
+                  <div
+                    class="bg-[#F6F6F6] border-4 border-white rounded-xl h-[230px] flex justify-center items-center relative">
+                    <div class="py-1 px-3 bg-[#0D9488] rounded-md absolute top-4 right-5">
+                      <p class="text-base font-semibold text-white">20% Off</p>
+                    </div>
+                    <img class="w-[60%]" src="./assets/image/home/carousel1.png" alt="">
+                  </div>
+
+                  <div class="p-3">
+                    <div class="flex justify-between">
+                      <p class="flex items-center gap-1 -ml-1">
+                        <img src="./assets/image/home/star.svg" alt="">
+                        <span class="text-[10px] text-[#09090B]">
+                          5.0 <span class="text-[#474957]">(3 Reviews)</span>
+                        </span>
+                      </p>
+                      <p class="flex">
+                        <img src="./assets/image/home/location-block.svg" alt="">
+                        <span class="text-[10px] text-[#474957]">Dhaka</span>
+                      </p>
+                    </div>
+
+                    <div class="pt-[8px] pb-5">
+                      <h2 class="text-[#09090B] font-bold text-lg">
+                        For Harley Sportster 883 XL1200 X48 Dyna CVO...
+                      </h2>
+                    </div>
+
+                    <div class="mb-6">
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Manufacturer:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Part Number:</span>
+                        <span class="text-[#09090B]">ZZVF</span>
+                      </p>
+
+                      <p class="text-xs">
+                        <span class="text-[#525468]">Vehicle Model:</span>
+                        <span class="text-[#09090B]">i20, i20 Elite</span>
+                      </p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2.5">
+                        <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
+                        <p class="text-[#525468] text-base line-through">1,024 Tk</p>
+                      </div>
+                      <img src="./assets/image/home/delivery.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="flex justify-center mt-20">
+              <nav aria-label="Page navigation example">
+                <ul class="flex items-center -space-x-px h-8 text-sm gap-2">
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all  hover:border-[#0F766D] hover:text-[#0F766D]">
+                      <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M5 1 1 5l4 4" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-sm transition-all border-[#0F766D] text-[#0F766D] hover:border-[#0F766D] hover:text-[#0F766D]">1</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">2</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">3</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                      <i class="fa-solid fa-ellipsis"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                      <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m1 9 4-4-4-4" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
