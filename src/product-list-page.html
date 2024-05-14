@@ -27,12 +27,10 @@
 </head>
 
 <body class="font-inter">
-  <!-- Header section -->
-  <header>
-    <!-- top menu -->
-    <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
-      <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
-
+  <!-- top menu -->
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 xl:px-0">
+    <div class="container mx-auto">
+      <nav class="md:flex  justify-between items-center">
         <ul class="flex gap-[40px]">
           <li>
             <a class="font-inter text-sm text-[#383941]" href="#">About</a>
@@ -58,7 +56,7 @@
             </li>
 
             <div id="dropdown1"
-              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              class="z-[100] hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
                 <li>
                   <a href="#"
@@ -66,7 +64,7 @@
                 </li>
                 <li>
                   <a href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bangla</a>
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bangla</a>
                 </li>
               </ul>
             </div>
@@ -95,28 +93,27 @@
             </li>
           </div>
         </ul>
-
       </nav>
-    </section>
-
-    <!-- main menu  -->
-    <section class="menu py-[16px] shadow px-3 2xl:px-0">
-      <div
-        class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
-        <div>
+    </div>
+  </section>
+  <!-- main menu  -->
+  <header class=" sticky top-0 z-50  py-[16px] bg-white menu  shadow px-3">
+    <section class="xl:px-0">
+      <div class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class=" flex  shrink-0 ">
           <a href="../index.html">
             <img src="./assets/image/home/logo.png" alt="logo">
           </a>
         </div>
 
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] 2xl:w-[900px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[849px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
 
             <img src="./assets/image/home/search.svg" alt="search">
 
             <input type="text" id="first_name"
               class="border-0 bg-transparent block w-full focus:ring-0
-                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
               placeholder="Search anything" required />
           </form>
 
@@ -225,143 +222,141 @@
               </div>
             </div>
 
-            <button class="text-[#09090B] font-bold text-sm">
+            <button class="text-[#09090B] font-bold text-sm w-16">
               Sign Up
             </button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Search for Products -->
-    <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
-      <div class="container mx-auto">
-        <div class="py-10">
-          <div class="flex justify-center gap-5 mb-1">
-            <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
-              <img src="./assets/image/home/search-for-products.svg" alt="">
-              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
-            </div>
-
-            <div class="flex items-center gap-2 cursor-pointer">
-              <img src="./assets/image/product-grid-page/search-for-services.svg" alt="">
-              <h3 class="font-semibold text-sm">Search for Services...</h3>
-            </div>
+  </header>
+  <!-- Search for Products -->
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
+    <div class="container mx-auto">
+      <div class="py-10">
+        <div class="flex justify-center gap-5 mb-1">
+          <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
+            <img src="./assets/image/home/search-for-products.svg" alt="">
+            <h3 class="text-[#0F766D] font-semibold text-sm">Search for Products...</h3>
           </div>
 
-          <div class="flex justify-center">
-            <div
-              class="flex justify-center ps-1 xl:ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
-
-              <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
-                  <option class="text-xs xl:text-base" data-display="Select">Select Brand</option>
-                  <option class="text-xs xl:text-base" value="1">Some option2</option>
-                  <option class="text-xs xl:text-base" value="2">Some option3</option>
-                  <option class="text-xs xl:text-base" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
-                  <option class="text-xs xl:text-base" data-display="Select">Select Model</option>
-                  <option class="text-xs xl:text-base" value="1">Some option2</option>
-                  <option class="text-xs xl:text-base" value="2">Some option3</option>
-                  <option class="text-xs xl:text-base" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
-                  <option class="text-xs xl:text-base" data-display="Select">Model Year </option>
-                  <option class="text-xs xl:text-base" value="1">Some option2</option>
-                  <option class="text-xs xl:text-base" value="2">Some option3</option>
-                  <option class="text-xs xl:text-base" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
-                  <option class="text-xs xl:text-base" data-display="Select">Engine (Optional)</option>
-                  <option class="text-xs xl:text-base" value="1">Some option2</option>
-                  <option class="text-xs xl:text-base" value="2">Some option3</option>
-                  <option class="text-xs xl:text-base" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div class="select border-r-2 border-[#E4E5E9]">
-                <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
-                  <option class="text-xs xl:text-base" data-display="Select">Product Category (Optional)</option>
-                  <option class="text-xs xl:text-base" value="1">Some option2</option>
-                  <option class="text-xs xl:text-base" value="2">Some option3</option>
-                  <option class="text-xs xl:text-base" value="4">Some option4</option>
-                </select>
-              </div>
-
-              <div>
-                <input
-                  class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base"
-                  type="text" name="" id="" placeholder="Keyword">
-              </div>
-
-              <div>
-                <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
-                  <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
-                  <span class="font-bold text-white text-xs">Search</span>
-                </button>
-              </div>
-            </div>
+          <div class="flex items-center gap-2 cursor-pointer">
+            <img src="./assets/image/product-grid-page/search-for-services.svg" alt="">
+            <h3 class="font-semibold text-sm">Search for Services...</h3>
           </div>
         </div>
-      </div>
 
-      <!-- Ad section -->
-      <div class=" w-[970px] xl:w-[1130px] mx-auto mb-10">
-        <div class="bg-no-repeat xl:bg-cover xl:pb-[11px] rounded-xl"
-          style="background-image: url('./assets/image/product-grid-page/ad.png')">
-          <div class="flex justify-between items-center">
+        <div class="flex justify-center">
+          <div
+            class="flex justify-center ps-1 xl:ps-4 pr-1.5 py-2 bg-white category-shadow items-center xl:gap-2 rounded-lg">
+
+            <div class="select border-r-2 border-[#E4E5E9]">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                <option class="text-xs xl:text-base" data-display="Select">Select Brand</option>
+                <option class="text-xs xl:text-base" value="1">Some option2</option>
+                <option class="text-xs xl:text-base" value="2">Some option3</option>
+                <option class="text-xs xl:text-base" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="select border-r-2 border-[#E4E5E9]">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                <option class="text-xs xl:text-base" data-display="Select">Select Model</option>
+                <option class="text-xs xl:text-base" value="1">Some option2</option>
+                <option class="text-xs xl:text-base" value="2">Some option3</option>
+                <option class="text-xs xl:text-base" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="select border-r-2 border-[#E4E5E9]">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                <option class="text-xs xl:text-base" data-display="Select">Model Year </option>
+                <option class="text-xs xl:text-base" value="1">Some option2</option>
+                <option class="text-xs xl:text-base" value="2">Some option3</option>
+                <option class="text-xs xl:text-base" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="select border-r-2 border-[#E4E5E9]">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                <option class="text-xs xl:text-base" data-display="Select">Engine (Optional)</option>
+                <option class="text-xs xl:text-base" value="1">Some option2</option>
+                <option class="text-xs xl:text-base" value="2">Some option3</option>
+                <option class="text-xs xl:text-base" value="4">Some option4</option>
+              </select>
+            </div>
+
+            <div class="select border-r-2 border-[#E4E5E9]">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-xs xl:text-base cursor-pointer">
+                <option class="text-xs xl:text-base" data-display="Select">Product Category (Optional)</option>
+                <option class="text-xs xl:text-base" value="1">Some option2</option>
+                <option class="text-xs xl:text-base" value="2">Some option3</option>
+                <option class="text-xs xl:text-base" value="4">Some option4</option>
+              </select>
+            </div>
+
             <div>
-              <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
-            </div>
-            <div class="flex gap-3 mr-2.5 mt-2">
-              <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                fill="none">
-                <g opacity="0.5">
-                  <path
-                    d="M10 5.625C9.83424 5.625 9.67527 5.55915 9.55806 5.44194C9.44085 5.32473 9.375 5.16576 9.375 5C9.375 4.83424 9.44085 4.67527 9.55806 4.55806C9.67527 4.44085 9.83424 4.375 10 4.375C10.1658 4.375 10.3247 4.44085 10.4419 4.55806C10.5592 4.67527 10.625 4.83424 10.625 5C10.625 5.16576 10.5592 5.32473 10.4419 5.44194C10.3247 5.55915 10.1658 5.625 10 5.625ZM10 10.625C9.83424 10.625 9.67527 10.5592 9.55806 10.4419C9.44085 10.3247 9.375 10.1658 9.375 10C9.375 9.83424 9.44085 9.67527 9.55806 9.55806C9.67527 9.44085 9.83424 9.375 10 9.375C10.1658 9.375 10.3247 9.44085 10.4419 9.55806C10.5592 9.67527 10.625 9.83424 10.625 10C10.625 10.1658 10.5592 10.3247 10.4419 10.4419C10.3247 10.5592 10.1658 10.625 10 10.625ZM10 15.625C9.83424 15.625 9.67527 15.5592 9.55806 15.4419C9.44085 15.3247 9.375 15.1658 9.375 15C9.375 14.8342 9.44085 14.6753 9.55806 14.5581C9.67527 14.4408 9.83424 14.375 10 14.375C10.1658 14.375 10.3247 14.4408 10.4419 14.5581C10.5592 14.6753 10.625 14.8342 10.625 15C10.625 15.1658 10.5592 15.3247 10.4419 15.4419C10.3247 15.5592 10.1658 15.625 10 15.625Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-              </svg>
-              <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                fill="none">
-                <g opacity="0.5">
-                  <path d="M5 15L15 5M5 5L15 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </g>
-              </svg>
-            </div>
-          </div>
-          <div class="flex justify-around">
-            <div class="mt-[-13px] ml-[-20px]">
-              <img src="./assets/image/product-grid-page/car.png" alt="">
+              <input
+                class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base"
+                type="text" name="" id="" placeholder="Keyword">
             </div>
 
-            <div class="mt-2">
-              <p class="text-white font-medium text-xs">Summer SALE</p>
-              <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
-              <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
-            </div>
-            <div class="mt-2">
-              <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
-                Lets book a test drive
+            <div>
+              <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                <span class="font-bold text-white text-xs">Search</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-  </header>
+    <!-- Ad section -->
+    <div class=" w-[970px] xl:w-[1130px] mx-auto mb-10">
+      <div class="bg-no-repeat xl:bg-cover xl:pb-[11px] rounded-xl"
+        style="background-image: url('./assets/image/product-grid-page/ad.png')">
+        <div class="flex justify-between items-center">
+          <div>
+            <h4 class="text-white text-sm ml-2 mt-1">Ad</h4>
+          </div>
+          <div class="flex gap-3 mr-2.5 mt-2">
+            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <g opacity="0.5">
+                <path
+                  d="M10 5.625C9.83424 5.625 9.67527 5.55915 9.55806 5.44194C9.44085 5.32473 9.375 5.16576 9.375 5C9.375 4.83424 9.44085 4.67527 9.55806 4.55806C9.67527 4.44085 9.83424 4.375 10 4.375C10.1658 4.375 10.3247 4.44085 10.4419 4.55806C10.5592 4.67527 10.625 4.83424 10.625 5C10.625 5.16576 10.5592 5.32473 10.4419 5.44194C10.3247 5.55915 10.1658 5.625 10 5.625ZM10 10.625C9.83424 10.625 9.67527 10.5592 9.55806 10.4419C9.44085 10.3247 9.375 10.1658 9.375 10C9.375 9.83424 9.44085 9.67527 9.55806 9.55806C9.67527 9.44085 9.83424 9.375 10 9.375C10.1658 9.375 10.3247 9.44085 10.4419 9.55806C10.5592 9.67527 10.625 9.83424 10.625 10C10.625 10.1658 10.5592 10.3247 10.4419 10.4419C10.3247 10.5592 10.1658 10.625 10 10.625ZM10 15.625C9.83424 15.625 9.67527 15.5592 9.55806 15.4419C9.44085 15.3247 9.375 15.1658 9.375 15C9.375 14.8342 9.44085 14.6753 9.55806 14.5581C9.67527 14.4408 9.83424 14.375 10 14.375C10.1658 14.375 10.3247 14.4408 10.4419 14.5581C10.5592 14.6753 10.625 14.8342 10.625 15C10.625 15.1658 10.5592 15.3247 10.4419 15.4419C10.3247 15.5592 10.1658 15.625 10 15.625Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <g opacity="0.5">
+                <path d="M5 15L15 5M5 5L15 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="flex justify-around">
+          <div class="mt-[-13px] ml-[-20px]">
+            <img src="./assets/image/product-grid-page/car.png" alt="">
+          </div>
+
+          <div class="mt-2">
+            <p class="text-white font-medium text-xs">Summer SALE</p>
+            <h2 class="text-[#9FD86C] text-2xl font-bold uppercase mt-[-5px]">drive luxury</h2>
+            <p class="font-kaushan text-[26px] text-white mt-[-22px] text-right">Car</p>
+          </div>
+          <div class="mt-2">
+            <button class="bg-[#E4EEDB] rounded-md px-3 py-2 text-[#013B42] text-sm font-semibold">
+              Lets book a test drive
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- main section -->
   <main>
