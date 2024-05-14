@@ -124,4 +124,16 @@
   .profile-hover:hover svg {
     fill: #0F766D;
   }
+
+  .store-profile-hover:hover {
+    @apply text-[#0F766D]
+  }
+
+  .store-profile-hover svg {
+    @apply transition-all
+  }
+
+  .store-profile-hover:hover svg {
+    fill: white;
+  }
 }
