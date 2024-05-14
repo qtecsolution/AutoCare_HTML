@@ -136,8 +136,4 @@
   .store-profile-hover:hover svg {
     fill: white;
   }
-
-  .newProduct-dropdown {
-    transform: translate(373px, 732px) !important;
-  }
 }

@@ -795,10 +795,6 @@ video {
   fill: white;
 }
 
-.newProduct-dropdown {
-  transform: translate(373px, 732px) !important;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1294,6 +1290,10 @@ video {
   margin-top: 0.625rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1344,10 +1344,6 @@ video {
 
 .mt-\[51px\] {
   margin-top: 51px;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -1906,10 +1902,6 @@ video {
 
 .gap-\[8px\] {
   gap: 8px;
-}
-
-.gap-\[1px\] {
-  gap: 1px;
 }
 
 .gap-x-3 {
@@ -3599,6 +3591,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .line-through {
