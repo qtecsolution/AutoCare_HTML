@@ -844,8 +844,40 @@ video {
   bottom: 0px;
 }
 
+.-bottom-8 {
+  bottom: -2rem;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.-left-0\.5 {
+  left: -0.125rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
+}
+
+.-left-2\.5 {
+  left: -0.625rem;
+}
+
+.-left-8 {
+  left: -2rem;
+}
+
+.-left-\[15px\] {
+  left: -15px;
+}
+
 .-right-6 {
   right: -1.5rem;
+}
+
+.-right-\[15px\] {
+  right: -15px;
 }
 
 .-top-7 {
@@ -972,36 +1004,16 @@ video {
   top: 2px;
 }
 
+.top-\[42\%\] {
+  top: 42%;
+}
+
 .top-\[6px\] {
   top: 6px;
 }
 
 .top-\[9px\] {
   top: 9px;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.-left-\[15px\] {
-  left: -15px;
-}
-
-.top-\[42\] {
-  top: 42;
-}
-
-.top-\[42\%\] {
-  top: 42%;
-}
-
-.-right-\[15px\] {
-  right: -15px;
 }
 
 .z-0 {
@@ -1196,6 +1208,10 @@ video {
 
 .ml-11 {
   margin-left: 2.75rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .ml-2 {
@@ -1470,6 +1486,10 @@ video {
   height: 230px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[7px\] {
   height: 7px;
 }
@@ -1488,10 +1508,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[30px\] {
-  height: 30px;
 }
 
 .max-h-full {
@@ -1598,6 +1614,10 @@ video {
   width: 302px;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
 .w-\[322px\] {
   width: 322px;
 }
@@ -1660,14 +1680,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[30px\] {
-  width: 30px;
 }
 
 .max-w-44 {
@@ -2199,6 +2211,10 @@ video {
   border-bottom-width: 0px;
 }
 
+.border-l {
+  border-left-width: 1px;
+}
+
 .border-l-\[5px\] {
   border-left-width: 5px;
 }
@@ -2237,10 +2253,6 @@ video {
 
 .border-t-\[9px\] {
   border-top-width: 9px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .border-dashed {
@@ -4414,6 +4426,10 @@ video {
     margin-left: 2.5rem;
   }
 
+  .xl\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
   .xl\:mr-6 {
     margin-right: 1.5rem;
   }
@@ -4676,6 +4692,10 @@ video {
     width: 265px;
   }
 
+  .\32xl\:w-\[370px\] {
+    width: 370px;
+  }
+
   .\32xl\:w-\[484px\] {
     width: 484px;
   }
@@ -4698,14 +4718,6 @@ video {
 
   .\32xl\:w-full {
     width: 100%;
-  }
-
-  .\32xl\:w-96 {
-    width: 24rem;
-  }
-
-  .\32xl\:w-\[370px\] {
-    width: 370px;
   }
 
   .\32xl\:max-w-\[900px\] {
