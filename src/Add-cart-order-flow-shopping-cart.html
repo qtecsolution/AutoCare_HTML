@@ -140,9 +140,136 @@
             </div>
           </div>
 
-          <button class="text-[#09090B] font-bold text-sm">
+          <button data-modal-target="sign-modal" data-modal-toggle="sign-modal" type="button"
+            class="text-[#09090B] font-bold text-sm w-16">
             Sign Up
           </button>
+
+          <!-- Sign modal -->
+          <div id="sign-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-[560px] max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="mb-6">
+                  <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                    Register Now!
+                  </h3>
+                  <p class="text-[#525468] text-sm text-center dark:text-white mt-2">
+                    Explore Auto Sales & Services
+                  </p>
+                </div>
+                <!-- Modal body -->
+                <div>
+                  <form action="#">
+                    <div>
+                      <label for="name"
+                        class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                        Full Name
+                      </label>
+
+                      <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M13.613 3.695L9.45498 1.294C8.77599 0.902 7.93599 0.902 7.24999 1.294L3.099 3.695C2.42 4.087 2 4.815 2 5.606V10.394C2 11.178 2.42 11.906 3.099 12.305L7.25699 14.706C7.93599 15.098 8.77599 15.098 9.46199 14.706L13.62 12.305C14.299 11.913 14.719 11.185 14.719 10.394V5.606C14.712 4.815 14.292 4.094 13.613 3.695ZM8.35599 4.738C9.25899 4.738 9.98699 5.466 9.98699 6.369C9.98699 7.272 9.25899 8 8.35599 8C7.45299 8 6.725 7.272 6.725 6.369C6.725 5.473 7.45299 4.738 8.35599 4.738ZM10.232 11.262H6.48C5.913 11.262 5.584 10.632 5.899 10.163C6.375 9.456 7.29899 8.98 8.35599 8.98C9.41299 8.98 10.337 9.456 10.813 10.163C11.128 10.625 10.792 11.262 10.232 11.262Z"
+                            fill="#0F766D" />
+                        </svg>
+                        <input type="text" name="name" id="name"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                          placeholder="Enter Your Name" required />
+                      </div>
+                    </div>
+
+                    <div class="mt-6">
+                      <label for="phoneNumber"
+                        class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                        Phone Number
+                      </label>
+
+                      <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                            fill="#0F766D" />
+                        </svg>
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                          placeholder="Enter Your Phone Number" required />
+                      </div>
+                    </div>
+
+                    <button type="submit"
+                      class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                      Continue
+                    </button>
+
+                    <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                      Already have account?
+                      <a href="#" class="text-[#115E57] hover:underline font-bold">
+                        LOGIN
+                      </a>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-5 mt-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                        <path
+                          d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                          fill="#D9D9D9" />
+                      </svg>
+                      <p class="text-[#191919] text-sm">
+                        Or Continue with
+                      </p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                        <path
+                          d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                          fill="#D9D9D9" />
+                      </svg>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4 mt-3">
+                      <button
+                        class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                          <path
+                            d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                            fill="#167EE6" />
+                          <path
+                            d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                            fill="#12B347" />
+                          <path
+                            d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                            fill="#0F993E" />
+                          <path
+                            d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                            fill="#FFD500" />
+                          <path
+                            d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                            fill="#FF4B26" />
+                          <path
+                            d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                            fill="#D93F21" />
+                        </svg>
+                        Google
+                      </button>
+                      <button
+                        class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                            fill="#1877F2" />
+                          <path
+                            d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                            fill="#F1F1F1" />
+                        </svg>
+                        Facebook
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hidden xl:block">
