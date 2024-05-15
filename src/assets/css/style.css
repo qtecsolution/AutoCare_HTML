@@ -1016,6 +1016,22 @@ video {
   top: 9px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.left-32 {
+  left: 8rem;
+}
+
+.left-\[135px\] {
+  left: 135px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1710,6 +1726,10 @@ video {
   max-width: 410px;
 }
 
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
 .max-w-\[513px\] {
   max-width: 513px;
 }
@@ -1744,10 +1764,6 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
 }
 
 .flex-shrink-0 {
@@ -2340,6 +2356,11 @@ video {
   border-color: rgb(231 234 239 / var(--tw-border-opacity));
 }
 
+.border-\[\#EFEFEF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 239 239 / var(--tw-border-opacity));
+}
+
 .border-\[\#F9851A\] {
   --tw-border-opacity: 1;
   border-color: rgb(249 133 26 / var(--tw-border-opacity));
@@ -2389,11 +2410,6 @@ video {
 
 .border-\[\#\] {
   border-color: #;
-}
-
-.border-\[\#EFEFEF\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 239 239 / var(--tw-border-opacity));
 }
 
 .border-l-transparent {
@@ -2700,6 +2716,10 @@ video {
   padding: 0.375rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-14 {
   padding: 3.5rem;
 }
@@ -2742,10 +2762,6 @@ video {
 
 .p-\[5px\] {
   padding: 5px;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-0 {
@@ -3083,6 +3099,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -3353,6 +3373,14 @@ video {
   line-height: 1.5;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+}
+
 .tracking-\[-0\.09px\] {
   letter-spacing: -0.09px;
 }
@@ -3433,6 +3461,11 @@ video {
 .text-\[\#171F46\] {
   --tw-text-opacity: 1;
   color: rgb(23 31 70 / var(--tw-text-opacity));
+}
+
+.text-\[\#191919\] {
+  --tw-text-opacity: 1;
+  color: rgb(25 25 25 / var(--tw-text-opacity));
 }
 
 .text-\[\#1A202C\] {
@@ -3689,13 +3722,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#191919\] {
-  --tw-text-opacity: 1;
-  color: rgb(25 25 25 / var(--tw-text-opacity));
+.text-\[\] {
+  color: ;
 }
 
-.text-\[\#\#191919\] {
-  color: ##191919;
+.underline {
+  text-decoration-line: underline;
 }
 
 .line-through {
