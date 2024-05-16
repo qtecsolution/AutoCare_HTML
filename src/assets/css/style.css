@@ -1040,6 +1040,10 @@ video {
   z-index: 100;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1200,6 +1204,14 @@ video {
 
 .mb-9 {
   margin-bottom: 2.25rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-0\.5 {
+  margin-left: 0.125rem;
 }
 
 .ml-1 {
@@ -1396,14 +1408,6 @@ video {
 
 .mt-\[51px\] {
   margin-top: 51px;
-}
-
-.ml-0 {
-  margin-left: 0px;
-}
-
-.ml-0\.5 {
-  margin-left: 0.125rem;
 }
 
 .block {

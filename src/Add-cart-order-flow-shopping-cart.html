@@ -84,26 +84,35 @@
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
             <div class="relative p-4 w-full max-w-[560px] max-h-full">
               <!-- Modal content -->
-              <div
-                class="relative bg-[#F1F4F6] px-12 py-14 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+              <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
                 <!-- Modal header -->
-                <div class="mb-10">
+                <div class="mb-6">
                   <h3 class="text-black text-xl font-semibold text-center dark:text-white">
-                    Welcome! Please Login to Continue.
+                    Welcome!
                   </h3>
+                  <p class="text-[#525468] text-sm text-center dark:text-white mt-2">
+                    Please Login to continue.
+                  </p>
                 </div>
                 <!-- Modal body -->
                 <div>
                   <form action="#">
                     <div>
-                      <label for="number"
+                      <label for="phoneNumber"
                         class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
                         Phone Number
                       </label>
 
-                      <input type="number" name="number" id="number"
-                        class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        placeholder="Enter your Phone Number" required />
+                      <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                            fill="#0F766D" />
+                        </svg>
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                          placeholder="Enter Your Phone Number" required />
+                      </div>
                     </div>
 
                     <div class="mt-6">
@@ -112,27 +121,95 @@
                         Password
                       </label>
 
-                      <input type="password" name="password" id="password"
-                        class="bg-gray-50 border border-[#D7DFE9] text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 px-5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        placeholder="Enter your password" required />
-                    </div>
+                      <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7" fill="none">
+                          <path
+                            d="M6.79583 2.33333C6.32917 0.9625 5.01667 0 3.5 0C1.575 0 0 1.575 0 3.5C0 5.425 1.575 7 3.5 7C5.01667 7 6.3 6.0375 6.79583 4.66667H9.33333V7H11.6667V4.66667H12.8333V2.33333H6.79583ZM3.5 4.66667C2.85833 4.66667 2.33333 4.14167 2.33333 3.5C2.33333 2.85833 2.85833 2.33333 3.5 2.33333C4.14167 2.33333 4.66667 2.85833 4.66667 3.5C4.66667 4.14167 4.14167 4.66667 3.5 4.66667Z"
+                            fill="#0F766D" />
+                        </svg>
+                        <input type="password" name="password" id="password"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                          placeholder="********" required />
 
-                    <div class="text-right mt-2">
-                      <a href="#" class="text-xs font-medium text-[#383941] hover:underline dark:text-blue-500">Forgot
-                        Password?
-                        <span class="text-[#0F766D] uppercase">Reset</span> </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M7.99564 13.3684C7.36431 13.3684 6.73031 13.2818 6.10896 13.1098C5.84296 13.0364 5.68696 12.7611 5.7603 12.4951C5.83363 12.2284 6.11096 12.0731 6.37563 12.1464C6.90964 12.2938 7.45431 12.3684 7.99564 12.3684C11.051 12.3684 13.669 9.9671 13.669 8.0011C13.669 7.36444 13.373 6.63845 12.8363 5.95845C12.6656 5.74179 12.703 5.42712 12.9196 5.25579C13.1363 5.08512 13.451 5.12179 13.6216 5.33846C14.297 6.19512 14.669 7.14044 14.669 8.0011C14.669 10.4324 11.6923 13.3684 7.99564 13.3684Z"
+                            fill="#7B7F95" />
+                          <path
+                            d="M8.37663 10.5695C8.13996 10.5695 7.92996 10.4008 7.88529 10.1601C7.83529 9.88879 8.01529 9.62746 8.28729 9.57812C8.93996 9.45746 9.45863 8.93879 9.57663 8.28546C9.62596 8.01346 9.88529 7.83479 10.158 7.88279C10.4293 7.93212 10.61 8.19212 10.5606 8.46412C10.3686 9.52412 9.52796 10.3661 8.46729 10.5608C8.43729 10.5668 8.40663 10.5695 8.37663 10.5695Z"
+                            fill="#7B7F95" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.38804 13.612C2.48537 13.71 2.61337 13.7587 2.74137 13.7587C2.86937 13.7587 2.99737 13.71 3.0947 13.612L4.57904 12.1277C4.61423 12.101 4.64634 12.0692 4.67418 12.0326L13.6107 3.09602C13.806 2.90069 13.806 2.58402 13.6107 2.38869C13.4154 2.19335 13.0994 2.19335 12.904 2.38869L11.652 3.64085C10.5352 2.98191 9.27965 2.63541 7.99671 2.63541C4.30341 2.63541 1.33008 5.57141 1.33008 8.00209C1.33008 9.30189 2.16736 10.7396 3.50376 11.7896L2.38804 12.9054C2.1927 13.1007 2.1927 13.4167 2.38804 13.612ZM4.21697 11.0763C3.07484 10.213 2.33008 9.01515 2.33008 8.00209C2.33008 6.03675 4.94475 3.63541 7.99671 3.63541C9.01451 3.63541 10.0132 3.88967 10.9179 4.37495L9.45565 5.83728C9.02771 5.54909 8.51725 5.38981 7.99798 5.38981H7.99198C7.29531 5.39114 6.64132 5.66381 6.14932 6.15714C5.65799 6.65047 5.38799 7.30582 5.38999 7.99915C5.38798 8.51922 5.54674 9.03022 5.83574 9.45742L4.21697 11.0763ZM6.56439 8.72875L8.72665 6.56633C8.50218 6.45174 8.25145 6.38981 7.99731 6.38981H7.99398C7.56398 6.39047 7.16065 6.55847 6.85798 6.86249C6.55533 7.16715 6.38866 7.57049 6.38999 7.99982C6.38879 8.25475 6.45026 8.50515 6.56439 8.72875Z"
+                            fill="#7B7F95" />
+                        </svg>
+                      </div>
                     </div>
 
                     <button type="submit"
-                      class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-4">
-                      Log in
+                      class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                      Continue
                     </button>
 
                     <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
-                      Didn't have any account?
+                      Already have account?
                       <a href="#" class="text-[#115E57] hover:underline font-bold">
                         SIGN UP
                       </a>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-5 mt-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                        <path
+                          d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                          fill="#D9D9D9" />
+                      </svg>
+                      <p class="text-[#191919] text-sm">
+                        Or Continue with
+                      </p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                        <path
+                          d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                          fill="#D9D9D9" />
+                      </svg>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4 mt-3">
+                      <button
+                        class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                          <path
+                            d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                            fill="#167EE6" />
+                          <path
+                            d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                            fill="#12B347" />
+                          <path
+                            d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                            fill="#0F993E" />
+                          <path
+                            d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                            fill="#FFD500" />
+                          <path
+                            d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                            fill="#FF4B26" />
+                          <path
+                            d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                            fill="#D93F21" />
+                        </svg>
+                        Google
+                      </button>
+                      <button
+                        class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                            fill="#1877F2" />
+                          <path
+                            d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                            fill="#F1F1F1" />
+                        </svg>
+                        Facebook
+                      </button>
                     </div>
                   </form>
                 </div>
