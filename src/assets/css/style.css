@@ -2416,6 +2416,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#E6E6E7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 231 / var(--tw-border-opacity));
+}
+
 .border-l-transparent {
   border-left-color: transparent;
 }
@@ -3225,6 +3230,10 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
 }
 
 .text-left {
