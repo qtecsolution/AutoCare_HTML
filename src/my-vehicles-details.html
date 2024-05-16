@@ -401,48 +401,50 @@
   <main>
     <section class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
       <div class="max-w-[1260px] container mx-auto px-3 pt-16">
+        <div>
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+
+              <li class="inline-flex items-center">
+                <a href="#"
+                  class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <div class="flex items-center">
+                  <svg class="rtl:rotate-180 w-3 h-3 text-gray-400" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                  <a href="#"
+                    class="ms-2 text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
+                    Account
+                  </a>
+                </div>
+              </li>
+
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <svg class="rtl:rotate-180 w-3 h-3 text-gray-400" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                  <span class=" text-sm font-medium text-[#0F766D] ms-2 dark:text-gray-400">My Vehicles</span>
+                </div>
+              </li>
+            </ol>
+          </nav>
+          <h1 class="text-2xl text-[#027371] font-semibold mb-4 mt-1">
+            My Account
+          </h1>
+        </div>
+
         <div class="grid grid-cols-3 gap-10 pb-20">
           <div>
-            <nav class="flex" aria-label="Breadcrumb">
-              <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-
-                <li class="inline-flex items-center">
-                  <a href="#"
-                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
-                    Home
-                  </a>
-                </li>
-
-                <li>
-                  <div class="flex items-center">
-                    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m1 9 4-4-4-4" />
-                    </svg>
-                    <a href="#"
-                      class="ms-2 text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400 dark:hover:text-white">
-                      Account
-                    </a>
-                  </div>
-                </li>
-
-                <li aria-current="page">
-                  <div class="flex items-center">
-                    <svg class="rtl:rotate-180 w-3 h-3 text-gray-400" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class=" text-sm font-medium text-[#0F766D] ms-2 dark:text-gray-400">My Vehicles</span>
-                  </div>
-                </li>
-              </ol>
-            </nav>
-            <h1 class="text-2xl text-[#027371] font-semibold mb-4 mt-1">
-              My Account
-            </h1>
-
             <div class="bg-white rounded-2xl category-shadow">
               <div class="border-4 border-white bg-[#0273710d] rounded-tl-2xl rounded-tr-2xl py-8">
                 <figure class="flex justify-center">
@@ -582,135 +584,146 @@
           </div>
 
           <div class="col-span-2">
-            <div class="bg-white rounded-lg py-[18px] px-6 category-shadow mb-4">
-              <h3 class="text-base font-semibold text-[#09090B]">
-                My Vehicles
-              </h3>
-            </div>
-
             <div class="bg-white rounded-2xl">
-              <div class="flex justify-between items-center pt-8 pb-4 pl-8 pr-14 border-b border-[#E6E6E7]">
-                <div class="flex items-center gap-5">
-                  <figure>
-                    <img src="./assets/image/profile/My Vehicles.png" alt="My Vehicles" />
-                  </figure>
-                  <div class="">
-                    <h4 class="text-[#09090B] text-base font-bold">
-                      Hatchback
-                    </h4>
-
-                    <div class="flex gap-4 my-1">
-                      <p class="text-[#7B7F95] text-sm">
-                        Brand:
-                        <span class="text-[#383941]">Toyota</span>,
-                      </p>
-                      <p class="text-[#7B7F95] text-sm">
-                        Registration Number:
-                        <span class="text-[#383941]">BA-12412</span>
-                      </p>
-                    </div>
-                    <p class="text-[#7B7F95] text-sm">
-                      Last Service Date:
-                      <span class="text-[#383941]">20 Dec 2020</span>
-                    </p>
-                  </div>
+              <div
+                class="flex justify-between items-center px-10 py-6 bg-[#F4F5F7] border-t-[5px] border-r-[5px] border-l-[5px] border-white rounded-t-2xl">
+                <div class="flex gap-4 items-center">
+                  <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_708_28190)">
+                      <path
+                        d="M18.7979 8.5961C18.7161 8.58282 18.6332 8.57669 18.5504 8.57776H4.44077L4.74844 8.43467C5.04917 8.29233 5.32276 8.09861 5.55695 7.86227L9.51363 3.90558C10.0347 3.40814 10.1223 2.6079 9.72112 2.00952C9.25422 1.37188 8.35882 1.23343 7.72114 1.70034C7.66962 1.73808 7.62066 1.77922 7.57464 1.82349L0.419694 8.97844C-0.139465 9.53697 -0.139957 10.443 0.418576 11.0022C0.418934 11.0025 0.419336 11.0029 0.419694 11.0033L7.57464 18.1582C8.13425 18.7163 9.04029 18.715 9.59837 18.1554C9.64229 18.1114 9.68329 18.0645 9.72112 18.0151C10.1223 17.4168 10.0347 16.6165 9.51363 16.1191L5.5641 12.1552C5.35415 11.9451 5.11276 11.7688 4.84861 11.6329L4.41931 11.4397H18.4716C19.2026 11.4669 19.844 10.9562 19.9813 10.2377C20.1078 9.4576 19.578 8.72265 18.7979 8.5961Z"
+                        fill="#383941" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_708_28190">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-[#383941] text-base font-semibold">
+                    Toyota Corolla
+                  </p>
                 </div>
-
-                <div class="flex gap-2">
-                  <a href="#"
-                    class="bg-[#F4F5F7] px-4 py-2 rounded-[10px] text-[#09090B] text-sm transition-all hover:bg-[#0F766D] hover:text-white">
+                <div class="flex gap-8 items-center">
+                  <a href="" class="text-[#09090B] text-sm">
                     Edit
                   </a>
-
-                  <a href="./my-vehicles-details.html"
-                    class="bg-[#0F766D] px-4 py-2 rounded-[10px] text-white text-sm  border border-[#0F766D] transition-all hover:bg-[#F4F5F7] hover:text-[#0F766D]">
-                    Details
-                  </a>
-
-
-                </div>
-              </div>
-
-              <div class="flex justify-between items-center pt-4 pb-4 pl-8 pr-14 border-b border-[#E6E6E7]">
-                <div class="flex items-center gap-5">
-                  <figure>
-                    <img src="./assets/image/profile/My Vehicles.png" alt="My Vehicles" />
-                  </figure>
-                  <div class="">
-                    <h4 class="text-[#09090B] text-base font-bold">
-                      Hatchback
-                    </h4>
-
-                    <div class="flex gap-4 my-1">
-                      <p class="text-[#7B7F95] text-sm">
-                        Brand:
-                        <span class="text-[#383941]">Toyota</span>,
-                      </p>
-                      <p class="text-[#7B7F95] text-sm">
-                        Registration Number:
-                        <span class="text-[#383941]">BA-12412</span>
-                      </p>
-                    </div>
-                    <p class="text-[#7B7F95] text-sm">
-                      Last Service Date:
-                      <span class="text-[#383941]">20 Dec 2020</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex gap-2">
-                  <a href="#"
-                    class="bg-[#F4F5F7] px-4 py-2 rounded-[10px] text-[#09090B] text-sm transition-all hover:bg-[#0F766D] hover:text-white">
-                    Edit
-                  </a>
-
-                  <a href="./my-vehicles-details.html"
-                    class="bg-[#0F766D] px-4 py-2 rounded-[10px] text-white text-sm  border border-[#0F766D] transition-all hover:bg-[#F4F5F7] hover:text-[#0F766D]">
-                    Details
+                  <a href="" class="text-[#09090B] text-sm">
+                    Delete
                   </a>
                 </div>
               </div>
 
-              <div class="flex justify-between items-center pt-4 pb-4 pl-8 pr-14 border-b border-[#E6E6E7]">
-                <div class="flex items-center gap-5">
-                  <figure>
-                    <img src="./assets/image/profile/My Vehicles.png" alt="My Vehicles" />
-                  </figure>
-                  <div class="">
-                    <h4 class="text-[#09090B] text-base font-bold">
-                      Hatchback
-                    </h4>
+              <div class="px-10">
+                <figure class="mt-8 w-full">
+                  <img class="w-full rounded-3xl" src="./assets/image/profile/My Vehicles1.png" alt="Vehicles1" />
+                </figure>
 
-                    <div class="flex gap-4 my-1">
-                      <p class="text-[#7B7F95] text-sm">
-                        Brand:
-                        <span class="text-[#383941]">Toyota</span>,
-                      </p>
-                      <p class="text-[#7B7F95] text-sm">
-                        Registration Number:
-                        <span class="text-[#383941]">BA-12412</span>
-                      </p>
-                    </div>
-                    <p class="text-[#7B7F95] text-sm">
-                      Last Service Date:
-                      <span class="text-[#383941]">20 Dec 2020</span>
+                <h3 class="text-[#09090B] text-lg font-semibold mt-14 pb-2 border-b border-[#CBCDD6]">
+                  About Your Vehicle
+                </h3>
+                <p class="text-[#72757B] text-sm mt-4 mb-8">
+                  age into steps using a table format. Each step contains relevant input fields or dropdown menus for
+                  users to provide information about their vehicle
+                </p>
+
+                <h3 class="text-[#09090B] text-lg font-semibold  pb-2 border-b border-[#CBCDD6]">
+                  Vehicle Information
+                </h3>
+
+                <div class="flex items-center gap-64 mt-5">
+                  <div class="">
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Brand:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Year:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Engine:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Registration Number:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      CC (Cubic Capacity):
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium">
+                      Mileage:
+                    </p>
+                  </div>
+
+                  <div class="">
+                    <p class="text-[#72757B] text-sm mb-4">
+                      Toyota
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      2024
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      --
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      1256574214
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      1256574214
+                    </p>
+                    <p class="text-[#72757B] text-sm">
+                      Km 124000
+                    </p>
+                  </div>
+                </div>
+                <h3 class="text-[#09090B] text-lg font-semibold mt-8 pb-2 border-b border-[#CBCDD6]">
+                  Renewal Information
+                </h3>
+
+                <div class="flex items-center gap-64 mt-5 ">
+                  <div class="">
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Fitness Renewal:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Insurance Renewal:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Token Renewal:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Service Date:
+                    </p>
+                    <p class="text-[#09090B] text-sm font-medium mb-4">
+                      Frequency Servicing:
+                    </p>
+                  </div>
+
+                  <div class="">
+                    <p class="text-[#72757B] text-sm mb-4">
+                      12/15/24
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      12/15/24
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      12/15/24
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      12/15/24
+                    </p>
+                    <p class="text-[#72757B] text-sm mb-4">
+                      Annually
                     </p>
                   </div>
                 </div>
 
-                <div class="flex gap-2">
-                  <a href="#"
-                    class="bg-[#F4F5F7] px-4 py-2 rounded-[10px] text-[#09090B] text-sm transition-all hover:bg-[#0F766D] hover:text-white">
-                    Edit
-                  </a>
-
+                <div class="py-12">
                   <a href="./my-vehicles-details.html"
-                    class="bg-[#0F766D] px-4 py-2 rounded-[10px] text-white text-sm  border border-[#0F766D] transition-all hover:bg-[#F4F5F7] hover:text-[#0F766D]">
-                    Details
+                    class="bg-[#0F766D] px-6 py-3 rounded-[10px] text-white text-sm  border border-[#0F766D] transition-all hover:bg-[#F4F5F7] hover:text-[#0F766D]">
+                    Book A Service
                   </a>
                 </div>
               </div>
-              <div class="pb-96"></div>
             </div>
           </div>
         </div>

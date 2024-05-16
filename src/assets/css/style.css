@@ -1040,10 +1040,6 @@ video {
   z-index: 100;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1410,8 +1406,16 @@ video {
   margin-top: 51px;
 }
 
-.mb-96 {
-  margin-bottom: 24rem;
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -1880,6 +1884,10 @@ video {
   justify-content: space-around;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-0 {
   gap: 0px;
 }
@@ -1982,6 +1990,10 @@ video {
 
 .gap-\[8px\] {
   gap: 8px;
+}
+
+.gap-64 {
+  gap: 16rem;
 }
 
 .gap-x-3 {
@@ -2363,6 +2375,11 @@ video {
   border-color: rgb(228 229 233 / var(--tw-border-opacity));
 }
 
+.border-\[\#E6E6E7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 231 / var(--tw-border-opacity));
+}
+
 .border-\[\#E7EAEF\] {
   --tw-border-opacity: 1;
   border-color: rgb(231 234 239 / var(--tw-border-opacity));
@@ -2414,11 +2431,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#E6E6E7\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(230 230 231 / var(--tw-border-opacity));
 }
 
 .border-l-transparent {
@@ -3100,6 +3112,10 @@ video {
   padding-right: 2.75rem;
 }
 
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
@@ -3230,10 +3246,6 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
 }
 
 .text-left {
@@ -3727,10 +3739,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -4097,6 +4105,11 @@ video {
   background-color: rgb(217 128 27 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#F4F5F7\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 247 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -4110,11 +4123,6 @@ video {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#F4F5F7\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 245 247 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#027371\]:hover {
