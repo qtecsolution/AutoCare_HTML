@@ -795,6 +795,14 @@ video {
   fill: white;
 }
 
+.wauto {
+  width: 100% !important;
+}
+
+.nice-select.open .nice-select-dropdown {
+  width: 100%;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -922,6 +930,14 @@ video {
 
 .left-\[43px\] {
   left: 43px;
+}
+
+.left-\[70px\] {
+  left: 70px;
+}
+
+.left-\[75px\] {
+  left: 75px;
 }
 
 .left-\[91px\] {
@@ -1342,6 +1358,10 @@ video {
   margin-top: 2.75rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1406,16 +1426,12 @@ video {
   margin-top: 51px;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
+.-mb-3 {
+  margin-bottom: -0.75rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
+.-mb-5 {
+  margin-bottom: -1.25rem;
 }
 
 .block {
@@ -1620,6 +1636,10 @@ video {
 
 .w-\[1020px\] {
   width: 1020px;
+}
+
+.w-\[110px\] {
+  width: 110px;
 }
 
 .w-\[137px\] {
@@ -1884,10 +1904,6 @@ video {
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-0 {
   gap: 0px;
 }
@@ -1952,6 +1968,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-64 {
+  gap: 16rem;
+}
+
 .gap-7 {
   gap: 1.75rem;
 }
@@ -1990,10 +2010,6 @@ video {
 
 .gap-\[8px\] {
   gap: 8px;
-}
-
-.gap-64 {
-  gap: 16rem;
 }
 
 .gap-x-3 {
@@ -4502,6 +4518,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:left-\[91px\] {
+    left: 91px;
+  }
+
   .xl\:ml-10 {
     margin-left: 2.5rem;
   }
@@ -4532,6 +4552,10 @@ video {
 
   .xl\:w-\[1130px\] {
     width: 1130px;
+  }
+
+  .xl\:w-\[137px\] {
+    width: 137px;
   }
 
   .xl\:w-\[620px\] {
