@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>AutoCare - Store Profile</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+
+  <!-- font-awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- flowbite cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="font-inter">
+  <!-- top menu -->
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+    <div class="container mx-auto">
+      <nav class="md:flex  justify-between items-center">
+        <ul class="flex gap-[40px]">
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#">About</a>
+          </li>
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#">Blog & News</a>
+          </li>
+          <li>
+            <a class="font-inter text-sm text-[#383941]" href="#"> Become a Seller</a>
+          </li>
+        </ul>
+
+        <ul class="flex gap-[18px] items-center">
+          <div class="flex gap-[12px] items-center">
+            <li class="mr-6">
+              <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"
+                class="flex items-center gap-[7px]  relative">
+                <img src="./assets/image/home/lang.svg" alt="location">
+                <span class="text-base font-medium">English</span>
+                <span
+                  class="absolute top-[9px] right-[-18px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#09090B]"></span>
+              </button>
+            </li>
+
+            <div id="dropdown1"
+              class="z-[100] hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bangla</a>
+                </li>
+              </ul>
+            </div>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/fb.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/instagram.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/twitter.svg" alt="fb"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/image/home/linkedIn.svg" alt="fb"></a>
+            </li>
+          </div>
+
+          <div class="flex gap-[8px]">
+            <li>
+              <a href="#"><img src="./assets/image/home/googlePlay.png" alt="fb"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="./assets/image/home/appStore.png" alt="fb"></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- main menu  -->
+  <header class=" sticky top-0 z-50  py-[16px] bg-white menu  shadow px-3">
+    <section class="2xl:px-0">
+      <div class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+        <div class=" flex  shrink-0 ">
+          <a href="../index.html">
+            <img src="./assets/image/home/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="flex justify-between gap-[32px] items-center">
+          <form class="flex items-center xl:w-[620px] 2xl:w-[849px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+
+            <img src="./assets/image/home/search.svg" alt="search">
+
+            <input type="text" id="first_name"
+              class="border-0 bg-transparent block w-full focus:ring-0
+                  font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
+              placeholder="Search anything" required />
+          </form>
+
+          <div>
+            <ul class="flex gap-7">
+              <li class="mr-6">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex gap-[7px]  relative">
+                  <img src="./assets/image/home/location.svg" alt="location">
+                  <span class="text-base font-medium">Dhaka</span>
+                  <span
+                    class="absolute top-[9px] right-[-30px] border-r-[7px] border-r-transparent border-l-[7px] border-l-transparent border-t-[9px] border-[#B5B5BD]">
+                  </span>
+                </button>
+              </li>
+
+              <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                </ul>
+              </div>
+
+              <li class="ms-5">
+                <a class="relative" href="./Add-cart-order-flow-shopping-cart.html">
+                  <img src="./assets/image/home/cart.svg" alt="cart">
+                  <span
+                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+              <img src="./assets/image/home/user.svg" alt="user">
+              <span>Login</span>
+            </button>
+
+            <!-- Login modal -->
+            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[560px] max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-6">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Welcome!
+                    </h3>
+                    <p class="text-[#525468] text-sm text-center dark:text-white mt-2">
+                      Please Login to continue.
+                    </p>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <form action="#">
+                      <div>
+                        <label for="phoneNumber"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                              fill="#0F766D" />
+                          </svg>
+                          <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                            placeholder="Enter Your Phone Number" required />
+                        </div>
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="password"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Password
+                        </label>
+
+                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7" fill="none">
+                            <path
+                              d="M6.79583 2.33333C6.32917 0.9625 5.01667 0 3.5 0C1.575 0 0 1.575 0 3.5C0 5.425 1.575 7 3.5 7C5.01667 7 6.3 6.0375 6.79583 4.66667H9.33333V7H11.6667V4.66667H12.8333V2.33333H6.79583ZM3.5 4.66667C2.85833 4.66667 2.33333 4.14167 2.33333 3.5C2.33333 2.85833 2.85833 2.33333 3.5 2.33333C4.14167 2.33333 4.66667 2.85833 4.66667 3.5C4.66667 4.14167 4.14167 4.66667 3.5 4.66667Z"
+                              fill="#0F766D" />
+                          </svg>
+                          <input type="password" name="password" id="password"
+                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                            placeholder="********" required />
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M7.99564 13.3684C7.36431 13.3684 6.73031 13.2818 6.10896 13.1098C5.84296 13.0364 5.68696 12.7611 5.7603 12.4951C5.83363 12.2284 6.11096 12.0731 6.37563 12.1464C6.90964 12.2938 7.45431 12.3684 7.99564 12.3684C11.051 12.3684 13.669 9.9671 13.669 8.0011C13.669 7.36444 13.373 6.63845 12.8363 5.95845C12.6656 5.74179 12.703 5.42712 12.9196 5.25579C13.1363 5.08512 13.451 5.12179 13.6216 5.33846C14.297 6.19512 14.669 7.14044 14.669 8.0011C14.669 10.4324 11.6923 13.3684 7.99564 13.3684Z"
+                              fill="#7B7F95" />
+                            <path
+                              d="M8.37663 10.5695C8.13996 10.5695 7.92996 10.4008 7.88529 10.1601C7.83529 9.88879 8.01529 9.62746 8.28729 9.57812C8.93996 9.45746 9.45863 8.93879 9.57663 8.28546C9.62596 8.01346 9.88529 7.83479 10.158 7.88279C10.4293 7.93212 10.61 8.19212 10.5606 8.46412C10.3686 9.52412 9.52796 10.3661 8.46729 10.5608C8.43729 10.5668 8.40663 10.5695 8.37663 10.5695Z"
+                              fill="#7B7F95" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.38804 13.612C2.48537 13.71 2.61337 13.7587 2.74137 13.7587C2.86937 13.7587 2.99737 13.71 3.0947 13.612L4.57904 12.1277C4.61423 12.101 4.64634 12.0692 4.67418 12.0326L13.6107 3.09602C13.806 2.90069 13.806 2.58402 13.6107 2.38869C13.4154 2.19335 13.0994 2.19335 12.904 2.38869L11.652 3.64085C10.5352 2.98191 9.27965 2.63541 7.99671 2.63541C4.30341 2.63541 1.33008 5.57141 1.33008 8.00209C1.33008 9.30189 2.16736 10.7396 3.50376 11.7896L2.38804 12.9054C2.1927 13.1007 2.1927 13.4167 2.38804 13.612ZM4.21697 11.0763C3.07484 10.213 2.33008 9.01515 2.33008 8.00209C2.33008 6.03675 4.94475 3.63541 7.99671 3.63541C9.01451 3.63541 10.0132 3.88967 10.9179 4.37495L9.45565 5.83728C9.02771 5.54909 8.51725 5.38981 7.99798 5.38981H7.99198C7.29531 5.39114 6.64132 5.66381 6.14932 6.15714C5.65799 6.65047 5.38799 7.30582 5.38999 7.99915C5.38798 8.51922 5.54674 9.03022 5.83574 9.45742L4.21697 11.0763ZM6.56439 8.72875L8.72665 6.56633C8.50218 6.45174 8.25145 6.38981 7.99731 6.38981H7.99398C7.56398 6.39047 7.16065 6.55847 6.85798 6.86249C6.55533 7.16715 6.38866 7.57049 6.38999 7.99982C6.38879 8.25475 6.45026 8.50515 6.56439 8.72875Z"
+                              fill="#7B7F95" />
+                          </svg>
+                        </div>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                        Continue
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Already have account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          SIGN UP
+                        </a>
+                      </div>
+
+                      <div class="flex justify-center items-center gap-5 mt-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                          <path
+                            d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                            fill="#D9D9D9" />
+                        </svg>
+                        <p class="text-[#191919] text-sm">
+                          Or Continue with
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                          <path
+                            d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                            fill="#D9D9D9" />
+                        </svg>
+                      </div>
+
+                      <div class="flex justify-center items-center gap-4 mt-3">
+                        <button
+                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                            fill="none">
+                            <path
+                              d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                              fill="#167EE6" />
+                            <path
+                              d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                              fill="#12B347" />
+                            <path
+                              d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                              fill="#0F993E" />
+                            <path
+                              d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                              fill="#FFD500" />
+                            <path
+                              d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                              fill="#FF4B26" />
+                            <path
+                              d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                              fill="#D93F21" />
+                          </svg>
+                          Google
+                        </button>
+                        <button
+                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                              fill="#1877F2" />
+                            <path
+                              d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                              fill="#F1F1F1" />
+                          </svg>
+                          Facebook
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button data-modal-target="sign-modal" data-modal-toggle="sign-modal" type="button"
+              class="text-[#09090B] font-bold text-sm w-16">
+              Sign Up
+            </button>
+
+            <!-- Sign modal -->
+            <div id="sign-modal" tabindex="-1" aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-[560px] max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="mb-6">
+                    <h3 class="text-black text-xl font-semibold text-center dark:text-white">
+                      Register Now!
+                    </h3>
+                    <p class="text-[#525468] text-sm text-center dark:text-white mt-2">
+                      Explore Auto Sales & Services
+                    </p>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <form action="#">
+                      <div>
+                        <label for="name"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Full Name
+                        </label>
+
+                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M13.613 3.695L9.45498 1.294C8.77599 0.902 7.93599 0.902 7.24999 1.294L3.099 3.695C2.42 4.087 2 4.815 2 5.606V10.394C2 11.178 2.42 11.906 3.099 12.305L7.25699 14.706C7.93599 15.098 8.77599 15.098 9.46199 14.706L13.62 12.305C14.299 11.913 14.719 11.185 14.719 10.394V5.606C14.712 4.815 14.292 4.094 13.613 3.695ZM8.35599 4.738C9.25899 4.738 9.98699 5.466 9.98699 6.369C9.98699 7.272 9.25899 8 8.35599 8C7.45299 8 6.725 7.272 6.725 6.369C6.725 5.473 7.45299 4.738 8.35599 4.738ZM10.232 11.262H6.48C5.913 11.262 5.584 10.632 5.899 10.163C6.375 9.456 7.29899 8.98 8.35599 8.98C9.41299 8.98 10.337 9.456 10.813 10.163C11.128 10.625 10.792 11.262 10.232 11.262Z"
+                              fill="#0F766D" />
+                          </svg>
+                          <input type="text" name="name" id="name"
+                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                            placeholder="Enter Your Name" required />
+                        </div>
+                      </div>
+
+                      <div class="mt-6">
+                        <label for="phoneNumber"
+                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] dark:text-white">
+                          Phone Number
+                        </label>
+
+                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                              fill="#0F766D" />
+                          </svg>
+                          <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                            placeholder="Enter Your Phone Number" required />
+                        </div>
+                      </div>
+
+                      <button type="submit"
+                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                        Continue
+                      </button>
+
+                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] dark:text-gray-300">
+                        Already have account?
+                        <a href="#" class="text-[#115E57] hover:underline font-bold">
+                          LOGIN
+                        </a>
+                      </div>
+
+                      <div class="flex justify-center items-center gap-5 mt-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                          <path
+                            d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                            fill="#D9D9D9" />
+                        </svg>
+                        <p class="text-[#191919] text-sm">
+                          Or Continue with
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
+                          <path
+                            d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                            fill="#D9D9D9" />
+                        </svg>
+                      </div>
+
+                      <div class="flex justify-center items-center gap-4 mt-3">
+                        <button
+                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                            fill="none">
+                            <path
+                              d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                              fill="#167EE6" />
+                            <path
+                              d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                              fill="#12B347" />
+                            <path
+                              d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                              fill="#0F993E" />
+                            <path
+                              d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                              fill="#FFD500" />
+                            <path
+                              d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                              fill="#FF4B26" />
+                            <path
+                              d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                              fill="#D93F21" />
+                          </svg>
+                          Google
+                        </button>
+                        <button
+                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                              fill="#1877F2" />
+                            <path
+                              d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                              fill="#F1F1F1" />
+                          </svg>
+                          Facebook
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- store hero section -->
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-[#F4F4F4]">
+    <div class="container mx-auto px-3 2xl:px-0">
+      <!-- Breadcrumb -->
+      <nav class="flex py-5" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+
+          <li class="inline-flex items-center">
+            <a href="#"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#0F766D] dark:text-gray-400">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <a href="#"
+                class="ms-1 text-sm font-medium text-gray-700 hover:text-[#0F766D] md:ms-2 dark:text-gray-400">
+                Store
+              </a>
+            </div>
+          </li>
+
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="ms-1 text-sm font-medium text-[#0F766D] md:ms-2">Alisha Garage</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-white rounded-2xl category-shadow">
+        <figure>
+          <img class="w-full" src="./assets/image/store-profile/store-profile-hero.png" alt="">
+        </figure>
+
+        <div class="flex justify-between mt-8 pl-12 pr-6">
+          <div>
+            <div class="flex gap-4">
+              <figure>
+                <img src="./assets/image/store-profile/cars.png" alt="">
+              </figure>
+              <div>
+                <div class="flex items-center gap-1">
+                  <h2 class="text-[#1A202C] text-xl font-semibold">Mayer Doa Parts Store</h2>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.6598 6.91606L10.9234 5.42383L10.1869 6.91606C10.1111 7.06957 9.96471 7.17601 9.79522 7.20061L8.14844 7.43991L9.34009 8.60144C9.46265 8.72098 9.51862 8.89312 9.4897 9.06193L9.20837 10.7021L10.6813 9.92767C10.757 9.88782 10.8402 9.86795 10.9234 9.86795C11.0065 9.86795 11.0897 9.88787 11.1654 9.92767L12.6383 10.7021L12.357 9.06193C12.3281 8.89317 12.3841 8.72098 12.5066 8.60144L13.6983 7.43991L12.0515 7.20061C11.8821 7.17601 11.7356 7.06957 11.6598 6.91606Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M18.4074 8.52464C18.3628 8.38756 18.3628 8.24263 18.4074 8.1055L18.8289 6.8081C19.0598 6.0978 18.8088 5.32559 18.2046 4.88654L17.1009 4.08468C16.9843 3.99994 16.8991 3.88268 16.8546 3.74555L16.433 2.44814C16.2021 1.73785 15.5453 1.2606 14.7984 1.2606H13.4342C13.29 1.2606 13.1522 1.21581 13.0355 1.13107L11.9319 0.329216C11.3276 -0.109739 10.5157 -0.109739 9.91146 0.329216L8.80783 1.13107C8.6912 1.21581 8.55334 1.2606 8.40919 1.2606H7.04498C6.29817 1.2606 5.64124 1.73785 5.41037 2.4482L4.98879 3.74566C4.94426 3.88273 4.85905 3.99999 4.74242 4.08473L3.63879 4.88659C3.03462 5.32559 2.78367 6.0978 3.01448 6.8081L3.43606 8.10556C3.48065 8.24263 3.48065 8.38756 3.43606 8.52469L3.01448 9.82215C2.78367 10.5325 3.03462 11.3047 3.63884 11.7437L4.74253 12.5456C4.85916 12.6303 4.94432 12.7476 4.98885 12.8847L5.41043 14.1822C5.6413 14.8925 6.29817 15.3697 7.04504 15.3697H8.40924C8.55339 15.3697 8.69125 15.4145 8.80788 15.4992L9.91156 16.301C10.2138 16.5206 10.5677 16.6303 10.9218 16.6303C11.2758 16.6303 11.6299 16.5206 11.932 16.3011L13.0357 15.4992C13.1523 15.4145 13.2901 15.3697 13.4343 15.3697H14.7985C15.5453 15.3697 16.2022 14.8925 16.4331 14.1821L16.8547 12.8846C16.8992 12.7476 16.9844 12.6303 17.1011 12.5456L18.2047 11.7437C18.8089 11.3047 19.0598 10.5325 18.829 9.8221L18.4074 8.52464ZM15.1777 7.44952L13.4272 9.15587L13.8404 11.5653C13.8739 11.7605 13.7936 11.9577 13.6334 12.0742C13.5428 12.14 13.4354 12.1735 13.3276 12.1735C13.2448 12.1735 13.1617 12.1538 13.0856 12.1138L10.9217 10.9761L8.75784 12.1137C8.58263 12.2058 8.37017 12.1906 8.21 12.0742C8.04983 11.9578 7.96956 11.7605 8.00301 11.5653L8.41626 9.15587L6.6657 7.44952C6.52389 7.3113 6.47291 7.10457 6.53408 6.91625C6.59531 6.72793 6.75809 6.5907 6.954 6.56219L9.3733 6.21063L10.4552 4.01841C10.5428 3.84086 10.7237 3.72844 10.9217 3.72844C11.1198 3.72844 11.3006 3.84086 11.3882 4.01841L12.4701 6.21063L14.8894 6.56219C15.0854 6.59065 15.2482 6.72793 15.3093 6.91625C15.3705 7.10457 15.3195 7.3113 15.1777 7.44952Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M20.7129 15.3213L18.2555 12.8633L17.717 13.254L17.3212 14.4718C16.9648 15.5694 15.9499 16.3066 14.796 16.3066H13.5158L13.0117 16.6723L16.1871 19.8471C16.2854 19.9454 16.4186 19.9996 16.5549 19.9996C16.5903 19.9996 16.6262 19.9959 16.6615 19.9881C16.8332 19.9522 16.9752 19.832 17.0392 19.6687L18.0224 17.1561L20.5345 16.1734C20.6984 16.1094 20.8185 15.9674 20.8544 15.7952C20.8903 15.6235 20.8373 15.4451 20.7129 15.3213Z"
+                      fill="#0D941B" />
+                    <path
+                      d="M8.3223 16.3066H7.04206C5.88823 16.3066 4.8733 15.5694 4.51695 14.4718L4.12107 13.254L3.58265 12.8633L1.12517 15.3213C1.00084 15.4451 0.947774 15.6235 0.983669 15.7952C1.01956 15.9674 1.13973 16.1094 1.3036 16.1734L3.8157 17.1561L4.7989 19.6687C4.86289 19.832 5.00491 19.9522 5.17658 19.9881C5.21195 19.9959 5.24785 19.9996 5.28322 19.9996C5.41952 19.9996 5.55269 19.9454 5.65101 19.8471L8.82639 16.6723L8.3223 16.3066Z"
+                      fill="#0D941B" />
+                  </svg>
+                </div>
+                <div class="flex items-center gap-1 py-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                    <path
+                      d="M6.58489 0.587138C6.84462 -0.195713 7.97268 -0.195713 8.23154 0.587138L9.15788 3.38534C9.21448 3.55575 9.32449 3.70424 9.47221 3.80958C9.61992 3.91491 9.79777 3.97171 9.98034 3.97184H12.9775C13.8164 3.97184 14.1645 5.02584 13.4866 5.51034L11.0625 7.23924C10.9145 7.34466 10.8043 7.4934 10.7477 7.66411C10.6911 7.83483 10.691 8.01876 10.7474 8.18954L11.6737 10.9877C11.9335 11.7706 11.0201 12.4225 10.3405 11.938L7.91641 10.2091C7.76854 10.1037 7.59051 10.047 7.40778 10.047C7.22506 10.047 7.04702 10.1037 6.89916 10.2091L4.47508 11.938C3.79634 12.4225 2.88384 11.7706 3.1427 10.9877L4.06904 8.18954C4.12547 8.01876 4.12537 7.83483 4.06876 7.66411C4.01214 7.4934 3.90193 7.34466 3.75391 7.23924L1.3307 5.51119C0.652823 5.02669 1.00172 3.97269 1.83976 3.97269H4.83609C5.01881 3.97273 5.19685 3.91602 5.34474 3.81068C5.49263 3.70533 5.60277 3.55674 5.65941 3.38619L6.58576 0.587987L6.58489 0.587138Z"
+                      fill="#F29232" />
+                  </svg>
+                  <p class="text-[#282728] text-xs">
+                    5.0 <span class="text-[#4A5568]">(210 Reviews)</span>
+                  </p>
+                </div>
+                <p class="text-[#7B7F95] text-xs max-w-44">
+                  Plot- 105, Road- 01, Block- A Shagufta Housing, Dhaka 1216,
+                </p>
+              </div>
+            </div>
+
+            <ul class="flex flex-wrap xl:flex-nowrap gap-3 font-medium text-center mt-8">
+              <li>
+                <a href="./store-profile.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow">
+                  Store Home
+                </a>
+              </li>
+              <li>
+                <a href="./store-profile3.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+                  All Service
+                </a>
+              </li>
+              <li>
+                <a href="./all-reviews.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+                  Reviews
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-end gap-2 mb-14">
+              <a href="#"
+                class="text-[#0F766D] text-sm font-medium py-3 px-5 border border-[E4E5E9] bg-white rounded-lg flex items-center gap-1.5 transition-all hover:bg-[#0F766D] hover:text-white store-profile-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M10.7738 9.81686L11.0013 11.6602C11.0596 12.1443 10.5404 12.4827 10.1263 12.2318L7.68208 10.7793C7.41375 10.7793 7.15126 10.7619 6.89459 10.7269C7.32626 10.2194 7.58292 9.57767 7.58292 8.8835C7.58292 7.22684 6.14792 5.8852 4.37459 5.8852C3.69792 5.8852 3.07375 6.07768 2.55459 6.41602C2.53709 6.27018 2.53125 6.12434 2.53125 5.97268C2.53125 3.31851 4.83542 1.16602 7.68208 1.16602C10.5288 1.16602 12.8329 3.31851 12.8329 5.97268C12.8329 7.54768 12.0221 8.94186 10.7738 9.81686Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M7.58366 8.88502C7.58366 9.57919 7.327 10.2209 6.89533 10.7284C6.31783 11.4284 5.40199 11.8775 4.37533 11.8775L2.85283 12.7817C2.59616 12.9392 2.26949 12.7234 2.30449 12.4259L2.45032 11.2767C1.66866 10.7342 1.16699 9.86502 1.16699 8.88502C1.16699 7.85836 1.71533 6.9542 2.55533 6.41754C3.0745 6.0792 3.69866 5.88672 4.37533 5.88672C6.14866 5.88672 7.58366 7.22836 7.58366 8.88502Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                Chat
+              </a>
+              <a href="#"
+                class="text-[#0F766D] text-sm font-medium py-3 px-5 border border-[E4E5E9] bg-white rounded-lg flex items-center gap-1.5 transition-all hover:bg-[#0F766D] hover:text-white store-profile-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M4.36328 10.7044L6.17161 12.1044C6.40495 12.3378 6.92995 12.4544 7.27995 12.4544H9.49662C10.1966 12.4544 10.9549 11.9294 11.1299 11.2294L12.5299 6.9711C12.8216 6.15443 12.2966 5.45443 11.4216 5.45443H9.08828C8.73828 5.45443 8.44661 5.16277 8.50495 4.75443L8.79661 2.88777C8.91328 2.36277 8.56328 1.77943 8.03828 1.60443C7.57161 1.42943 6.98828 1.66277 6.75495 2.01277L4.36328 5.5711"
+                    stroke="#0F766D" stroke-miterlimit="10" />
+                  <path
+                    d="M1.38867 10.7039V4.98724C1.38867 4.17057 1.73867 3.87891 2.55534 3.87891H3.13867C3.95534 3.87891 4.30534 4.17057 4.30534 4.98724V10.7039C4.30534 11.5206 3.95534 11.8122 3.13867 11.8122H2.55534C1.73867 11.8122 1.38867 11.5206 1.38867 10.7039Z"
+                    stroke="#0F766D" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                Follow
+              </a>
+            </div>
+
+            <form class="flex items-center bg-white border border-[#E4E5E9] rounded-lg px-4 py-0.5 w-80">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/linear/search-normal">
+                  <g id="search-normal">
+                    <path id="Vector"
+                      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                      stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path id="Vector_2" d="M22 22L20 20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                </g>
+              </svg>
+              <input type="text" id="first_name"
+                class="border-0 bg-transparent block w-full focus:ring-0
+                    font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
+                placeholder="Search anything" required />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- main section -->
+  <main class="bg-[#F4F4F4]">
+    <!-- reviews -->
+    <section class="py-16">
+      <div class="container mx-auto px-3 2xl:px-0">
+
+        <div class="flex items-center gap-8 mb-7">
+          <div class="flex gap-4">
+            <h2 class="text-xl font-semibold text-black">20 Reviews </h2>
+            <p>
+              <i class="fa-solid fa-star text-[#F29232]"></i>
+              <span class="text-[#4A5568] text-xs">5.0 Average Rating </span>
+            </p>
+          </div>
+
+          <button
+            class="border border-[#0D9488] py-2 px-6 rounded-lg bg-white text-[#0D9488] text-xs font-semibold transition-all hover:text-white hover:bg-[#0D9488]">
+            Write Review
+          </button>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-24 mb-10">
+          <div>
+            <div class="flex gap-4 items-center">
+              <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="">
+              <div>
+                <p class="text-[#12141D] font-semibold text-base">Leslie Alexander</p>
+                <p class="text-[#12141D] text-sm mt-1.5">Founder</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+              <i class="fa-solid fa-star text-[#FABE25]"></i>
+            </div>
+          </div>
+          <div class="max-w-[699px]">
+            <p class="text-justify text-[#383941] text-sm font-medium">
+              “You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+              choose the page, make the change & it is a good channel for us.”
+            </p>
+
+            <div class="flex gap-2 mt-4">
+              <figure>
+                <img src="./assets/image/store-profile/review1.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review2.png" alt="">
+              </figure>
+              <figure>
+                <img src="./assets/image/store-profile/review3.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex mt-8">
+          <nav aria-label="Page navigation example">
+            <ul class="flex items-center -space-x-px h-8 text-sm gap-2">
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all  hover:border-[#0F766D] hover:text-[#0F766D]">
+                  <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 1 1 5l4 4" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-sm transition-all border-[#0F766D] text-[#0F766D] hover:border-[#0F766D] hover:text-[#0F766D]">1</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">2</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">3</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border pt-0.5 rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                  <i class="fa-solid fa-ellipsis"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  class="h-8 w-8 flex justify-center items-center border rounded-lg category-shadow text-[#A7AAB9] text-sm transition-all hover:border-[#0F766D] hover:text-[#0F766D]">
+                  <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="bg-[#1F1E28]">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <img src="./assets/image/home/auto-care-logo.svg" alt="">
+            <span class="font-alata text-white text-xl md:text-2xl uppercase">Auto Care</span>
+          </div>
+          <p class="text-[#BABABA] text-sm mt-6 text-center md:text-left">Rent your belongings to people in your area to
+            make some extra cash.
+          </p>
+          <div class="flex justify-center md:justify-start gap-3 mt-6">
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Facebook-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Instagram-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/Twitter-footer.svg" alt="">
+            </a>
+            <a href="#" class="p-2 bg-[#ffffff17] rounded-full">
+              <img src="./assets/image/home/LinkedIn-footer.svg" alt="">
+            </a>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-center md:text-left text-lg font-bold text-white">Need Assistance?</h3>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Get In Touch :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">+14 88854874124</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">contactus@autocare.com</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm mt-2">Address :</p>
+            <p class="text-center md:text-left text-[#BABABA] text-sm">Road-1, Dhaka 1230, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="col-span-2">
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Company
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Legal
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Terms of Use
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Refund Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Service Policy
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Affiliates
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Shop Category
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="mb-8 text-center md:text-left">
+                <a class="text-white text-lg font-bold tracking-[-0.09px]" href="#">
+                  Service Category
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  About US
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Contact Us
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  How It Work
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Career
+                </a>
+              </li>
+
+              <li class="mb-9 text-center md:text-left">
+                <a class="text-[#E6E6E6] text-base font-medium" href="#">
+                  Quick Guide
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex">
+            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-e-none">
+              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                Download Customer App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border  border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-s-none ">
+              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                Download Vendor App
+              </legend>
+              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                  </a>
+                </div>
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-col lg:flex-row justify-between md:items-center md:gap-4 mt-8 mb-5 bg-[#14050B] rounded-[22px] py-5 px-4 sm:px-11">
+        <div class="flex gap-6 items-center sm:w-1/2">
+          <img src="./assets/image/home/email.png" alt="">
+          <h2 class="text-xs md:text-sm lg:text-xl xl:text-2xl font-semibold text-white leading-normal">
+            Subscribe and be a part of <br class="hidden sm:inline"> Autocares and get exciting offers!
+          </h2>
+        </div>
+
+
+        <form
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          <input
+            class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
+            type="text" placeholder="Enter Your Email">
+          <button
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+        <div class="text-center md:text-left mb-4 md:mb-0 flex gap-3 items-center">
+          <img src="./assets/image/home/copyright.svg" alt="">
+          <p class="text-[#ffffff99] font-medium text-sm">
+            2024-2025 autocare. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/image/home/Payment Method1.png" alt="">
+          <img src="./assets/image/home/Payment Method2.png" alt="">
+          <img src="./assets/image/home/Payment Method3.png" alt="">
+          <img src="./assets/image/home/Payment Method4.png" alt="">
+          <img src="./assets/image/home/Payment Method5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- flowbite cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>

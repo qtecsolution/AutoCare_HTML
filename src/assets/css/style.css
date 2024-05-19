@@ -1822,6 +1822,10 @@ video {
   max-width: 12rem;
 }
 
+.max-w-\[699px\] {
+  max-width: 699px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
