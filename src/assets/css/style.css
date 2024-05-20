@@ -1044,6 +1044,10 @@ video {
   top: 9px;
 }
 
+.left-\[123px\] {
+  left: 123px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1768,6 +1772,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[169px\] {
+  width: 169px;
 }
 
 .max-w-44 {
