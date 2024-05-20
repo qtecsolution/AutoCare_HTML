@@ -29,8 +29,8 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
-    <nav class="sm:container md:container lg:container xl:container mx-auto  md:flex  justify-between items-center">
+  <section class="bg-[#EDF7F7] py-[10px]">
+    <nav class="container mx-auto px-3 2xl:px-0 md:flex  justify-between items-center">
 
       <ul class="flex gap-[40px]">
         <li>
@@ -99,9 +99,8 @@
   </section>
 
   <!-- main menu  -->
-  <header class="menu py-[16px] shadow px-3 2xl:px-0">
-    <div
-      class="sm:container md:container lg:container xl:container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
+  <header class="menu py-[16px] shadow">
+    <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
       <div>
         <a href="../index.html">
           <img src="./assets/image/home/logo.png" alt="logo">
@@ -299,8 +298,8 @@
   </header>
 
   <!-- Search for Products -->
-  <section class="px-3">
-    <div class="container mx-auto my-6">
+  <section>
+    <div class="container mx-auto px-3 2xl:px-0 my-6">
       <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
         style="background-image: url('./assets/image/home/search-for-products.png')">
         <div class=" lg:pt-4 xl:pt-9">
@@ -353,7 +352,7 @@
         </div>
 
         <div class="pb-9 2xl:pb-16">
-          <div class="flex ps-4 pr-2 py-2 md:max-w-[983px] justify-between bg-white items-center gap-2 rounded-lg">
+          <div class="flex ps-4 pr-2 py-2 md:max-w-[1000px] justify-between bg-white items-center gap-2 rounded-lg">
 
             <div class="border-r-2 border-[#E4E5E9] homeSelect">
               <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
@@ -512,443 +511,446 @@
     </section>
 
     <!-- Hot Service Category-->
-    <section class="container mx-auto mt-10 px-3 2xl:px-0">
-      <div class="bg-[#F8F4F0] rounded-3xl">
-        <div class="md:flex 2xl:justify-between gap-6 md:gap-7 p-6 ">
-          <div class="mb-5">
-            <div class="flex justify-center md:justify-start ">
-              <h3 class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#4E5AC7] text-xs font-semibold uppercase">
-                Service Category
-              </h3>
-            </div>
-
-            <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 md:text-left text-center">
-              Find Best Car Servicing Centre near you
-            </h2>
-            <img class="w-full mt-2" src="./assets/image/home/product-category.png" alt="">
-            <div class="flex justify-center md:block mt-8">
-              <a href="./service-home.html" class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
-                Browse All Service
-              </a>
-            </div>
-          </div>
-
-          <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/engine.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Engine & Transmission
-                </h4>
+    <section class="mb-10">
+      <div class="container mx-auto mt-10 px-3 2xl:px-0">
+        <div class="bg-[#F8F4F0] rounded-3xl">
+          <div class="md:flex 2xl:justify-between gap-6 md:gap-7 p-6 ">
+            <div class="mb-5">
+              <div class="flex justify-center md:justify-start ">
+                <h3
+                  class="py-2 px-3 bg-white inline-block rounded-[53px] text-[#4E5AC7] text-xs font-semibold uppercase">
+                  Service Category
+                </h3>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
-
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
+              <h2 class="md:w-48 text-lg font-bold tracking-[-0.09px] leading-[140%] py-3 md:text-left text-center">
+                Find Best Car Servicing Centre near you
+              </h2>
+              <img class="w-full mt-2" src="./assets/image/home/product-category.png" alt="">
+              <div class="flex justify-center md:block mt-8">
+                <a href="./service-home.html"
+                  class="py-3 px-5 bg-[#027371] rounded-md text-xs font-semibold text-white">
+                  Browse All Service
+                </a>
+              </div>
             </div>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/electrical.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Electrical & Electronics
-                </h4>
+            <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
+
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/engine.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Engine & Transmission
+                  </h4>
+                </div>
+
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
+
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/electrical.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Electrical & Electronics
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/steering.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Steering
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/steering.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Steering
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/brakes.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Brakes & Suspension
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/brakes.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Brakes & Suspension
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/Tires.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Tires & Wheels
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/Tires.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Tires & Wheels
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 px-[14px] py-3 border-b">
-                <img src="./assets/image/home/paint.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Paint Sealants
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 px-[14px] py-3 border-b">
+                  <img src="./assets/image/home/paint.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Paint Sealants
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/turbo.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Turbo Traverse
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/turbo.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Turbo Traverse
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-            <div
-              class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
-              <div class="flex gap-2 p-[14px] border-b">
-                <img src="./assets/image/home/fuel.svg" alt="engine">
-                <h4 class="text-[15px] font-bold text-[#3D3D3D]">
-                  Fuel System
-                </h4>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
               </div>
 
-              <ul class="ps-10 py-3 list-disc">
-                <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
-                <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
-                <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
-              </ul>
+              <div
+                class="rounded-xl bg-white category-shadow cursor-pointer transition-all 2xl:w-[265px] hover:hoverShadow">
+                <div class="flex gap-2 p-[14px] border-b">
+                  <img src="./assets/image/home/fuel.svg" alt="engine">
+                  <h4 class="text-[15px] font-bold text-[#3D3D3D]">
+                    Fuel System
+                  </h4>
+                </div>
 
-              <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
-                <span>See All</span>
-                <img src="./assets/image/home/rightarray.svg" alt="">
-              </a>
-            </div>
+                <ul class="ps-10 py-3 list-disc">
+                  <li class="text-[#2D3748] text-sm leading-7">Engine Oils</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Transmission Fluids</li>
+                  <li class="text-[#2D3748] text-sm leading-7">Gear Oils</li>
+                </ul>
 
-          </div>
-        </div>
+                <a class="flex ps-6 pb-4 gap-3 text-[#027371] text-sm leading-7" href="./service-grid-page.html">
+                  <span>See All</span>
+                  <img src="./assets/image/home/rightarray.svg" alt="">
+                </a>
+              </div>
 
-        <!-- Hot Service carousel -->
-        <div class="p-6 pt-0">
-          <div class="flex justify-between items-center">
-            <h1 class="font-semibold text-2xl text-[#09090B]">Hot Service</h1>
-            <div class="flex gap-2">
-
-              <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center"
-                data-carousel-prev>
-                <i class="fa-solid fa-chevron-left text-xl text-[#D3D3D3]"></i>
-              </button>
-
-              <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center"
-                data-carousel-next>
-                <i class="fa-solid fa-chevron-right text-xl text-[#027371]"></i>
-              </button>
             </div>
           </div>
 
-          <div class="pt-6 md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-3 lg:justify-center">
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
-                </div>
+          <!-- Hot Service carousel -->
+          <div class="p-6 pt-0">
+            <div class="flex justify-between items-center">
+              <h1 class="font-semibold text-2xl text-[#09090B]">Hot Service</h1>
+              <div class="flex gap-2">
 
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px]">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
-                  </div>
+                <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center"
+                  data-carousel-prev>
+                  <i class="fa-solid fa-chevron-left text-xl text-[#D3D3D3]"></i>
+                </button>
 
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                  </div>
-
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                  </div>
-
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                  </div>
-                </div>
-
+                <button class="p-2 bg-white shadow rounded-lg h-8 w-8 flex justify-center items-center"
+                  data-carousel-next>
+                  <i class="fa-solid fa-chevron-right text-xl text-[#027371]"></i>
+                </button>
               </div>
-            </a>
+            </div>
 
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
+            <div class="pt-6 md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-3 lg:justify-center">
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
+                  </div>
+
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px]">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
+                  </div>
+
                 </div>
+              </a>
 
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px] ">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
                   </div>
 
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
-                  </div>
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
 
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                  </div>
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
 
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                  </div>
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
 
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                  </div>
-                </div>
-              </div>
-            </a>
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
 
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
-                </div>
-
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px] ">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
-                  </div>
-
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                  </div>
-
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                  </div>
-
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                  </div>
-                </div>
-
-              </div>
-            </a>
-
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
-                </div>
-
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px] ">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
-                  </div>
-
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                  </div>
-
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                  </div>
-
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
                   </div>
                 </div>
+              </a>
 
-              </div>
-            </a>
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
+                  </div>
 
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
+                  </div>
+
                 </div>
+              </a>
 
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px] ">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
                   </div>
 
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                </div>
+              </a>
+
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
                   </div>
 
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
                   </div>
 
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                </div>
+              </a>
+
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
+                  </div>
+
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="">
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
                   </div>
                 </div>
+              </a>
+            </div>
 
-              </div>
-            </a>
-
-            <a href="./service-grid-page.html">
-              <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                <div class="flex justify-center items-center">
-                  <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="">
-                </div>
-
-                <div class="pt-3 pb-4">
-                  <div class="flex items-center gap-1 -ml-1">
-                    <img src="./assets/image/home/star.svg" alt="">
-                    <p class="text-[10px] ">
-                      <span class="text-[#282728]">5.0</span>
-                      <span class="text-[#4A5568]">Average Rating</span>
-                    </p>
-                  </div>
-
-                  <div class="mt-2">
-                    <p class="text-xs font-bold text-[#B36C7D]">
-                      Tires/Wheels Sales Change
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                  </div>
-
-                  <div>
-                    <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                  </div>
-
-                  <div class="mt-2">
-                    <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                  </div>
-                </div>
-              </div>
-            </a>
           </div>
-
         </div>
       </div>
-
     </section>
   </main>
 
