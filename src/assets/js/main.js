@@ -118,7 +118,6 @@ $("#lightSlider").lightSlider({
   thumbItem: 5,
 });
 
-
 $(function () {
   $('input[name="datefilter"]').daterangepicker({
     autoUpdateInput: false,
