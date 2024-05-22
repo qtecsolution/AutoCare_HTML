@@ -440,7 +440,7 @@
   </header>
 
   <!-- Breadcrumb -->
-  <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
+  <div class="bg-gradient-to-b from-[#EDF6F6] to-white">
     <div class="container mx-auto pt-16 pb-44 px-3">
       <nav class="flex" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -487,15 +487,23 @@
         </ol>
       </nav>
     </div>
-  </section>
+  </div>
 
   <!-- prosuct details -->
   <section class="container mx-auto -mt-40 px-3">
     <div class="flex justify-between 2xl:justify-start 2xl:gap-10">
-      <div class="w-[300px] xl:w-[390px] 2xl:w-[470px]">
+      <div class="w-[300px] xl:w-[390px] 2xl:w-[480px]">
         <ul id="lightSlider" class="h-full">
-          <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product1.png">
+          <li class="flex justify-center items-center relative"
+            data-thumb="./assets/image/single-product-page/product1.png">
             <img src="./assets/image/single-product-page/product1.png" />
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.25 44C8.25 24.255 24.255 8.25 44 8.25C63.745 8.25 79.75 24.255 79.75 44C79.75 63.745 63.745 79.75 44 79.75C24.255 79.75 8.25 63.745 8.25 44ZM59.6713 40.3957C60.3136 40.7532 60.8487 41.2758 61.2213 41.9095C61.5938 42.5432 61.7902 43.2649 61.7902 44C61.7902 44.7351 61.5938 45.4568 61.2213 46.0905C60.8487 46.7242 60.3136 47.2468 59.6713 47.6043L39.127 59.0187C38.4992 59.3671 37.7914 59.5457 37.0734 59.5367C36.3555 59.5278 35.6523 59.3315 35.0334 58.9675C34.4146 58.6034 33.9015 58.0841 33.5448 57.461C33.1882 56.8378 33.0004 56.1323 33 55.4143V32.5857C33 29.4433 36.377 27.4523 39.127 28.9813L59.6713 40.3957Z"
+                  fill="white" />
+              </svg>
+            </div>
           </li>
           <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product2.png">
             <img src="./assets/image/single-product-page/product2.png" />
@@ -520,7 +528,7 @@
           </span>
         </p>
 
-        <h2 class="text-[#09090B] font-semibold text-2xl leading-8 my-1">
+        <h2 class="text-[#09090B] font-semibold text-2xl leading-8">
           Purolator Oil Filter 133500I99 <br> - Fits Toyota Qualis
         </h2>
 
@@ -528,7 +536,7 @@
           In-Line Filter, 6mm, 6,1mm
         </h4>
 
-        <p class="text-[12px] mt-3">
+        <p class="text-[12px] mt-1.5">
           <span class="text-[#A7AAB9]">Manufacturer:</span>
           <span class="text-[#525468]">ZZVF</span>
         </p>
@@ -542,14 +550,14 @@
           <span class="text-[#525468]">3Years</span>
         </p>
 
-        <p class="text-[12px] my-3">
+        <p class="text-[12px] my-2">
           <span class="text-[#A7AAB9]">SKU:</span>
           <span class="text-black">OEM-RA-13622</span>
           <span class="bg-[#B87DF3] px-2 py-1 rounded-[40px] text-white text-[10px] font-semibold ml-1">New</span>
         </p>
 
-        <h3 class="text-[#0F766D] text-2xl font-semibold mt-7">$ 112.99</h3>
-        <div class="flex items-center gap-2 2xl:gap-5 mb-7">
+        <h3 class="text-[#0F766D] text-2xl font-semibold mt-5">$ 112.99</h3>
+        <div class="flex items-center gap-2 2xl:gap-5 mb-5 mt-2">
           <p class="text-[#5B5B5F] text-[10px] xl:text-sm">
             Store Coupon Available
           </p>
@@ -1202,7 +1210,7 @@
           <button data-modal-target="compare-modal" data-modal-toggle="compare-modal" type="button"
             class="flex items-center gap-1 text-sm font-medium">
             <img src="./assets/image/single-product-page/add-to-list.svg" alt="">
-            <span class="text-[#536AC3]">Add to list</span>
+            <span class="text-[#536AC3]">Add Favorite list</span>
           </button>
 
           <!-- compare modal -->
