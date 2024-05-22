@@ -74,7 +74,7 @@
   }
 
   .label-radio .checkmark-radio:after {
-    @apply left-[3px] 2xl:left-[4px] top-[3px] 2xl:top-[4px] w-[8px] 2xl:w-[10px] h-[8px] 2xl:h-[10px] bg-[#0F766D] rounded-full content-[''];
+    @apply left-[3px] 2xl:left-1 top-[3px] 2xl:top-1 w-2 2xl:w-[9px] h-2 2xl:h-[9px] bg-[#0F766D] rounded-full content-[''];
   }
 
   .myshadow {
