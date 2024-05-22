@@ -612,10 +612,10 @@
         <div>
           <div class="grid grid-cols-3 xl:grid-cols-5 gap-1 mb-1 w-full">
             <div>
-              <a href="./single-product-page2.html"
+              <button
                 class="border-[.5px] border-[#0000001a] px-3 py-2 text-[10px] text-[#5D5F67] rounded hover:border-[#0F766D] hover:text-[#0F766D] duration-500 w-full">17
                 (11.5cm)
-              </a>
+              </button>
             </div>
 
             <div>
@@ -685,926 +685,137 @@
 
         <p class="text-sm my-3">
           <span class="text-[#7D7F85]">Quantity:</span>
-          <span class="text-[#107231]">37 in stock</span>
+          <span class="text-[#D87607]">No Stock</span>
         </p>
 
-        <div class="inline-flex gap-6 rounded-lg border border-[#0000001a] p-1 justify-center items-center mb-4">
-          <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
-            +
-          </button>
-          <button>
-            6
-          </button>
-          <button class="w-[22px] h-[22px] bg-[#F6F6F6] rounded flex justify-center items-center">
-            -
-          </button>
-        </div>
 
-        <div class="flex gap-2">
-          <button type="button" data-modal-target="comparision-modal" data-modal-toggle="comparision-modal"
-            class="bg-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-5 xl:px-9 py-3 rounded-[10px] text-white text-base font-semibold">
-            <img src="./assets/image/single-product-page/buynow.svg" alt="">
-            Buy Now
-          </button>
-          <button data-modal-target="addToCart-modal" data-modal-toggle="addToCart-modal" type="button"
-            class="border border-[#0F766D] flex items-center gap-1.5 xl:gap-2 px-4 xl:px-8 py-3 rounded-[10px] text-[#09090B] text-base font-semibold">
-            <img src="./assets/image/single-product-page/cart.svg" alt="">
-            Add to Cart
-          </button>
-        </div>
-
-        <!-- comparision modal -->
-        <div id="comparision-modal" tabindex="-1" aria-hidden="true"
-          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative p-4 w-full max-w-[1500px] max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-[40px] shadow ">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-2xl w-full font-semibold text-[#09090B] text-center  ">
-                  Compare Products
-                </h3>
-                <button type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center   "
-                  data-modal-hide="comparision-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div>
-                <div class="grid grid-cols-7">
-                  <div class="border-r flex justify-center items-center border-b">
-                    <h3 class="text-2xl font-semibold text-black  ">
-                      Product
-                    </h3>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b pt-12 px-5">
-                    <div class="w-full">
-                      <img class="w-full" src="./assets/image/single-product-page/comparision.png" alt="">
-                    </div>
-                    <div class="flex gap-1 mt-2.5 mx-1">
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product2.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product3.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product4.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product5.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product6.png" alt="">
-                      </div>
-                    </div>
-
-                    <div class="flex items-center gap-1 mt-7">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                          d="M8.139 2.63339C8.409 1.80449 9.5817 1.80449 9.8508 2.63339L10.8138 5.59619C10.8726 5.77663 10.987 5.93386 11.1406 6.04539C11.2941 6.15692 11.479 6.21705 11.6688 6.21719H14.7846C15.6567 6.21719 16.0185 7.33319 15.3138 7.84619L12.7938 9.67679C12.6399 9.78842 12.5254 9.9459 12.4665 10.1267C12.4076 10.3074 12.4075 10.5022 12.4662 10.683L13.4292 13.6458C13.6992 14.4747 12.7497 15.165 12.0432 14.652L9.5232 12.8214C9.36948 12.7098 9.1844 12.6497 8.99445 12.6497C8.8045 12.6497 8.61941 12.7098 8.4657 12.8214L5.9457 14.652C5.2401 15.165 4.2915 14.4747 4.5606 13.6458L5.5236 10.683C5.58226 10.5022 5.58215 10.3074 5.5233 10.1267C5.46445 9.9459 5.34987 9.78842 5.196 9.67679L2.6769 7.84709C1.9722 7.33409 2.3349 6.21809 3.2061 6.21809H6.321C6.51094 6.21814 6.69603 6.1581 6.84977 6.04655C7.00351 5.93501 7.11802 5.77768 7.1769 5.59709L8.1399 2.63429L8.139 2.63339Z"
-                          fill="#F49D0C" />
-                      </svg>
-                      <p class="text-[#282728] text-xs font-medium">5.0
-                        <span class="text-[#4A5568]">Average Rating</span>
-                      </p>
-                    </div>
-
-                    <div class="mt-2">
-                      <h2 class="text-[#09090B] text-base font-bold">
-                        Purolator Oil Filter 133500I99 - Fits <br> Toyota Qualis
-                      </h2>
-                    </div>
-                    <div class="mt-7">
-                      <h2 class="text-[#0F766D] text-2xl font-semibold">
-                        $ 112.99
-                      </h2>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 mt-7 pb-8">
-                      <a href="#"
-                        class="px-6 py-2 bg-[#0F766D] flex items-center gap-1.5 rounded-lg text-white font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                          <path
-                            d="M11.9995 3.36866V2.13813C11.9995 1.50378 11.5157 0.988281 10.9178 0.988281H1.08264C0.485165 0.988281 0 1.5033 0 2.13813V3.36866H11.9995Z"
-                            fill="white" />
-                          <path
-                            d="M0 4.75781V9.43789C0 10.0727 0.484711 10.5877 1.08264 10.5877H10.9183C11.5157 10.5877 12 10.0732 12 9.43789V4.75781H0ZM2.90372 9.00452H1.2768V7.77979H2.90372V9.00452ZM5.51052 9.00452H3.8836V7.77979H5.51052V9.00452ZM8.11686 9.00452H6.48994V7.77979H8.11686V9.00452ZM10.7237 9.00452H9.09674V7.77979H10.7237V9.00452Z"
-                            fill="white" />
-                        </svg>
-                        Buy Now
-                      </a>
-
-                      <a href="#"
-                        class="px-6 py-2 bg-[#fff] flex items-center gap-1.5 rounded-lg border border-[#0F766D] text-black font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 1.08359C0 0.86268 0.179086 0.683594 0.4 0.683594H1.6C1.78355 0.683594 1.94354 0.808513 1.98806 0.98658L2.31231 2.28359H11.6C11.719 2.28359 11.8318 2.33657 11.9078 2.42814C11.9838 2.51971 12.0151 2.64035 11.9931 2.75731L10.7931 9.15731C10.7577 9.3465 10.5925 9.48359 10.4 9.48359H9.6H4H3.2C3.00751 9.48359 2.84232 9.3465 2.80685 9.15731L1.60905 2.76903L1.28769 1.48359H0.4C0.179086 1.48359 0 1.30451 0 1.08359ZM4 9.48359C3.11634 9.48359 2.4 10.1999 2.4 11.0836C2.4 11.9672 3.11634 12.6836 4 12.6836C4.88365 12.6836 5.6 11.9672 5.6 11.0836C5.6 10.1999 4.88365 9.48359 4 9.48359ZM9.6 9.48359C8.71634 9.48359 8 10.1999 8 11.0836C8 11.9672 8.71634 12.6836 9.6 12.6836C10.4837 12.6836 11.2 11.9672 11.2 11.0836C11.2 10.1999 10.4837 9.48359 9.6 9.48359ZM4 10.2836C3.55817 10.2836 3.2 10.6418 3.2 11.0836C3.2 11.5254 3.55817 11.8836 4 11.8836C4.44183 11.8836 4.8 11.5254 4.8 11.0836C4.8 10.6418 4.44183 10.2836 4 10.2836ZM9.6 10.2836C9.15817 10.2836 8.8 10.6418 8.8 11.0836C8.8 11.5254 9.15817 11.8836 9.6 11.8836C10.0418 11.8836 10.4 11.5254 10.4 11.0836C10.4 10.6418 10.0418 10.2836 9.6 10.2836Z"
-                            fill="#0F766D" />
-                        </svg>
-                        Buy Now
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b pt-12 px-5">
-                    <div class="w-full">
-                      <img class="w-full" src="./assets/image/single-product-page/comparision.png" alt="">
-                    </div>
-                    <div class="flex gap-1 mt-2.5 mx-1">
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product2.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product3.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product4.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product5.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product6.png" alt="">
-                      </div>
-                    </div>
-
-                    <div class="flex items-center gap-1 mt-7">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                          d="M8.139 2.63339C8.409 1.80449 9.5817 1.80449 9.8508 2.63339L10.8138 5.59619C10.8726 5.77663 10.987 5.93386 11.1406 6.04539C11.2941 6.15692 11.479 6.21705 11.6688 6.21719H14.7846C15.6567 6.21719 16.0185 7.33319 15.3138 7.84619L12.7938 9.67679C12.6399 9.78842 12.5254 9.9459 12.4665 10.1267C12.4076 10.3074 12.4075 10.5022 12.4662 10.683L13.4292 13.6458C13.6992 14.4747 12.7497 15.165 12.0432 14.652L9.5232 12.8214C9.36948 12.7098 9.1844 12.6497 8.99445 12.6497C8.8045 12.6497 8.61941 12.7098 8.4657 12.8214L5.9457 14.652C5.2401 15.165 4.2915 14.4747 4.5606 13.6458L5.5236 10.683C5.58226 10.5022 5.58215 10.3074 5.5233 10.1267C5.46445 9.9459 5.34987 9.78842 5.196 9.67679L2.6769 7.84709C1.9722 7.33409 2.3349 6.21809 3.2061 6.21809H6.321C6.51094 6.21814 6.69603 6.1581 6.84977 6.04655C7.00351 5.93501 7.11802 5.77768 7.1769 5.59709L8.1399 2.63429L8.139 2.63339Z"
-                          fill="#F49D0C" />
-                      </svg>
-                      <p class="text-[#282728] text-xs font-medium">5.0
-                        <span class="text-[#4A5568]">Average Rating</span>
-                      </p>
-                    </div>
-
-                    <div class="mt-2">
-                      <h2 class="text-[#09090B] text-base font-bold">
-                        Purolator Oil Filter 133500I99 - Fits <br> Toyota Qualis
-                      </h2>
-                    </div>
-                    <div class="mt-7">
-                      <h2 class="text-[#0F766D] text-2xl font-semibold">
-                        $ 112.99
-                      </h2>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 mt-7 pb-8">
-                      <a href="#"
-                        class="px-6 py-2 bg-[#0F766D] flex items-center gap-1.5 rounded-lg text-white font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                          <path
-                            d="M11.9995 3.36866V2.13813C11.9995 1.50378 11.5157 0.988281 10.9178 0.988281H1.08264C0.485165 0.988281 0 1.5033 0 2.13813V3.36866H11.9995Z"
-                            fill="white" />
-                          <path
-                            d="M0 4.75781V9.43789C0 10.0727 0.484711 10.5877 1.08264 10.5877H10.9183C11.5157 10.5877 12 10.0732 12 9.43789V4.75781H0ZM2.90372 9.00452H1.2768V7.77979H2.90372V9.00452ZM5.51052 9.00452H3.8836V7.77979H5.51052V9.00452ZM8.11686 9.00452H6.48994V7.77979H8.11686V9.00452ZM10.7237 9.00452H9.09674V7.77979H10.7237V9.00452Z"
-                            fill="white" />
-                        </svg>
-                        Buy Now
-                      </a>
-
-                      <a href="#"
-                        class="px-6 py-2 bg-[#fff] flex items-center gap-1.5 rounded-lg border border-[#0F766D] text-black font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 1.08359C0 0.86268 0.179086 0.683594 0.4 0.683594H1.6C1.78355 0.683594 1.94354 0.808513 1.98806 0.98658L2.31231 2.28359H11.6C11.719 2.28359 11.8318 2.33657 11.9078 2.42814C11.9838 2.51971 12.0151 2.64035 11.9931 2.75731L10.7931 9.15731C10.7577 9.3465 10.5925 9.48359 10.4 9.48359H9.6H4H3.2C3.00751 9.48359 2.84232 9.3465 2.80685 9.15731L1.60905 2.76903L1.28769 1.48359H0.4C0.179086 1.48359 0 1.30451 0 1.08359ZM4 9.48359C3.11634 9.48359 2.4 10.1999 2.4 11.0836C2.4 11.9672 3.11634 12.6836 4 12.6836C4.88365 12.6836 5.6 11.9672 5.6 11.0836C5.6 10.1999 4.88365 9.48359 4 9.48359ZM9.6 9.48359C8.71634 9.48359 8 10.1999 8 11.0836C8 11.9672 8.71634 12.6836 9.6 12.6836C10.4837 12.6836 11.2 11.9672 11.2 11.0836C11.2 10.1999 10.4837 9.48359 9.6 9.48359ZM4 10.2836C3.55817 10.2836 3.2 10.6418 3.2 11.0836C3.2 11.5254 3.55817 11.8836 4 11.8836C4.44183 11.8836 4.8 11.5254 4.8 11.0836C4.8 10.6418 4.44183 10.2836 4 10.2836ZM9.6 10.2836C9.15817 10.2836 8.8 10.6418 8.8 11.0836C8.8 11.5254 9.15817 11.8836 9.6 11.8836C10.0418 11.8836 10.4 11.5254 10.4 11.0836C10.4 10.6418 10.0418 10.2836 9.6 10.2836Z"
-                            fill="#0F766D" />
-                        </svg>
-                        Buy Now
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-span-2 border-b pt-12 px-5">
-                    <div class="w-full">
-                      <img class="w-full" src="./assets/image/single-product-page/comparision.png" alt="">
-                    </div>
-                    <div class="flex gap-1 mt-2.5 mx-1">
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product2.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product3.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product4.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product5.png" alt="">
-                      </div>
-                      <div class="rounded-xl border-[2.9px] border-white bg-[#F6F6F6] comparision p-3">
-                        <img src="./assets/image/single-product-page/product6.png" alt="">
-                      </div>
-                    </div>
-
-                    <div class="flex items-center gap-1 mt-7">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                          d="M8.139 2.63339C8.409 1.80449 9.5817 1.80449 9.8508 2.63339L10.8138 5.59619C10.8726 5.77663 10.987 5.93386 11.1406 6.04539C11.2941 6.15692 11.479 6.21705 11.6688 6.21719H14.7846C15.6567 6.21719 16.0185 7.33319 15.3138 7.84619L12.7938 9.67679C12.6399 9.78842 12.5254 9.9459 12.4665 10.1267C12.4076 10.3074 12.4075 10.5022 12.4662 10.683L13.4292 13.6458C13.6992 14.4747 12.7497 15.165 12.0432 14.652L9.5232 12.8214C9.36948 12.7098 9.1844 12.6497 8.99445 12.6497C8.8045 12.6497 8.61941 12.7098 8.4657 12.8214L5.9457 14.652C5.2401 15.165 4.2915 14.4747 4.5606 13.6458L5.5236 10.683C5.58226 10.5022 5.58215 10.3074 5.5233 10.1267C5.46445 9.9459 5.34987 9.78842 5.196 9.67679L2.6769 7.84709C1.9722 7.33409 2.3349 6.21809 3.2061 6.21809H6.321C6.51094 6.21814 6.69603 6.1581 6.84977 6.04655C7.00351 5.93501 7.11802 5.77768 7.1769 5.59709L8.1399 2.63429L8.139 2.63339Z"
-                          fill="#F49D0C" />
-                      </svg>
-                      <p class="text-[#282728] text-xs font-medium">5.0
-                        <span class="text-[#4A5568]">Average Rating</span>
-                      </p>
-                    </div>
-
-                    <div class="mt-2">
-                      <h2 class="text-[#09090B] text-base font-bold">
-                        Purolator Oil Filter 133500I99 - Fits <br> Toyota Qualis
-                      </h2>
-                    </div>
-                    <div class="mt-7">
-                      <h2 class="text-[#0F766D] text-2xl font-semibold">
-                        $ 112.99
-                      </h2>
-                    </div>
-
-                    <div class="flex items-center gap-2.5 mt-7 pb-8">
-                      <a href="#"
-                        class="px-6 py-2 bg-[#0F766D] flex items-center gap-1.5 rounded-lg text-white font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                          <path
-                            d="M11.9995 3.36866V2.13813C11.9995 1.50378 11.5157 0.988281 10.9178 0.988281H1.08264C0.485165 0.988281 0 1.5033 0 2.13813V3.36866H11.9995Z"
-                            fill="white" />
-                          <path
-                            d="M0 4.75781V9.43789C0 10.0727 0.484711 10.5877 1.08264 10.5877H10.9183C11.5157 10.5877 12 10.0732 12 9.43789V4.75781H0ZM2.90372 9.00452H1.2768V7.77979H2.90372V9.00452ZM5.51052 9.00452H3.8836V7.77979H5.51052V9.00452ZM8.11686 9.00452H6.48994V7.77979H8.11686V9.00452ZM10.7237 9.00452H9.09674V7.77979H10.7237V9.00452Z"
-                            fill="white" />
-                        </svg>
-                        Buy Now
-                      </a>
-
-                      <a href="#"
-                        class="px-6 py-2 bg-[#fff] flex items-center gap-1.5 rounded-lg border border-[#0F766D] text-black font-semibold text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 1.08359C0 0.86268 0.179086 0.683594 0.4 0.683594H1.6C1.78355 0.683594 1.94354 0.808513 1.98806 0.98658L2.31231 2.28359H11.6C11.719 2.28359 11.8318 2.33657 11.9078 2.42814C11.9838 2.51971 12.0151 2.64035 11.9931 2.75731L10.7931 9.15731C10.7577 9.3465 10.5925 9.48359 10.4 9.48359H9.6H4H3.2C3.00751 9.48359 2.84232 9.3465 2.80685 9.15731L1.60905 2.76903L1.28769 1.48359H0.4C0.179086 1.48359 0 1.30451 0 1.08359ZM4 9.48359C3.11634 9.48359 2.4 10.1999 2.4 11.0836C2.4 11.9672 3.11634 12.6836 4 12.6836C4.88365 12.6836 5.6 11.9672 5.6 11.0836C5.6 10.1999 4.88365 9.48359 4 9.48359ZM9.6 9.48359C8.71634 9.48359 8 10.1999 8 11.0836C8 11.9672 8.71634 12.6836 9.6 12.6836C10.4837 12.6836 11.2 11.9672 11.2 11.0836C11.2 10.1999 10.4837 9.48359 9.6 9.48359ZM4 10.2836C3.55817 10.2836 3.2 10.6418 3.2 11.0836C3.2 11.5254 3.55817 11.8836 4 11.8836C4.44183 11.8836 4.8 11.5254 4.8 11.0836C4.8 10.6418 4.44183 10.2836 4 10.2836ZM9.6 10.2836C9.15817 10.2836 8.8 10.6418 8.8 11.0836C8.8 11.5254 9.15817 11.8836 9.6 11.8836C10.0418 11.8836 10.4 11.5254 10.4 11.0836C10.4 10.6418 10.0418 10.2836 9.6 10.2836Z"
-                            fill="#0F766D" />
-                        </svg>
-                        Buy Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-7">
-                  <div class="border-r flex justify-center items-center border-b">
-                    <h3 class="text-2xl font-semibold text-black  ">
-                      Product
-                    </h3>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-10 pl-5 pr-10">
-                    <p class="text-sm text-[#7D7F85]">
-                      Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively
-                      with
-                      the delicate touch that your baby deserves. Dress your precious one in the
-                    </p>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-10 pl-5 pr-10">
-                    <p class="text-sm text-[#7D7F85]">
-                      Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively
-                      with
-                      the delicate touch that your baby deserves. Dress your precious one in the
-                    </p>
-                  </div>
-
-                  <div class="col-span-2 border-b py-10 pl-5 pr-10">
-                    <p class="text-sm text-[#7D7F85]">
-                      Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively
-                      with
-                      the delicate touch that your baby deserves. Dress your precious one in the
-                    </p>
-
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-7">
-                  <div class="border-r flex justify-center items-center border-b">
-                    <h3 class="text-2xl font-semibold text-black  ">
-                      Product
-                    </h3>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-10 pl-5 pr-10">
-                    <div class="flex gap-12">
-                      <div>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Filter type:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Height [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Diameter [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Inlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Outlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Packaging length [cm]:
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          In-Line Filter
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          30,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6,1
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          14,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          17
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-10 pl-5 pr-10">
-                    <div class="flex gap-12">
-                      <div>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Filter type:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Height [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Diameter [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Inlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Outlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Packaging length [cm]:
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          In-Line Filter
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          30,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6,1
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          14,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          17
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-span-2 border-b py-10 pl-5 pr-10">
-                    <div class="flex gap-12">
-                      <div>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Filter type:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Height [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Diameter [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Inlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Outlet Ø [mm]:
-                        </p>
-                        <p class="text-[#525468] text-[12px] mb-3">
-                          Packaging length [cm]:
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          In-Line Filter
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          30,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          6,1
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          14,0
-                        </p>
-                        <p class=" text-[#383941] text-[12px] font-medium mb-3">
-                          17
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-7">
-                  <div class="border-r flex justify-center items-center border-b">
-                    <h3 class="text-2xl font-semibold text-black  ">
-                      Compatibility
-                    </h3>
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-2 pl-5 pr-10">
-                    <img src="./assets/image/single-product-page/tabel.png" alt="">
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-2 pl-5 pr-10">
-                    <img src="./assets/image/single-product-page/tabel.png" alt="">
-                  </div>
-
-                  <div class="col-span-2 border-r border-b py-2 pl-5 pr-10">
-                    <img src="./assets/image/single-product-page/tabel.png" alt="">
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-7">
-                  <div class="border-r flex justify-center items-center">
-                    <h3 class="text-2xl font-semibold text-black  ">
-                      Availability
-                    </h3>
-                  </div>
-
-                  <div class="col-span-2 border-r py-10 pl-5 pr-10 flex justify-center">
-                    <h4 class="text-[#107231] text-2xl font-semibold">
-                      In stock
-                    </h4>
-                  </div>
-
-                  <div class="col-span-2 border-r py-10 pl-5 pr-10 flex justify-center">
-                    <h4 class="text-[#107231] text-2xl font-semibold">
-                      In stock
-                    </h4>
-                  </div>
-
-                  <div class="col-span-2 py-10 pl-5 pr-10 flex justify-center">
-                    <h4 class="text-[#107231] text-2xl font-semibold">
-                      In stock
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-        <!-- add to cart modal -->
-        <div id="addToCart-modal" tabindex="-1" aria-hidden="true"
-          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative p-4 w-full max-w-xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white border-[5px] border-white category-shadow px-10 py-8 rounded-3xl shadow ">
-              <!-- Modal header -->
-              <div>
-                <h3 class="text-xl font-semibold text-black ml-1 mb-5  ">
-                  1 new item(s) have been added to your cart
-                </h3>
-              </div>
-              <!-- Modal body -->
-              <div>
-                <div class="flex items-center justify-between bg-white ">
-                  <div class="flex items-center gap-2">
-
-                    <img src="./assets/image/single-product-page/addToCart-modal.png" alt="">
-
-                    <div>
-                      <h2 class="text-black font-semibold text-[12px] leading-5">
-                        For Harley Sportster 883 X....
-                      </h2>
-                      <p>
-                        <span class="text-[10px] mr-2">
-                          <span class="text-[#525468]">Manufacturer:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </span>
-                        <span class="text-[10px]">
-                          <span class="text-[#525468]">Part Number:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center gap-2">
-                    <h3 class="text-[#0F766D] text-base font-bold">1,024 Tk</h3>
-                    <p class="text-[#525468] text-xs line-through">1,024 Tk</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal footer -->
-              <div class="flex items-center gap-2 mt-6">
-                <a href="../index.html" type="button"
-                  class="border border-[#BFD4D3] px-6 py-2 rounded text-xs font-semibold text-[#0F766D] transition-all hover:bg-[#0F766D] hover:text-white">
-                  Continue Shopping
-                </a>
-                <a href="./Add-cart-order-flow-shopping-cart.html" type="button"
-                  class="border border-[#FEE2B1] px-8 py-2 rounded text-xs font-semibold text-[#D9801B] transition-all hover:bg-[#D9801B] hover:text-white">
-                  Go To Cart
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex gap-16 ml-11 mt-5">
-          <button data-modal-target="compare-modal" data-modal-toggle="compare-modal" type="button"
-            class="flex items-center gap-1 text-sm font-medium">
-            <img src="./assets/image/single-product-page/add-to-list.svg" alt="">
-            <span class="text-[#536AC3]">Add Favorite list</span>
+        <div class="mt-4">
+          <button type="button" data-modal-target="request-modal" data-modal-toggle="request-modal"
+            class="bg-[#0F766D] px-9 py-3 rounded-[10px] text-white text-base font-semibold">
+            Request For Stock
           </button>
 
-          <!-- compare modal -->
-          <div id="compare-modal" tabindex="-1" aria-hidden="true"
+          <div id="request-modal" tabindex="-1" aria-hidden="true"
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-[570px] max-h-full">
+            <div class="relative w-full max-w-[472px] max-h-full">
               <!-- Modal content -->
-              <div class="relative bg-white px-16 py-14 rounded-3xl shadow ">
+              <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow ">
                 <!-- Modal header -->
-                <div class="mb-5">
-                  <form class="flex items-center w-full bg-[#F4F5F7] rounded-lg px-4 py-0.5">
-                    <img src="./assets/image/home/search.svg" alt="search">
-                    <input type="text" id="first_name"
-                      class="border-0 bg-transparent block w-full focus:ring-0 font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium "
-                      placeholder="Search anything" required />
-                  </form>
+                <div class="mb-2">
+                  <h3 class="text-black text-xl font-bold text-center  ">
+                    Request Form
+                  </h3>
                 </div>
                 <!-- Modal body -->
                 <div>
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
+                  <div class="mb-8">
+                    <h3 class="text-sm text-[#202020] font-medium mb-2">
+                      Product
+                    </h3>
+                    <div class="flex items-center gap-4">
+                      <figure class="">
+                        <img src="./assets/image/single-product-page/requestForm.png" alt="">
+                      </figure>
+                      <div class="">
+                        <div class="flex items-center gap-2">
+                          <div class="flex gap-1.5 items-center">
+                            <img class="w-5 h-5 rounded-full" src="./assets/image/home/featured1.png" alt="">
+                            <p class="text-[#1A202C] text-[10px] font-semibold">
+                              Nextage
+                            </p>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                              fill="none">
+                              <path
+                                d="M10.9478 10.3265L8.31715 12.9572C8.20211 13.0724 8.06549 13.1637 7.91512 13.226C7.76474 13.2884 7.60356 13.3205 7.44078 13.3205C7.278 13.3205 7.11682 13.2884 6.96644 13.226C6.81607 13.1637 6.67946 13.0724 6.56441 12.9572L3.93313 10.3265C3.23949 9.63285 2.76712 8.74907 2.57576 7.78693C2.3844 6.82479 2.48263 5.82751 2.85805 4.92121C3.23347 4.0149 3.86921 3.24027 4.68487 2.69527C5.50053 2.15027 6.45949 1.85938 7.44047 1.85938C8.42146 1.85938 9.38041 2.15027 10.1961 2.69527C11.0117 3.24027 11.6475 4.0149 12.0229 4.92121C12.3983 5.82751 12.4965 6.82479 12.3052 7.78693C12.1138 8.74907 11.6415 9.63285 10.9478 10.3265V10.3265Z"
+                                stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path
+                                d="M9.30008 6.82094C9.30008 7.31424 9.10411 7.78734 8.7553 8.13616C8.40648 8.48497 7.93338 8.68094 7.44008 8.68094C6.94678 8.68094 6.47368 8.48497 6.12486 8.13616C5.77604 7.78734 5.58008 7.31424 5.58008 6.82094C5.58008 6.32763 5.77604 5.85454 6.12486 5.50572C6.47368 5.1569 6.94678 4.96094 7.44008 4.96094C7.93338 4.96094 8.40648 5.1569 8.7553 5.50572C9.10411 5.85454 9.30008 6.32763 9.30008 6.82094V6.82094Z"
+                                stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            <p class="text-[#4A5568] text-[10px]">
+                              Dhaka
+                            </p>
                           </div>
                         </div>
+                        <h3 class="text-black text-sm font-semibold my-1">
+                          For Harley Sportster 883 X....
+                        </h3>
+                        <div class="flex gap-2 items-center">
+                          <p class="text-[#525468] text-[10px]">
+                            Manufacturer: ZZVF
+                          </p>
+                          <p class="text-[#525468] text-[10px]">
+                            Part Number: ZZVF
+                          </p>
+                        </div>
                       </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
                     </div>
                   </div>
-
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer mt-3">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer mt-3">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer mt-3">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer mt-3">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center bg-white rounded-xl myshadow cursor-pointer mt-3">
-                    <div class="flex items-center gap-3 ">
-                      <div
-                        class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center w-24 h-20 relative">
-                        <img src="./assets/image/home/carousel1.png" alt="">
-                      </div>
-
-                      <div>
-                        <div class="flex items-center gap-12 w-full">
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/star.svg" alt="">
-                            <span class="text-[10px] text-[#09090B]">
-                              5.0 <span class="text-[#474957]"> Average Rating</span>
-                            </span>
-                          </p>
-
-                          <p class="flex items-center gap-1">
-                            <img src="./assets/image/home/location-block.svg" alt="">
-                            <span class="text-[10px] text-[#474957]">Dhaka</span>
-                          </p>
-                        </div>
-
-                        <div>
-                          <div class="pt-[8px]">
-                            <h2 class="text-[#09090B] font-bold text-sm ">
-                              For Harley Sportster 883 <br> XL1200 X48....
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="mr-4">
-                      <a href="./Add-cart-order-flow-shopping-cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                          <rect width="30" height="30" rx="6" fill="#F4F5F7" />
-                          <path d="M15 10V20M20 15H10" stroke="#60637A" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <label class="label ps-6 flex items-center text-[#D87607] text-sm font-medium "
-            data-drawer-target="drawer-bottom-example" data-drawer-show="drawer-bottom-example"
-            data-drawer-placement="bottom" aria-controls="drawer-bottom-example">Add to Compare
-            <input type="checkbox" class="hidden">
-            <span class="checkmark top-[2px]"></span>
-          </label>
-
-          <!-- drawer component -->
-          <div id="drawer-bottom-example"
-            class="fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-white   translate-y-full"
-            tabindex="-1" aria-labelledby="drawer-bottom-label">
-
-            <div class="flex justify-between items-center mx-14">
-              <div class="flex items-center ">
-                <div class="mr-14 cursor-pointer">
-                  <svg data-drawer-hide="drawer-bottom-example" aria-controls="drawer-bottom-example"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-
-                <div class="flex items-center bg-white rounded-xl myshadow cursor-pointer transition-all w-[500px]">
-                  <div
-                    class="bg-[#F6F6F6] border-4 border-white rounded-xl  flex justify-center items-center h-36 w-60 relative">
-                    <img src="./assets/image/home/carousel1.png" alt="">
-                  </div>
-
-                  <div class="px-3 w-full">
-                    <div class="flex justify-between w-full">
-                      <p class="flex items-center gap-1">
-                        <img src="./assets/image/home/star.svg" alt="">
-                        <span class="text-[10px] text-[#09090B]">
-                          5.0 <span class="text-[#474957]"> Average Rating</span>
-                        </span>
-                      </p>
-
-                      <p class="flex items-center gap-1">
-                        <img src="./assets/image/home/location-block.svg" alt="">
-                        <span class="text-[10px] text-[#474957]">Dhaka</span>
-                      </p>
-                    </div>
-
+                  <form>
                     <div>
-                      <div class="pt-[8px] pb-5">
-                        <h2 class="text-[#09090B] font-bold text-[12px] leading-5">
-                          For Harley Sportster 883 XL1200 X48 Dyna CVO...
-                        </h2>
-                      </div>
+                      <label for="name" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                        Enter Your Full Name
+                      </label>
 
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3">
-                          <h3 class="text-[#0F766D] text-base xl:text-xl font-bold">1,024 Tk</h3>
-                          <p class="text-[#525468] text-xs xl:text-base line-through">1,024 Tk</p>
-                        </div>
-                        <img src="./assets/image/home/delivery.svg" alt="">
+                      <div class="border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <input type="text" name="name" id="name"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
+                          placeholder="Enter Your Full Name" required />
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="bg-[#F4F5F7] px-12 py-11 flex justify-center items-center ml-4 rounded-2xl cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-                    <path d="M27.5 10.3125V44.6875M44.6875 27.5H10.3125" stroke="#60637A" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                    <div class="mt-4">
+                      <label for="phoneNumber" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px] ">
+                        Phone Number
+                      </label>
+
+                      <div class="border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
+                          placeholder="Phone Number" required />
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="email" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                        Email
+                      </label>
+
+                      <div class="border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <input type="email" name="email" id="email"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
+                          placeholder="Email" required />
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="Address" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                        Address
+                      </label>
+
+                      <div class="border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <input type="text" name="Address" id="Address"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
+                          placeholder="Address" required />
+                      </div>
+                    </div>
+
+                    <button type="submit"
+                      class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                      Submit
+                    </button>
+                  </form>
                 </div>
               </div>
-
-              <button class="bg-[#0F766D]  px-5 xl:px-9 py-3 rounded-[10px] text-white text-base font-semibold">
-                Compare
-              </button>
             </div>
-
           </div>
         </div>
+
+
       </div>
 
       <div>

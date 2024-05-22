@@ -1574,6 +1574,10 @@ video {
   height: 30px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[58px\] {
   height: 58px;
 }
@@ -1826,6 +1830,10 @@ video {
   max-width: 410px;
 }
 
+.max-w-\[472px\] {
+  max-width: 472px;
+}
+
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -1852,6 +1860,10 @@ video {
 
 .max-w-\[800px\] {
   max-width: 800px;
+}
+
+.max-w-\[820px\] {
+  max-width: 820px;
 }
 
 .max-w-\[850px\] {
@@ -2637,6 +2649,11 @@ video {
   background-color: rgb(224 234 200 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#E4E4E4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 228 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#E4EEDB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(228 238 219 / var(--tw-bg-opacity));
@@ -2914,10 +2931,6 @@ video {
   padding: 5px;
 }
 
-.p-\[6px\] {
-  padding: 6px;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -3118,6 +3131,11 @@ video {
   padding-bottom: 7px;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -3274,6 +3292,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.pr-28 {
+  padding-right: 7rem;
+}
+
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -3396,18 +3418,6 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.pr-44 {
-  padding-right: 11rem;
-}
-
-.pr-32 {
-  padding-right: 8rem;
-}
-
-.pr-28 {
-  padding-right: 7rem;
 }
 
 .text-left {
@@ -5021,10 +5031,6 @@ video {
     width: 849px;
   }
 
-  .\32xl\:w-\[900px\] {
-    width: 900px;
-  }
-
   .\32xl\:w-\[995px\] {
     width: 995px;
   }
@@ -5115,11 +5121,6 @@ video {
     padding-bottom: 2.75rem;
   }
 
-  .\32xl\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .\32xl\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -5172,4 +5173,16 @@ video {
 
 .rtl\:text-right:where([dir="rtl"], [dir="rtl"] *) {
   text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:hover\:bg-gray-600:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  }
+
+  .dark\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
