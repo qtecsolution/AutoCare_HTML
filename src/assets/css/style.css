@@ -4867,6 +4867,11 @@ video {
     padding-right: 2.25rem;
   }
 
+  .xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .xl\:pb-\[11px\] {
     padding-bottom: 11px;
   }
@@ -5108,6 +5113,11 @@ video {
   .\32xl\:py-11 {
     padding-top: 2.75rem;
     padding-bottom: 2.75rem;
+  }
+
+  .\32xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .\32xl\:pb-16 {
