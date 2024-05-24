@@ -35,244 +35,486 @@
 <body class="font-inter">
   <header>
     <!-- main menu  -->
-    <div class="menu py-[16px] shadow px-3">
-      <nav class="container mx-auto  md:flex justify-between items-center xl:gap-[60px]">
-        <div class="flex gap-10 items-center">
-          <a href="../index.html">
-            <img src="./assets/image/home/logo.png" alt="logo">
-          </a>
+    <div class="py-[16px] shadow px-3">
+      <div class="container mx-auto">
+        <nav class="flex justify-between items-center xl:gap-[60px]">
+          <div class="flex gap-10 items-center">
+            <a href="../index.html">
+              <img src="./assets/image/home/logo.png" alt="logo">
+            </a>
 
-          <ul class="flex gap-12">
-            <li>
-              <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
-                href="#">About</a>
-            </li>
-            <li>
-              <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
-                href="#">Blog &
-                News</a>
-            </li>
-            <li>
-              <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
-                href="#">Become A
-                seller</a>
-            </li>
-            <li>
-              <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
-                href="#">List your
-                Garage</a>
-            </li>
-          </ul>
-        </div>
-
-
-        <div class="flex justify-between gap-[32px] items-center">
-          <div>
-            <ul class="flex gap-7">
-              <li class="ms-5">
-                <a class="relative" href="./Add-cart-order-flow-shopping-cart.html">
-                  <img src="./assets/image/home/cart.svg" alt="cart">
-                  <span
-                    class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
-                </a>
-              </li>
-
-            </ul>
+            <div class="hidden lg:block">
+              <ul class="flex gap-12">
+                <li>
+                  <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
+                    href="#">About</a>
+                </li>
+                <li>
+                  <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
+                    href="#">Blog &
+                    News</a>
+                </li>
+                <li>
+                  <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
+                    href="#">Become A
+                    seller</a>
+                </li>
+                <li>
+                  <a class="font-inter text-sm xl:text-[13px] 2xl:text-sm text-[#383941] transition-all hover:text-[#0F766D]"
+                    href="#">List your
+                    Garage</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-1.5 gap-4 rounded-xl">
-            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
-              class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
-              <img src="./assets/image/home/user.svg" alt="user">
-              <span>Login</span>
-            </button>
+          <div class="hidden lg:block">
+            <div class="flex justify-between gap-[32px] items-center">
+              <div>
+                <ul class="flex gap-7">
+                  <li class="ms-5">
+                    <a class="relative" href="./Add-cart-order-flow-shopping-cart.html">
+                      <img src="./assets/image/home/cart.svg" alt="cart">
+                      <span
+                        class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                    </a>
+                  </li>
 
-            <!-- Login modal -->
-            <div id="authentication-modal" tabindex="-1" aria-hidden="true"
-              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-              <div class="relative p-4 w-full max-w-[560px] max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow ">
-                  <!-- Modal header -->
-                  <div class="mb-6">
-                    <h3 class="text-black text-xl font-semibold text-center  ">
-                      Welcome!
-                    </h3>
-                    <p class="text-[#525468] text-sm text-center   mt-2">
-                      Please Login to continue.
-                    </p>
-                  </div>
-                  <!-- Modal body -->
-                  <div>
-                    <form action="#">
-                      <div>
-                        <label for="phoneNumber"
-                          class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
-                          Phone Number
-                        </label>
+                </ul>
+              </div>
 
-                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                            fill="none">
-                            <path
-                              d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
-                              fill="#0F766D" />
-                          </svg>
-                          <input type="number" name="phoneNumber" id="phoneNumber"
-                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
-                            placeholder="Enter Your Phone Number" required />
-                        </div>
-                      </div>
+              <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-1.5 gap-4 rounded-xl">
+                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+                  class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
+                  <img src="./assets/image/home/user.svg" alt="user">
+                  <span>Login</span>
+                </button>
 
-                      <div class="mt-6">
-                        <label for="password" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
-                          Password
-                        </label>
-
-                        <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7" fill="none">
-                            <path
-                              d="M6.79583 2.33333C6.32917 0.9625 5.01667 0 3.5 0C1.575 0 0 1.575 0 3.5C0 5.425 1.575 7 3.5 7C5.01667 7 6.3 6.0375 6.79583 4.66667H9.33333V7H11.6667V4.66667H12.8333V2.33333H6.79583ZM3.5 4.66667C2.85833 4.66667 2.33333 4.14167 2.33333 3.5C2.33333 2.85833 2.85833 2.33333 3.5 2.33333C4.14167 2.33333 4.66667 2.85833 4.66667 3.5C4.66667 4.14167 4.14167 4.66667 3.5 4.66667Z"
-                              fill="#0F766D" />
-                          </svg>
-                          <input type="password" name="password" id="password"
-                            class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
-                            placeholder="********" required />
-
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                            fill="none">
-                            <path
-                              d="M7.99564 13.3684C7.36431 13.3684 6.73031 13.2818 6.10896 13.1098C5.84296 13.0364 5.68696 12.7611 5.7603 12.4951C5.83363 12.2284 6.11096 12.0731 6.37563 12.1464C6.90964 12.2938 7.45431 12.3684 7.99564 12.3684C11.051 12.3684 13.669 9.9671 13.669 8.0011C13.669 7.36444 13.373 6.63845 12.8363 5.95845C12.6656 5.74179 12.703 5.42712 12.9196 5.25579C13.1363 5.08512 13.451 5.12179 13.6216 5.33846C14.297 6.19512 14.669 7.14044 14.669 8.0011C14.669 10.4324 11.6923 13.3684 7.99564 13.3684Z"
-                              fill="#7B7F95" />
-                            <path
-                              d="M8.37663 10.5695C8.13996 10.5695 7.92996 10.4008 7.88529 10.1601C7.83529 9.88879 8.01529 9.62746 8.28729 9.57812C8.93996 9.45746 9.45863 8.93879 9.57663 8.28546C9.62596 8.01346 9.88529 7.83479 10.158 7.88279C10.4293 7.93212 10.61 8.19212 10.5606 8.46412C10.3686 9.52412 9.52796 10.3661 8.46729 10.5608C8.43729 10.5668 8.40663 10.5695 8.37663 10.5695Z"
-                              fill="#7B7F95" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M2.38804 13.612C2.48537 13.71 2.61337 13.7587 2.74137 13.7587C2.86937 13.7587 2.99737 13.71 3.0947 13.612L4.57904 12.1277C4.61423 12.101 4.64634 12.0692 4.67418 12.0326L13.6107 3.09602C13.806 2.90069 13.806 2.58402 13.6107 2.38869C13.4154 2.19335 13.0994 2.19335 12.904 2.38869L11.652 3.64085C10.5352 2.98191 9.27965 2.63541 7.99671 2.63541C4.30341 2.63541 1.33008 5.57141 1.33008 8.00209C1.33008 9.30189 2.16736 10.7396 3.50376 11.7896L2.38804 12.9054C2.1927 13.1007 2.1927 13.4167 2.38804 13.612ZM4.21697 11.0763C3.07484 10.213 2.33008 9.01515 2.33008 8.00209C2.33008 6.03675 4.94475 3.63541 7.99671 3.63541C9.01451 3.63541 10.0132 3.88967 10.9179 4.37495L9.45565 5.83728C9.02771 5.54909 8.51725 5.38981 7.99798 5.38981H7.99198C7.29531 5.39114 6.64132 5.66381 6.14932 6.15714C5.65799 6.65047 5.38799 7.30582 5.38999 7.99915C5.38798 8.51922 5.54674 9.03022 5.83574 9.45742L4.21697 11.0763ZM6.56439 8.72875L8.72665 6.56633C8.50218 6.45174 8.25145 6.38981 7.99731 6.38981H7.99398C7.56398 6.39047 7.16065 6.55847 6.85798 6.86249C6.55533 7.16715 6.38866 7.57049 6.38999 7.99982C6.38879 8.25475 6.45026 8.50515 6.56439 8.72875Z"
-                              fill="#7B7F95" />
-                          </svg>
-                        </div>
-                      </div>
-
-                      <button type="submit"
-                        class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
-                        Continue
-                      </button>
-
-                      <div class="mt-6 text-center text-sm font-medium text-[#171F46] ">
-                        Already have account?
-                        <a href="#" class="text-[#115E57] hover:underline font-bold">
-                          SIGN UP
-                        </a>
-                      </div>
-
-                      <div class="flex justify-center items-center gap-5 mt-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
-                          <path
-                            d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
-                            fill="#D9D9D9" />
-                        </svg>
-                        <p class="text-[#191919] text-sm">
-                          Or Continue with
+                <!-- Login modal -->
+                <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+                  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                  <div class="relative p-4 w-full max-w-[560px] max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow ">
+                      <!-- Modal header -->
+                      <div class="mb-6">
+                        <h3 class="text-black text-xl font-semibold text-center  ">
+                          Welcome!
+                        </h3>
+                        <p class="text-[#525468] text-sm text-center   mt-2">
+                          Please Login to continue.
                         </p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3" fill="none">
-                          <path
-                            d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
-                            fill="#D9D9D9" />
-                        </svg>
                       </div>
+                      <!-- Modal body -->
+                      <div>
+                        <form action="#">
+                          <div>
+                            <label for="phoneNumber"
+                              class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                              Phone Number
+                            </label>
 
-                      <div class="flex justify-center items-center gap-4 mt-3">
-                        <button
-                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                            fill="none">
-                            <path
-                              d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
-                              fill="#167EE6" />
-                            <path
-                              d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
-                              fill="#12B347" />
-                            <path
-                              d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
-                              fill="#0F993E" />
-                            <path
-                              d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
-                              fill="#FFD500" />
-                            <path
-                              d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
-                              fill="#FF4B26" />
-                            <path
-                              d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
-                              fill="#D93F21" />
-                          </svg>
-                          Google
-                        </button>
-                        <button
-                          class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                            fill="none">
-                            <path
-                              d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
-                              fill="#1877F2" />
-                            <path
-                              d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
-                              fill="#F1F1F1" />
-                          </svg>
-                          Facebook
-                        </button>
+                            <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                                  fill="#0F766D" />
+                              </svg>
+                              <input type="number" name="phoneNumber" id="phoneNumber"
+                                class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                                placeholder="Enter Your Phone Number" required />
+                            </div>
+                          </div>
+
+                          <div class="mt-6">
+                            <label for="password"
+                              class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                              Password
+                            </label>
+
+                            <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7"
+                                fill="none">
+                                <path
+                                  d="M6.79583 2.33333C6.32917 0.9625 5.01667 0 3.5 0C1.575 0 0 1.575 0 3.5C0 5.425 1.575 7 3.5 7C5.01667 7 6.3 6.0375 6.79583 4.66667H9.33333V7H11.6667V4.66667H12.8333V2.33333H6.79583ZM3.5 4.66667C2.85833 4.66667 2.33333 4.14167 2.33333 3.5C2.33333 2.85833 2.85833 2.33333 3.5 2.33333C4.14167 2.33333 4.66667 2.85833 4.66667 3.5C4.66667 4.14167 4.14167 4.66667 3.5 4.66667Z"
+                                  fill="#0F766D" />
+                              </svg>
+                              <input type="password" name="password" id="password"
+                                class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                                placeholder="********" required />
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M7.99564 13.3684C7.36431 13.3684 6.73031 13.2818 6.10896 13.1098C5.84296 13.0364 5.68696 12.7611 5.7603 12.4951C5.83363 12.2284 6.11096 12.0731 6.37563 12.1464C6.90964 12.2938 7.45431 12.3684 7.99564 12.3684C11.051 12.3684 13.669 9.9671 13.669 8.0011C13.669 7.36444 13.373 6.63845 12.8363 5.95845C12.6656 5.74179 12.703 5.42712 12.9196 5.25579C13.1363 5.08512 13.451 5.12179 13.6216 5.33846C14.297 6.19512 14.669 7.14044 14.669 8.0011C14.669 10.4324 11.6923 13.3684 7.99564 13.3684Z"
+                                  fill="#7B7F95" />
+                                <path
+                                  d="M8.37663 10.5695C8.13996 10.5695 7.92996 10.4008 7.88529 10.1601C7.83529 9.88879 8.01529 9.62746 8.28729 9.57812C8.93996 9.45746 9.45863 8.93879 9.57663 8.28546C9.62596 8.01346 9.88529 7.83479 10.158 7.88279C10.4293 7.93212 10.61 8.19212 10.5606 8.46412C10.3686 9.52412 9.52796 10.3661 8.46729 10.5608C8.43729 10.5668 8.40663 10.5695 8.37663 10.5695Z"
+                                  fill="#7B7F95" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.38804 13.612C2.48537 13.71 2.61337 13.7587 2.74137 13.7587C2.86937 13.7587 2.99737 13.71 3.0947 13.612L4.57904 12.1277C4.61423 12.101 4.64634 12.0692 4.67418 12.0326L13.6107 3.09602C13.806 2.90069 13.806 2.58402 13.6107 2.38869C13.4154 2.19335 13.0994 2.19335 12.904 2.38869L11.652 3.64085C10.5352 2.98191 9.27965 2.63541 7.99671 2.63541C4.30341 2.63541 1.33008 5.57141 1.33008 8.00209C1.33008 9.30189 2.16736 10.7396 3.50376 11.7896L2.38804 12.9054C2.1927 13.1007 2.1927 13.4167 2.38804 13.612ZM4.21697 11.0763C3.07484 10.213 2.33008 9.01515 2.33008 8.00209C2.33008 6.03675 4.94475 3.63541 7.99671 3.63541C9.01451 3.63541 10.0132 3.88967 10.9179 4.37495L9.45565 5.83728C9.02771 5.54909 8.51725 5.38981 7.99798 5.38981H7.99198C7.29531 5.39114 6.64132 5.66381 6.14932 6.15714C5.65799 6.65047 5.38799 7.30582 5.38999 7.99915C5.38798 8.51922 5.54674 9.03022 5.83574 9.45742L4.21697 11.0763ZM6.56439 8.72875L8.72665 6.56633C8.50218 6.45174 8.25145 6.38981 7.99731 6.38981H7.99398C7.56398 6.39047 7.16065 6.55847 6.85798 6.86249C6.55533 7.16715 6.38866 7.57049 6.38999 7.99982C6.38879 8.25475 6.45026 8.50515 6.56439 8.72875Z"
+                                  fill="#7B7F95" />
+                              </svg>
+                            </div>
+                          </div>
+
+                          <button type="submit"
+                            class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                            Continue
+                          </button>
+
+                          <div class="mt-6 text-center text-sm font-medium text-[#171F46] ">
+                            Already have account?
+                            <a href="#" class="text-[#115E57] hover:underline font-bold">
+                              SIGN UP
+                            </a>
+                          </div>
+
+                          <div class="flex justify-center items-center gap-5 mt-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3"
+                              fill="none">
+                              <path
+                                d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                                fill="#D9D9D9" />
+                            </svg>
+                            <p class="text-[#191919] text-sm">
+                              Or Continue with
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3"
+                              fill="none">
+                              <path
+                                d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                                fill="#D9D9D9" />
+                            </svg>
+                          </div>
+
+                          <div class="flex justify-center items-center gap-4 mt-3">
+                            <button
+                              class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                fill="none">
+                                <path
+                                  d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                                  fill="#167EE6" />
+                                <path
+                                  d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                                  fill="#12B347" />
+                                <path
+                                  d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                                  fill="#0F993E" />
+                                <path
+                                  d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                                  fill="#FFD500" />
+                                <path
+                                  d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                                  fill="#FF4B26" />
+                                <path
+                                  d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                                  fill="#D93F21" />
+                              </svg>
+                              Google
+                            </button>
+                            <button
+                              class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                                  fill="#1877F2" />
+                                <path
+                                  d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                                  fill="#F1F1F1" />
+                              </svg>
+                              Facebook
+                            </button>
+                          </div>
+                        </form>
                       </div>
-                    </form>
+                    </div>
+                  </div>
+                </div>
+
+                <button data-modal-target="sign-modal" data-modal-toggle="sign-modal" type="button"
+                  class="text-[#09090B] font-bold text-sm w-16">
+                  Sign Up
+                </button>
+
+                <!-- Sign modal -->
+                <div id="sign-modal" tabindex="-1" aria-hidden="true"
+                  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                  <div class="relative p-4 w-full max-w-[560px] max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow ">
+                      <!-- Modal header -->
+                      <div class="mb-6">
+                        <h3 class="text-black text-xl font-semibold text-center  ">
+                          Register Now!
+                        </h3>
+                        <p class="text-[#525468] text-sm text-center   mt-2">
+                          Explore Auto Sales & Services
+                        </p>
+                      </div>
+                      <!-- Modal body -->
+                      <div>
+                        <form action="#">
+                          <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                              Full Name
+                            </label>
+
+                            <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M13.613 3.695L9.45498 1.294C8.77599 0.902 7.93599 0.902 7.24999 1.294L3.099 3.695C2.42 4.087 2 4.815 2 5.606V10.394C2 11.178 2.42 11.906 3.099 12.305L7.25699 14.706C7.93599 15.098 8.77599 15.098 9.46199 14.706L13.62 12.305C14.299 11.913 14.719 11.185 14.719 10.394V5.606C14.712 4.815 14.292 4.094 13.613 3.695ZM8.35599 4.738C9.25899 4.738 9.98699 5.466 9.98699 6.369C9.98699 7.272 9.25899 8 8.35599 8C7.45299 8 6.725 7.272 6.725 6.369C6.725 5.473 7.45299 4.738 8.35599 4.738ZM10.232 11.262H6.48C5.913 11.262 5.584 10.632 5.899 10.163C6.375 9.456 7.29899 8.98 8.35599 8.98C9.41299 8.98 10.337 9.456 10.813 10.163C11.128 10.625 10.792 11.262 10.232 11.262Z"
+                                  fill="#0F766D" />
+                              </svg>
+                              <input type="text" name="name" id="name"
+                                class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                                placeholder="Enter Your Name" required />
+                            </div>
+                          </div>
+
+                          <div class="mt-6">
+                            <label for="phoneNumber"
+                              class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                              Phone Number
+                            </label>
+
+                            <div class="flex items-center border border-[#D7DFE9] rounded-lg bg-white px-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M1 4.64379C1 9.09974 6.90822 15.0021 11.3583 15.0021C12.3323 15.0021 13.2422 14.6347 13.9129 13.964L14.4962 13.2932C15.1727 12.6167 15.1727 11.4735 14.467 10.7678C14.4495 10.7503 13.0439 9.67132 13.0439 9.67132C12.344 9.00642 11.2417 9.00642 10.5476 9.67132L9.69611 10.3537C7.82974 9.5605 6.50578 8.23072 5.65425 6.30019L6.33081 5.44866C7.00154 4.75461 7.00154 3.64645 6.33081 2.9524C6.33081 2.9524 5.25182 1.54679 5.23432 1.52929C4.5286 0.82357 3.38545 0.82357 2.67973 1.52929L2.06733 2.06004C1.36744 2.75409 1 3.66395 1 4.63796V4.64379Z"
+                                  fill="#0F766D" />
+                              </svg>
+                              <input type="number" name="phoneNumber" id="phoneNumber"
+                                class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full py-4"
+                                placeholder="Enter Your Phone Number" required />
+                            </div>
+                          </div>
+
+                          <button type="submit"
+                            class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944]  rounded-[10px] py-3 text-center mt-6">
+                            Continue
+                          </button>
+
+                          <div class="mt-6 text-center text-sm font-medium text-[#171F46] ">
+                            Already have account?
+                            <a href="#" class="text-[#115E57] hover:underline font-bold">
+                              LOGIN
+                            </a>
+                          </div>
+
+                          <div class="flex justify-center items-center gap-5 mt-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3"
+                              fill="none">
+                              <path
+                                d="M60 1.5C60 0.677707 59.3225 0.0169374 58.5005 0.0374883L-3.8147e-06 1.5L-nan -nanL-3.8147e-06 1.5L58.5005 2.96251C59.3225 2.98306 60 2.32229 60 1.5Z"
+                                fill="#D9D9D9" />
+                            </svg>
+                            <p class="text-[#191919] text-sm">
+                              Or Continue with
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="3" viewBox="0 0 60 3"
+                              fill="none">
+                              <path
+                                d="M0 1.5C0 0.677707 0.677496 0.0169374 1.49953 0.0374883L60 1.5L-nan -nanL60 1.5L1.49953 2.96251C0.677494 2.98306 0 2.32229 0 1.5Z"
+                                fill="#D9D9D9" />
+                            </svg>
+                          </div>
+
+                          <div class="flex justify-center items-center gap-4 mt-3">
+                            <button
+                              class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                fill="none">
+                                <path
+                                  d="M15.2641 6.68457H9.31094C9.04844 6.68457 8.83594 6.89707 8.83594 7.15957V9.0627C8.83594 9.3252 9.04844 9.5377 9.31094 9.5377H12.6641C12.2984 10.4908 11.6109 11.2877 10.7391 11.7939L12.1672 14.2689C14.4578 12.9439 15.8141 10.6158 15.8141 8.0127C15.8141 7.64082 15.7859 7.3752 15.7328 7.07832C15.6891 6.8502 15.4922 6.68457 15.2641 6.68457Z"
+                                  fill="#167EE6" />
+                                <path
+                                  d="M8.51484 12.3938C6.87422 12.3938 5.44297 11.4969 4.67422 10.1719L2.19922 11.5969C3.45859 13.7813 5.81797 15.25 8.51484 15.25C9.83984 15.25 11.0867 14.8938 12.1648 14.2719V14.2688L10.7367 11.7937C10.0805 12.175 9.32422 12.3938 8.51484 12.3938Z"
+                                  fill="#12B347" />
+                                <path
+                                  d="M12.1625 14.2721V14.2689L10.7344 11.7939C10.0812 12.1721 9.325 12.3939 8.51562 12.3939V15.2502C9.84062 15.2502 11.0875 14.8939 12.1625 14.2721Z"
+                                  fill="#0F993E" />
+                                <path
+                                  d="M4.075 7.95332C4.075 7.14395 4.29688 6.3877 4.675 5.73457L2.2 4.30957C1.575 5.38145 1.21875 6.6252 1.21875 7.95332C1.21875 9.28145 1.575 10.5252 2.2 11.5971L4.675 10.1721C4.29375 9.51895 4.075 8.7627 4.075 7.95332Z"
+                                  fill="#FFD500" />
+                                <path
+                                  d="M8.51484 3.5125C9.58359 3.5125 10.568 3.89375 11.3336 4.525C11.5242 4.68125 11.7992 4.66875 11.9711 4.49687L13.318 3.15C13.5148 2.95312 13.4992 2.63125 13.2898 2.45C12.0055 1.33125 10.3336 0.65625 8.51484 0.65625C5.81797 0.65625 3.45859 2.125 2.19922 4.30937L4.67422 5.73438C5.44297 4.40937 6.87422 3.5125 8.51484 3.5125Z"
+                                  fill="#FF4B26" />
+                                <path
+                                  d="M11.3344 4.525C11.525 4.68125 11.8 4.66875 11.9719 4.49687L13.3188 3.15C13.5156 2.95312 13.5 2.63125 13.2906 2.45C12.0062 1.33125 10.3344 0.65625 8.51562 0.65625V3.5125C9.58438 3.5125 10.5688 3.89062 11.3344 4.525Z"
+                                  fill="#D93F21" />
+                              </svg>
+                              Google
+                            </button>
+                            <button
+                              class="flex gap-2 items-center text-[#191919] text-base font-semibold px-5 py-3 bg-white border border-[#EFEFEF] rounded-[10px]">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                  d="M7.99994 0C-1.91871 0.290526 -2.93025 14.2085 6.74352 16H7.99994H9.25636C18.9323 14.2068 17.9164 0.289516 7.99994 0Z"
+                                  fill="#1877F2" />
+                                <path
+                                  d="M9.25774 10.3756H11.1314L11.488 8.04901H9.25774V6.53912C9.25774 5.90265 9.56931 5.28219 10.5682 5.28219H11.5823V3.30139C9.41066 2.91015 6.80165 3.02922 6.74489 6.2757V8.04901H4.70312V10.3756H6.74489V16.0002H8.00131H9.25774V10.3756Z"
+                                  fill="#F1F1F1" />
+                              </svg>
+                              Facebook
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="hidden xl:block">
+                <button
+                  class="flex items-center bg-[#0F766D] rounded-[10px] px-3 py-[14px] font-semibold text-sm 2xl:text-base text-white gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_217_19181)">
+                      <path
+                        d="M16.25 13.75C16.4158 13.75 16.5747 13.6842 16.6919 13.5669C16.8092 13.4497 16.875 13.2908 16.875 13.125V3.125C16.875 2.2962 16.5458 1.50134 15.9597 0.915291C15.3737 0.32924 14.5788 0 13.75 0L6.25 0C5.4212 0 4.62634 0.32924 4.04029 0.915291C3.45424 1.50134 3.125 2.2962 3.125 3.125V16.875C3.125 17.7038 3.45424 18.4987 4.04029 19.0847C4.62634 19.6708 5.4212 20 6.25 20H13.75C14.5788 20 15.3737 19.6708 15.9597 19.0847C16.5458 18.4987 16.875 17.7038 16.875 16.875V15.625C16.875 15.4592 16.8092 15.3003 16.6919 15.1831C16.5747 15.0658 16.4158 15 16.25 15C16.0842 15 15.9253 15.0658 15.8081 15.1831C15.6908 15.3003 15.625 15.4592 15.625 15.625V16.875C15.625 17.3723 15.4275 17.8492 15.0758 18.2008C14.7242 18.5525 14.2473 18.75 13.75 18.75H6.25C5.75272 18.75 5.27581 18.5525 4.92417 18.2008C4.57254 17.8492 4.375 17.3723 4.375 16.875V3.125C4.37609 2.73816 4.4968 2.36112 4.72059 2.04558C4.94437 1.73004 5.26028 1.49145 5.625 1.3625V1.75625C5.625 2.28503 5.83506 2.79214 6.20896 3.16604C6.58286 3.53994 7.08997 3.75 7.61875 3.75H12.3812C12.6431 3.75 12.9023 3.69843 13.1442 3.59823C13.3861 3.49804 13.6059 3.35118 13.791 3.16604C13.9762 2.98091 14.123 2.76112 14.2232 2.51923C14.3234 2.27733 14.375 2.01807 14.375 1.75625V1.3625C14.7397 1.49145 15.0556 1.73004 15.2794 2.04558C15.5032 2.36112 15.6239 2.73816 15.625 3.125V13.125C15.625 13.2908 15.6908 13.4497 15.8081 13.5669C15.9253 13.6842 16.0842 13.75 16.25 13.75ZM13.125 1.75625C13.125 1.85392 13.1058 1.95063 13.0684 2.04087C13.031 2.13111 12.9762 2.2131 12.9072 2.28216C12.8381 2.35122 12.7561 2.40601 12.6659 2.44339C12.5756 2.48076 12.4789 2.5 12.3812 2.5H7.61875C7.42149 2.5 7.23232 2.42164 7.09284 2.28216C6.95336 2.14268 6.875 1.9535 6.875 1.75625V1.25H13.125V1.75625Z"
+                        fill="white" />
+                      <path
+                        d="M13.125 11.25C12.9592 11.25 12.8003 11.3158 12.6831 11.4331C12.5658 11.5503 12.5 11.7092 12.5 11.875V12.5C12.5 12.6658 12.4342 12.8247 12.3169 12.9419C12.1997 13.0592 12.0408 13.125 11.875 13.125H8.125C7.95924 13.125 7.80027 13.0592 7.68306 12.9419C7.56585 12.8247 7.5 12.6658 7.5 12.5V11.875C7.5 11.7092 7.43415 11.5503 7.31694 11.4331C7.19973 11.3158 7.04076 11.25 6.875 11.25C6.70924 11.25 6.55027 11.3158 6.43306 11.4331C6.31585 11.5503 6.25 11.7092 6.25 11.875V12.5C6.25 12.9973 6.44754 13.4742 6.79917 13.8258C7.15081 14.1775 7.62772 14.375 8.125 14.375H11.875C12.3723 14.375 12.8492 14.1775 13.2008 13.8258C13.5525 13.4742 13.75 12.9973 13.75 12.5V11.875C13.75 11.7092 13.6842 11.5503 13.5669 11.4331C13.4497 11.3158 13.2908 11.25 13.125 11.25Z"
+                        fill="#CCFBF7" />
+                      <path
+                        d="M9.5549 11.6937C9.613 11.7523 9.68213 11.7988 9.75829 11.8306C9.83445 11.8623 9.91614 11.8786 9.99865 11.8786C10.0812 11.8786 10.1628 11.8623 10.239 11.8306C10.3152 11.7988 10.3843 11.7523 10.4424 11.6937L12.3174 9.81875C12.3757 9.76048 12.4219 9.69129 12.4534 9.61516C12.485 9.53902 12.5012 9.45741 12.5012 9.375C12.5012 9.29259 12.485 9.21098 12.4534 9.13484C12.4219 9.05871 12.3757 8.98952 12.3174 8.93125C12.2591 8.87298 12.1899 8.82675 12.1138 8.79521C12.0377 8.76367 11.9561 8.74744 11.8737 8.74744C11.7912 8.74744 11.7096 8.76367 11.6335 8.79521C11.5574 8.82675 11.4882 8.87298 11.4299 8.93125L10.6237 9.74375V6.25C10.6237 6.08424 10.5578 5.92527 10.4406 5.80806C10.3234 5.69085 10.1644 5.625 9.99865 5.625C9.83289 5.625 9.67392 5.69085 9.55671 5.80806C9.4395 5.92527 9.37365 6.08424 9.37365 6.25V9.74375L8.5674 8.93125C8.44971 8.81356 8.29009 8.74744 8.12365 8.74744C7.95721 8.74744 7.79759 8.81356 7.6799 8.93125C7.56221 9.04894 7.49609 9.20856 7.49609 9.375C7.49609 9.54144 7.56221 9.70106 7.6799 9.81875L9.5549 11.6937Z"
+                        fill="#CCFBF7" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_217_19181">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <span>Download Mobile App</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.21934 8.22015C5.35997 8.0797 5.55059 8.00081 5.74934 8.00081C5.94809 8.00081 6.13871 8.0797 6.27934 8.22015L9.99934 11.9402L13.7193 8.22015C13.788 8.14647 13.8708 8.08736 13.9628 8.04637C14.0548 8.00538 14.1541 7.98334 14.2548 7.98156C14.3555 7.97979 14.4555 7.99831 14.5489 8.03603C14.6423 8.07375 14.7272 8.1299 14.7984 8.20112C14.8696 8.27233 14.9257 8.35717 14.9635 8.45056C15.0012 8.54394 15.0197 8.64397 15.0179 8.74468C15.0162 8.84538 14.9941 8.94469 14.9531 9.03669C14.9121 9.12869 14.853 9.21149 14.7793 9.28015L10.5293 13.5302C10.3887 13.6706 10.1981 13.7495 9.99934 13.7495C9.80059 13.7495 9.60997 13.6706 9.46934 13.5302L5.21934 9.28015C5.07889 9.13953 5 8.9489 5 8.75015C5 8.5514 5.07889 8.36078 5.21934 8.22015Z"
+                      fill="#CCFBF7" />
+                  </svg>
+                </button>
+              </div>
             </div>
-
-            <button class="text-[#09090B] font-bold text-sm">
-              Sign Up
-            </button>
           </div>
 
-          <div class="hidden xl:block">
-            <button
-              class="flex items-center bg-[#0F766D] rounded-[10px] px-3 py-[14px] font-semibold text-sm 2xl:text-base text-white gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <g clip-path="url(#clip0_217_19181)">
-                  <path
-                    d="M16.25 13.75C16.4158 13.75 16.5747 13.6842 16.6919 13.5669C16.8092 13.4497 16.875 13.2908 16.875 13.125V3.125C16.875 2.2962 16.5458 1.50134 15.9597 0.915291C15.3737 0.32924 14.5788 0 13.75 0L6.25 0C5.4212 0 4.62634 0.32924 4.04029 0.915291C3.45424 1.50134 3.125 2.2962 3.125 3.125V16.875C3.125 17.7038 3.45424 18.4987 4.04029 19.0847C4.62634 19.6708 5.4212 20 6.25 20H13.75C14.5788 20 15.3737 19.6708 15.9597 19.0847C16.5458 18.4987 16.875 17.7038 16.875 16.875V15.625C16.875 15.4592 16.8092 15.3003 16.6919 15.1831C16.5747 15.0658 16.4158 15 16.25 15C16.0842 15 15.9253 15.0658 15.8081 15.1831C15.6908 15.3003 15.625 15.4592 15.625 15.625V16.875C15.625 17.3723 15.4275 17.8492 15.0758 18.2008C14.7242 18.5525 14.2473 18.75 13.75 18.75H6.25C5.75272 18.75 5.27581 18.5525 4.92417 18.2008C4.57254 17.8492 4.375 17.3723 4.375 16.875V3.125C4.37609 2.73816 4.4968 2.36112 4.72059 2.04558C4.94437 1.73004 5.26028 1.49145 5.625 1.3625V1.75625C5.625 2.28503 5.83506 2.79214 6.20896 3.16604C6.58286 3.53994 7.08997 3.75 7.61875 3.75H12.3812C12.6431 3.75 12.9023 3.69843 13.1442 3.59823C13.3861 3.49804 13.6059 3.35118 13.791 3.16604C13.9762 2.98091 14.123 2.76112 14.2232 2.51923C14.3234 2.27733 14.375 2.01807 14.375 1.75625V1.3625C14.7397 1.49145 15.0556 1.73004 15.2794 2.04558C15.5032 2.36112 15.6239 2.73816 15.625 3.125V13.125C15.625 13.2908 15.6908 13.4497 15.8081 13.5669C15.9253 13.6842 16.0842 13.75 16.25 13.75ZM13.125 1.75625C13.125 1.85392 13.1058 1.95063 13.0684 2.04087C13.031 2.13111 12.9762 2.2131 12.9072 2.28216C12.8381 2.35122 12.7561 2.40601 12.6659 2.44339C12.5756 2.48076 12.4789 2.5 12.3812 2.5H7.61875C7.42149 2.5 7.23232 2.42164 7.09284 2.28216C6.95336 2.14268 6.875 1.9535 6.875 1.75625V1.25H13.125V1.75625Z"
-                    fill="white" />
-                  <path
-                    d="M13.125 11.25C12.9592 11.25 12.8003 11.3158 12.6831 11.4331C12.5658 11.5503 12.5 11.7092 12.5 11.875V12.5C12.5 12.6658 12.4342 12.8247 12.3169 12.9419C12.1997 13.0592 12.0408 13.125 11.875 13.125H8.125C7.95924 13.125 7.80027 13.0592 7.68306 12.9419C7.56585 12.8247 7.5 12.6658 7.5 12.5V11.875C7.5 11.7092 7.43415 11.5503 7.31694 11.4331C7.19973 11.3158 7.04076 11.25 6.875 11.25C6.70924 11.25 6.55027 11.3158 6.43306 11.4331C6.31585 11.5503 6.25 11.7092 6.25 11.875V12.5C6.25 12.9973 6.44754 13.4742 6.79917 13.8258C7.15081 14.1775 7.62772 14.375 8.125 14.375H11.875C12.3723 14.375 12.8492 14.1775 13.2008 13.8258C13.5525 13.4742 13.75 12.9973 13.75 12.5V11.875C13.75 11.7092 13.6842 11.5503 13.5669 11.4331C13.4497 11.3158 13.2908 11.25 13.125 11.25Z"
-                    fill="#CCFBF7" />
-                  <path
-                    d="M9.5549 11.6937C9.613 11.7523 9.68213 11.7988 9.75829 11.8306C9.83445 11.8623 9.91614 11.8786 9.99865 11.8786C10.0812 11.8786 10.1628 11.8623 10.239 11.8306C10.3152 11.7988 10.3843 11.7523 10.4424 11.6937L12.3174 9.81875C12.3757 9.76048 12.4219 9.69129 12.4534 9.61516C12.485 9.53902 12.5012 9.45741 12.5012 9.375C12.5012 9.29259 12.485 9.21098 12.4534 9.13484C12.4219 9.05871 12.3757 8.98952 12.3174 8.93125C12.2591 8.87298 12.1899 8.82675 12.1138 8.79521C12.0377 8.76367 11.9561 8.74744 11.8737 8.74744C11.7912 8.74744 11.7096 8.76367 11.6335 8.79521C11.5574 8.82675 11.4882 8.87298 11.4299 8.93125L10.6237 9.74375V6.25C10.6237 6.08424 10.5578 5.92527 10.4406 5.80806C10.3234 5.69085 10.1644 5.625 9.99865 5.625C9.83289 5.625 9.67392 5.69085 9.55671 5.80806C9.4395 5.92527 9.37365 6.08424 9.37365 6.25V9.74375L8.5674 8.93125C8.44971 8.81356 8.29009 8.74744 8.12365 8.74744C7.95721 8.74744 7.79759 8.81356 7.6799 8.93125C7.56221 9.04894 7.49609 9.20856 7.49609 9.375C7.49609 9.54144 7.56221 9.70106 7.6799 9.81875L9.5549 11.6937Z"
-                    fill="#CCFBF7" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_217_19181">
-                    <rect width="20" height="20" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+          <!-- mobile menu -->
 
-              <span>Download Mobile App</span>
+          <div class="block lg:hidden">
+            <div class="flex items-center gap-10">
+              <ul class="flex gap-7">
+                <li class="ms-5">
+                  <a class="relative" href="./Add-cart-order-flow-shopping-cart.html">
+                    <img src="./assets/image/home/cart.svg" alt="cart">
+                    <span
+                      class="absolute text-white text-xs font-semibold bottom-3 left-3 bg-[#0D9488] w-5 h-5 flex items-center justify-center rounded-full">2</span>
+                  </a>
+                </li>
+              </ul>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5.21934 8.22015C5.35997 8.0797 5.55059 8.00081 5.74934 8.00081C5.94809 8.00081 6.13871 8.0797 6.27934 8.22015L9.99934 11.9402L13.7193 8.22015C13.788 8.14647 13.8708 8.08736 13.9628 8.04637C14.0548 8.00538 14.1541 7.98334 14.2548 7.98156C14.3555 7.97979 14.4555 7.99831 14.5489 8.03603C14.6423 8.07375 14.7272 8.1299 14.7984 8.20112C14.8696 8.27233 14.9257 8.35717 14.9635 8.45056C15.0012 8.54394 15.0197 8.64397 15.0179 8.74468C15.0162 8.84538 14.9941 8.94469 14.9531 9.03669C14.9121 9.12869 14.853 9.21149 14.7793 9.28015L10.5293 13.5302C10.3887 13.6706 10.1981 13.7495 9.99934 13.7495C9.80059 13.7495 9.60997 13.6706 9.46934 13.5302L5.21934 9.28015C5.07889 9.13953 5 8.9489 5 8.75015C5 8.5514 5.07889 8.36078 5.21934 8.22015Z"
-                  fill="#CCFBF7" />
-              </svg>
-            </button>
+              <button class="rounded-full p-2 border" type="button" data-drawer-target="drawer-navigation"
+                data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M19.2188 9.21875H0.78125C0.349766 9.21875 0 9.56852 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H19.2188C19.6502 10.7812 20 10.4315 20 10C20 9.56852 19.6502 9.21875 19.2188 9.21875Z"
+                    fill="black" />
+                  <path
+                    d="M19.2188 2.96875H0.78125C0.349766 2.96875 0 3.31852 0 3.75C0 4.18148 0.349766 4.53125 0.78125 4.53125H19.2188C19.6502 4.53125 20 4.18148 20 3.75C20 3.31852 19.6502 2.96875 19.2188 2.96875Z"
+                    fill="black" />
+                  <path
+                    d="M19.2188 15.4688H0.78125C0.349766 15.4688 0 15.8185 0 16.25C0 16.6815 0.349766 17.0312 0.78125 17.0312H19.2188C19.6502 17.0312 20 16.6815 20 16.25C20 15.8185 19.6502 15.4688 19.2188 15.4688Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+
+          <div id="drawer-navigation"
+            class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64"
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase">
+              Menu</h5>
+            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close menu</span>
+            </button>
+            <div class="py-4 overflow-y-auto">
+              <ul class="space-y-2 font-medium">
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group">
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                    Blog & News
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                    Become A seller
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                    List your Garage
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                    <svg
+                      class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Login</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                    <svg
+                      class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                      <path
+                        d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                      <path
+                        d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
   <!-- main section -->
   <main>
-    <section class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
-      <div class="max-w-[1260px] container mx-auto px-3 pt-16">
+    <div class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
+      <div class="2xl:max-w-[1260px] container mx-auto px-3 pt-16">
         <nav class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
 
@@ -318,10 +560,10 @@
           </ol>
         </nav>
       </div>
-    </section>
+    </div>
 
     <section class=" bg-[#f4f4f4fc]">
-      <div class="max-w-[850px] container mx-auto px-3 pt-10">
+      <div class="lg:max-w-[850px] container mx-auto px-3 pt-10">
         <div class="bg-white px-14 py-10 rounded-2xl category-shadow">
           <div class="flex justify-between items-center mb-4">
             <h2 class="text-[#09090B] text-2xl font-semibold ">
