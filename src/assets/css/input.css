@@ -113,6 +113,10 @@
     box-shadow: 0px 0px 1.199px 0px rgba(12, 26, 75, 0.24), 0px 3.597px 9.591px -1.199px rgba(50, 50, 71, 0.05);
   }
 
+  .blogshadow {
+    box-shadow: 0px 0px 0.655px 0px rgba(12, 26, 75, 0.24), 0px 1.964px 5.237px -0.655px rgba(50, 50, 71, 0.05);
+  }
+
   .profile-hover {
     transition: all .3s ease-in-out;
   }
