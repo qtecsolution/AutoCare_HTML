@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,8 +211,6 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -236,9 +234,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -494,10 +492,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -548,10 +542,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .container {
@@ -1896,10 +1886,6 @@ video {
   max-width: 820px;
 }
 
-.max-w-\[850px\] {
-  max-width: 850px;
-}
-
 .max-w-\[900px\] {
   max-width: 900px;
 }
@@ -2195,6 +2181,10 @@ video {
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-end {
@@ -4570,6 +4560,10 @@ video {
     width: 420px;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-\[1000px\] {
     max-width: 1000px;
   }
@@ -4707,6 +4701,10 @@ video {
 
   .lg\:w-\[650px\] {
     width: 650px;
+  }
+
+  .lg\:w-0 {
+    width: 0px;
   }
 
   .lg\:max-w-\[1260px\] {
@@ -4860,14 +4858,6 @@ video {
 
   .xl\:max-w-\[440px\] {
     max-width: 440px;
-  }
-
-  .xl\:max-w-\[1260px\] {
-    max-width: 1260px;
-  }
-
-  .xl\:max-w-\[850px\] {
-    max-width: 850px;
   }
 
   .xl\:grid-cols-2 {
@@ -5129,12 +5119,12 @@ video {
     max-width: 14rem;
   }
 
-  .\32xl\:max-w-\[900px\] {
-    max-width: 900px;
-  }
-
   .\32xl\:max-w-\[1260px\] {
     max-width: 1260px;
+  }
+
+  .\32xl\:max-w-\[900px\] {
+    max-width: 900px;
   }
 
   .\32xl\:justify-start {

@@ -434,7 +434,7 @@
   <!-- main section -->
   <main>
     <!-- Get Clients  -->
-    <section class=" my-10 px-3 2xl:px-0">
+    <!-- <section class=" my-10 px-3 2xl:px-0">
       <div class="bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow max-w-[500px] mx-auto">
         <div class="mb-6">
           <h3 class="text-black text-xl font-semibold text-center  ">
@@ -498,12 +498,74 @@
           </form>
         </div>
       </div>
+    </section> -->
+    <section class="my-10 px-3 2xl:px-0">
+      <div class="bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow max-w-[500px] mx-auto">
+        <div class="mb-6">
+          <h3 class="text-black text-xl font-semibold text-center">Enter OTP</h3>
+          <p class="text-[#525468] text-sm text-center mt-2">Explore Auto Sales & Services</p>
+        </div>
+        <div>
+          <form action="#">
+            <div class="flex gap-3">
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp1" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, 'otp2')" onkeydown="moveToPrevious(event, 'otp1', null, 'otp2')"
+                  placeholder="-">
+              </div>
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp2" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, 'otp3')" onkeydown="moveToPrevious(event, 'otp2', 'otp1', 'otp3')"
+                  placeholder="-">
+              </div>
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp3" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, 'otp4')" onkeydown="moveToPrevious(event, 'otp3', 'otp2', 'otp4')"
+                  placeholder="-">
+              </div>
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp4" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, 'otp5')" onkeydown="moveToPrevious(event, 'otp4', 'otp3', 'otp5')"
+                  placeholder="-">
+              </div>
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp5" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, 'otp6')" onkeydown="moveToPrevious(event, 'otp5', 'otp4', 'otp6')"
+                  placeholder="-">
+              </div>
+              <div class="border border-[#EFEFEF] rounded-[10px] bg-white flex justify-center items-center">
+                <input type="text" id="otp6" maxlength="1"
+                  class="bg-transparent border-none text-[#040715] font-bold rounded-lg focus:ring-0 focus:border-[#D7DFE9] block w-full py-3 text-center text-xl"
+                  oninput="moveToNext(this, null)" onkeydown="moveToPrevious(event, 'otp6', 'otp5', 'null')"
+                  placeholder="-">
+              </div>
+            </div>
+            <a href="./create-profile.html" type="submit"
+              class="w-full text-white text-base font-semibold bg-[#0F766D] transition-all hover:bg-[#054944] rounded-[10px] py-3 text-center mt-6">
+              Verify
+            </a>
+            <div class="mt-6 text-center text-sm font-medium text-[#171F46]">
+              Didn’t receive OTP code?
+              <a href="#" class="text-[#115E57] hover:underline font-bold">
+                Resend Code
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
+  <!-- inputOTP -->
+  <script src="./assets/js/inputOTP.js"></script>
 </body>
 
 </html>
