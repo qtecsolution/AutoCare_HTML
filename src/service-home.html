@@ -96,7 +96,7 @@
   </section>
 
   <!-- main menu  -->
-  <header class=" sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -106,7 +106,7 @@
         </div>
 
         <div class="flex justify-between gap-[32px] items-center">
-          <form class="flex items-center xl:w-[620px] 2xl:w-[849px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
+          <form class="flex items-center xl:w-[448px] 2xl:w-[707px] bg-[#F4F5F7] rounded-lg px-4 py-0.5">
 
             <img src="./assets/image/home/search.svg" alt="search">
 
@@ -147,7 +147,7 @@
                 </a>
               </li>
 
-              <li class="ms-5 2xl:hidden">
+              <li class="ms-5">
                 <a class="relative" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
@@ -160,20 +160,7 @@
               </li>
             </ul>
           </div>
-
-          <div class="2xl:hidden">
-            <div class="flex items-center bg-[#F4F5F7] p-1.5 gap-4 rounded-[10px]">
-              <button class="px-2.5 py-1 bg-white rounded-md border-2 border-white category-shadow ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 7H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
-                  <path d="M3 12H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
-                  <path d="M3 17H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="hidden 2xl:block">
+          <div class="flex items-center gap-1.5">
             <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
               <button data-modal-target="login-modal" data-modal-toggle="login-modal" type="button"
                 class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
@@ -330,7 +317,7 @@
               </button>
 
               <!-- Sign modal -->
-              <div id="sign-modal" tabindex="-1" aria-hidden="true"
+              <div id="sign-modal" tabindex="-1" 849px aria-hidden="true"
                 class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative p-4 w-full max-w-[560px] max-h-full">
                   <!-- Modal content -->
@@ -457,6 +444,16 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="flex items-center bg-[#F4F5F7] p-1.5 gap-4 rounded-[10px]">
+              <button class="px-2.5 py-2 bg-white rounded-md border-2 border-white category-shadow ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 7H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M3 12H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M3 17H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
