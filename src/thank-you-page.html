@@ -155,38 +155,49 @@
             </ul>
           </div>
 
-          <div class=" bg-[#F4F5F7] p-1.5 rounded-xl w-[188px]">
-            <div id="profileDropdown" data-dropdown-toggle="profileDropdown1"
-              class="flex items-center justify-between gap-1 category-shadow bg-white px-2.5 py-1.5 rounded-md cursor-pointer">
-              <div class="flex gap-2 items-center">
-                <figure>
-                  <img src="./assets/image/profile/profile1.png" alt="profile">
-                </figure>
+          <div class="flex items-center gap-1.5">
+            <div class=" bg-[#F4F5F7] p-1.5 rounded-xl w-[188px]">
+              <div id="profileDropdown" data-dropdown-toggle="profileDropdown1"
+                class="flex items-center justify-between gap-1 category-shadow bg-white px-2.5 py-1.5 rounded-md cursor-pointer">
+                <div class="flex gap-2 items-center">
+                  <figure>
+                    <img src="./assets/image/profile/profile1.png" alt="profile">
+                  </figure>
 
-                <h2 class="text-[#0F766D] text-base font-bold">
-                  Md Nasir ...
-                </h2>
+                  <h2 class="text-[#0F766D] text-base font-bold">
+                    Md Nasir ...
+                  </h2>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M11.6189 5.2207L7.81557 9.02404C7.36641 9.4732 6.63141 9.4732 6.18224 9.02404L2.37891 5.2207"
+                    stroke="#0F766D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M11.6189 5.2207L7.81557 9.02404C7.36641 9.4732 6.63141 9.4732 6.18224 9.02404L2.37891 5.2207"
-                  stroke="#0F766D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
+
+              <!-- profile Dropdown menu -->
+              <div id="profileDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-gray-700 " aria-labelledby="profileDropdown">
+                  <li>
+                    <a href="./profile.html" class="block px-4 py-2 hover:bg-gray-100   ">Profile</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100   ">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+
             </div>
-
-            <!-- profile Dropdown menu -->
-            <div id="profileDropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-              <ul class="py-2 text-sm text-gray-700 " aria-labelledby="profileDropdown">
-                <li>
-                  <a href="./profile.html" class="block px-4 py-2 hover:bg-gray-100   ">Profile</a>
-                </li>
-
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100   ">Sign out</a>
-                </li>
-              </ul>
+            <div class="flex items-center bg-[#F4F5F7] p-1.5 gap-4 rounded-[10px]">
+              <button class="px-2.5 py-1 bg-white rounded-md border-2 border-white category-shadow ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 7H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M3 12H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M3 17H21" stroke="#0F766D" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </button>
             </div>
-
           </div>
         </div>
       </div>
