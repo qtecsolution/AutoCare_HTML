@@ -25,11 +25,9 @@
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/daterangepicker.css">
-
   <!-- nice-select2 -->
   <link rel="stylesheet" href="./assets/css/nice-select2.css">
 
-  <link rel="stylesheet" href="./assets/css/service-booking.css">
 </head>
 
 <body class="font-inter">
@@ -624,7 +622,29 @@
             </div>
           </div>
 
-          <div class="mt-6">
+          <div class="w-full my-4">
+            <h4 class="text-[#09090B] text-sm font-medium mb-2.5">
+              Select Car
+            </h4>
+            <div class="SelectCar">
+              <select class="selectize border-none focus:ring-0 text-[#7B7F95] cursor-pointer">
+                <option data-display="Select">Select</option>
+                <option value="1">Some option2</option>
+                <option value="2">Some option3</option>
+                <option value="4">Some option4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center gap-6 mt-8">
+            <span class="h-[1px] bg-[#F3F4F6] w-64"></span>
+            <p class="text-[#6B7280] text-sm ">
+              Or Input Information
+            </p>
+            <span class="h-[1px] bg-[#F3F4F6] w-64"></span>
+          </div>
+
+          <div class="mt-2">
             <h4 class="text-[#09090B] text-sm font-medium mb-3 ">
               Select Car Type
             </h4>
@@ -712,7 +732,7 @@
               <p class="text-[#09090B] text-sm font-medium">
                 Select Car Brand
               </p>
-              <div>
+              <div class="SelectBrand">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">
                     Select
@@ -729,7 +749,7 @@
                 Model
               </p>
 
-              <div>
+              <div class="SelectBrand">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer ">
                   <option class="text-[10px]" data-display="Select">
                     Select
@@ -747,7 +767,7 @@
               <p class="text-[#09090B] text-sm font-medium">
                 Engine (Optional)
               </p>
-              <div>
+              <div class="SelectBrand">
                 <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
                   <option class="text-[10px]" data-display="Select">
                     Select

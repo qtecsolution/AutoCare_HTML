@@ -153,4 +153,18 @@
   .nice-select.open .nice-select-dropdown {
     width: 100%;
   }
+
+  /* nice selector */
+  .SelectCar .nice-select {
+    width: 100%;
+  }
+
+  .SelectBrand .nice-select {
+    width: 324px;
+    margin-top: 7px;
+  }
+
+  .nice-select-dropdown {
+    width: 100%;
+  }
 }
