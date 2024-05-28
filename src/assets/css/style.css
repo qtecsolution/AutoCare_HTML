@@ -1457,6 +1457,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1519,10 +1523,6 @@ video {
 
 .mt-\[51px\] {
   margin-top: 51px;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .block {
@@ -1961,6 +1961,10 @@ video {
   max-width: 940px;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -1969,8 +1973,8 @@ video {
   max-width: 20rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -3857,6 +3861,11 @@ video {
   color: rgb(35 35 35 / var(--tw-text-opacity));
 }
 
+.text-\[\#2563EB\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .text-\[\#259427\] {
   --tw-text-opacity: 1;
   color: rgb(37 148 39 / var(--tw-text-opacity));
@@ -4129,15 +4138,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[\#2563EB\] {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -5060,6 +5060,10 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .lg\:text-\[10px\] {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -5211,12 +5215,20 @@ video {
     gap: 73px;
   }
 
+  .xl\:gap-12 {
+    gap: 3rem;
+  }
+
   .xl\:bg-cover {
     background-size: cover;
   }
 
   .xl\:p-\[22px\] {
     padding: 22px;
+  }
+
+  .xl\:p-5 {
+    padding: 1.25rem;
   }
 
   .xl\:px-0 {
