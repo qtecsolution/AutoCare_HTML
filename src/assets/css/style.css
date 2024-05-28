@@ -759,10 +759,6 @@ video {
   box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.10), 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
 }
 
-.comparision {
-  box-shadow: 0px 0px 0.697px 0px rgba(12, 26, 75, 0.24), 0px 2.092px 5.58px -0.697px rgba(50, 50, 71, 0.05);
-}
-
 .allshopeshadow {
   box-shadow: 0px 0px 1.199px 0px rgba(12, 26, 75, 0.24), 0px 3.597px 9.591px -1.199px rgba(50, 50, 71, 0.05);
 }
@@ -1502,6 +1498,10 @@ video {
   margin-top: 51px;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .block {
   display: block;
 }
@@ -1742,10 +1742,6 @@ video {
   width: 24rem;
 }
 
-.w-\[1020px\] {
-  width: 1020px;
-}
-
 .w-\[110px\] {
   width: 110px;
 }
@@ -1850,6 +1846,10 @@ video {
   width: 970px;
 }
 
+.w-\[980px\] {
+  width: 980px;
+}
+
 .w-\[99\%\] {
   width: 99%;
 }
@@ -1872,10 +1872,6 @@ video {
 
 .max-w-\[1260px\] {
   max-width: 1260px;
-}
-
-.max-w-\[1500px\] {
-  max-width: 1500px;
 }
 
 .max-w-\[320px\] {
@@ -2147,6 +2143,10 @@ video {
   gap: 2rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-\[12px\] {
   gap: 12px;
 }
@@ -2371,11 +2371,6 @@ video {
   border-end-start-radius: 0px;
 }
 
-.rounded-t {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
 .rounded-t-2xl {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -2438,10 +2433,6 @@ video {
 
 .border-\[\.5px\] {
   border-width: .5px;
-}
-
-.border-\[2\.9px\] {
-  border-width: 2.9px;
 }
 
 .border-\[5px\] {
@@ -3543,6 +3534,22 @@ video {
   padding-top: 8px;
 }
 
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4448,6 +4455,11 @@ video {
   background-color: rgb(2 115 113 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#033d38\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 61 56 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#054944\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(5 73 68 / var(--tw-bg-opacity));
@@ -4771,10 +4783,6 @@ video {
     padding: 0.75rem;
   }
 
-  .md\:p-5 {
-    padding: 1.25rem;
-  }
-
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -4914,6 +4922,10 @@ video {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:rounded-none {
+    border-radius: 0px;
   }
 
   .lg\:rounded-s-3xl {
@@ -5057,6 +5069,10 @@ video {
 
   .xl\:w-36 {
     width: 9rem;
+  }
+
+  .xl\:w-\[1078px\] {
+    width: 1078px;
   }
 
   .xl\:w-\[1130px\] {
