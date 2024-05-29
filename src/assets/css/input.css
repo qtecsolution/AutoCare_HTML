@@ -167,4 +167,8 @@
   .nice-select-dropdown {
     width: 100%;
   }
+
+  .myPoint {
+    background: linear-gradient(180deg, #F49D0C 0%, #BC560A 100%);
+  }
 }
