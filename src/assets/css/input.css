@@ -186,6 +186,14 @@
     width: 100%;
   }
 
+  .bg-gradient-become-a-vendor {
+    background: linear-gradient(180deg, #0D9488 0%, #115E57 100%);
+  }
+
+  .bg-gradient-become-a-vendor-cart {
+    background: linear-gradient(180deg, #FFF 0%, #D7F4F1 100%);
+  }
+
   /* start scroll bar  */
   .scrollbar::-webkit-scrollbar {
     @apply w-2;
