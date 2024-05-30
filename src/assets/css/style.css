@@ -652,6 +652,17 @@ video {
   }
 }
 
+.checkmark-full {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(182 182 182 / var(--tw-bg-opacity));
+}
+
 /* When the checkbox is checked, add a ##0F766D background */
 
 .label input:checked~.checkmark {
@@ -687,6 +698,15 @@ video {
   display: none;
 }
 
+.checkmark-full:after {
+  /* @apply absolute block content ""; */
+  position: absolute;
+  display: block;
+  --tw-content: '';
+  content: var(--tw-content);
+  display: none;
+}
+
 /* Show the checkmark when checked */
 
 .label input:checked~.checkmark:after {
@@ -694,6 +714,10 @@ video {
 }
 
 .label-radio input:checked~.checkmark-radio:after {
+  display: block;
+}
+
+.label-radio input:checked~.checkmark-full:after {
   display: block;
 }
 
@@ -733,6 +757,18 @@ video {
     height: 9px;
     width: 9px;
   }
+}
+
+.label-radio .checkmark-full:after {
+  left: 0px;
+  top: 0px;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 109 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .myshadow {
@@ -821,6 +857,26 @@ video {
 .nice-select-dropdown {
   width: 100%;
 }
+
+/* start scroll bar  */
+
+.scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 229 233 / var(--tw-bg-opacity));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 180 195 / var(--tw-bg-opacity));
+}
+
+/* end scroll bar  */
 
 .sr-only {
   position: absolute;
@@ -1506,6 +1562,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1704,6 +1764,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[440px\] {
+  max-height: 440px;
 }
 
 .max-h-full {
@@ -1940,6 +2004,10 @@ video {
 
 .max-w-\[1260px\] {
   max-width: 1260px;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
 }
 
 .max-w-\[320px\] {
@@ -2329,6 +2397,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .whitespace-nowrap {
@@ -2931,8 +3003,23 @@ video {
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#d4f2e1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 242 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d7e7fe\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 231 254 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#d9d9d99e\] {
   background-color: #d9d9d99e;
+}
+
+.bg-\[\#ebfdfc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 253 252 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#ece4fb\] {
@@ -2958,8 +3045,23 @@ video {
   background-color: rgb(251 242 231 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fef2d3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 211 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ff52901a\] {
   background-color: #ff52901a;
+}
+
+.bg-\[\#ffd8dc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 216 220 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffdce9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 220 233 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#ffffff17\] {
@@ -3717,6 +3819,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -3948,6 +4055,11 @@ video {
   color: rgb(26 32 44 / var(--tw-text-opacity));
 }
 
+.text-\[\#1B1E23\] {
+  --tw-text-opacity: 1;
+  color: rgb(27 30 35 / var(--tw-text-opacity));
+}
+
 .text-\[\#1F2937\] {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -3991,6 +4103,11 @@ video {
 .text-\[\#383941\] {
   --tw-text-opacity: 1;
   color: rgb(56 57 65 / var(--tw-text-opacity));
+}
+
+.text-\[\#3B3B3B\] {
+  --tw-text-opacity: 1;
+  color: rgb(59 59 59 / var(--tw-text-opacity));
 }
 
 .text-\[\#3C3C3D\] {
@@ -4091,6 +4208,11 @@ video {
 .text-\[\#8355DE\] {
   --tw-text-opacity: 1;
   color: rgb(131 85 222 / var(--tw-text-opacity));
+}
+
+.text-\[\#848484\] {
+  --tw-text-opacity: 1;
+  color: rgb(132 132 132 / var(--tw-text-opacity));
 }
 
 .text-\[\#9FD86C\] {
@@ -4280,6 +4402,10 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow {
@@ -5189,6 +5315,10 @@ video {
 
   .xl\:left-\[91px\] {
     left: 91px;
+  }
+
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .xl\:mb-10 {
