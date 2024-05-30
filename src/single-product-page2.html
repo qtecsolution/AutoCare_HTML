@@ -724,13 +724,28 @@
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
             <div class="relative w-full max-w-[472px] max-h-full">
               <!-- Modal content -->
-              <div class="relative bg-[#F1F4F6] p-12 border-[5px] border-white rounded-3xl shadow ">
+              <div class="relative bg-[#F1F4F6] px-12 py-6 border-[5px] border-white rounded-3xl shadow ">
                 <!-- Modal header -->
+                <button type="button" class="absolute top-3 right-4" data-modal-hide="request-modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_934_24184)">
+                      <path
+                        d="M9.9987 0.832031C8.18571 0.832031 6.41343 1.36965 4.90597 2.37689C3.39852 3.38414 2.22361 4.81578 1.52981 6.49077C0.836003 8.16576 0.654472 10.0089 1.00817 11.787C1.36187 13.5652 2.23491 15.1985 3.51689 16.4805C4.79887 17.7625 6.43221 18.6355 8.21037 18.9892C9.98853 19.3429 11.8316 19.1614 13.5066 18.4676C15.1816 17.7738 16.6133 16.5989 17.6205 15.0914C18.6278 13.584 19.1654 11.8117 19.1654 9.9987C19.1625 7.56843 18.1958 5.23851 16.4773 3.52005C14.7589 1.80159 12.429 0.834898 9.9987 0.832031ZM13.5337 12.3562C13.6133 12.4331 13.6768 12.525 13.7205 12.6267C13.7641 12.7284 13.7871 12.8377 13.7881 12.9484C13.789 13.059 13.768 13.1687 13.7261 13.2712C13.6842 13.3736 13.6223 13.4666 13.544 13.5449C13.4658 13.6231 13.3727 13.685 13.2703 13.7269C13.1679 13.7688 13.0582 13.7899 12.9475 13.7889C12.8369 13.7879 12.7275 13.765 12.6259 13.7213C12.5242 13.6776 12.4322 13.6141 12.3554 13.5345L9.9987 11.177L7.64204 13.5345C7.48487 13.6863 7.27436 13.7703 7.05587 13.7684C6.83737 13.7665 6.62836 13.6789 6.47385 13.5244C6.31935 13.3699 6.23171 13.1609 6.22981 12.9424C6.22791 12.7239 6.3119 12.5134 6.4637 12.3562L8.82037 9.9987L6.4637 7.6412C6.38411 7.56433 6.32062 7.47237 6.27695 7.3707C6.23328 7.26903 6.21029 7.15968 6.20933 7.04903C6.20836 6.93838 6.22945 6.82865 6.27135 6.72624C6.31325 6.62382 6.37513 6.53078 6.45337 6.45254C6.53162 6.37429 6.62466 6.31241 6.72707 6.27051C6.82949 6.22861 6.93922 6.20753 7.04987 6.20849C7.16052 6.20945 7.26987 6.23244 7.37154 6.27611C7.47321 6.31979 7.56516 6.38327 7.64204 6.46286L9.9987 8.82037L12.3554 6.46286C12.4322 6.38327 12.5242 6.31979 12.6259 6.27611C12.7275 6.23244 12.8369 6.20945 12.9475 6.20849C13.0582 6.20753 13.1679 6.22861 13.2703 6.27051C13.3727 6.31241 13.4658 6.37429 13.544 6.45254C13.6223 6.53078 13.6842 6.62382 13.7261 6.72624C13.768 6.82865 13.789 6.93838 13.7881 7.04903C13.7871 7.15968 13.7641 7.26903 13.7205 7.3707C13.6768 7.47237 13.6133 7.56433 13.5337 7.6412L11.177 9.9987L13.5337 12.3562Z"
+                        fill="#CBCDD6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_934_24184">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
                 <div class="mb-2">
                   <h3 class="text-black text-xl font-bold text-center  ">
                     Request Form
                   </h3>
                 </div>
+
                 <!-- Modal body -->
                 <div>
                   <div class="mb-8">
@@ -822,10 +837,22 @@
                         Address
                       </label>
 
+                      <div class="border border-[#D7DFE9] rounded-lg bg-white px-3">
+                        <input type="text" name="Address" id="Address"
+                          class="bg-transparent border-none text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
+                          placeholder="Address" required />
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="Address" class="block mb-2 text-sm font-medium text-[#202020] tracking-[0.14px]  ">
+                        Description
+                      </label>
+
                       <div>
-                        <textarea name="Address" id="Address" cols="3" rows="3"
+                        <textarea name="Description" id="Description" cols="3" rows="3"
                           class="border border-[#D7DFE9] bg-white px-3 text-[#040715] text-sm rounded-lg right-0 focus:ring-0 focus:border-[#D7DFE9] block w-full p-0 py-4"
-                          placeholder="Address" required></textarea>
+                          placeholder="Description" required></textarea>
                       </div>
                     </div>
 

@@ -1175,6 +1175,10 @@ video {
   top: 9px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -3871,6 +3875,10 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-left {
