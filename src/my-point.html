@@ -28,9 +28,9 @@
 </head>
 
 <body class="font-inter">
-  <header>
+  <header class="sticky top-0 left-0 bg-white z-50">
     <!-- main menu  -->
-    <div class="py-[16px] shadow px-3">
+    <div class="py-4 shadow px-3">
       <div class="container mx-auto">
         <nav class="flex justify-between items-center xl:gap-[60px]">
           <div class="flex gap-10 items-center">
@@ -762,32 +762,146 @@
 
           <div class="col-span-2 bg-white rounded-2xl">
             <div class="m-5">
-              <div class="rounded-2xl bg-[#fbf2e7] p-9 flex items-center gap-6">
-                <figure class="">
-                  <svg class="opacity-100" xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79"
-                    fill="none">
-                    <path
-                      d="M39.5 74.0625C58.5883 74.0625 74.0625 58.5883 74.0625 39.5C74.0625 20.4117 58.5883 4.9375 39.5 4.9375C20.4117 4.9375 4.9375 20.4117 4.9375 39.5C4.9375 58.5883 20.4117 74.0625 39.5 74.0625Z"
-                      fill="#FFB300" />
-                    <path
-                      d="M39.5 66.6562C54.498 66.6562 66.6562 54.498 66.6562 39.5C66.6562 24.502 54.498 12.3438 39.5 12.3438C24.502 12.3438 12.3438 24.502 12.3438 39.5C12.3438 54.498 24.502 66.6562 39.5 66.6562Z"
-                      fill="#FF8F00" />
-                    <path
-                      d="M40.539 23.8606L44.8698 32.6359L54.5538 34.0431C55.5041 34.1812 55.8834 35.3488 55.1958 36.019L48.1884 42.8496L49.8426 52.4945C50.0049 53.4409 49.0116 54.1625 48.1618 53.7157L39.5 49.1619L30.8383 53.7157C29.9884 54.1625 28.9951 53.4408 29.1574 52.4945L30.8116 42.8496L23.8042 36.019C23.1167 35.3489 23.4961 34.1812 24.4462 34.0431L34.1303 32.6359L38.4611 23.8606C38.8859 22.9996 40.1141 22.9996 40.539 23.8606Z"
-                      fill="#ECEFF1" />
-                  </svg>
-                </figure>
+              <div class="rounded-2xl bg-[#fbf2e7] p-9 flex items-center justify-between">
+                <div class="flex items-center gap-6">
+                  <figure class="">
+                    <svg class="opacity-100" xmlns="http://www.w3.org/2000/svg" width="79" height="79"
+                      viewBox="0 0 79 79" fill="none">
+                      <path
+                        d="M39.5 74.0625C58.5883 74.0625 74.0625 58.5883 74.0625 39.5C74.0625 20.4117 58.5883 4.9375 39.5 4.9375C20.4117 4.9375 4.9375 20.4117 4.9375 39.5C4.9375 58.5883 20.4117 74.0625 39.5 74.0625Z"
+                        fill="#FFB300" />
+                      <path
+                        d="M39.5 66.6562C54.498 66.6562 66.6562 54.498 66.6562 39.5C66.6562 24.502 54.498 12.3438 39.5 12.3438C24.502 12.3438 12.3438 24.502 12.3438 39.5C12.3438 54.498 24.502 66.6562 39.5 66.6562Z"
+                        fill="#FF8F00" />
+                      <path
+                        d="M40.539 23.8606L44.8698 32.6359L54.5538 34.0431C55.5041 34.1812 55.8834 35.3488 55.1958 36.019L48.1884 42.8496L49.8426 52.4945C50.0049 53.4409 49.0116 54.1625 48.1618 53.7157L39.5 49.1619L30.8383 53.7157C29.9884 54.1625 28.9951 53.4408 29.1574 52.4945L30.8116 42.8496L23.8042 36.019C23.1167 35.3489 23.4961 34.1812 24.4462 34.0431L34.1303 32.6359L38.4611 23.8606C38.8859 22.9996 40.1141 22.9996 40.539 23.8606Z"
+                        fill="#ECEFF1" />
+                    </svg>
+                  </figure>
 
-                <div class="">
-                  <h3 class="text-[60px] text-[#BC560A] font-bold">58</h3>
-                  <p class="text-[#1F2937] text-base font-medium">
-                    Available Autocare Points
-                  </p>
+                  <div class="">
+                    <h3 class="text-[60px] text-[#BC560A] font-bold">58</h3>
+                    <p class="text-[#1F2937] text-base font-medium">
+                      Available Autocare Points
+                    </p>
+                  </div>
                 </div>
+
+                <button class="text-teal-700 text-xs font-medium px-3 py-1 rounded-[42px] bg-white category-shadow">
+                  How to Earn Autocare Points
+                </button>
               </div>
 
-              <p class="text-[#1F2937] text-base font-semibold mt-5">
-                Point History
+            </div>
+            <p class="text-[#1F2937] text-lg font-semibold pl-5 pb-5">
+              Point History
+            </p>
+
+            <div class="border-b border-t border-[#E6E6E7]">
+              <div class="flex justify-between items-center pl-7 pr-20 py-4">
+                <div class="flex items-center gap-5">
+                  <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                      <path
+                        d="M11.5 21.5625C17.0574 21.5625 21.5625 17.0574 21.5625 11.5C21.5625 5.94263 17.0574 1.4375 11.5 1.4375C5.94263 1.4375 1.4375 5.94263 1.4375 11.5C1.4375 17.0574 5.94263 21.5625 11.5 21.5625Z"
+                        fill="#FFB300" />
+                      <path
+                        d="M11.5 19.4062C15.8665 19.4062 19.4062 15.8665 19.4062 11.5C19.4062 7.1335 15.8665 3.59375 11.5 3.59375C7.1335 3.59375 3.59375 7.1335 3.59375 11.5C3.59375 15.8665 7.1335 19.4062 11.5 19.4062Z"
+                        fill="#FF8F00" />
+                      <path
+                        d="M11.8025 6.94776L13.0634 9.5026L15.8828 9.91228C16.1594 9.9525 16.2698 10.2924 16.0697 10.4876L14.0295 12.4762L14.5111 15.2842C14.5584 15.5598 14.2692 15.7698 14.0218 15.6398L11.5 14.314L8.97824 15.6398C8.73081 15.7698 8.44162 15.5597 8.48888 15.2842L8.97048 12.4762L6.93034 10.4876C6.73017 10.2925 6.84064 9.9525 7.11725 9.91228L9.93666 9.5026L11.1975 6.94776C11.3212 6.6971 11.6788 6.6971 11.8025 6.94776Z"
+                        fill="#ECEFF1" />
+                    </svg>
+                  </figure>
+                  <div>
+                    <p class="text-xs text-[#6B7280]">
+                      Last Wednesday at 9:42 AM
+                    </p>
+                    <p class="text-sm text-[#6B7280]">
+                      Earned <span class="text-[#1F2937] font-medium">500</span> Point by complete order <span
+                        class="text-[#1F2937] font-medium">#451141</span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="flex gap-1 items-center px-2 py-1 border border-[#F9851A] rounded-[44px] text-[10px] text-[#F9851A] font-medium bg-[#f9851a1a]">
+                    <div class="w-2 h-2 bg-[#F9851A] rounded-full"></div>
+                    EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-t border-[#E6E6E7]">
+              <div class="flex justify-between items-center pl-7 pr-[70px] py-4">
+                <div class="flex items-center gap-5">
+                  <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                      <path
+                        d="M11.5 21.5625C17.0574 21.5625 21.5625 17.0574 21.5625 11.5C21.5625 5.94263 17.0574 1.4375 11.5 1.4375C5.94263 1.4375 1.4375 5.94263 1.4375 11.5C1.4375 17.0574 5.94263 21.5625 11.5 21.5625Z"
+                        fill="#CACACA" />
+                      <path
+                        d="M11.5 19.4062C15.8665 19.4062 19.4062 15.8665 19.4062 11.5C19.4062 7.1335 15.8665 3.59375 11.5 3.59375C7.1335 3.59375 3.59375 7.1335 3.59375 11.5C3.59375 15.8665 7.1335 19.4062 11.5 19.4062Z"
+                        fill="#9D9D9D" />
+                      <path
+                        d="M11.8025 6.94776L13.0634 9.5026L15.8828 9.91228C16.1594 9.9525 16.2698 10.2924 16.0697 10.4876L14.0295 12.4762L14.5111 15.2842C14.5584 15.5598 14.2692 15.7698 14.0218 15.6398L11.5 14.314L8.97824 15.6398C8.73081 15.7698 8.44162 15.5597 8.48888 15.2842L8.97048 12.4762L6.93034 10.4876C6.73017 10.2925 6.84064 9.9525 7.11725 9.91228L9.93666 9.5026L11.1975 6.94776C11.3212 6.6971 11.6788 6.6971 11.8025 6.94776Z"
+                        fill="#ECEFF1" />
+                    </svg>
+                  </figure>
+                  <div>
+                    <p class="text-xs text-[#6B7280]">
+                      Last Wednesday at 9:42 AM
+                    </p>
+                    <p class="text-sm text-[#6B7280]">
+                      Eliminated <span class="text-[#1F2937] font-medium">50</span> Point for time is expired
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="flex gap-1 items-center px-2 py-1 border border-[#625E6F] rounded-[44px] text-[10px] text-[#625E6F] font-medium bg-[#625e6f1a]">
+                    <div class="w-2 h-2 bg-[#625E6F] rounded-full"></div>
+                    Elements
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-t border-[#E6E6E7]">
+              <div class="flex justify-between items-center pl-7 pr-16 py-4">
+                <div class="flex items-center gap-5">
+                  <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                      <path
+                        d="M11.5 21.5625C17.0574 21.5625 21.5625 17.0574 21.5625 11.5C21.5625 5.94263 17.0574 1.4375 11.5 1.4375C5.94263 1.4375 1.4375 5.94263 1.4375 11.5C1.4375 17.0574 5.94263 21.5625 11.5 21.5625Z"
+                        fill="#C0F6FA" />
+                      <path
+                        d="M11.5 19.4062C15.8665 19.4062 19.4062 15.8665 19.4062 11.5C19.4062 7.1335 15.8665 3.59375 11.5 3.59375C7.1335 3.59375 3.59375 7.1335 3.59375 11.5C3.59375 15.8665 7.1335 19.4062 11.5 19.4062Z"
+                        fill="#31BCC6" />
+                      <path
+                        d="M11.8025 6.94776L13.0634 9.5026L15.8828 9.91228C16.1594 9.9525 16.2698 10.2924 16.0697 10.4876L14.0295 12.4762L14.5111 15.2842C14.5584 15.5598 14.2692 15.7698 14.0218 15.6398L11.5 14.314L8.97824 15.6398C8.73081 15.7698 8.44162 15.5597 8.48888 15.2842L8.97048 12.4762L6.93034 10.4876C6.73017 10.2925 6.84064 9.9525 7.11725 9.91228L9.93666 9.5026L11.1975 6.94776C11.3212 6.6971 11.6788 6.6971 11.8025 6.94776Z"
+                        fill="#ECEFF1" />
+                    </svg>
+                  </figure>
+                  <div>
+                    <p class="text-xs text-[#6B7280]">
+                      Last Wednesday at 9:42 AM
+                    </p>
+                    <p class="text-sm text-[#6B7280]">
+                      Earned <span class="text-[#1F2937] font-medium">50</span> Point by complete order <span
+                        class="text-[#1F2937] font-medium">#451141</span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="flex gap-1 items-center px-2 py-1 border border-[#31BCC6] rounded-[44px] text-[10px] text-[#31BCC6] font-medium bg-[#31bcc61a]">
+                    <div class="w-2 h-2 bg-[#31BCC6] rounded-full"></div>
+                    Redeemed
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
