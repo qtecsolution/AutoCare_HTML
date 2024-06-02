@@ -5592,6 +5592,16 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .xl\:pb-\[11px\] {
     padding-bottom: 11px;
   }
