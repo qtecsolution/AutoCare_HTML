@@ -1179,6 +1179,10 @@ video {
   top: 9px;
 }
 
+.left-52 {
+  left: 13rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -5298,6 +5302,10 @@ video {
     left: 9rem;
   }
 
+  .lg\:left-52 {
+    left: 13rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -5490,6 +5498,10 @@ video {
 
   .xl\:left-\[91px\] {
     left: 91px;
+  }
+
+  .xl\:left-52 {
+    left: 13rem;
   }
 
   .xl\:col-span-2 {
@@ -5728,6 +5740,14 @@ video {
     padding-top: 2.25rem;
   }
 
+  .xl\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .xl\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -5955,6 +5975,10 @@ video {
 
   .\32xl\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .\32xl\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .\32xl\:text-2xl {
