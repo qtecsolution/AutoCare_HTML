@@ -578,9 +578,8 @@
         </h1>
 
         <div class="grid grid-cols-3 gap-10 pb-20">
-
           <div>
-            <div class="bg-white rounded-2xl category-shadow pb-[250px]">
+            <div class="bg-white rounded-2xl category-shadow">
               <div class="border-4 border-white bg-[#0273710d] rounded-tl-2xl rounded-tr-2xl py-8">
                 <figure class="flex justify-center">
                   <img class="rounded-full" src="./assets/image/profile/profile.png" alt="" />
@@ -916,44 +915,228 @@
                 </div>
               </div>
 
-              <ol class="flex items-center w-full ml-24 my-7">
+              <ol class="flex items-center w-full ml-24 mt-7 mb-16">
                 <li
-                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
+                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block   relative">
                   <span
                     class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
                   </span>
-
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
+                  <span class="absolute -bottom-8 -left-8 text-[#525468] text-sm">
+                    Payment Pending
                   </span>
                 </li>
 
                 <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
                   <span
                     class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
+                  </span>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#525468] text-sm">
+                    Processing
                   </span>
                 </li>
 
-                <li class="flex items-center w-full">
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
+                  </span>
+                  <span class="absolute -bottom-8 -left-0.5 text-[#525468] text-sm">
+                    Shipped
+                  </span>
+                </li>
+
+                <li class="flex items-center w-full relative">
                   <span class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full   shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M3.75 10.625L8.75 15.625L17 5.5" stroke="#0F766D" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                     </svg>
                   </span>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#0F766D] text-sm">
+                    Delivered
+                  </span>
                 </li>
               </ol>
 
-              <div class="border border-[#D9D9D9] rounded-lg ml-24 mr-14 py-4">
-                <p class="text-sm text-center">
+              <div class="border border-[#D9D9D9] rounded-lg ml-16 xl:mr-10 py-4">
+                <p class="text-sm pl-4">
+                  <span class="text-[#525468]">
+                    Tue, Oct 07, 2024, 5:20pm
+                  </span>
+                  <span class="text-[#09090B]">
+                    It has been delivered. Thanks For order from Auto Car
+                  </span>
+                </p>
+                <a href="#" class="block text-center mt-2 text-[#0F766D] text-base">
+                  View more
+                </a>
+              </div>
+
+              <div class="flex items-center justify-end gap-8 mt-6">
+                <div class="flex items-center gap-2">
+                  <p class="text-[#09090B] text-base">
+                    Support
+                  </p>
+
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M9.99992 0C4.48554 0 0 4.48554 0 9.99992C0 12.1869 0.705474 14.215 1.90471 15.8612L0.658354 19.5766L4.50312 18.3481C6.08447 19.3946 7.97159 20 10.0057 20C15.5201 20 20.0056 15.5143 20.0056 10.0001C20.0056 4.4857 15.5201 0.000165983 10.0057 0.000165983H9.99992V0Z"
+                        fill="url(#paint0_linear_308_14740)" />
+                      <path
+                        d="M7.20726 5.07976C7.0133 4.61537 6.8663 4.59778 6.57247 4.58583C6.46089 4.57865 6.34912 4.57477 6.23731 4.57422C5.85504 4.57422 5.45535 4.68588 5.21428 4.93276C4.92044 5.23257 4.19141 5.93207 4.19141 7.36658C4.19141 8.80109 5.23784 10.1885 5.37887 10.3826C5.52587 10.5764 7.41897 13.5629 10.3583 14.78C12.6569 15.7324 13.339 15.6441 13.8621 15.5325C14.6264 15.3679 15.5847 14.8033 15.8258 14.1215C16.0668 13.4394 16.0668 12.8574 15.9962 12.734C15.9256 12.6105 15.7315 12.5402 15.4377 12.393C15.1438 12.246 13.7151 11.5405 13.4447 11.4465C13.1801 11.3466 12.9274 11.3819 12.7276 11.6641C12.4454 12.058 12.1691 12.4579 11.9457 12.6988C11.7693 12.8869 11.4811 12.9105 11.2402 12.8104C10.9168 12.6754 10.0116 12.3577 8.89446 11.3642C8.0302 10.5941 7.44236 9.63598 7.27197 9.34795C7.1014 9.05411 7.25438 8.88339 7.38944 8.72477C7.53644 8.54243 7.67747 8.41318 7.82447 8.24262C7.97147 8.07222 8.05376 7.98396 8.14784 7.78403C8.24788 7.59007 8.1772 7.39014 8.10669 7.24314C8.03618 7.09614 7.44834 5.66163 7.20726 5.07976Z"
+                        fill="#FEFEFE" />
+                      <defs>
+                        <linearGradient id="paint0_linear_308_14740" x1="-75.1672" y1="-33.5038" x2="-75.1672"
+                          y2="-32.77" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6EBF61" />
+                          <stop offset="0.231" stop-color="#50A557" />
+                          <stop offset="0.522" stop-color="#2A904F" />
+                          <stop offset="0.812" stop-color="#50A557" />
+                          <stop offset="1" stop-color="#6EBF63" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-[#383941] text-base">
+                      +880 1707 878583
+                    </p>
+                  </div>
+                </div>
+
+                <a href="" class="text-[#F9851A] text-base">
+                  Write Review
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl category-shadow p-6 mt-4">
+              <div class="flex justify-between items-center w-full">
+                <div class="flex items-center gap-2.5">
+                  <figure>
+                    <img src="./assets/image/profile/MyOrder.png" alt="" />
+                  </figure>
+
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <div class="flex items-center gap-1.5">
+                        <figure>
+                          <img src="./assets/image/profile/Nextage.svg" alt="" />
+                        </figure>
+                        <p class="text-[#1A202C] text-[10px] font-semibold">
+                          Nextage
+                        </p>
+                      </div>
+
+                      <div class="flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                          <path
+                            d="M10.9478 10.3275L8.31715 12.9582C8.20211 13.0733 8.06549 13.1647 7.91512 13.227C7.76474 13.2893 7.60356 13.3214 7.44078 13.3214C7.278 13.3214 7.11682 13.2893 6.96644 13.227C6.81607 13.1647 6.67946 13.0733 6.56441 12.9582L3.93313 10.3275C3.23949 9.63383 2.76712 8.75004 2.57576 7.7879C2.3844 6.82577 2.48263 5.82849 2.85805 4.92218C3.23347 4.01588 3.86921 3.24124 4.68487 2.69624C5.50053 2.15124 6.45949 1.86035 7.44047 1.86035C8.42146 1.86035 9.38041 2.15124 10.1961 2.69624C11.0117 3.24124 11.6475 4.01588 12.0229 4.92218C12.3983 5.82849 12.4965 6.82577 12.3052 7.7879C12.1138 8.75004 11.6415 9.63383 10.9478 10.3275V10.3275Z"
+                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M9.30008 6.82094C9.30008 7.31424 9.10411 7.78734 8.7553 8.13616C8.40648 8.48497 7.93338 8.68094 7.44008 8.68094C6.94678 8.68094 6.47368 8.48497 6.12486 8.13616C5.77604 7.78734 5.58008 7.31424 5.58008 6.82094C5.58008 6.32763 5.77604 5.85454 6.12486 5.50572C6.47368 5.1569 6.94678 4.96094 7.44008 4.96094C7.93338 4.96094 8.40648 5.1569 8.7553 5.50572C9.10411 5.85454 9.30008 6.32763 9.30008 6.82094V6.82094Z"
+                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="text-[#4A5568] text-[10px]">
+                          Dhaka
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="mt-0.5">
+                      <h2 class="text-black text-sm font-semibold">
+                        For Harley Sportster 883 X....
+                      </h2>
+
+                      <div class="flex items-center gap-2">
+                        <p class="text-[10px]">
+                          <span class="text-[#525468]">Manufacturer:</span>
+                          <span class="text-[#09090B]">ZZVF</span>
+                        </p>
+
+                        <p class="text-[10px]">
+                          <span class="text-[#525468]">Manufacturer:</span>
+                          <span class="text-[#09090B]">ZZVF</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="text-[#383941] text-base">
+                    $100
+                  </p>
+                </div>
+
+                <div>
+                  <p class="text-[#383941] text-xs font-semibold">
+                    Qty:
+                    <span class="text-[#525468] font-normal"> 1</span>
+                  </p>
+                </div>
+
+                <div>
+                  <div class="flex justify-end mb-2">
+                    <button
+                      class="flex items-center gap-1 border border-[#3786FC] rounded-[44px] py-[7px] px-3 bg-[#3786fc1a]">
+                      <div class="h-[7px] w-[7px] bg-[#3786FC] rounded-full"></div>
+                      <span class="text-[#3786FC] text-[10px] font-medium uppercase">In progress</span>
+                    </button>
+                  </div>
+
+                  <p class="text-[#7D7F85] text-[10px]">
+                    Delivered On: 05 Feb 2024
+                  </p>
+                </div>
+              </div>
+
+              <ol class="flex items-center w-full ml-24 mt-7 mb-16">
+                <li
+                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block   relative">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
+                  </span>
+                  <span class="absolute -bottom-8 -left-8 text-[#525468] text-sm">
+                    Payment Pending
+                  </span>
+                </li>
+
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
+                  </span>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#525468] text-sm">
+                    Processing
+                  </span>
+                </li>
+
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
+                  </span>
+                  <span class="absolute -bottom-8 -left-0.5 text-[#525468] text-sm">
+                    Shipped
+                  </span>
+                </li>
+
+                <li class="flex items-center w-full relative">
+                  <span class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full   shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M3.75 10.625L8.75 15.625L17 5.5" stroke="#0F766D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#0F766D] text-sm">
+                    Delivered
+                  </span>
+                </li>
+              </ol>
+
+              <div class="border border-[#D9D9D9] rounded-lg ml-16 xl:mr-10 py-4">
+                <p class="text-sm pl-4">
                   <span class="text-[#525468]">
                     Tue, Oct 07, 2024, 5:20pm
                   </span>
@@ -1084,380 +1267,52 @@
                 </div>
               </div>
 
-              <ol class="flex items-center w-full ml-24 my-7">
+              <ol class="flex items-center w-full ml-24 mt-7 mb-16">
                 <li
-                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
+                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block   relative">
                   <span
                     class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
                   </span>
-
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
+                  <span class="absolute -bottom-8 -left-8 text-[#525468] text-sm">
+                    Payment Pending
                   </span>
                 </li>
 
                 <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
                   <span
                     class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
+                  </span>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#525468] text-sm">
+                    Processing
                   </span>
                 </li>
 
-                <li class="flex items-center w-full">
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  relative">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
+                  </span>
+                  <span class="absolute -bottom-8 -left-0.5 text-[#525468] text-sm">
+                    Shipped
+                  </span>
+                </li>
+
+                <li class="flex items-center w-full relative">
                   <span class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full   shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M3.75 10.625L8.75 15.625L17 5.5" stroke="#0F766D" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                     </svg>
                   </span>
-                </li>
-              </ol>
-
-              <div class="border border-[#D9D9D9] rounded-lg ml-24 mr-14 py-4">
-                <p class="text-sm text-center">
-                  <span class="text-[#525468]">
-                    Tue, Oct 07, 2024, 5:20pm
-                  </span>
-                  <span class="text-[#09090B]">
-                    It has been delivered. Thanks For order from Auto Car
-                  </span>
-                </p>
-                <a href="#" class="block text-center mt-2 text-[#0F766D] text-base">
-                  View more
-                </a>
-              </div>
-
-              <div class="flex items-center justify-end gap-8 mt-6">
-                <div class="flex items-center gap-2">
-                  <p class="text-[#09090B] text-base">
-                    Support
-                  </p>
-
-                  <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M9.99992 0C4.48554 0 0 4.48554 0 9.99992C0 12.1869 0.705474 14.215 1.90471 15.8612L0.658354 19.5766L4.50312 18.3481C6.08447 19.3946 7.97159 20 10.0057 20C15.5201 20 20.0056 15.5143 20.0056 10.0001C20.0056 4.4857 15.5201 0.000165983 10.0057 0.000165983H9.99992V0Z"
-                        fill="url(#paint0_linear_308_14740)" />
-                      <path
-                        d="M7.20726 5.07976C7.0133 4.61537 6.8663 4.59778 6.57247 4.58583C6.46089 4.57865 6.34912 4.57477 6.23731 4.57422C5.85504 4.57422 5.45535 4.68588 5.21428 4.93276C4.92044 5.23257 4.19141 5.93207 4.19141 7.36658C4.19141 8.80109 5.23784 10.1885 5.37887 10.3826C5.52587 10.5764 7.41897 13.5629 10.3583 14.78C12.6569 15.7324 13.339 15.6441 13.8621 15.5325C14.6264 15.3679 15.5847 14.8033 15.8258 14.1215C16.0668 13.4394 16.0668 12.8574 15.9962 12.734C15.9256 12.6105 15.7315 12.5402 15.4377 12.393C15.1438 12.246 13.7151 11.5405 13.4447 11.4465C13.1801 11.3466 12.9274 11.3819 12.7276 11.6641C12.4454 12.058 12.1691 12.4579 11.9457 12.6988C11.7693 12.8869 11.4811 12.9105 11.2402 12.8104C10.9168 12.6754 10.0116 12.3577 8.89446 11.3642C8.0302 10.5941 7.44236 9.63598 7.27197 9.34795C7.1014 9.05411 7.25438 8.88339 7.38944 8.72477C7.53644 8.54243 7.67747 8.41318 7.82447 8.24262C7.97147 8.07222 8.05376 7.98396 8.14784 7.78403C8.24788 7.59007 8.1772 7.39014 8.10669 7.24314C8.03618 7.09614 7.44834 5.66163 7.20726 5.07976Z"
-                        fill="#FEFEFE" />
-                      <defs>
-                        <linearGradient id="paint0_linear_308_14740" x1="-75.1672" y1="-33.5038" x2="-75.1672"
-                          y2="-32.77" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#6EBF61" />
-                          <stop offset="0.231" stop-color="#50A557" />
-                          <stop offset="0.522" stop-color="#2A904F" />
-                          <stop offset="0.812" stop-color="#50A557" />
-                          <stop offset="1" stop-color="#6EBF63" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <p class="text-[#383941] text-base">
-                      +880 1707 878583
-                    </p>
-                  </div>
-                </div>
-
-                <a href="" class="text-[#F9851A] text-base">
-                  Write Review
-                </a>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-2xl category-shadow p-6 mt-4">
-              <div class="flex justify-between items-center w-full">
-                <div class="flex items-center gap-2.5">
-                  <figure>
-                    <img src="./assets/image/profile/MyOrder.png" alt="" />
-                  </figure>
-
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <div class="flex items-center gap-1.5">
-                        <figure>
-                          <img src="./assets/image/profile/Nextage.svg" alt="" />
-                        </figure>
-                        <p class="text-[#1A202C] text-[10px] font-semibold">
-                          Nextage
-                        </p>
-                      </div>
-
-                      <div class="flex items-center gap-1.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                          <path
-                            d="M10.9478 10.3275L8.31715 12.9582C8.20211 13.0733 8.06549 13.1647 7.91512 13.227C7.76474 13.2893 7.60356 13.3214 7.44078 13.3214C7.278 13.3214 7.11682 13.2893 6.96644 13.227C6.81607 13.1647 6.67946 13.0733 6.56441 12.9582L3.93313 10.3275C3.23949 9.63383 2.76712 8.75004 2.57576 7.7879C2.3844 6.82577 2.48263 5.82849 2.85805 4.92218C3.23347 4.01588 3.86921 3.24124 4.68487 2.69624C5.50053 2.15124 6.45949 1.86035 7.44047 1.86035C8.42146 1.86035 9.38041 2.15124 10.1961 2.69624C11.0117 3.24124 11.6475 4.01588 12.0229 4.92218C12.3983 5.82849 12.4965 6.82577 12.3052 7.7879C12.1138 8.75004 11.6415 9.63383 10.9478 10.3275V10.3275Z"
-                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M9.30008 6.82094C9.30008 7.31424 9.10411 7.78734 8.7553 8.13616C8.40648 8.48497 7.93338 8.68094 7.44008 8.68094C6.94678 8.68094 6.47368 8.48497 6.12486 8.13616C5.77604 7.78734 5.58008 7.31424 5.58008 6.82094C5.58008 6.32763 5.77604 5.85454 6.12486 5.50572C6.47368 5.1569 6.94678 4.96094 7.44008 4.96094C7.93338 4.96094 8.40648 5.1569 8.7553 5.50572C9.10411 5.85454 9.30008 6.32763 9.30008 6.82094V6.82094Z"
-                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="text-[#4A5568] text-[10px]">
-                          Dhaka
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="mt-0.5">
-                      <h2 class="text-black text-sm font-semibold">
-                        For Harley Sportster 883 X....
-                      </h2>
-
-                      <div class="flex items-center gap-2">
-                        <p class="text-[10px]">
-                          <span class="text-[#525468]">Manufacturer:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </p>
-
-                        <p class="text-[10px]">
-                          <span class="text-[#525468]">Manufacturer:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <p class="text-[#383941] text-base">
-                    $100
-                  </p>
-                </div>
-
-                <div>
-                  <p class="text-[#383941] text-xs font-semibold">
-                    Qty:
-                    <span class="text-[#525468] font-normal"> 1</span>
-                  </p>
-                </div>
-
-                <div>
-                  <div class="flex justify-end mb-2">
-                    <button
-                      class="flex items-center gap-1 border border-[#0F766D] rounded-[44px] py-[7px] px-3 bg-[#0f766d1a]">
-                      <div class="h-[7px] w-[7px] bg-[#0F766D] rounded-full"></div>
-                      <span class="text-[#0F766D] text-[10px] font-medium uppercase">Delivered</span>
-                    </button>
-                  </div>
-
-                  <p class="text-[#7D7F85] text-[10px]">
-                    Delivered On: 05 Feb 2024
-                  </p>
-                </div>
-              </div>
-
-              <ol class="flex items-center w-full ml-24 my-7">
-                <li
-                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-                </li>
-
-                <li class="flex items-center w-full">
-                  <span class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full   shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M3.75 10.625L8.75 15.625L17 5.5" stroke="#0F766D" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
+                  <span class="absolute -bottom-8 -left-2.5 text-[#0F766D] text-sm">
+                    Delivered
                   </span>
                 </li>
               </ol>
 
-              <div class="border border-[#D9D9D9] rounded-lg ml-24 mr-14 py-4">
-                <p class="text-sm text-center">
-                  <span class="text-[#525468]">
-                    Tue, Oct 07, 2024, 5:20pm
-                  </span>
-                  <span class="text-[#09090B]">
-                    It has been delivered. Thanks For order from Auto Car
-                  </span>
-                </p>
-                <a href="#" class="block text-center mt-2 text-[#0F766D] text-base">
-                  View more
-                </a>
-              </div>
-
-              <div class="flex items-center justify-end gap-8 mt-6">
-                <div class="flex items-center gap-2">
-                  <p class="text-[#09090B] text-base">
-                    Support
-                  </p>
-
-                  <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path
-                        d="M9.99992 0C4.48554 0 0 4.48554 0 9.99992C0 12.1869 0.705474 14.215 1.90471 15.8612L0.658354 19.5766L4.50312 18.3481C6.08447 19.3946 7.97159 20 10.0057 20C15.5201 20 20.0056 15.5143 20.0056 10.0001C20.0056 4.4857 15.5201 0.000165983 10.0057 0.000165983H9.99992V0Z"
-                        fill="url(#paint0_linear_308_14740)" />
-                      <path
-                        d="M7.20726 5.07976C7.0133 4.61537 6.8663 4.59778 6.57247 4.58583C6.46089 4.57865 6.34912 4.57477 6.23731 4.57422C5.85504 4.57422 5.45535 4.68588 5.21428 4.93276C4.92044 5.23257 4.19141 5.93207 4.19141 7.36658C4.19141 8.80109 5.23784 10.1885 5.37887 10.3826C5.52587 10.5764 7.41897 13.5629 10.3583 14.78C12.6569 15.7324 13.339 15.6441 13.8621 15.5325C14.6264 15.3679 15.5847 14.8033 15.8258 14.1215C16.0668 13.4394 16.0668 12.8574 15.9962 12.734C15.9256 12.6105 15.7315 12.5402 15.4377 12.393C15.1438 12.246 13.7151 11.5405 13.4447 11.4465C13.1801 11.3466 12.9274 11.3819 12.7276 11.6641C12.4454 12.058 12.1691 12.4579 11.9457 12.6988C11.7693 12.8869 11.4811 12.9105 11.2402 12.8104C10.9168 12.6754 10.0116 12.3577 8.89446 11.3642C8.0302 10.5941 7.44236 9.63598 7.27197 9.34795C7.1014 9.05411 7.25438 8.88339 7.38944 8.72477C7.53644 8.54243 7.67747 8.41318 7.82447 8.24262C7.97147 8.07222 8.05376 7.98396 8.14784 7.78403C8.24788 7.59007 8.1772 7.39014 8.10669 7.24314C8.03618 7.09614 7.44834 5.66163 7.20726 5.07976Z"
-                        fill="#FEFEFE" />
-                      <defs>
-                        <linearGradient id="paint0_linear_308_14740" x1="-75.1672" y1="-33.5038" x2="-75.1672"
-                          y2="-32.77" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#6EBF61" />
-                          <stop offset="0.231" stop-color="#50A557" />
-                          <stop offset="0.522" stop-color="#2A904F" />
-                          <stop offset="0.812" stop-color="#50A557" />
-                          <stop offset="1" stop-color="#6EBF63" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <p class="text-[#383941] text-base">
-                      +880 1707 878583
-                    </p>
-                  </div>
-                </div>
-
-                <a href="" class="text-[#F9851A] text-base">
-                  Write Review
-                </a>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-2xl category-shadow p-6 mt-4">
-              <div class="flex justify-between items-center w-full">
-                <div class="flex items-center gap-2.5">
-                  <figure>
-                    <img src="./assets/image/profile/MyOrder.png" alt="" />
-                  </figure>
-
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <div class="flex items-center gap-1.5">
-                        <figure>
-                          <img src="./assets/image/profile/Nextage.svg" alt="" />
-                        </figure>
-                        <p class="text-[#1A202C] text-[10px] font-semibold">
-                          Nextage
-                        </p>
-                      </div>
-
-                      <div class="flex items-center gap-1.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                          <path
-                            d="M10.9478 10.3275L8.31715 12.9582C8.20211 13.0733 8.06549 13.1647 7.91512 13.227C7.76474 13.2893 7.60356 13.3214 7.44078 13.3214C7.278 13.3214 7.11682 13.2893 6.96644 13.227C6.81607 13.1647 6.67946 13.0733 6.56441 12.9582L3.93313 10.3275C3.23949 9.63383 2.76712 8.75004 2.57576 7.7879C2.3844 6.82577 2.48263 5.82849 2.85805 4.92218C3.23347 4.01588 3.86921 3.24124 4.68487 2.69624C5.50053 2.15124 6.45949 1.86035 7.44047 1.86035C8.42146 1.86035 9.38041 2.15124 10.1961 2.69624C11.0117 3.24124 11.6475 4.01588 12.0229 4.92218C12.3983 5.82849 12.4965 6.82577 12.3052 7.7879C12.1138 8.75004 11.6415 9.63383 10.9478 10.3275V10.3275Z"
-                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M9.30008 6.82094C9.30008 7.31424 9.10411 7.78734 8.7553 8.13616C8.40648 8.48497 7.93338 8.68094 7.44008 8.68094C6.94678 8.68094 6.47368 8.48497 6.12486 8.13616C5.77604 7.78734 5.58008 7.31424 5.58008 6.82094C5.58008 6.32763 5.77604 5.85454 6.12486 5.50572C6.47368 5.1569 6.94678 4.96094 7.44008 4.96094C7.93338 4.96094 8.40648 5.1569 8.7553 5.50572C9.10411 5.85454 9.30008 6.32763 9.30008 6.82094V6.82094Z"
-                            stroke="#4A5568" stroke-width="1.06286" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="text-[#4A5568] text-[10px]">
-                          Dhaka
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="mt-0.5">
-                      <h2 class="text-black text-sm font-semibold">
-                        For Harley Sportster 883 X....
-                      </h2>
-
-                      <div class="flex items-center gap-2">
-                        <p class="text-[10px]">
-                          <span class="text-[#525468]">Manufacturer:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </p>
-
-                        <p class="text-[10px]">
-                          <span class="text-[#525468]">Manufacturer:</span>
-                          <span class="text-[#09090B]">ZZVF</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <p class="text-[#383941] text-base">
-                    $100
-                  </p>
-                </div>
-
-                <div>
-                  <p class="text-[#383941] text-xs font-semibold">
-                    Qty:
-                    <span class="text-[#525468] font-normal"> 1</span>
-                  </p>
-                </div>
-
-                <div>
-                  <div class="flex justify-end mb-2">
-                    <button
-                      class="flex items-center gap-1 border border-[#0F766D] rounded-[44px] py-[7px] px-3 bg-[#0f766d1a]">
-                      <div class="h-[7px] w-[7px] bg-[#0F766D] rounded-full"></div>
-                      <span class="text-[#0F766D] text-[10px] font-medium uppercase">Delivered</span>
-                    </button>
-                  </div>
-
-                  <p class="text-[#7D7F85] text-[10px]">
-                    Delivered On: 05 Feb 2024
-                  </p>
-                </div>
-              </div>
-
-              <ol class="flex items-center w-full ml-24 my-7">
-                <li
-                  class="flex w-full items-center text-blue-600   after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-                </li>
-
-                <li
-                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#C1E1DF] after:border-[6px] after:inline-block  ">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full lg:h-12 lg:w-12  shrink-0">
-
-                  </span>
-                </li>
-
-                <li class="flex items-center w-full">
-                  <span class="flex items-center justify-center w-10 h-10 bg-[#C1E1DF] rounded-full   shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M3.75 10.625L8.75 15.625L17 5.5" stroke="#0F766D" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </li>
-              </ol>
-
-              <div class="border border-[#D9D9D9] rounded-lg ml-24 mr-14 py-4">
-                <p class="text-sm text-center">
+              <div class="border border-[#D9D9D9] rounded-lg ml-16 xl:mr-10 py-4">
+                <p class="text-sm pl-4">
                   <span class="text-[#525468]">
                     Tue, Oct 07, 2024, 5:20pm
                   </span>
