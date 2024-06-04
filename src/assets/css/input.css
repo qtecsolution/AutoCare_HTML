@@ -208,4 +208,46 @@
   }
 
   /* end scroll bar  */
+
+  /* Start Toggle button Apply point */
+  .apply-point {
+    @apply relative inline-block w-[42px] h-6;
+  }
+
+  .apply-point input {
+    @apply opacity-0 w-0 h-0;
+  }
+
+  .toggle-button {
+    @apply absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-[#F3F4F6];
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .toggle-button:before {
+    @apply absolute h-5 w-5 left-0.5 bottom-0.5 rounded-full bg-white;
+    content: "";
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked+.toggle-button {
+    @apply bg-teal-700;
+  }
+
+  input:focus+.toggle-button {
+    box-shadow: 0 0 1px #E5E7EB;
+  }
+
+  input:checked+.toggle-button:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+
+  .toggle-button.round {
+    @apply rounded-[34px];
+  }
+
+  /* End Toggle button Apply point */
 }
