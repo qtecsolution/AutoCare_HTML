@@ -3346,16 +3346,16 @@ input:checked+.toggle-button:before {
   background-size: cover;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-right {
   background-position: right;
 }
 
 .bg-right-bottom {
   background-position: right bottom;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-no-repeat {
