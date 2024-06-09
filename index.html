@@ -346,7 +346,7 @@
               </button>
 
               <!-- Sign modal -->
-              <div id="sign-modal" tabindex="-1" 849px aria-hidden="true"
+              <div id="sign-modal" tabindex="-1" aria-hidden="true"
                 class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative p-4 w-full max-w-[560px] max-h-full">
                   <!-- Modal content -->
@@ -605,22 +605,24 @@
   </section>
 
   <!-- hero section -->
-  <section class="container mx-auto mt-6 mb-10 px-3 2xl:px-0 hidden lg:block">
-    <div class="grid md:grid-cols-3 gap-3">
+  <section class="container mx-auto mt-6 mb-10 px-3 2xl:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
       <aside class="col-span-2">
         <div class="swiper mySwiper w-full h-full">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]"
+                src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"
+                alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./src/assets/image/home/hero-slide.png" alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./src/assets/image/home/hero-slide.png" alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./src/assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./src/assets/image/home/hero-slide.png" alt="" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -628,7 +630,6 @@
       </aside>
 
       <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
-
         <div class="relative z-10">
           <img class="w-[72%] xl:w-[80%] 2xl:w-[83%]" src="./src/assets/image/home/hero-right1.png" alt="" />
         </div>
@@ -2588,7 +2589,7 @@
     </section>
 
     <!-- Browse All Product -->
-    <section class="container mx-auto my-10 px-3 2xl:px-0 hidden lg:block">
+    <section class="container mx-auto my-10 px-3 2xl:px-0">
       <div class="py-5 xl:py-6 pl-10 bg-no-repeat 2xl:bg-cover rounded-3xl overflow-hidden bg-right"
         style="background-image: url('./src/assets/image/home/browse-all-product.png')">
         <div class="mb-5">
@@ -2633,7 +2634,7 @@
                       </div>
 
                       <div>
-                        <div class="flex justify-between w-full">
+                        <div class="flex justify-between">
                           <h2 class="text-[#042F2B] font-semibold text-base">
                             Nextage
                           </h2>
@@ -3308,8 +3309,8 @@
     </section>
 
     <!-- Car Servicing Centre -->
-    <section class="container mx-auto my-10 px-3 2xl:px-0 hidden lg:block">
-      <div class="py-5 px-10 2xl:py-11 2xl:px-16 bg-no-repeat 2xl:bg-cover rounded-[34px] overflow-hidden "
+    <section class="container mx-auto my-10 px-3 2xl:px-0 ">
+      <div class="py-5 px-10 2xl:py-11 2xl:px-16 bg-no-repeat bg-center 2xl:bg-cover rounded-[34px] overflow-hidden "
         style="background-image: url('./src/assets/image/home/car-servicing-centre.png')">
         <div class="md:flex justify-between">
           <div class="mb-3 md:mb-0">
@@ -3355,7 +3356,7 @@
     <!-- Just for you section -->
     <section class="my-10">
       <div class="container mx-auto px-3 2xl:px-0">
-        <div class="px-6 md:p-0">
+        <div class="">
           <div class="flex justify-between items-center mb-6">
             <h1 class="font-semibold text-2xl text-[#09090B]">
               Just for you
@@ -3875,7 +3876,7 @@
 
     <!-- car service -->
     <section class="container mx-auto my-10 px-3 2xl:px-0">
-      <div class="px-6 md:p-0 md:flex justify-between items-center gap-3">
+      <div class="md:flex justify-between items-center gap-3">
         <div>
           <img class="rounded-2xl w-full lg:w-[330px] xl:w-full 2xl:w-[484px]"
             src="./src/assets/image/home/carservice1.png" alt="" />
@@ -3890,8 +3891,8 @@
     <!-- Recently Viewed Product & Service  -->
     <section class="bg-[#F4F5F7] py-16">
       <div class="container mx-auto px-3 2xl:px-0">
-        <div class="px-6 md:p-0 lg:grid lg:grid-cols-3 lg:gap-6">
-          <aside class="col-span-2 ">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
+          <aside class="col-span-2">
             <h2 class="text-[#09090B] font-semibold text-lg lg:text-2xl">
               Recently Viewed Product
             </h2>
@@ -4149,16 +4150,16 @@
             </div>
           </aside>
 
-          <aside class="mt-5 lg:mt-0">
+          <aside class="mt-6 lg:mt-0">
             <h2 class="text-[#09090B] font-semibold text-lg lg:text-2xl">
               Recently Viewed Service
             </h2>
 
-            <div class="grid gap-2.5 mt-6">
-              <a href="./src/service-grid-page.html">
+            <div class="flex flex-col gap-3 mt-6">
+              <a class="block" href="./src/service-grid-page.html">
                 <div
-                  class="flex items-center gap-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
-                  <div class="flex justify-center items-center">
+                  class="flex items-center gap-3 pr-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
+                  <div>
                     <img src="./src/assets/image/home/service1.png" alt="" />
                   </div>
 
@@ -4192,7 +4193,7 @@
                 </div>
               </a>
 
-              <a href="./src/service-grid-page.html">
+              <a class="block" href="./src/service-grid-page.html">
                 <div
                   class="flex items-center gap-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                   <div class="flex justify-center items-center">
@@ -4229,7 +4230,7 @@
                 </div>
               </a>
 
-              <a href="./src/service-grid-page.html">
+              <a class="block" href="./src/service-grid-page.html">
                 <div
                   class="flex items-center gap-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                   <div class="flex justify-center items-center">
@@ -4266,7 +4267,7 @@
                 </div>
               </a>
 
-              <a href="./src/service-grid-page.html">
+              <a class="block" href="./src/service-grid-page.html">
                 <div
                   class="flex items-center gap-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                   <div class="flex justify-center items-center">
@@ -4303,7 +4304,7 @@
                 </div>
               </a>
 
-              <a href="./src/service-grid-page.html">
+              <a class="block" href="./src/service-grid-page.html">
                 <div
                   class="flex items-center gap-3 bg-white rounded-2xl hotServiceShadow cursor-pointer transition-all hover:hoverShadow">
                   <div class="flex justify-center items-center">
@@ -4348,7 +4349,7 @@
 
     <!-- Best car  -->
     <section class="container mx-auto my-10 px-3 2xl:px-0">
-      <div class="px-6 md:p-0 md:grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-3 gap-6">
         <div>
           <img class="w-full" src="./src/assets/image/home/best-car1.png" alt="" />
         </div>
@@ -4498,7 +4499,7 @@
 
     <!-- Get Clients  -->
     <section class="container mx-auto my-10 px-3 2xl:px-0">
-      <div class="md:grid md:grid-cols-2 md:gap-7">
+      <div class="grid lg:grid-cols-2 gap-7">
         <aside class="bg-no-repeat bg-cover rounded-[32px]"
           style="background-image: url('./src/assets/image/home/get-clients1.png')">
           <div>

@@ -3354,6 +3354,10 @@ input:checked+.toggle-button:before {
   background-position: right bottom;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
