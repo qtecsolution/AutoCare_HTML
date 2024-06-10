@@ -29,7 +29,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0 hidden lg:block">
     <div class="container mx-auto">
       <nav class="md:flex  justify-between items-center">
         <ul class="flex gap-[40px]">
@@ -95,7 +95,7 @@
     </div>
   </section>
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -468,8 +468,8 @@
   </header>
 
   <!-- Search for Products -->
-  <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
-    <div class="container mx-auto">
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-white ">
+    <div class="container mx-auto hidden lg:block">
       <div class="py-10">
         <div class="flex justify-center gap-5 mb-1">
           <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
@@ -550,7 +550,7 @@
     </div>
 
     <!-- Ad section -->
-    <div class=" w-[970px] xl:w-[1078px] mx-auto mb-10">
+    <div class=" w-[970px] xl:w-[1078px] mx-auto mb-10 hidden lg:block">
       <div class="bg-no-repeat xl:bg-cover xl:pb-[11px] rounded-xl"
         style="background-image: url('./assets/image/product-grid-page/ad.png')">
         <div class="flex justify-between items-center">
@@ -600,8 +600,8 @@
   <main>
     <!-- product-grid section -->
     <section class="container mx-auto mb-5 px-3 2xl:px-0">
-      <div class="grid grid-cols-4 gap-12">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-12">
+        <div class="mb-6 lg:mb-0">
           <div class="mb-5">
             <!-- Breadcrumb -->
             <nav class="flex" aria-label="Breadcrumb">
@@ -953,7 +953,7 @@
         </div>
 
         <div class="col-span-3">
-          <div class="flex justify-between items-center mb-5">
+          <div class="flex flex-wrap gap-5 justify-between items-center mb-5">
             <div class="flex items-center gap-2 xl:gap-10">
               <div class="w-44 border border-[#E4E5E9] rounded-lg py-[7px] px-3">
                 <button id="dhaka" data-dropdown-toggle="dhaka1" class="flex gap-[7px] items-center relative">
@@ -1052,7 +1052,7 @@
           </div>
 
 
-          <div class="grid grid-cols-3 gap-4 gap-y-5">
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-5">
             <a href="./single-product-page.html">
               <div class="bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
                 <div
@@ -1625,8 +1625,8 @@
 
     <!-- add section -->
     <section class="container mx-auto mb-10 px-3 2xl:px-0">
-      <div class="grid grid-cols-4 gap-12">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-12">
+        <div class="hidden lg:block">
           <div class="relative">
             <img class="w-full" src="./assets/image/product-grid-page/add2.png" alt="add2">
             <i class="fa-solid fa-x absolute top-3 right-5 2xl:right-5 cursor-pointer text-[#CBCBCB]"></i>
@@ -1648,7 +1648,7 @@
 
     <!-- Get Clients  -->
     <section class="container mx-auto my-10 px-3 2xl:px-0">
-      <div class="md:grid md:grid-cols-2 md:gap-7">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
         <aside class="bg-no-repeat bg-cover rounded-[32px]"
           style="background-image: url('./assets/image/home/get-clients1.png')">
           <div>
@@ -1883,43 +1883,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -1935,12 +1936,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">
