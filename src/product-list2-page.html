@@ -28,7 +28,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0 hidden lg:block">
     <div class="container mx-auto">
       <nav class="md:flex  justify-between items-center">
         <ul class="flex gap-[40px]">
@@ -94,7 +94,7 @@
     </div>
   </section>
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -127,20 +127,34 @@
               <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                 <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
                   <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100   ">Dashboard</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100   ">Settings</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
                   </li>
                 </ul>
               </div>
             </ul>
           </div>
+
           <div class="flex items-center gap-1.5">
             <div class="flex items-center bg-[#F4F5F7] ps-2 pr-4 py-[6px] gap-4 rounded-xl">
               <button data-modal-target="login-modal" data-modal-toggle="login-modal" type="button"
-                class="flex items-center gap-2 border-2 px-5 py-2 rounded-lg bg-white border-white shadow-[0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)] text-[#0F766D] font-bold">
-                <img src="./assets/image/home/user.svg" alt="" />
+                class="login-singUp-inactive">
+                <svg class="fill-[#000]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="vuesax/linear/user">
+                    <g id="user">
+                      <path id="Vector"
+                        d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2"
+                        d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </svg>
+
                 <span>Login</span>
               </button>
 
@@ -302,7 +316,7 @@
               </div>
 
               <button data-modal-target="sign-modal" data-modal-toggle="sign-modal" type="button"
-                class="text-[#09090B] font-bold text-sm w-16">
+                class="login-singUp-active">
                 Sign Up
               </button>
 
@@ -466,8 +480,8 @@
   </header>
 
   <!-- Search for Products -->
-  <section class="bg-gradient-to-b from-[#EDF6F6] to-white">
-    <div class="container mx-auto">
+  <section class="bg-gradient-to-b from-[#EDF6F6] to-white ">
+    <div class="container mx-auto hidden lg:block">
       <div class="py-10">
         <div class="flex justify-center gap-5 mb-1">
           <div class="flex items-center gap-2 bg-white py-2 px-5 rounded-t-lg cursor-pointer">
@@ -532,7 +546,7 @@
 
             <div>
               <input
-                class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base"
+                class="border-none focus:ring-0 text-[14px] xl:text-base placeholder:text-[11px] xl:placeholder:text-base w-[80%] xl:w-full"
                 type="text" name="" id="" placeholder="Keyword">
             </div>
 
@@ -548,7 +562,7 @@
     </div>
 
     <!-- Ad section -->
-    <div class=" w-[970px] xl:w-[1078px] mx-auto mb-10">
+    <div class=" w-[970px] xl:w-[1078px] mx-auto mb-10 hidden lg:block">
       <div class="bg-no-repeat xl:bg-cover xl:pb-[11px] rounded-xl"
         style="background-image: url('./assets/image/product-grid-page/ad.png')">
         <div class="flex justify-between items-center">
@@ -597,8 +611,8 @@
   <main>
     <!-- product-list section -->
     <section class="container mx-auto mb-5 px-3 2xl:px-0">
-      <div class="grid grid-cols-4 gap-12">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-12">
+        <div class="mb-6 lg:mb-0">
           <div class="mb-5">
             <!-- Breadcrumb -->
             <nav class="flex" aria-label="Breadcrumb">
@@ -2029,8 +2043,8 @@
 
     <!-- add section -->
     <section class="container mx-auto mb-10 px-3 2xl:px-0">
-      <div class="grid grid-cols-4 gap-12">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-12">
+        <div class="hidden lg:block">
           <div class="relative">
             <img class="w-full" src="./assets/image/product-grid-page/add2.png" alt="add2">
             <i class="fa-solid fa-x absolute top-3 right-5 2xl:right-5 cursor-pointer text-[#CBCBCB]"></i>
@@ -2052,7 +2066,7 @@
 
     <!-- Get Clients  -->
     <section class="container mx-auto my-10 px-3 2xl:px-0">
-      <div class="md:grid md:grid-cols-2 md:gap-7">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
         <aside class="bg-no-repeat bg-cover rounded-[32px]"
           style="background-image: url('./assets/image/home/get-clients1.png')">
           <div>
@@ -2099,7 +2113,7 @@
 
   <!-- footer section -->
   <footer class="bg-[#1F1E28]">
-    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 xl:px-0">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 2xl:px-0">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center justify-center md:justify-start gap-3">
@@ -2287,43 +2301,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -2339,12 +2354,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">

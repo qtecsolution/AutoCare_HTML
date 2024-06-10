@@ -249,5 +249,18 @@
     @apply rounded-[34px];
   }
 
+  .login-singUp-active {
+    @apply flex items-center gap-2 border-2 px-5 py-2 rounded-lg text-sm bg-white border-white text-[#0F766D] font-bold;
+  }
+
+  .login-singUp-active svg {
+    fill: #0F766D;
+  }
+
+  .login-singUp-inactive {
+    @apply flex items-center gap-2 text-[#09090B] font-bold text-sm w-16
+  }
+
+
   /* End Toggle button Apply point */
 }
