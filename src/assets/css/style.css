@@ -1275,6 +1275,10 @@ input:checked+.toggle-button:before {
   top: 9px;
 }
 
+.left-48 {
+  left: 12rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -5036,6 +5040,11 @@ input:checked+.toggle-button:before {
 }
 
 @media (min-width: 640px) {
+  .sm\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -5046,6 +5055,10 @@ input:checked+.toggle-button:before {
 
   .sm\:inline {
     display: inline;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:w-1\/2 {
@@ -5135,6 +5148,10 @@ input:checked+.toggle-button:before {
 
   .md\:top-\[-7px\] {
     top: -7px;
+  }
+
+  .md\:left-72 {
+    left: 18rem;
   }
 
   .md\:mb-0 {
