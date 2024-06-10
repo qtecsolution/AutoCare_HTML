@@ -32,7 +32,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="bg-[#EDF7F7] py-[10px]">
+  <section class="bg-[#EDF7F7] py-[10px] hidden lg:block">
     <nav class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center">
 
       <ul class="flex gap-[40px]">
@@ -99,7 +99,7 @@
   </section>
 
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -524,10 +524,10 @@
 
   <!-- product details -->
   <section class="container mx-auto -mt-40 px-3">
-    <div class="flex justify-between 2xl:justify-start 2xl:gap-10">
-      <div class="w-[300px] xl:w-[390px] 2xl:w-[480px]">
+    <div class="flex flex-wrap justify-center md:justify-between 2xl:justify-start gap-10 lg:gap-0 2xl:gap-10">
+      <div class="w-full lg:w-[300px] xl:w-[390px] 2xl:w-[480px]">
         <ul id="lightSlider" class="h-full">
-          <li class="flex justify-center items-center relative"
+          <li class="flex justify-center items-center h-full relative"
             data-thumb="./assets/image/single-product-page/product1.png">
             <img src="./assets/image/single-product-page/product1.png" />
             <div data-modal-target="video-modal" data-modal-toggle="video-modal"
@@ -539,16 +539,20 @@
               </svg>
             </div>
           </li>
-          <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product2.png">
+          <li class="flex justify-center items-center h-full"
+            data-thumb="./assets/image/single-product-page/product2.png">
             <img src="./assets/image/single-product-page/product2.png" />
           </li>
-          <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product3.png">
+          <li class="flex justify-center items-center h-full"
+            data-thumb="./assets/image/single-product-page/product3.png">
             <img src="./assets/image/single-product-page/product3.png" />
           </li>
-          <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product4.png">
+          <li class="flex justify-center items-center h-full"
+            data-thumb="./assets/image/single-product-page/product4.png">
             <img src="./assets/image/single-product-page/product4.png" />
           </li>
-          <li class="flex justify-center items-center" data-thumb="./assets/image/single-product-page/product5.png">
+          <li class="flex justify-center items-center h-full"
+            data-thumb="./assets/image/single-product-page/product5.png">
             <img src="./assets/image/single-product-page/product5.png" />
           </li>
         </ul>
@@ -590,7 +594,7 @@
       </div>
 
 
-      <div class="">
+      <div class="w-full lg:w-auto">
         <p class="flex items-center gap-1">
           <img src="./assets/image/home/star.svg" alt="" />
           <span class="text-[12px] text-[#282728] font-medium">
@@ -599,7 +603,7 @@
         </p>
 
         <h2 class="text-[#09090B] font-semibold text-2xl leading-8">
-          Purolator Oil Filter 133500I99 <br /> - Fits Toyota Qualis
+          Purolator Oil Filter 133500I99 <br class="hidden lg:block" /> - Fits Toyota Qualis
         </h2>
 
         <h4 class="text-black text-sm font-medium">
@@ -1200,8 +1204,8 @@
         </div>
       </div>
 
-      <div>
-        <div class="shadow p-7 rounded-2xl w-[302px]">
+      <div class="w-full lg:w-auto">
+        <div class="shadow p-7 rounded-2xl lg:w-[302px]">
           <div class="flex gap-3 items-center mb-6">
             <div>
               <img src="./assets/image/single-product-page/verified-product.svg" alt="" />
@@ -1269,7 +1273,7 @@
           </div>
         </div>
 
-        <div class="shadow rounded-2xl w-[302px] my-2">
+        <div class="shadow rounded-2xl lg:w-[302px] my-2">
           <div class="p-5 pb-0">
             <div class="flex justify-between items-center">
               <h5 class="text-[#60637A] text-[10px] font-medium uppercase">Store</h5>
@@ -1303,7 +1307,7 @@
           </div>
         </div>
 
-        <div class="shadow ps-8 p-5  rounded-2xl w-[302px] flex justify-between">
+        <div class="shadow ps-8 p-5  rounded-2xl lg:w-[302px] flex justify-between">
           <p>Share</p>
           <div class="flex gap-2">
             <a href="#" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
@@ -1413,7 +1417,7 @@
         </ul>
       </div>
 
-      <div class="max-w-[900px] category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-14 mb-16">
+      <div class="max-w-[900px] category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-4 lg:px-14 mb-16">
         <div id="specifications">
           <h2 class="text-[20px] font-semibold text-black mt-10 mb-4">Specifications</h2>
           <div class="flex justify-between">
@@ -1539,7 +1543,7 @@
           </ul>
         </div>
 
-        <div id="compatibility">
+        <div id="compatibility" class="hidden sm:block">
           <h2 class="text-[20px] font-semibold text-black">Compatibility</h2>
           <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
             Dress your precious one in the soft embrace of the Lil' Blossom Baby Dress, designed exclusively with the

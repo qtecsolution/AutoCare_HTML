@@ -39,7 +39,7 @@
 
 .lSSlideWrapper {
   border-radius: 24px;
-  /* height: 470px !important; */
+  height: 450px !important;
   border: 10px solid #FFF;
   background: #F6F6F6;
   box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
@@ -47,13 +47,9 @@
 }
 
 #lightSlider {
-  /* height: 480px !important; */
+  height: 480px !important;
   padding-bottom: 5px;
 }
-
-/* #lightSlider li {
-  height: 470px !important;
-} */
 
 
 .lSPager {
@@ -64,14 +60,48 @@
   padding: 2px;
 }
 
+.lSSlideOuter .lSPager.lSGallery img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100% !important;
+}
+
 .lSPager li a img {
-  height: 50px !important;
+  height: 70px !important;
   padding: 5px;
   flex-shrink: 0;
   border-radius: 10px;
   border: 4.217px solid #FFF;
   background: #F6F6F6;
   box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+}
+
+.lSPager li a {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .lSPager li a img {
+    height: 87px !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .lSPager li a img {
+    height: 135px !important;
+  }
+
+  .lSSlideWrapper {
+    height: 500px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lSPager li a img {
+    height: 50px !important;
+  }
 }
 
 .lSPrev,

@@ -1894,6 +1894,18 @@ input:checked+.toggle-button:before {
   height: 100vh;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[1000px\] {
+  height: 1000px;
+}
+
 .max-h-\[440px\] {
   max-height: 440px;
 }
@@ -5353,6 +5365,10 @@ input:checked+.toggle-button:before {
     height: 3rem;
   }
 
+  .lg\:h-\[93\%\] {
+    height: 93%;
+  }
+
   .lg\:w-12 {
     width: 3rem;
   }
@@ -5371,6 +5387,18 @@ input:checked+.toggle-button:before {
 
   .lg\:w-\[650px\] {
     width: 650px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[302px\] {
+    width: 302px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:max-w-\[1260px\] {
@@ -5417,6 +5445,10 @@ input:checked+.toggle-button:before {
     gap: 1.5rem;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:rounded-none {
     border-radius: 0px;
   }
@@ -5458,6 +5490,11 @@ input:checked+.toggle-button:before {
   .lg\:py-\[95px\] {
     padding-top: 95px;
     padding-bottom: 95px;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:pr-10 {
