@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="language" content="English">
-  <title>AutoCare - Checkout</title>
+  <title>AutoCare - Cart</title>
 
   <!-- favicon  -->
   <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
@@ -16,14 +16,19 @@
   <!-- flowbite cdn -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
-  <!-- daterangepicker -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+
+  <!-- lightslider -->
+  <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <link rel="stylesheet" href="./assets/css/custom.css">
-  <!-- daterangepicker -->
-  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
+
+  <!-- nice-select2 -->
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
 </head>
 
 <body class="font-inter">
@@ -566,64 +571,65 @@
             </nav>
           </div>
 
-          <h1 class="text-[#09090B] text-[26px] font-medium mb-6">
+          <h1 class="text-[#09090B] text-2xl font-medium mb-6">
             Shopping Cart (3 items)
           </h1>
 
-          <div class="lg:grid gap-6 grid-cols-3 pb-44">
+          <div class="grid grid-cols-1 lg:gap-6 lg:grid-cols-3 pb-44">
             <div class="col-span-2">
               <div class="max-w-4xl rounded-3xl bg-white category-shadow">
                 <div
-                  class="flex justify-between items-center pl-6 pr-10 py-3 bg-[#F4F5F7] border-t-[5px] border-r-[5px] border-l-[5px] border-white rounded-t-3xl">
+                  class="flex justify-between items-center pl-6 pr-5 sm:pr-16 py-3 bg-[#F4F5F7] border-t-[5px] border-r-[5px] border-l-[5px] border-white rounded-t-3xl">
                   <div>
-                    <label class="label flex items-center text-[#3F3F4B] text-xs font-medium uppercase ps-[39px]">Select
-                      All (4
-                      Items)
+                    <label
+                      class="label flex items-center text-[#3F3F4B] text-[11px] sm:text-xs font-medium uppercase ps-7 sm:ps-[39px]">
+                      Select All (4 Items)
                       <input type="checkbox" class="hidden" />
                       <span class="checkmark top-0"></span>
                     </label>
                   </div>
 
-                  <div class="flex items-center gap-10 ">
-                    <p class="text-[#3F3F4B] uppercase font-medium text-xs">Un Select</p>
-                    <p class="text-[#3F3F4B] uppercase font-medium text-xs">Remove From Cart</p>
+                  <div class="flex items-center gap-5 xl:gap-[73px] sm:pr-28">
+                    <p class="text-[#3F3F4B] uppercase font-medium text-[11px] sm:text-xs">Quantity</p>
+                    <p class="text-[#3F3F4B] uppercase font-medium text-[11px] sm:text-xs">Price</p>
                   </div>
                 </div>
                 <!-- cart-product -->
                 <div>
-                  <div class="flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
-
+                  <div class="sm:flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
                     <div class="flex items-center gap-2.5">
                       <label class="label">
                         <input type="checkbox" class="hidden" />
                         <span class="checkmark -mt-2"></span>
                       </label>
-                      <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
+                      <div class="sm:flex items-center gap-2.5">
+                        <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
 
-                      <div>
-                        <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
-                        <p>
-                          <span class="text-[10px] mr-2">
-                            <span class="text-[#525468]">Manufacturer:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                          <span class="text-[10px]">
-                            <span class="text-[#525468]">Part Number:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                        </p>
-                        <div class="flex items-center gap-5 mt-4 ">
-                          <button class="text-[#D87607] font-medium text-xs">
-                            Save for later
-                          </button>
-                          <button class="text-[#566363] font-medium text-xs">
-                            Remove
-                          </button>
+                        <div class="mt-5 sm:mt-0">
+                          <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
+                          <p>
+                            <span class="text-[10px] mr-2">
+                              <span class="text-[#525468]">Manufacturer:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                            <span class="text-[10px]">
+                              <span class="text-[#525468]">Part Number:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                          </p>
+                          <div class="flex items-center gap-5 mt-4 ">
+                            <button class="text-[#D87607] font-medium text-xs">
+                              Save for later
+                            </button>
+                            <button class="text-[#566363] font-medium text-xs">
+                              Remove
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div>
+                    <div class=" flex my-5 sm:my-0">
                       <div class="flex items-center gap-2 2xl:gap-6 border border-[#0000001a] rounded-lg p-1">
                         <button class="bg-[#F6F6F6] text-[#7D7F85] text-sm font-medium rounded-[5px] px-2">-</button>
                         <h2>6</h2>
@@ -647,40 +653,40 @@
                     </div>
                   </div>
 
-                  <div class="flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
-
+                  <div class="sm:flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
                     <div class="flex items-center gap-2.5">
                       <label class="label">
                         <input type="checkbox" class="hidden" />
                         <span class="checkmark -mt-2"></span>
                       </label>
+                      <div class="sm:flex items-center gap-2.5">
+                        <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
 
-                      <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
-
-                      <div>
-                        <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
-                        <p>
-                          <span class="text-[10px] mr-2">
-                            <span class="text-[#525468]">Manufacturer:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                          <span class="text-[10px]">
-                            <span class="text-[#525468]">Part Number:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                        </p>
-                        <div class="flex items-center gap-5 mt-4 ">
-                          <button class="text-[#D87607] font-medium text-xs">
-                            Save for later
-                          </button>
-                          <button class="text-[#566363] font-medium text-xs">
-                            Remove
-                          </button>
+                        <div class="mt-5 sm:mt-0">
+                          <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
+                          <p>
+                            <span class="text-[10px] mr-2">
+                              <span class="text-[#525468]">Manufacturer:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                            <span class="text-[10px]">
+                              <span class="text-[#525468]">Part Number:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                          </p>
+                          <div class="flex items-center gap-5 mt-4 ">
+                            <button class="text-[#D87607] font-medium text-xs">
+                              Save for later
+                            </button>
+                            <button class="text-[#566363] font-medium text-xs">
+                              Remove
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div>
+                    <div class=" flex my-5 sm:my-0">
                       <div class="flex items-center gap-2 2xl:gap-6 border border-[#0000001a] rounded-lg p-1">
                         <button class="bg-[#F6F6F6] text-[#7D7F85] text-sm font-medium rounded-[5px] px-2">-</button>
                         <h2>6</h2>
@@ -702,44 +708,42 @@
                       <p class="text-[#525468] text-base line-through">1,024 Tk</p>
                       <p class="text-[#0F766D] text-base font-bold">1,024 Tk</p>
                     </div>
-
-
                   </div>
 
-                  <div class="flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
-
+                  <div class="sm:flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
                     <div class="flex items-center gap-2.5">
                       <label class="label">
                         <input type="checkbox" class="hidden" />
                         <span class="checkmark -mt-2"></span>
                       </label>
+                      <div class="sm:flex items-center gap-2.5">
+                        <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
 
-                      <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
-
-                      <div>
-                        <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
-                        <p>
-                          <span class="text-[10px] mr-2">
-                            <span class="text-[#525468]">Manufacturer:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                          <span class="text-[10px]">
-                            <span class="text-[#525468]">Part Number:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                        </p>
-                        <div class="flex items-center gap-5 mt-4 ">
-                          <button class="text-[#D87607] font-medium text-xs">
-                            Save for later
-                          </button>
-                          <button class="text-[#566363] font-medium text-xs">
-                            Remove
-                          </button>
+                        <div class="mt-5 sm:mt-0">
+                          <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
+                          <p>
+                            <span class="text-[10px] mr-2">
+                              <span class="text-[#525468]">Manufacturer:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                            <span class="text-[10px]">
+                              <span class="text-[#525468]">Part Number:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                          </p>
+                          <div class="flex items-center gap-5 mt-4 ">
+                            <button class="text-[#D87607] font-medium text-xs">
+                              Save for later
+                            </button>
+                            <button class="text-[#566363] font-medium text-xs">
+                              Remove
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div>
+                    <div class=" flex my-5 sm:my-0">
                       <div class="flex items-center gap-2 2xl:gap-6 border border-[#0000001a] rounded-lg p-1">
                         <button class="bg-[#F6F6F6] text-[#7D7F85] text-sm font-medium rounded-[5px] px-2">-</button>
                         <h2>6</h2>
@@ -761,44 +765,42 @@
                       <p class="text-[#525468] text-base line-through">1,024 Tk</p>
                       <p class="text-[#0F766D] text-base font-bold">1,024 Tk</p>
                     </div>
-
-
                   </div>
 
-                  <div class="flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
-
+                  <div class="sm:flex justify-between items-center border-b border-[#E4E5E9] pl-7 pr-10 xl:pr-14 py-4">
                     <div class="flex items-center gap-2.5">
                       <label class="label">
                         <input type="checkbox" class="hidden" />
                         <span class="checkmark -mt-2"></span>
                       </label>
+                      <div class="sm:flex items-center gap-2.5">
+                        <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
 
-                      <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
-
-                      <div>
-                        <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
-                        <p>
-                          <span class="text-[10px] mr-2">
-                            <span class="text-[#525468]">Manufacturer:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                          <span class="text-[10px]">
-                            <span class="text-[#525468]">Part Number:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                        </p>
-                        <div class="flex items-center gap-5 mt-4 ">
-                          <button class="text-[#D87607] font-medium text-xs">
-                            Save for later
-                          </button>
-                          <button class="text-[#566363] font-medium text-xs">
-                            Remove
-                          </button>
+                        <div class="mt-5 sm:mt-0">
+                          <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
+                          <p>
+                            <span class="text-[10px] mr-2">
+                              <span class="text-[#525468]">Manufacturer:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                            <span class="text-[10px]">
+                              <span class="text-[#525468]">Part Number:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                          </p>
+                          <div class="flex items-center gap-5 mt-4 ">
+                            <button class="text-[#D87607] font-medium text-xs">
+                              Save for later
+                            </button>
+                            <button class="text-[#566363] font-medium text-xs">
+                              Remove
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div>
+                    <div class=" flex my-5 sm:my-0">
                       <div class="flex items-center gap-2 2xl:gap-6 border border-[#0000001a] rounded-lg p-1">
                         <button class="bg-[#F6F6F6] text-[#7D7F85] text-sm font-medium rounded-[5px] px-2">-</button>
                         <h2>6</h2>
@@ -820,44 +822,42 @@
                       <p class="text-[#525468] text-base line-through">1,024 Tk</p>
                       <p class="text-[#0F766D] text-base font-bold">1,024 Tk</p>
                     </div>
-
-
                   </div>
 
-                  <div class="flex justify-between items-center pl-7 pr-10 xl:pr-14 py-4">
-
+                  <div class="sm:flex justify-between items-center pl-7 pr-10 xl:pr-14 py-4">
                     <div class="flex items-center gap-2.5">
                       <label class="label">
                         <input type="checkbox" class="hidden" />
                         <span class="checkmark -mt-2"></span>
                       </label>
+                      <div class="sm:flex items-center gap-2.5">
+                        <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
 
-                      <img src="./assets/image/Add-cart-order-flow-product-grid-page/product-img.png" alt="" />
-
-                      <div>
-                        <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
-                        <p>
-                          <span class="text-[10px] mr-2">
-                            <span class="text-[#525468]">Manufacturer:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                          <span class="text-[10px]">
-                            <span class="text-[#525468]">Part Number:</span>
-                            <span class="text-[#09090B]">ZZVF</span>
-                          </span>
-                        </p>
-                        <div class="flex items-center gap-5 mt-4 ">
-                          <button class="text-[#D87607] font-medium text-xs">
-                            Save for later
-                          </button>
-                          <button class="text-[#566363] font-medium text-xs">
-                            Remove
-                          </button>
+                        <div class="mt-5 sm:mt-0">
+                          <h2 class="text-xs xl:text-base font-semibold text-black">For Harley Sportster 883 X....</h2>
+                          <p>
+                            <span class="text-[10px] mr-2">
+                              <span class="text-[#525468]">Manufacturer:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                            <span class="text-[10px]">
+                              <span class="text-[#525468]">Part Number:</span>
+                              <span class="text-[#09090B]">ZZVF</span>
+                            </span>
+                          </p>
+                          <div class="flex items-center gap-5 mt-4 ">
+                            <button class="text-[#D87607] font-medium text-xs">
+                              Save for later
+                            </button>
+                            <button class="text-[#566363] font-medium text-xs">
+                              Remove
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div>
+                    <div class=" flex my-5 sm:my-0">
                       <div class="flex items-center gap-2 2xl:gap-6 border border-[#0000001a] rounded-lg p-1">
                         <button class="bg-[#F6F6F6] text-[#7D7F85] text-sm font-medium rounded-[5px] px-2">-</button>
                         <h2>6</h2>
@@ -884,8 +884,8 @@
               </div>
             </div>
 
-            <div>
-              <div class="max-w-xs p-7 bg-white rounded-2xl category-shadow">
+            <div class="mt-6 lg:mt-0">
+              <div class="w-full lg:max-w-xs p-7 bg-white rounded-2xl category-shadow">
                 <div class="flex gap-3 items-center ">
                   <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -971,7 +971,7 @@
                 </div>
               </div>
 
-              <div class="max-w-xs bg-white rounded-2xl category-shadow mt-3">
+              <div class="w-full lg:max-w-xs bg-white rounded-2xl category-shadow mt-3">
                 <div
                   class="px-5 py-3 bg-[#F4F5F7] border-t-[5px] border-r-[5px] border-l-[5px] border-white rounded-t-3xl">
                   <h4 class="text-lg font-bold text-[#0F766D] uppercase">
@@ -980,8 +980,8 @@
                 </div>
                 <div class="p-5">
                   <form class="bg-[#F6F6F6] rounded-lg flex items-center gap-1 p-1.5 pl-4">
-                    <input class="border-none focus:ring-0 bg-transparent p-0 placeholder:text-sm w-[76%]" type="text"
-                      name="" id="" placeholder="Discount Coupon">
+                    <input class="border-none focus:ring-0 bg-transparent p-0 placeholder:text-sm w-full lg:w-[76%]"
+                      type="text" name="" id="" placeholder="Discount Coupon">
                     <a href="./Add-cart-order-flow-shopping-cart.html"
                       class="text-[#EB2529] text-xs font-medium">Remove</a>
                   </form>
@@ -1051,15 +1051,8 @@
 
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
-  <!-- momentjs -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <script src="a.js"></script>
-
   <!-- Custom main js -->
-  <script src="./assets/js/daterangepicker.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
