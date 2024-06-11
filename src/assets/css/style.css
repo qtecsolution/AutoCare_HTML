@@ -980,6 +980,25 @@ input:checked+.toggle-button:before {
   color: rgb(9 9 11 / var(--tw-text-opacity));
 }
 
+.textOverflowEllipsis {
+  height: 3rem;
+  max-width: 8rem;
+}
+
+@media (min-width: 1024px) {
+  .textOverflowEllipsis {
+    max-width: 20rem;
+  }
+}
+
+.textOverflowEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* End Toggle button Apply point */
 
 .sr-only {
@@ -1524,10 +1543,6 @@ input:checked+.toggle-button:before {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .ml-24 {
@@ -2102,6 +2117,10 @@ input:checked+.toggle-button:before {
   max-width: 42rem;
 }
 
+.max-w-32 {
+  max-width: 8rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -2216,14 +2235,6 @@ input:checked+.toggle-button:before {
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-48 {
-  max-width: 12rem;
-}
-
-.max-w-32 {
-  max-width: 8rem;
 }
 
 .flex-1 {
@@ -3734,6 +3745,21 @@ input:checked+.toggle-button:before {
   padding-bottom: 7px;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -3898,16 +3924,8 @@ input:checked+.toggle-button:before {
   padding-right: 3.5rem;
 }
 
-.pr-16 {
-  padding-right: 4rem;
-}
-
 .pr-2 {
   padding-right: 0.5rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .pr-3 {
@@ -3932,10 +3950,6 @@ input:checked+.toggle-button:before {
 
 .pr-9 {
   padding-right: 2.25rem;
-}
-
-.pr-\[70px\] {
-  padding-right: 70px;
 }
 
 .ps-1 {
@@ -5069,12 +5083,24 @@ input:checked+.toggle-button:before {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:gap-4 {
     gap: 1rem;
   }
 
   .sm\:gap-64 {
     gap: 16rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
   }
 
   .sm\:px-10 {
@@ -5095,6 +5121,11 @@ input:checked+.toggle-button:before {
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:px-\[14px\] {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .sm\:pl-5 {
@@ -5379,12 +5410,12 @@ input:checked+.toggle-button:before {
     margin-bottom: 0.25rem;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -5451,6 +5482,14 @@ input:checked+.toggle-button:before {
     width: auto;
   }
 
+  .lg\:max-w-52 {
+    max-width: 13rem;
+  }
+
+  .lg\:max-w-80 {
+    max-width: 20rem;
+  }
+
   .lg\:max-w-\[1260px\] {
     max-width: 1260px;
   }
@@ -5469,14 +5508,6 @@ input:checked+.toggle-button:before {
 
   .lg\:max-w-xs {
     max-width: 20rem;
-  }
-
-  .lg\:max-w-48 {
-    max-width: 12rem;
-  }
-
-  .lg\:max-w-52 {
-    max-width: 13rem;
   }
 
   .lg\:grid-cols-2 {
@@ -5511,16 +5542,20 @@ input:checked+.toggle-button:before {
     gap: 0px;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
+  .lg\:gap-32 {
+    gap: 8rem;
   }
 
-  .lg\:gap-10 {
-    gap: 2.5rem;
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:rounded-none {
@@ -5534,6 +5569,11 @@ input:checked+.toggle-button:before {
 
   .lg\:p-0 {
     padding: 0px;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:px-10 {
@@ -5571,8 +5611,25 @@ input:checked+.toggle-button:before {
     padding-bottom: 95px;
   }
 
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .lg\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
   }
 
   .lg\:pt-4 {

@@ -261,6 +261,14 @@
     @apply flex items-center gap-2 text-[#09090B] font-bold text-sm w-16
   }
 
+  .textOverflowEllipsis {
+    @apply max-w-32 h-12 lg:max-w-80;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   /* End Toggle button Apply point */
 }
