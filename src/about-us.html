@@ -29,7 +29,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+  <section class="bg-[#EDF7F7] py-[10px] px-3 2xl:px-0 hidden lg:block">
     <div class="container mx-auto">
       <nav class="md:flex  justify-between items-center">
         <ul class="flex gap-[40px]">
@@ -95,7 +95,7 @@
     </div>
   </section>
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -484,11 +484,11 @@
       <div class="container mx-auto px-3 2xl:px-0">
         <div class="bg-no-repeat bg-cover rounded-[40px] bg-right-bottom"
           style="background-image: url(./assets/image/Career/aboutus-bg.png);">
-          <div class="py-36 px-20 xl:pl-36">
+          <div class="p-8 sm:py-36 sm:px-20 xl:pl-36">
             <h1 class="text-white text-4xl font-semibold">
               Welcome to Autocare
             </h1>
-            <p class="text-white text-base mt-6 max-w-4xl">
+            <p class="text-white text-justify text-base mt-6 max-w-4xl">
               Welcome to Autocare, the largest online multivendor marketplace dedicated to automobile parts and
               services.
               At Autocare, we are passionate about connecting car enthusiasts, professionals, and everyday drivers with
@@ -504,7 +504,7 @@
             <h1 class="text-[#3C3C3D] text-4xl font-semibold">
               Our Mission
             </h1>
-            <p class="text-[#5B5B5F] text-base mt-6">
+            <p class="text-[#5B5B5F] text-justify text-base mt-6">
               Welcome to Autocare, the largest online multivendor marketplace dedicated to automobile parts and
               services. At Autocare, we are passionate about connecting car enthusiasts, professionals, and everyday
               drivers with the highest quality automotive products and services. Whether you're looking to upgrade your
@@ -516,7 +516,7 @@
             <h1 class="text-[#3C3C3D] text-4xl font-semibold">
               Our Vision
             </h1>
-            <p class="text-[#5B5B5F] text-base mt-6">
+            <p class="text-[#5B5B5F] text-justify text-base mt-6">
               Welcome to Autocare, the largest online multivendor marketplace dedicated to automobile parts and
               services. At Autocare, we are passionate about connecting car enthusiasts, professionals, and everyday
               drivers with the highest quality automotive products and services. Whether you're looking to upgrade your
@@ -536,7 +536,7 @@
           </h1>
 
           <div class="grid lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
-            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-10">
+            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-4 sm:p-10">
               <h3 class="text-xl text-black font-semibold">What We Offer</h3>
 
               <p class="text-base text-[#5B5B5F] mt-6">
@@ -546,7 +546,7 @@
               </p>
             </div>
 
-            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-10">
+            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-4 sm:p-10">
               <h3 class="text-xl text-black font-semibold">
                 Trusted Services
               </h3>
@@ -558,7 +558,7 @@
               </p>
             </div>
 
-            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-10">
+            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-4 sm:p-10">
               <h3 class="text-xl text-black font-semibold">
                 User-Friendly Platform
               </h3>
@@ -570,7 +570,7 @@
               </p>
             </div>
 
-            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-10">
+            <div class="border border-[#E6E6E7] bg-white rounded-3xl p-4 sm:p-10">
               <h3 class="text-xl text-black font-semibold">
                 Secure Transactions
               </h3>
@@ -637,7 +637,7 @@
                 </div>
               </div>
 
-              <div class="border-t-[6px] border-[#0F766D] rounded-[32px] bg-white p-20">
+              <div class="border-t-[6px] border-[#0F766D] rounded-[32px] bg-white py-20 sm:p-20">
                 <figure class="flex justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="117" height="117" viewBox="0 0 117 117" fill="none">
                     <path
@@ -917,43 +917,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -969,12 +970,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">

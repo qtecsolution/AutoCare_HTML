@@ -544,7 +544,7 @@
 
   <!-- main section -->
   <main>
-    <section class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
+    <div class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
       <div class="max-w-[1260px] container mx-auto px-3 pt-16">
         <nav class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -591,16 +591,16 @@
           </ol>
         </nav>
       </div>
-    </section>
+    </div>
 
     <section class=" bg-[#f4f4f4fc]">
-      <div class="max-w-[1260px] container mx-auto px-3 pt-10">
-        <div class="grid grid-cols-3 gap-10 2xl:gap-16">
+      <div class="lg:max-w-[1260px] container mx-auto px-3 py-10 ">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 2xl:gap-16">
           <div class="col-span-2">
             <div class="bg-white rounded-2xl category-shadow px-8 py-5">
-              <div class="flex justify-between items-center">
+              <div class="flex flex-wrap gap-4 justify-between items-center">
                 <div class="flex items-center gap-5">
-                  <h2 class="text-[#09090B] text-2xl font-semibold">
+                  <h2 class="text-[#09090B] text-lg md:text-2xl font-semibold">
                     Tires/Wheels Sales Change
                   </h2>
                   <div class="flex items-center gap-1 mb-1.5">
@@ -619,7 +619,7 @@
                 </h3>
               </div>
 
-              <div class="flex justify-between items-center">
+              <div class="flex flex-wrap gap-4 justify-between items-center">
                 <div class=" flex items-center gap-2.5">
                   <img src="./assets/image/service-2-col-list-Page/nextage.png" alt="" />
                   <div>
@@ -643,7 +643,7 @@
                 </div>
 
                 <a href="./service-booking.html"
-                  class="flex items-center gap-1.5 bg-[#0F766D] py-3 px-[76px] rounded-[10px] text-white text-base font-semibold">
+                  class="flex items-center gap-1.5 bg-[#0F766D] py-3 px-5 sm:px-[76px] rounded-[10px] text-white text-base font-semibold">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_308_10177)">
                       <path
@@ -662,10 +662,10 @@
             </div>
 
             <div class="mt-10">
-              <ul class="flex gap-10 font-medium text-center ">
+              <ul class="flex gap-3 lg:gap-10 font-medium text-center ">
                 <li>
                   <a href="#descriptions"
-                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow bg-white">
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-2 md:px-5 text-xs sm:text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                       <path
                         d="M16.849 4.36279C15.6608 2.98909 13.1006 2.16797 10.0016 2.16797H10.0008C6.90145 2.16797 4.34123 2.98829 3.15267 4.36279C1.18081 6.64388 1.18081 12.6921 3.15307 14.974C3.54579 15.4034 4.00917 15.7623 4.52311 16.0352L4.80021 17.701C4.84576 17.9757 4.95944 18.2346 5.13087 18.454C5.3023 18.6734 5.526 18.8464 5.78152 18.9571C6.03703 19.0677 6.31622 19.1126 6.59353 19.0875C6.87085 19.0624 7.13746 18.9682 7.36898 18.8135L9.646 17.2949C9.78514 17.2053 9.94761 17.1586 10.1131 17.1607C13.1641 17.1403 15.682 16.3224 16.849 14.9732C18.8208 12.6921 18.8208 6.64388 16.849 4.36279ZM10.0008 5.29297C10.2068 5.29297 10.4082 5.35406 10.5795 5.46852C10.7508 5.58298 10.8843 5.74567 10.9632 5.93601C11.042 6.12635 11.0627 6.33579 11.0225 6.53785C10.9823 6.73992 10.8831 6.92553 10.7374 7.07121C10.5917 7.21689 10.4061 7.31609 10.204 7.35629C10.002 7.39648 9.79252 7.37585 9.60218 7.29701C9.41184 7.21817 9.24916 7.08466 9.1347 6.91335C9.02024 6.74205 8.95915 6.54066 8.95915 6.33464C8.95914 6.19784 8.98608 6.06238 9.03843 5.936C9.09077 5.80962 9.1675 5.69478 9.26423 5.59805C9.36096 5.50132 9.47579 5.42459 9.60218 5.37225C9.72856 5.3199 9.86402 5.29296 10.0008 5.29297ZM10.8341 14.2513H9.16748C8.94647 14.2513 8.7345 14.1635 8.57822 14.0072C8.42194 13.8509 8.33415 13.639 8.33415 13.418C8.33415 13.197 8.42194 12.985 8.57822 12.8287C8.7345 12.6724 8.94647 12.5846 9.16748 12.5846V10.0846C8.94647 10.0846 8.7345 9.99684 8.57822 9.84056C8.42194 9.68428 8.33415 9.47232 8.33415 9.2513C8.33415 9.03029 8.42194 8.81833 8.57822 8.66205C8.7345 8.50577 8.94647 8.41797 9.16748 8.41797H10.0008C10.1103 8.41794 10.2186 8.43948 10.3197 8.48134C10.4209 8.52321 10.5127 8.5846 10.5901 8.66198C10.6675 8.73937 10.7289 8.83125 10.7708 8.93237C10.8126 9.03348 10.8342 9.14186 10.8341 9.2513V12.5846C11.0552 12.5846 11.2671 12.6724 11.4234 12.8287C11.5797 12.985 11.6675 13.197 11.6675 13.418C11.6675 13.639 11.5797 13.8509 11.4234 14.0072C11.2671 14.1635 11.0552 14.2513 10.8341 14.2513Z"
@@ -677,7 +677,7 @@
 
                 <li>
                   <a href="#reviews"
-                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-2 md:px-5 text-xs sm:text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <g clip-path="url(#clip0_217_18501)">
                         <path
@@ -696,7 +696,7 @@
 
                 <li>
                   <a href="#questions"
-                    class="flex items-center justify-center gap-1.5 py-1.5 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
+                    class="flex items-center justify-center gap-1.5 py-1.5 px-2 md:px-5 text-xs sm:text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow hover:bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path
                         d="M8.0625 11.1305H4.375C4.025 11.1305 3.75 10.8555 3.75 10.5055C3.75 10.1617 4.025 9.88047 4.375 9.88047H7.325C7.15 9.50547 7.0125 9.11172 6.9125 8.69922H4.375C4.025 8.69922 3.75 8.41797 3.75 8.07422C3.75 7.73047 4.025 7.44922 4.375 7.44922H6.73125C6.725 7.34297 6.725 7.24297 6.725 7.13672C6.725 6.39297 6.85 5.68047 7.075 5.01172H3.5C2.25625 5.01172 1.25 6.02422 1.25 7.26172V13.7492C1.25 14.9055 2.13125 15.868 3.2625 15.9805V17.2992C3.2625 17.668 3.46875 17.993 3.8 18.1555C3.93125 18.218 4.075 18.2492 4.2125 18.2492C4.425 18.2492 4.63125 18.1805 4.8 18.043L6.20625 16.9367C6.96875 16.3305 7.93125 15.993 8.9125 15.993H13.2375C14.475 15.993 15.4875 14.9867 15.4875 13.7492V13.4242C14.8188 13.6492 14.1062 13.7742 13.3625 13.7742C11.2 13.7742 9.275 12.7367 8.0625 11.1305ZM8.36875 13.568H4.375C4.025 13.568 3.75 13.2867 3.75 12.943C3.75 12.5992 4.025 12.318 4.375 12.318H8.36875C8.7125 12.318 8.99375 12.5992 8.99375 12.943C8.99375 13.2867 8.7125 13.568 8.36875 13.568Z"
@@ -711,7 +711,7 @@
               </ul>
             </div>
 
-            <div class="category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-14 mb-16 bg-white">
+            <div class="category-shadow rounded-r-2xl rounded-bl-2xl py-9 px-2 md:px-14 lg:mb-16 bg-white">
               <div id="descriptions" class="my-10">
                 <h2 class="text-[20px] font-semibold text-black">Descriptions</h2>
                 <p class="text-sm text-[#7D7F85] my-5 max-w-[600px] text-justify">
@@ -773,7 +773,7 @@
               </div>
 
               <div id="reviews">
-                <div class="flex justify-between mb-7">
+                <div class="flex flex-wrap gap-4 justify-between mb-7">
                   <div class="flex gap-4">
                     <h2 class="text-xl font-semibold text-black">20 Reviews </h2>
                     <p>
@@ -1006,8 +1006,8 @@
             </div>
           </div>
 
-          <div>
-            <div class="shadow p-7 rounded-2xl w-[302px] bg-white">
+          <div class="mt-5 lg:mt-0">
+            <div class="shadow p-7 rounded-2xl w-full lg:w-[302px] bg-white">
               <div class="flex gap-3 items-center mb-6">
                 <div>
                   <img src="./assets/image/single-product-page/verified-product.svg" alt="" />
@@ -1075,7 +1075,7 @@
               </div>
             </div>
 
-            <div class="shadow ps-8 p-5 my-3 rounded-2xl w-[302px] flex justify-between bg-white">
+            <div class="shadow ps-8 p-5 my-3 rounded-2xl w-full lg:w-[302px] flex justify-between bg-white">
               <p>Share</p>
               <div class="flex gap-2">
                 <a href="#" class="bg-[#A7AAB9] h-5 w-5 flex justify-center items-center rounded-full">
@@ -1096,7 +1096,7 @@
               </div>
             </div>
 
-            <div class="shadow rounded-2xl w-[302px]  bg-white">
+            <div class="shadow rounded-2xl w-full lg:w-[302px]  bg-white">
               <div class="p-5 pb-0">
                 <div class="flex justify-between items-center">
                   <h5 class="text-[#60637A] text-[10px] font-medium uppercase">Store</h5>

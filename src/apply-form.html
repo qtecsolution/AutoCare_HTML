@@ -525,7 +525,7 @@
       <div class="bg-gradient-to-b from-[#EDF6F6] to-[#f4f4f4]">
         <div class="max-w-[800px] mx-auto">
           <div class="pt-16 pb-10 px-3">
-            <h1 class="text-black text-5xl font-semibold text-center">
+            <h1 class="text-black text-3xl sm:text-5xl font-semibold text-center">
               Service Advisor
             </h1>
 
@@ -537,15 +537,15 @@
         </div>
       </div>
       <div class="bg-[#f4f4f4]">
-        <div class="max-w-[800px] mx-auto pb-20">
+        <div class="max-w-[800px] mx-auto px-4 lg:px-0 pb-20">
           <div class="bg-white rounded-2xl p-6">
             <div class="py-3 px-4 bg-[#E6E6E7] rounded-lg border border-[#E7EAEF]">
-              <h3 class="text-black text-base font-semibold">
+              <h3 class="text-black text-xs sm:text-base font-semibold">
                 Position Applied For Service Advisor
               </h3>
             </div>
 
-            <div class="flex justify-between items-center gap-5 mt-5">
+            <div class="sm:flex justify-between items-center gap-5 mt-5">
               <div class="w-full">
                 <label for="" class="block text-sm text-black font-medium mb-2">
                   Full Name
@@ -553,7 +553,7 @@
                 <input class="w-full rounded-lg border-[#E7EAEF]" type="text" name="" id="" placeholder="Full Name">
               </div>
 
-              <div class="w-full">
+              <div class="w-full mt-4 sm:mt-0">
                 <label for="" class="block text-sm text-black font-medium mb-2">
                   Email Address
                 </label>
@@ -562,7 +562,7 @@
               </div>
             </div>
 
-            <div class="flex justify-between items-center gap-5 mt-5">
+            <div class="sm:flex justify-between items-center gap-5 mt-5">
               <div class="w-full">
                 <label for="" class="block text-sm text-black font-medium mb-2">
                   Phone Number
@@ -571,7 +571,7 @@
                   placeholder="Phone Number">
               </div>
 
-              <div class="w-full">
+              <div class="w-full mt-4 sm:mt-0">
                 <label for="" class="block text-sm text-black font-medium mb-2">
                   Address
                 </label>
@@ -595,7 +595,7 @@
                   </p>
 
                   <button
-                    class="flex items-center gap-3 rounded-[10px] px-6 py-3 bg-[#F4F5F7] text-black text-base font-semibold">
+                    class="flex items-center gap-3 rounded-[10px] px-6 py-3 bg-[#F4F5F7] text-black text-sm sm:text-base font-semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path
                         d="M10.2754 10.1249L8.21706 12.1833C7.07539 13.3249 7.07539 15.1666 8.21706 16.3083C9.35872 17.4499 11.2004 17.4499 12.3421 16.3083L15.5837 13.0666C17.8587 10.7916 17.8587 7.0916 15.5837 4.8166C13.3087 2.5416 9.60873 2.5416 7.33372 4.8166L3.80039 8.34994C1.85039 10.2999 1.85039 13.4666 3.80039 15.4249"
@@ -810,43 +810,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -862,12 +863,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">

@@ -177,10 +177,11 @@
     width: 100%;
   }
 
-  .SelectBrand .nice-select {
-    width: 324px;
+  /* .SelectBrand .nice-select {
+    max-width: 324px !important;
+    width: 100%;
     margin-top: 7px;
-  }
+  } */
 
   .nice-select-dropdown {
     width: 100%;

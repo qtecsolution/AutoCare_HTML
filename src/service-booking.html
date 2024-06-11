@@ -594,8 +594,8 @@
 
     <section class=" bg-[#f4f4f4fc]">
       <div class="lg:max-w-[850px] container mx-auto px-3 pt-10">
-        <div class="bg-white px-14 py-10 rounded-2xl category-shadow">
-          <div class="flex justify-between items-center mb-4">
+        <div class="bg-white px-5 md:px-14 py-10 rounded-2xl category-shadow">
+          <div class="flex flex-wrap gap-2 justify-between items-center mb-4">
             <h2 class="text-[#09090B] text-2xl font-semibold ">
               Booking
             </h2>
@@ -611,7 +611,7 @@
           </div>
 
           <div class="bg-[#F4F5F7] rounded-2xl category-shadow px-8 py-5">
-            <div class="flex items-center justify-between gap-5">
+            <div class="flex flex-wrap items-center justify-between gap-5">
               <h2 class="text-[#09090B] text-lg font-medium">
                 Tires/Wheels Sales Change
               </h2>
@@ -625,7 +625,7 @@
               </div>
             </div>
 
-            <div class="flex justify-between items-end mt-4">
+            <div class="flex flex-wrap gap-3 justify-between items-end mt-4">
               <div class=" flex items-center gap-2.5">
                 <img src="./assets/image/service-2-col-list-Page/nextage.png" alt="" />
                 <div>
@@ -669,18 +669,18 @@
           </div>
 
           <div class="flex justify-between items-center gap-6 mt-8">
-            <span class="h-[1px] bg-[#F3F4F6] w-64"></span>
-            <p class="text-[#6B7280] text-sm ">
+            <span class="h-[1px] bg-[#F3F4F6] w-1/2 sm:w-full max-w-64"></span>
+            <p class="text-[#6B7280] text-sm w-full ">
               Or Input Information
             </p>
-            <span class="h-[1px] bg-[#F3F4F6] w-64"></span>
+            <span class="h-[1px] bg-[#F3F4F6] w-1/2 sm:w-full max-w-64"></span>
           </div>
 
           <div class="mt-2">
             <h4 class="text-[#09090B] text-sm font-medium mb-3 ">
               Select Car Type
             </h4>
-            <div class="grid grid-cols-5 justify-between items-center gap-1.5">
+            <div class="flex flex-wrap lg:justify-between items-center gap-1.5">
               <div class="px-3 py-4 border border-[#CBCDD6] rounded-lg bookingShadow w-[137px]">
                 <label class="label-radio flex items-center gap-1.5 text-[#383941] text-xs font-medium">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -759,63 +759,52 @@
             </div>
           </div>
 
-          <div class="flex justify-between mt-5">
-            <div>
-              <p class="text-[#09090B] text-sm font-medium">
+
+          <div class="sm:flex justify-between gap-5">
+            <div class="w-full">
+              <h4 class="text-[#09090B] text-sm font-medium mt-6 -mb-5">
                 Select Car Brand
-              </p>
-              <div class="SelectBrand">
-                <select id="seachable-select2"
-                  class="border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">
-                    Select
-                  </option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
+              </h4>
+              <select id="seachable-select2" class="wauto">
+                <option data-display="Select">List Item</option>
+                <option value="1">List Item</option>
+                <option value="2">List Item</option>
+                <option value="3">List Item</option>
+                <option value="3">List Item</option>
+                <option value="3">List Item</option>
+                <option value="3">List Item</option>
+                <option value="3">List Item</option>
+              </select>
             </div>
-
-            <div>
-              <p class="text-[#09090B] text-sm font-medium">
+            <div class="w-full">
+              <h4 class="text-[#09090B] text-sm font-medium mt-6  -mb-5">
                 Model
-              </p>
-
-              <div class="SelectBrand">
-                <select id="seachable-select3"
-                  class="border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer ">
-                  <option class="text-[10px]" data-display="Select">
-                    Select
-                  </option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
+              </h4>
+              <select id="seachable-select3" class="wauto">
+                <option data-display="Select">Select</option>
+                <option value="1">Buick</option>
+                <option value="2">Hyundai Venue</option>
+                <option value="3">Honda</option>
+              </select>
             </div>
           </div>
 
-          <div class="flex justify-between mt-5">
-            <div>
-              <p class="text-[#09090B] text-sm font-medium">
-                Engine (Optional)
-              </p>
-              <div class="SelectBrand">
-                <select id="seachable-select4"
-                  class="border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                  <option class="text-[10px]" data-display="Select">
-                    Select
-                  </option>
-                  <option class="text-[10px]" value="1">Some option2</option>
-                  <option class="text-[10px]" value="2">Some option3</option>
-                  <option class="text-[10px]" value="4">Some option4</option>
-                </select>
-              </div>
+          <div class="sm:flex justify-between gap-5 ">
+            <div class="w-full">
+              <h4 class="text-[#09090B] text-sm font-medium mt-6 -mb-5">
+                Engine
+                <span class="text-[#6A6B70] text-xs">(Optional)</span>
+              </h4>
+              <select id="seachable-select4" class="wauto">
+                <option data-display="Select">Select</option>
+                <option value="1">Buick</option>
+                <option value="2">Hyundai Venue</option>
+                <option value="3">Honda</option>
+              </select>
             </div>
 
-            <div>
-              <p class="text-[#09090B] text-sm font-medium mb-1">
+            <div class="w-full ">
+              <p class="text-[#09090B] text-sm font-medium mt-5 mb-1">
                 Date
               </p>
 
@@ -828,7 +817,7 @@
                   </svg>
                 </div>
                 <input datepicker datepicker-title="Flowbite datepicker" type="text"
-                  class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-[322px] ps-10 p-2.5 "
+                  class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 "
                   placeholder="Select date">
               </div>
             </div>
@@ -838,7 +827,7 @@
             <h4 class="text-[#09090B] text-sm font-medium mb-3 ">
               Select Servicing Time
             </h4>
-            <div class="flex justify-between items-center gap-1.5">
+            <div class="flex flex-wrap lg:justify-between items-center gap-1.5">
               <div class="px-3 py-4 border border-[#CBCDD6] rounded-lg bookingShadow w-40">
                 <label class="label-radio flex items-center gap-2 text-[#383941] text-xs font-medium">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -987,18 +976,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="./assets/js/swiper.js"></script>
-
-  <!-- alpinejs -->
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script>
-
   <!-- nice select -->
   <script src="./assets/js/nice-select2.js"></script>
-
-  <!--  -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 
   <!-- Custom main js -->
   <script src="./assets/js/main.js"></script>
