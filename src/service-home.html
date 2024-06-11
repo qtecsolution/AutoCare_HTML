@@ -29,7 +29,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="bg-[#EDF7F7] py-[10px]">
+  <section class="bg-[#EDF7F7] py-[10px] hidden lg:block">
     <nav class="container mx-auto px-3 2xl:px-0 md:flex  justify-between items-center">
 
       <ul class="flex gap-[40px]">
@@ -96,7 +96,7 @@
   </section>
 
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -470,7 +470,7 @@
   </header>
 
   <!-- Search for Products -->
-  <section>
+  <section class="hidden lg:block">
     <div class="container mx-auto px-3 2xl:px-0 my-6">
       <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
         style="background-image: url('./assets/image/home/search-for-products.png')">
@@ -600,21 +600,23 @@
 
   <!-- hero section -->
   <section class="container mx-auto mt-6 mb-10 px-3 2xl:px-0">
-    <div class="grid md:grid-cols-3 gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
       <aside class="col-span-2">
         <div class="swiper mySwiper w-full h-full">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]"
+                src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"
+                alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./assets/image/home/hero-slide.png" alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./assets/image/home/hero-slide.png" alt="" />
             </div>
             <div class="swiper-slide text-center text-base bg-white flex justify-center items-center">
-              <img class="2xl:w-full" src="./assets/image/home/hero-slide.png" alt="" />
+              <img class="2xl:w-full rounded-[28px]" src="./assets/image/home/hero-slide.png" alt="" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -622,7 +624,6 @@
       </aside>
 
       <aside class="flex-shrink-0 rounded-[24px] pt-4 xl:pt-8 bg-gradient-to-bl from-[#7A96DE] to-[#8BC06B] relative">
-
         <div class="relative z-10">
           <img class="w-[72%] xl:w-[80%] 2xl:w-[83%]" src="./assets/image/home/hero-right1.png" alt="" />
         </div>
@@ -637,46 +638,42 @@
     <section class="container mx-auto mt-10 pl-2.5">
       <div class="flex flex-wrap justify-center md:grid md:grid-cols-4 gap-4">
         <div class="flex items-center gap-4">
-
           <div class="bg-[#E0EAC8] w-12 h-12 flex justify-center items-center rounded-full">
-            <img src="./assets/image/home/orginalbrandproduct.png" alt="Orginal">
+            <img src="./assets/image/home/orginalbrandproduct.png" alt="" />
           </div>
 
-          <span class="text-[#09090B] text-[10px] lg:text-[15px] font-semibold">
-            Orginal Brand Product
+          <span class="text-[#09090B] text-xs lg:text-[15px] font-semibold">
+            Original Brand Product
           </span>
         </div>
 
         <div class="flex items-center gap-4">
-
           <div class="bg-[#E9D8BF] w-12 h-12 flex justify-center items-center rounded-full">
             <img src="./assets/image/home/nationwidedelivery.png" alt="" />
           </div>
 
-          <span class="text-[#09090B] text-[10px] lg:text-[15px] font-semibold">
+          <span class="text-[#09090B] text-xs lg:text-[15px] font-semibold">
             Nationwide Delivery
           </span>
         </div>
 
         <div class="flex items-center gap-4">
-
           <div class="bg-[#F0FDFC] w-12 h-12 flex justify-center items-center rounded-full">
             <img src="./assets/image/home/verified-service-center.png" alt="" />
           </div>
 
-          <span class="text-[#09090B] text-[10px] lg:text-[15px] font-semibold">
+          <span class="text-[#09090B] text-xs lg:text-[15px] font-semibold">
             Verified Service Center
           </span>
         </div>
 
-        <div class="flex items-center gap-4 ">
-
+        <div class="flex items-center gap-4">
           <div class="bg-[#ece4fb] w-12 h-12 flex justify-center items-center rounded-full">
             <img src="./assets/image/home/bestpricegarantee.png" alt="" />
           </div>
 
-          <span class="text-[#09090B] text-[10px] lg:text-[15px] font-semibold">
-            Best Price Garantee
+          <span class="text-[#09090B] text-xs lg:text-[15px] font-semibold">
+            Best Price Guarantee
           </span>
         </div>
       </div>
@@ -898,7 +895,7 @@
               </div>
             </div>
 
-            <div class="pt-6 md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-3 lg:justify-center">
+            <div class="pt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-3 lg:justify-center">
               <a href="./service-grid-page.html">
                 <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
                   <div class="flex justify-center items-center">
@@ -925,7 +922,7 @@
                     </div>
 
                     <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
                     </div>
 
                     <div class="mt-2">
@@ -962,7 +959,7 @@
                     </div>
 
                     <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
                     </div>
 
                     <div class="mt-2">
@@ -998,44 +995,7 @@
                     </div>
 
                     <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
-                    </div>
-
-                    <div class="mt-2">
-                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
-                    </div>
-                  </div>
-
-                </div>
-              </a>
-
-              <a href="./service-grid-page.html">
-                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
-                  <div class="flex justify-center items-center">
-                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="" />
-                  </div>
-
-                  <div class="pt-3 pb-4">
-                    <div class="flex items-center gap-1 -ml-1">
-                      <img src="./assets/image/home/star.svg" alt="" />
-                      <p class="text-[10px] ">
-                        <span class="text-[#282728]">5.0</span>
-                        <span class="text-[#4A5568]">Average Rating</span>
-                      </p>
-                    </div>
-
-                    <div class="mt-2">
-                      <p class="text-xs font-bold text-[#B36C7D]">
-                        Tires/Wheels Sales Change
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
-                    </div>
-
-                    <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
                     </div>
 
                     <div class="mt-2">
@@ -1072,7 +1032,7 @@
                     </div>
 
                     <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
                     </div>
 
                     <div class="mt-2">
@@ -1109,7 +1069,44 @@
                     </div>
 
                     <div>
-                      <p class="text-[10px] text-[#718096]">Ka-60,Soudi Mosjid Road, Dhaka 1212, Ban...</p>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
+                    </div>
+
+                    <div class="mt-2">
+                      <h3 class="text-[#027371] text-sm font-bold">1000 Tk - 2000 Tk</h3>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+
+              <a href="./service-grid-page.html">
+                <div class="flex gap-3 bg-white rounded-2xl cursor-pointer transition-all hover:hoverShadow">
+                  <div class="flex justify-center items-center">
+                    <img class="h-[130px]" src="./assets/image/home/service-carousel.png" alt="" />
+                  </div>
+
+                  <div class="pt-3 pb-4">
+                    <div class="flex items-center gap-1 -ml-1">
+                      <img src="./assets/image/home/star.svg" alt="" />
+                      <p class="text-[10px] ">
+                        <span class="text-[#282728]">5.0</span>
+                        <span class="text-[#4A5568]">Average Rating</span>
+                      </p>
+                    </div>
+
+                    <div class="mt-2">
+                      <p class="text-xs font-bold text-[#B36C7D]">
+                        Tires/Wheels Sales Change
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-[#1A202C]">Alisha Garage</h3>
+                    </div>
+
+                    <div>
+                      <p class="text-[10px] text-[#718096]">Ka-60,Saudi Masjid Road, Dhaka 1212, Ban...</p>
                     </div>
 
                     <div class="mt-2">
@@ -1128,7 +1125,7 @@
 
   <!-- footer section -->
   <footer class="bg-[#1F1E28]">
-    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 2xl:px-0">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center justify-center md:justify-start gap-3">
@@ -1316,43 +1313,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -1368,12 +1366,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">
@@ -1396,7 +1394,8 @@
   <!-- flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <!-- Swiper JS -->
-  <script src="./assets/js/swiper.js"></script>
+  <script src="./assets/js/Swiper_js/swiper.js"></script>
+  <script src="./assets/js/Swiper_js/custome-swiper.js"></script>
   <!-- nice select -->
   <script src="./assets/js/nice-select2.js"></script>
   <!-- Custom main js -->

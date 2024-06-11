@@ -5442,6 +5442,10 @@ input:checked+.toggle-button:before {
     height: 93%;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-12 {
     width: 3rem;
   }
@@ -5556,6 +5560,10 @@ input:checked+.toggle-button:before {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-y-0 {
+    row-gap: 0px;
   }
 
   .lg\:rounded-none {
