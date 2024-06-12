@@ -1838,10 +1838,6 @@ input:checked+.toggle-button:before {
   height: 1.25rem;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
 .h-60 {
   height: 15rem;
 }
@@ -1852,10 +1848,6 @@ input:checked+.toggle-button:before {
 
 .h-\[130px\] {
   height: 130px;
-}
-
-.h-\[180px\] {
-  height: 180px;
 }
 
 .h-\[1px\] {
@@ -2198,10 +2190,6 @@ input:checked+.toggle-button:before {
   max-width: 659px;
 }
 
-.max-w-\[699px\] {
-  max-width: 699px;
-}
-
 .max-w-\[708px\] {
   max-width: 708px;
 }
@@ -2327,10 +2315,6 @@ input:checked+.toggle-button:before {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -2421,10 +2405,6 @@ input:checked+.toggle-button:before {
 
 .gap-20 {
   gap: 5rem;
-}
-
-.gap-24 {
-  gap: 6rem;
 }
 
 .gap-3 {
@@ -3814,10 +3794,6 @@ input:checked+.toggle-button:before {
   padding-left: 2.5rem;
 }
 
-.pl-12 {
-  padding-left: 3rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -3900,10 +3876,6 @@ input:checked+.toggle-button:before {
 
 .pr-5 {
   padding-right: 1.25rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .pr-8 {
@@ -6311,10 +6283,6 @@ input:checked+.toggle-button:before {
     line-height: 2rem;
   }
 
-  .\32xl\:text-\[19px\] {
-    font-size: 19px;
-  }
-
   .\32xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -6328,10 +6296,6 @@ input:checked+.toggle-button:before {
   .\32xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .\32xl\:leading-9 {
-    line-height: 2.25rem;
   }
 }
 
