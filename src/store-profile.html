@@ -23,7 +23,7 @@
 
 <body class="font-inter">
   <!-- top menu -->
-  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0">
+  <section class="topmenu bg-[#EDF7F7] py-[10px] px-3 2xl:px-0 hidden lg:block">
     <div class="container mx-auto">
       <nav class="md:flex  justify-between items-center">
         <ul class="flex gap-[40px]">
@@ -89,7 +89,7 @@
     </div>
   </section>
   <!-- main menu  -->
-  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow">
+  <header class="sticky top-0 z-50 py-[16px] bg-white menu shadow hidden lg:block">
     <div class=" xl:px-0">
       <div class="container mx-auto px-3 2xl:px-0 md:flex justify-between items-center xl:gap-[60px]">
         <div class=" flex  shrink-0 ">
@@ -506,15 +506,15 @@
           <img class="w-full" src="./assets/image/store-profile/store-profile-hero.png" alt="" />
         </figure>
 
-        <div class="flex justify-between mt-8 pl-12 pr-6">
-          <div>
+        <div class="mt-8 px-4 lg:pl-12 lg:pr-6">
+          <div class="sm:flex justify-between">
             <div class="flex gap-4">
               <figure>
                 <img src="./assets/image/store-profile/cars.png" alt="" />
               </figure>
               <div>
                 <div class="flex items-center gap-1">
-                  <h2 class="text-[#1A202C] text-xl font-semibold">Mayer Doa Parts Store</h2>
+                  <h2 class="text-[#1A202C] text-xs sm:text-xl font-semibold">Mayer Doa Parts Store</h2>
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M11.6598 6.91606L10.9234 5.42383L10.1869 6.91606C10.1111 7.06957 9.96471 7.17601 9.79522 7.20061L8.14844 7.43991L9.34009 8.60144C9.46265 8.72098 9.51862 8.89312 9.4897 9.06193L9.20837 10.7021L10.6813 9.92767C10.757 9.88782 10.8402 9.86795 10.9234 9.86795C11.0065 9.86795 11.0897 9.88787 11.1654 9.92767L12.6383 10.7021L12.357 9.06193C12.3281 8.89317 12.3841 8.72098 12.5066 8.60144L13.6983 7.43991L12.0515 7.20061C11.8821 7.17601 11.7356 7.06957 11.6598 6.91606Z"
@@ -548,38 +548,7 @@
                 </p>
               </div>
             </div>
-
-            <ul class="flex flex-wrap xl:flex-nowrap gap-3 font-medium text-center mt-8">
-              <li>
-                <a href="./store-profile.html"
-                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow">
-                  Store Home
-                </a>
-              </li>
-              <li>
-                <a href="./store-profile2.html"
-                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow"
-                  aria-current="page">
-                  All Product
-                </a>
-              </li>
-              <li>
-                <a href="./store-profile3.html"
-                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
-                  All Service Package
-                </a>
-              </li>
-              <li>
-                <a href="#reviews"
-                  class="flex items-center justify-center gap-1.5 py-3 px-5  text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
-                  Reviews
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="flex items-center justify-end gap-2 mb-14">
+            <div class="flex items-center mt-4 sm:mt-0 gap-2 mb-14">
               <a href="#"
                 class="text-[#0F766D] text-sm font-medium py-3 px-5 border border-[E4E5E9] bg-white rounded-lg flex items-center gap-1.5 transition-all hover:bg-[#0F766D] hover:text-white store-profile-hover">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -607,25 +576,55 @@
                 Follow
               </a>
             </div>
+          </div>
 
-            <form class="flex items-center bg-white border border-[#E4E5E9] rounded-lg px-4 py-0.5 w-80">
-
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="vuesax/linear/search-normal">
-                  <g id="search-normal">
-                    <path id="Vector"
-                      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                      stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path id="Vector_2" d="M22 22L20 20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
+          <div class="flex flex-col-reverse lg:flex-row justify-between mt-8">
+            <ul class="flex lg:self-end xl:flex-nowrap gap-2 sm:gap-3 font-medium text-center">
+              <li>
+                <a href="./store-profile.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-2 sm:px-5 text-xs sm:text-sm font-semibold border-t  border-[#0F766D] text-[#0F766D] rounded-t-2xl category-shadow">
+                  Store Home
+                </a>
+              </li>
+              <li>
+                <a href="./store-profile2.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-2 sm:px-5 text-xs sm:text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow"
+                  aria-current="page">
+                  All Product
+                </a>
+              </li>
+              <li>
+                <a href="./store-profile3.html"
+                  class="flex items-center justify-center gap-1.5 py-3 px-2 sm:px-5 text-xs sm:text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+                  All Service Package
+                </a>
+              </li>
+              <li>
+                <a href="#reviews"
+                  class="flex items-center justify-center gap-1.5 py-3 px-2 sm:px-5 text-xs sm:text-sm text-[#525468] font-semibold border-transparent border-t transition-all hover:border-[#0F766D] hover:text-[#0F766D] rounded-t-2xl hover:category-shadow">
+                  Reviews
+                </a>
+              </li>
+            </ul>
+            <div class="mb-5">
+              <form class="flex items-center bg-white border border-[#E4E5E9] rounded-lg px-4 py-0.5 w-full lg:w-80">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="vuesax/linear/search-normal">
+                    <g id="search-normal">
+                      <path id="Vector"
+                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2" d="M22 22L20 20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
                   </g>
-                </g>
-              </svg>
-              <input type="text" id="first_name"
-                class="border-0 bg-transparent block w-full focus:ring-0
-                    font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
-                placeholder="Search anything" required />
-            </form>
+                </svg>
+                <input type="text" id="first_name"
+                  class="border-0 bg-transparent block w-full focus:ring-0
+          font-medium placeholder:text-[#7A828A] placeholder:text-[15px] placeholder:font-inter placeholder:font-medium outline-none py-2"
+                  placeholder="Search anything" required />
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -675,7 +674,7 @@
                 valid till Jul 31 2024
               </p>
 
-              <div class="flex gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
+              <div class="flex gap-16 lg:gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
                 <button class="bg-[#F5F5F6] py-1.5 px-2.5 rounded-[44px] text-xs text-[#F49D0C] font-semibold">
                   T&C
                 </button>
@@ -720,7 +719,7 @@
                 valid till Jul 31 2024
               </p>
 
-              <div class="flex gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
+              <div class="flex gap-16 lg:gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
                 <button class="bg-[#F5F5F6] py-1.5 px-2.5 rounded-[44px] text-xs text-[#F49D0C] font-semibold">
                   T&C
                 </button>
@@ -765,7 +764,7 @@
                 valid till Jul 31 2024
               </p>
 
-              <div class="flex gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
+              <div class="flex gap-16 lg:gap-5 xl:gap-20 2xl:gap-44 mt-2.5">
                 <button class="bg-[#F5F5F6] py-1.5 px-2.5 rounded-[44px] text-xs text-[#F49D0C] font-semibold">
                   T&C
                 </button>
@@ -783,7 +782,7 @@
     <!-- Hot Product & Service  -->
     <section class="pt-16">
       <div class="container mx-auto px-3 2xl:px-0">
-        <div class="px-6 md:p-0 lg:grid lg:grid-cols-3 lg:gap-6">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-6">
           <aside class="col-span-2 ">
             <div class="flex justify-between items-center">
               <h2 class="text-[#09090B] font-semibold text-lg lg:text-2xl">
@@ -1262,7 +1261,7 @@
     <!-- Best car  -->
     <section class="pt-14">
       <div class="container mx-auto px-3 2xl:px-0">
-        <div class="px-6 md:p-0 md:grid md:grid-cols-3 gap-6">
+        <div class="md:grid md:grid-cols-3 gap-6">
           <div>
             <img class="w-full" src="./assets/image/home/best-car1.png" alt="" />
           </div>
@@ -1281,11 +1280,11 @@
     <!-- New Product section -->
     <section class="pt-16">
       <div class="container mx-auto px-3 2xl:px-0">
-        <div class="px-6 md:p-0">
+        <div>
           <h1 class="font-semibold text-2xl text-[#09090B]">
             New Product
           </h1>
-          <div class="flex justify-between gap-4 mt-5">
+          <div class="md:grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
             <a href="./single-product-page.html">
               <div class="mt-5 md:mt-0 bg-white rounded-xl myshadow cursor-pointer transition-all hover:hoverShadow">
                 <div
@@ -1523,7 +1522,7 @@
     <section class="py-16">
       <div class="container mx-auto px-3 2xl:px-0">
         <div id="reviews">
-          <div class="flex items-center gap-8 mb-7">
+          <div class="flex flex-wrap items-center gap-8 mb-7">
             <div class="flex gap-4">
               <h2 class="text-xl font-semibold text-black">20 Reviews </h2>
               <p>
@@ -1538,7 +1537,7 @@
             </button>
           </div>
 
-          <div class="flex gap-24 mb-10">
+          <div class="flex flex-wrap gap-5 lg:gap-24 mb-10">
             <div>
               <div class="flex gap-4 items-center">
                 <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="" />
@@ -1575,7 +1574,7 @@
             </div>
           </div>
 
-          <div class="flex gap-24 mb-10">
+          <div class="flex flex-wrap gap-5 lg:gap-24 mb-10">
             <div>
               <div class="flex gap-4 items-center">
                 <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="" />
@@ -1612,7 +1611,7 @@
             </div>
           </div>
 
-          <div class="flex gap-24 mb-10">
+          <div class="flex flex-wrap gap-5 lg:gap-24 mb-10">
             <div>
               <div class="flex gap-4 items-center">
                 <img class="w-16" src="./assets/image/single-product-page/Oval.png" alt="" />
@@ -1663,7 +1662,7 @@
 
   <!-- footer section -->
   <footer class="bg-[#1F1E28]">
-    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto pt-12 pb-8 px-4 sm:px-6 2xl:px-0">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center justify-center md:justify-start gap-3">
@@ -1851,43 +1850,44 @@
               </li>
             </ul>
           </div>
+          <div class="hidden sm:block">
+            <div class="flex">
+              <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-e-none">
+                <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
+                  Download Customer App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
 
-          <div class="flex">
-            <fieldset class="border border-r-0 border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-e-none">
-              <legend class="text-[#15B7B7] font-bold text-xs md:text-base lg:text-lg xl:ml-10">
-                Download Customer App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6 ">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
+              <fieldset class="border  border-gray-300 p-4 2xl:px-[56px] rounded-2xl rounded-s-none ">
+                <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
+                  Download Vendor App
+                </legend>
+                <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
+                    </a>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
+                    </a>
+                  </div>
                 </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="border  border-gray-300 p-4 2xl:px-[45px] rounded-2xl rounded-s-none ">
-              <legend class="text-[#FFA47C] font-bold text-xs  md:text-base lg:text-lg xl:ml-10">
-                Download Vendor App
-              </legend>
-              <div class="flex gap-3 lg:px-8 xl:px-10 md:gap-4 lg:gap-6">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/googlePlay.png" alt="Google Play" class="xl:w-36">
-                  </a>
-                </div>
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img src="./assets/image/home/appStore.png" alt="App Store" class="xl:w-36">
-                  </a>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
@@ -1903,12 +1903,12 @@
 
 
         <form
-          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
+          class="flex items-center justify-between bg-white rounded-[70px] mt-4 sm:mt-0 p-1 md:p-3 pl-5 w-full sm:w-auto md:relative md:w-[420px]">
           <input
             class="flex-grow bg-transparent border-none focus:ring-0 placeholder-[#7A828A] text-sm sm:text-base placeholder-[15px] sm:placeholder-[17px] font-medium"
             type="text" placeholder="Enter Your Email" />
           <button
-            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px] mt-1.5 md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
+            class="px-6 py-3 bg-[#027371] text-white text-sm sm:text-base font-bold rounded-[50px]  md:mt-4  md:absolute top-[-4px] md:top-[-7px] right-[-36px]">Subscribe</button>
         </form>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between mt-8">

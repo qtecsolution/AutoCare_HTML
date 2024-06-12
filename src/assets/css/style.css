@@ -1834,10 +1834,6 @@ input:checked+.toggle-button:before {
   height: 1rem;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -2341,6 +2337,10 @@ input:checked+.toggle-button:before {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -3465,10 +3465,6 @@ input:checked+.toggle-button:before {
 
 .p-2\.5 {
   padding: 0.625rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-3 {
@@ -5021,12 +5017,12 @@ input:checked+.toggle-button:before {
     margin-top: 0px;
   }
 
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .sm\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .sm\:block {
@@ -5071,6 +5067,10 @@ input:checked+.toggle-button:before {
 
   .sm\:gap-20 {
     gap: 5rem;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 
   .sm\:gap-4 {
@@ -5118,6 +5118,11 @@ input:checked+.toggle-button:before {
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .sm\:px-6 {
@@ -5256,10 +5261,6 @@ input:checked+.toggle-button:before {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:mt-28 {
-    margin-top: 7rem;
   }
 
   .md\:mt-4 {
@@ -5508,6 +5509,10 @@ input:checked+.toggle-button:before {
     width: 18rem;
   }
 
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
   .lg\:w-\[300px\] {
     width: 300px;
   }
@@ -5608,6 +5613,14 @@ input:checked+.toggle-button:before {
     gap: 3rem;
   }
 
+  .lg\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
   .lg\:gap-32 {
     gap: 8rem;
   }
@@ -5616,20 +5629,20 @@ input:checked+.toggle-button:before {
     gap: 1rem;
   }
 
-  .lg\:gap-48 {
-    gap: 12rem;
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:gap-6 {
     gap: 1.5rem;
   }
 
-  .lg\:gap-14 {
-    gap: 3.5rem;
-  }
-
   .lg\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .lg\:self-end {
+    align-self: flex-end;
   }
 
   .lg\:rounded-none {
@@ -5674,6 +5687,11 @@ input:checked+.toggle-button:before {
     padding-right: 2rem;
   }
 
+  .lg\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -5689,13 +5707,16 @@ input:checked+.toggle-button:before {
     padding-bottom: 95px;
   }
 
-  .lg\:px-9 {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:pl-7 {
@@ -5710,21 +5731,26 @@ input:checked+.toggle-button:before {
     padding-right: 5rem;
   }
 
-  .lg\:pt-4 {
-    padding-top: 1rem;
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
   }
 
   .lg\:pt-10 {
     padding-top: 2.5rem;
   }
 
-  .lg\:pb-20 {
-    padding-bottom: 5rem;
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {
@@ -5770,11 +5796,6 @@ input:checked+.toggle-button:before {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
@@ -5932,6 +5953,10 @@ input:checked+.toggle-button:before {
     gap: 1rem;
   }
 
+  .xl\:gap-48 {
+    gap: 12rem;
+  }
+
   .xl\:gap-5 {
     gap: 1.25rem;
   }
@@ -5950,10 +5975,6 @@ input:checked+.toggle-button:before {
 
   .xl\:gap-\[73px\] {
     gap: 73px;
-  }
-
-  .xl\:gap-48 {
-    gap: 12rem;
   }
 
   .xl\:bg-cover {
