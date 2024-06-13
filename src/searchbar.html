@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="English">
+  <title>AutoCare - Service Home</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./assets/image/home/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    .select2-container--default .select2-selection--single {
+      background-color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+      background-color: #0F766D;
+    }
+  </style>
+</head>
+
+<body class="font-inter">
+  <!-- Search for Products -->
+  <section class="hidden lg:block">
+    <div class="container mx-auto px-3 2xl:px-0 my-6">
+      <div class="bg-no-repeat bg-right 2xl:bg-cover px-2 lg:px-10  xl:ps-16 rounded-3xl"
+        style="background-image: url('./assets/image/home/search-for-products.png')">
+        <div class=" lg:pt-4 xl:pt-9">
+          <h1 class="text-[32px] font-semibold text-white">
+            Find Your Automotive Parts and Services
+          </h1>
+        </div>
+
+        <div class="2xl:mb-6 2xl:mt-3">
+          <p class="text-[#F0FDFC] text-sm">
+            Explore a vast selection of automotive parts and services tailored to your needs. Whether you're seeking
+            specific components or specialized maintenance
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5 mb-2 mt-3">
+          <a href="../index.html">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                <path
+                  d="M11.877 0C12.3741 0 12.777 0.402948 12.777 0.9V1.8C11.277 1.8 9.95702 1.8 8.45703 1.8V0.9C8.45703 0.402948 8.85998 0 9.35703 0H11.877Z"
+                  fill="#F0FDFC" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.68 3.41953C13.68 2.92248 13.277 2.51953 12.78 2.51953H6.50216C6.02679 2.51953 5.57073 2.70756 5.23352 3.04259L0.53136 7.7142C0.19125 8.0521 0 8.51171 0 8.99114V16.1995C0 17.1937 0.805896 17.9995 1.8 17.9995H8.87292C7.33313 17.0918 6.3 15.4163 6.3 13.4995C6.3 10.6166 8.63706 8.27953 11.52 8.27953C12.2904 8.27953 13.0218 8.44641 13.68 8.74598V3.41953ZM8.29667 4.78136C8.84997 5.33466 8.84997 6.23172 8.29667 6.78501L4.44548 10.6362C3.89219 11.1895 2.99513 11.1895 2.44183 10.6362C1.88854 10.0829 1.88854 9.18585 2.44183 8.63254L6.29301 4.78136C6.84632 4.22805 7.74338 4.22807 8.29667 4.78136Z"
+                  fill="#F0FDFC" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.5195 18C14.0048 18 16.0195 15.9853 16.0195 13.5C16.0195 11.0147 14.0048 9 11.5195 9C9.03425 9 7.01953 11.0147 7.01953 13.5C7.01953 15.9853 9.03425 18 11.5195 18ZM13.3195 14.0279C13.3195 15.0287 12.5137 15.84 11.5195 15.84C10.5254 15.84 9.71953 15.0287 9.71953 14.0279C9.71953 13.2544 10.7948 11.8647 11.2832 11.2734C11.4081 11.1222 11.631 11.1222 11.7559 11.2734C12.2443 11.8647 13.3195 13.2544 13.3195 14.0279Z"
+                  fill="#F0FDFC" />
+              </svg>
+              <h3 class="text-[#F0FDFC] font-semibold text-sm">Search for Products...</h3>
+            </div>
+          </a>
+
+          <a href="./service-home.html">
+            <div class="flex items-center gap-2 cursor-pointer bg-white py-2 px-5 rounded-t-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M15.9986 2V5.052C15.9986 5.7884 15.4016 6.3854 14.6652 6.3854C13.9288 6.3854 13.332 5.7884 13.332 5.052V2C12.1562 2.515 11.332 3.6862 11.332 5.052C11.332 6.1386 11.8606 7.095 12.6652 7.7038V16C12.6652 17.1042 13.561 18 14.6652 18C15.7694 18 16.6652 17.1042 16.6652 16V7.7038C17.4706 7.095 17.9986 6.1386 17.9986 5.052C17.9986 3.6856 17.175 2.515 15.9986 2Z"
+                  fill="#115E57" />
+                <path
+                  d="M11.3334 11.3328V8.66602H4C2.8958 8.66602 2 9.56122 2 10.6654L2.0006 10.666H2V15.3328H3.3334V17.3328C3.3334 17.7 3.6334 17.9994 4 17.9994H5.3334C5.6998 17.9994 6 17.7 6 17.3328V15.3328H11.3334V12.666H6.6666V11.3328H11.3334ZM4.6666 12.8328C4.207 12.8328 3.8334 12.4598 3.8334 11.9994C3.8334 11.5384 4.207 11.166 4.6666 11.166C5.1264 11.166 5.5 11.5384 5.5 11.9994C5.5 12.4598 5.1264 12.8328 4.6666 12.8328Z"
+                  fill="#115E57" />
+                <path
+                  d="M10.0017 5.05278C10.0017 4.45118 10.1281 3.87318 10.3429 3.33398H6.21135C5.65935 3.33398 5.15935 3.55798 4.79735 3.91998C4.61375 4.10418 4.46535 4.32418 4.36455 4.56838L3.21875 7.33398H10.6061C10.2159 6.64718 10.0017 5.86858 10.0017 5.05278Z"
+                  fill="#115E57" />
+              </svg>
+              <h3 class="text-[#0F766D] font-semibold text-sm">Search for Services...</h3>
+            </div>
+          </a>
+        </div>
+
+        <div class="pb-9 2xl:pb-16">
+          <div class="flex ps-4 pr-2 py-2 md:max-w-[1000px] justify-between bg-white items-center rounded-lg">
+
+            <div class="border-r-2 border-[#E4E5E9 w-full">
+              <select class="js-example-basic-single w-full" name="state">
+                <option value="AL">Alabama</option>
+                <option value="">Jahir</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="js-example-basic-single w-full" name="state">
+                <option value="AL">Alabama</option>
+                <option value="">Jahir</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="js-example-basic-single w-full" name="state">
+                <option value="AL">Alabama</option>
+                <option value="">Jahir</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="js-example-basic-single w-full" name="state">
+                <option value="AL">Alabama</option>
+                <option value="">Jahirwwwwwwwwwwwwwwwwwwwwwwwwww</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="js-example-basic-single w-full" name="state">
+                <option value="AL">Alabama</option>
+                <option value="">Jahir</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+
+            <div class="pl-4">
+              <input class="border-none focus:ring-0 focus:border-none outline-none text-[12px]" type="text" name=""
+                id="" placeholder="Keyword">
+            </div>
+
+            <div>
+              <button class="flex items-center gap-2 bg-[#0F766D] rounded-md px-4 py-2">
+                <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                <span class="font-bold text-white text-xs">Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.js-example-basic-single').select2();
+    });
+  </script>
+</body>
+
+</html>

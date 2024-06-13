@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 });
 
+//select2
+$(document).ready(function () {
+  $(".service_select").select2();
+});
+
 $(function () {
   $('input[name="datefilter"]').daterangepicker({
     autoUpdateInput: false,

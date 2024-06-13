@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="./assets/css/swiper.css">
   <!-- tailwind css -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- nice-select2 -->
-  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <!-- select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <!-- custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
@@ -524,66 +524,57 @@
         </div>
 
         <div class="pb-9 2xl:pb-16">
-          <div class="flex ps-4 pr-2 py-2 md:max-w-[1000px] justify-between bg-white items-center gap-2 rounded-lg">
+          <div class="flex ps-4 pr-2 py-2 md:max-w-[1100px] justify-between bg-white items-center rounded-lg">
 
-            <div class="border-r-2 border-[#E4E5E9] homeSelect">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">
-                  Dhaka
-                </option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
+            <div class="border-r-2 border-[#E4E5E9 w-full">
+              <select class="service_select w-full" name="state">
+                <option value="AL">Dhaka</option>
+                <option value="">Barishal</option>
+                <option value="WY">Chattogram</option>
+                <option value="WY">Khulna</option>
+                <option value="WY">Rajshahi</option>
+                <option value="WY">Rangpur</option>
+                <option value="WY">Mymensingh</option>
+                <option value="WY">Sylhet</option>
               </select>
             </div>
 
-            <div class="border-r-2 border-[#E4E5E9] homeSelect">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">
-                  Servicing Type
-                </option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="service_select w-full" name="state">
+                <option value="AL">Servicing Type</option>
+                <option value="">Servicing Type</option>
+                <option value="WY">Servicing Type</option>
               </select>
             </div>
 
-            <div class="border-r-2 border-[#E4E5E9] homeSelect">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">
-                  Select
-                </option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="service_select w-full" name="state">
+                <option value="AL">Select</option>
+                <option value="">Select</option>
+                <option value="WY">Select</option>
               </select>
             </div>
 
-            <div class="border-r-2 border-[#E4E5E9] homeSelect">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">
-                  Car Type (Optional)
-                </option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="service_select w-full" name="state">
+                <option value="AL">Car Type (Optional)</option>
+                <option value="">Car Type (Optional)</option>
+                <option value="WY">Car Type (Optional)</option>
               </select>
             </div>
 
-            <div class="border-r-2 border-[#E4E5E9] homeSelect">
-              <select class="selectize border-none focus:ring-0 text-[#7B7F95] text-[10px] cursor-pointer">
-                <option class="text-[10px]" data-display="Select">
-                  Brand (Optional)
-                </option>
-                <option class="text-[10px]" value="1">Some option2</option>
-                <option class="text-[10px]" value="2">Some option3</option>
-                <option class="text-[10px]" value="4">Some option4</option>
+            <div class="border-r-2 border-[#E4E5E9] w-full">
+              <select class="service_select w-full" name="state">
+                <option value="AL">Brand (Optional)</option>
+                <option value="">Brand (Optional)</option>
+                <option value="WY">Brand (Optional)</option>
               </select>
             </div>
 
 
-            <div>
-              <input class="border-none focus:ring-0 text-[12px]" type="text" name="" id="" placeholder="Keyword">
+            <div class="pl-4">
+              <input class="border-none focus:ring-0 focus:border-none outline-none text-[12px]" type="text" name=""
+                id="" placeholder="Keyword">
             </div>
 
             <div>
@@ -1396,8 +1387,9 @@
   <!-- Swiper JS -->
   <script src="./assets/js/Swiper_js/swiper.js"></script>
   <script src="./assets/js/Swiper_js/custome-swiper.js"></script>
-  <!-- nice select -->
-  <script src="./assets/js/nice-select2.js"></script>
+  <!-- select2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <!-- Custom main js -->
   <script src="./assets/js/main.js"></script>
 </body>
