@@ -2117,6 +2117,10 @@ input:checked+.toggle-button:before {
   width: 100%;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
